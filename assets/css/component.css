@@ -1,0 +1,15 @@
+/* ========================
+   BUTTONS
+   ======================== */
+
+.btn {
+  @apply inline-flex items-center justify-center px-28 py-10 rounded-full border border-solid cursor-pointer font-bold uppercase transition-colors duration-300;
+}
+
+.btn-red {
+  @apply bg-red text-white border-red hover:bg-transparent hover:text-red;
+}
+
+.btn-red-outline {
+  @apply bg-transparent text-red border-2 border-red border-solid hover:bg-red hover:text-white;
+}

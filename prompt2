@@ -1,0 +1,311 @@
+first can you review the .claude/skills/html-css-rules/skill.md file and .claude.md file based on that we create teh new design
+
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4002-19208&m=dev
+can you access this home page? review this homepage based on that i want to create the app.css file, base.css and component.css file
+
+----
+
+now i want to create the app.css, base.css and component.css file
+
+----
+
+now i want add the all fonts in font.css like we added before in fonts.css file from fonts folder
+
+banner
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=223-3363&m=dev
+ I need you to create a banner section for a website based on figma.
+ requirements:
+The banner should have a video playing in the background that covers the entire section. On top of the video, display the main content  as shown in the Figma design. Include a play button icon alongside the text "Watch Full Video" — when clicked, this should open a modal popup containing the full video player. The popup must also feature a close icon positioned in the top-right corner that closes the modal when clicked.
+
+
+----
+i want to create the header as showing in figma. 
+
+left side add the hamburger and menus, add the logo in the middle, right side add the button.
+when i click on the hambarger bar then open the navbar from left side.
+in the navbar add make row of 2 columns.
+
+in the left side add like below:-
+add the close icon first.
+after that add the main menus with arrows. when i hover that menus then show the submenus at the right side as showing in figma.
+
+after that add the divider image.
+
+after that add the navmenus of 2 columns as showing in figma.
+after that i want to social icons.
+in the left sides ::after i want to add the image with full height which is appear end of the left side
+
+
+in the right side add like below:-
+i want to add image in the absolute
+in the top add the logo and button as showing in figma.
+hide the right side in responsive.
+
+make header and navbar proepr respobsive and pixel perfect
+
+----
+header
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=222-200&m=dev
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=222-890&m=dev
+I need you to create a header and slide-out navbar component that matches a Figma design exactly.
+**Requirements:**
+1. **Desktop Header:**
+   - Left side: Hamburger icon + main navigation menus (hide main navigation menus in responsive)
+   - Center: Logo
+   - Right side: CTA button
+
+2. ** Navbar (opens from left when hamburger is clicked):**
+   - Two-column layout structure
+   - **Left Column:**
+     - Close icon at the top
+     - Main navigation menus with arrow indicators(svg of arrow)
+     - Submenus that appear on hover, positioned on the right side of each menu item
+     - Divider image separator
+     - Secondary navigation menus arranged in 2 columns below the divider
+     - Social media icons at the bottom
+     - in the left sides ::after i want to add the image with full height which is appear end of the left side
+   - **Right Column:**
+     - Full-height background image in absolute positioning
+     - Logo and button at the top of this column
+     - This entire column should be hidden on mobile/responsive views
+
+3. **Responsive Behavior:**
+   - The navbar should slide in smoothly from the left when hamburger is clicked
+   - The right column (with image, logo, button) should be hidden on smaller screens
+   - All elements must be properly responsive and pixel-perfect across breakpoints
+---- 
+
+currently its working proper.in the responsive  submenu is show below of their related navbar-main-link
+
+
+
+
+https://www.thyme.co.uk/
+first review this reference website
+when first time open the website then i want to add the animation to header and banner like showing in reference website
+
+
+
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=222-203&m=dev
+i want to make this button's look and fill. when i hover on the button then just change the background color
+
+
+----
+
+
+aboutssection
+
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=223-3363&m=dev
+i want to redesigning this section as showing in figma. also there are image upside of content. 
+there are add the btn-decorative. add the height width like in figma.
+
+make sure the section is proper responsive and pixel perfect
+
+but first review this https://thedamai.com/ page's second section look the all of things and animation. then after start the designing about us section
+
+
+---
+
+ need you to first review the reference website at https://thedamai.com/ page's second section to understand the overall design language, section styling, animations, and visual patterns used throughout the site. Pay close attention to how sections are structured, the animation effects applied, button styles, spacing, typography, and color schemes.
+
+After completing your review, I need you to recreate the "About Us" section based on the Figma design at https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=223-3363&m=dev
+
+The section should include:
+- An image positioned above the content area as shown in the Figma design
+- Decorative buttons (btn-decorative) with exact height and width matching the Figma specifications
+- All styling details including colors, fonts, spacing, and visual effects
+
+CRITICAL requirements:
+- Ensure the section is fully responsive and adapts properly to mobile, tablet, and desktop viewports
+- Match the Figma design with pixel-perfect accuracy
+- Apply animations and transitions consistent with the themadamai.com design language you reviewed
+
+
+--
+
+can you access this section?
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=225-10938&m=dev
+
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=225-10938&m=dev
+i want to design the Discover section based on 
+in that there are 2 icons in the right side. by default first is image icon and after that there are map icon.
+
+when i click on the map icon then show the iframe at bottom. otherwise show the image
+
+
+Completed:- 
+Header
+banner section
+discover section
+Sustainability section
+
+in progress:-
+our story section
+------
+
+destination section
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=225-10938&m=dev
+can you access this destination section?
+i want to know is there a need to change in the our section?
+
+-----
+
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=229-44&m=dev
+i want to create experience section as showing in figma.
+first they are adding the heading. 
+then after see there are adding the swiper. and active slide's scale is bigger.also there are navigation is added positioned at where they are added in figma.
+
+---
+
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=229-87&m=dev
+I need you to create an experience section for a website that matches a Figma design reference.
+The section should include:
+1. A heading at the top
+2. A swiper/carousel component below the heading
+3. The active slide should have a larger scale than inactive slides
+4. Navigation arrows positioned exactly where shown in the Figma design
+
+https://hemingways-rebuild.fluxfullcircle.com/
+first review this website's "Discover Our Collection" section. then see how they are added effects. i want to do same thing in experience swiper.
+
+---
+
+
+First, visit https://hemingways-rebuild.fluxfullcircle.com/ and thoroughly examine the "Discover Our Collection" section. i want to do in experience section's swiper.
+1. The specific animation effects used (hover states, transitions, scroll-triggered animations, parallax, etc.)
+2. The CSS properties and values involved (transform, opacity, transition-timing-function, etc.)
+3. Any JavaScript libraries or techniques employed (GSAP, Intersection Observer, CSS animations, etc.)
+4. The timing and easing functions that create the smooth feel
+5. How elements respond to user interaction
+---
+
+First, visit https://hemingways-rebuild.fluxfullcircle.com/ and thoroughly examine the "Discover Our Collection" section. i want to apply that effect in experience section's swiper.
+1. The specific animation effects used (hover states, transitions, scroll-triggered animations, parallax, etc.)
+2. The CSS properties and values involved (transform, opacity, transition-timing-function, etc.)
+3. Any JavaScript libraries or techniques employed (GSAP, Intersection Observer, CSS animations, etc.)
+4. The timing and easing functions that create the smooth feel
+5. How elements respond to user interaction
+
+
+
+
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=229-61&m=dev
+see the gap between sldies in the figma and see the gap between slides in our browser. there are different. fix this issue
+
+
+
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=222-4&m=dev
+can you access this itineraries section?  i want to create as showing in figma.
+first add the top camps-bgimg1.svg. and bottom camps-bgimg2.svg abosultely
+after that add the heading part as showing in figma.
+after that add the three columns of row. in each column add the card
+before the crteating the cards first review the https://thedamai.com/ site's Damai packages's section. see the overlay effect. i want to apply in my card.
+in my add the content as showing in figma. in the end of the card there are button. in the button's bottom make sure there are image of line.
+
+---
+itineraries
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=222-4&m=dev
+I need you to create an itineraries section
+Please implement the following:
+1. Add two background images absolutely positioned - camps-bgimg1.svg at the top and camps-bgimg2.svg at the bottom of the section
+2. Create the heading section exactly as shown in the Figma design
+3. Build a three-column grid layout with cards in each column
+4. Before creating the cards, visit https://thedamai.com/ and study their "Damai packages" section to understand the overlay effect they use. Apply a similar overlay effect to your cards
+5. Populate each card with content matching the Figma design
+6. At the bottom of each card, add a button with the LINE app image positioned at the bottom of the button
+
+----
+second third section
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=235-145&m=dev
+i want to create this section as showing in figma.
+first in the top center add the image after that add the content as showing in figma.
+also there are one more image. 
+make sure section is responsive and pixel perfect.
+
+---
+
+second third section
+
+Please create a section based on this Figma design: https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=235-145&m=dev
+The section should follow these specifications:
+1. Layout structure: Place the first image at the top center of the section, then display the content below it as shown in the design
+2. Include the second image as it appears in the Figma design
+3. Ensure the section is fully responsive
+4. Achieve pixel-perfect accuracy matching the Figma dimensions, spacing, typography, and visual styling
+
+---
+
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=242-303&m=dev
+i want to create the newsletter section as showing in figma
+
+
+---
+footer
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=242-232&m=dev
+now i want to create the footer section as showing in the figma.
+for that if you want to create the grid or flex then you can use it.
+make sure section is responsive and pixel perfect.
+
+---
+our Camps
+
+now i want to create "our Camps" section as showing in figma
+add the 2 image absolutly to top and bottom.
+add the heading part as shiowing in the figma.
+after that i want to add the swiper of images as showing in figma.
+before the start designing thatb section first review this reference website's "Discover our other Camps & Lodges" section's swiper. see how they are added swiper. what's the effects are they added. i want to add the same effect. also i want to add same things as they are doing in responsive
+reference site:-https://entara.co.tz/camps-lodges/olmara-camp/
+
+----
+our Camps
+
+@https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=267-341&m=dev
+ need your help to build a "Our Camps" section for my website based on a Figma design.
+Before we begin the implementation, please visit this reference website: https://entara.co.tz/camps-lodges/olmara-camp/ and thoroughly review their "Discover our other Camps & Lodges" section. Analyze and document:
+1. How the swiper is implemented (library used, configuration)
+2. What animation and transition effects are applied (slide transitions, hover effects, autoplay behavior)
+3. How the navigation controls are styled and positioned
+4. The responsive behavior across different screen sizes (mobile, tablet, desktop)
+5. Any special effects like parallax, scaling, or opacity changes during slide transitions
+6. How the cards/images are structured and styled
+After your review, I need you to create the "Our Camps" section with these specific requirements:
+- Two images positioned absolutely at the top and bottom of the section
+- A heading section as shown in the Figma design
+- A swiper implementation matching the reference site's effects exactly
+- Full responsive implementation following the same patterns as the reference
+
+----
+
+❯ in the reference website's section they are not using that swiper. first review the reference website's "expand-img-grid" section. i want to implement  
+same functionality in my section                                                                                                                          
+reference website:-https://entara.co.tz/camps-lodges/olmara-camp/     
+
+
+first review the reference website's "intro" section. i want to implement same design. instead of our "about-section".
+reference website:-https://entara.co.tz/
+
+
+reference website:-https://entara.co.tz/
+can you access the reference website's "intro" section?.
+i want to add that section. review the what structure, style and any other things they are did. i want to add the same thing in my section.
+also see the resoponsive in the reference section. i want to add that pixel perfect
+
+
+I need you to analyze the intro section of the reference website at https://entara.co.tz/ and provide me with a comprehensive breakdown so I can replicate it in my own project.
+Please examine and document the following:
+1. **Structure** — Break down the HTML structure of the intro section. Identify all elements, containers, wrappers, and how they are nested. Note the semantic HTML tags used (header, section, div, h1-h6, p, button, etc.).
+2. **Content Elements** — List all content elements present (headings, subheadings, paragraphs, buttons, images, icons, links). Include the exact text content where possible.
+3. **Styling Details** — Provide detailed CSS specifications including:
+   - Layout method (Flexbox, Grid, positioning)
+   - Dimensions, padding, and margins
+   - Any visual effects (shadows, gradients, overlays)
+4. **Responsive Behavior** — Analyze how the intro section adapts across different screen sizes (desktop, tablet, mobile).
+images are available in the local
+
+
+---
+https://entara.co.tz/
+review the reference website's button. how they are added image in border, structure and style of button. i want to add same in my project.
+
+reference website:-https://entara.co.tz/
+still the i am not able to get the view as i want.i also apply the same css which they are added then why i am not able to add that view. is there i did any mistake?

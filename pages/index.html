@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/Favicon1.svg" />
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Sitewide bar -->
+        <div class="header-sitewide">
+            <div class="content content-white">
+                <p>This is the first example of a sitewide notice.</p>
+            </div>
+            <div class="header-sitewide-actions">
+                <a href="#" role="link" target="_self" aria-label="Schedule a tour" class="btn btn-red">
+                    JOIN THE EDGE
+                </a>
+            </div>
+        </div>
+
+        <!-- Main nav bar -->
+        <div class="header-nav">
+
+            <!-- Mobile: left group (hamburger + user) -->
+            <div class="header-mobile-left">
+                <button type="button" aria-label="Open navigation menu" class="hamburger-btn" id="hamburgerBtn">
+                    <span class="header-icon">
+                        <!-- Hamburger icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round">
+                            <line x1="2" y1="5" x2="18" y2="5" />
+                            <line x1="2" y1="10" x2="18" y2="10" />
+                            <line x1="2" y1="15" x2="18" y2="15" />
+                        </svg>
+                    </span>
+                </button>
+                <a href="#" role="link" target="_self" aria-label="My account" class="header-icon header-icon-link">
+                    <!-- User icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="10" cy="6" r="4" />
+                        <path d="M2 18c0-4 3.6-7 8-7s8 3 8 7" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Logo -->
+            <a href="/" role="link" target="_self" aria-label="The Edge homepage" class="header-logo">
+                <img src="../assets/images/logo.png" alt="The Edge at Princeton" width="315" height="60"
+                    class="header-logo-img" />
+            </a>
+
+            <!-- Desktop nav -->
+            <nav class="header-desktop-nav" aria-label="Main navigation">
+                <ul class="flex items-center gap-40">
+
+                    <li class="nav-item has-dropdown">
+                        <button type="button" aria-label="Toggle Amenities dropdown" class="nav-link">
+                            Amenities
+                        </button>
+                        <div class="nav-dropdown">
+                            <ul>
+                                <li>
+                                    <a href="#" role="link" target="_self" aria-label="Fitness Center"
+                                        class="nav-dropdown-link">
+                                        Fitness Center
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" role="link" target="_self" aria-label="Rooftop Lounge"
+                                        class="nav-dropdown-link">
+                                        Rooftop Lounge
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" role="link" target="_self" aria-label="Study Rooms"
+                                        class="nav-dropdown-link">
+                                        Study Rooms
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" role="link" target="_self" aria-label="Outdoor Spaces"
+                                        class="nav-dropdown-link">
+                                        Outdoor Spaces
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-dropdown">
+                        <button type="button" aria-label="Toggle Floor Plans dropdown" class="nav-link">
+                            Floor Plans
+                        </button>
+                        <div class="nav-dropdown">
+                            <ul>
+                                <li>
+                                    <a href="#" role="link" target="_self" aria-label="Studio"
+                                        class="nav-dropdown-link">
+                                        Studio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" role="link" target="_self" aria-label="1 Bedroom"
+                                        class="nav-dropdown-link">
+                                        1 Bedroom
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" role="link" target="_self" aria-label="2 Bedroom"
+                                        class="nav-dropdown-link">
+                                        2 Bedroom
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" role="link" target="_self" aria-label="4 Bedroom"
+                                        class="nav-dropdown-link">
+                                        4 Bedroom
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" role="link" target="_self" aria-label="Neighborhood" class="nav-link">
+                            Neighborhood
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" role="link" target="_self" aria-label="Gallery" class="nav-link">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" role="link" target="_self" aria-label="Residents" class="nav-link">
+                            Residents
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop right: phone + divider + icons -->
+            <div class="header-right">
+                <a href="tel:+16095550100" role="link" target="_self" aria-label="Call us at (609) 555-0100"
+                    class="header-phone">
+                    <span class="header-icon">
+                        <!-- Phone icon -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_4032_2496)">
+                                <path
+                                    d="M19.5516 15.8058L16.4629 12.7168C15.8477 12.1041 14.8289 12.1227 14.1923 12.7596L12.6362 14.3153C12.5379 14.2611 12.4361 14.2045 12.3291 14.1445C11.3465 13.6 10.0015 12.8537 8.58628 11.4374C7.16683 10.0182 6.41986 8.67115 5.87372 7.68786C5.81609 7.58369 5.76087 7.48325 5.70634 7.38787L6.75071 6.34506L7.26416 5.83098C7.90178 5.19319 7.91936 4.17468 7.30559 3.56016L4.2169 0.470783C3.60313 -0.142874 2.58387 -0.124258 1.94626 0.513532L1.07576 1.38903L1.09955 1.41264C0.807657 1.78509 0.563746 2.21465 0.382234 2.67788C0.214915 3.11882 0.110743 3.53959 0.0631095 3.96122C-0.344731 7.34231 1.20033 10.4324 5.39342 14.6255C11.1896 20.4213 15.8605 19.9834 16.062 19.962C16.5009 19.9096 16.9214 19.8047 17.3489 19.6387C17.8081 19.4593 18.2374 19.2158 18.6096 18.9245L18.6286 18.9414L19.5105 18.0779C20.1468 17.4402 20.1651 16.4213 19.5516 15.8058Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_4032_2496">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </span>
+                    <span class="header-phone-text">(609) 555-0100</span>
+                </a>
+
+                <div class="header-divider" aria-hidden="true"></div>
+
+                <div class="header-icons">
+                    <a href="#" role="link" target="_self" aria-label="My account" class="header-icon header-icon-link">
+                        <!-- User icon -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_4006_7302)">
+                                <path
+                                    d="M9.99968 10.0001C11.3803 10.0001 12.5586 9.51166 13.535 8.53517C14.5116 7.55868 14.9999 6.38033 14.9999 4.99994C14.9999 3.61978 14.5116 2.44139 13.535 1.46467C12.5583 0.488223 11.3799 0 9.99968 0C8.61948 0 7.4409 0.488223 6.46445 1.46467C5.48783 2.44139 4.99951 3.61974 4.99951 4.99994C4.99951 6.38033 5.48783 7.55868 6.46445 8.53517C7.44117 9.51166 8.61943 10.0001 9.99968 10.0001Z"
+                                    fill="white" />
+                                <path
+                                    d="M19.121 15.28C19.0905 14.8417 19.0297 14.3685 18.9387 13.8606C18.8475 13.3528 18.7323 12.882 18.5934 12.4478C18.4545 12.0139 18.2678 11.5907 18.0335 11.1783C17.7992 10.766 17.5301 10.4145 17.2261 10.1236C16.9221 9.83272 16.5511 9.60067 16.113 9.42709C15.6744 9.25355 15.1904 9.16663 14.6609 9.16663C14.5828 9.16663 14.4005 9.25994 14.114 9.44661C13.8278 9.63328 13.5044 9.84166 13.1441 10.0718C12.7839 10.3015 12.3149 10.51 11.7379 10.6964C11.1606 10.883 10.5812 10.9764 9.99942 10.9764C9.41784 10.9764 8.83845 10.883 8.26125 10.6964C7.68409 10.51 7.21521 10.3015 6.85496 10.0718C6.49475 9.84166 6.17145 9.63332 5.88503 9.44661C5.59848 9.25994 5.41629 9.16663 5.33816 9.16663C4.80866 9.16663 4.32468 9.25355 3.88635 9.42709C3.44793 9.60067 3.07687 9.8329 2.77299 10.1236C2.46921 10.4145 2.20008 10.766 1.96579 11.1783C1.73151 11.5907 1.54489 12.0141 1.40597 12.4478C1.2671 12.882 1.15203 13.3528 1.06091 13.8606C0.969692 14.3685 0.908944 14.8414 0.878524 15.28C0.848149 15.7185 0.833008 16.1678 0.833008 16.6278C0.833008 17.6693 1.14993 18.492 1.78355 19.0954C2.4173 19.6985 3.25939 20 4.30972 20H15.6902C16.7404 20 17.5824 19.6985 18.2163 19.0954C18.8502 18.492 19.1669 17.6695 19.1669 16.6278C19.1668 16.1678 19.1517 15.7185 19.121 15.28Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_4006_7302">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" role="link" target="_self" aria-label="Search" class="header-icon header-icon-link">
+                        <!-- Search icon -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_4006_7307)">
+                                <path
+                                    d="M15.1571 14.8615C13.8771 14.8615 12.8218 15.8944 12.8218 17.1967C12.8218 18.4767 13.8547 19.532 15.1571 19.532C16.437 19.532 17.4924 18.4991 17.4924 17.1967C17.4699 15.9168 16.437 14.8615 15.1571 14.8615Z"
+                                    fill="white" />
+                                <path
+                                    d="M19.2661 3.72395C19.2212 3.72395 19.1539 3.7015 19.0865 3.7015H4.94004L4.71549 2.19703C4.58076 1.20902 3.72748 0.468018 2.71702 0.468018H0.898188C0.404185 0.468018 0 0.872202 0 1.36621C0 1.86021 0.404185 2.26439 0.898188 2.26439H2.71702C2.82929 2.26439 2.91911 2.35421 2.94157 2.46649L4.33376 11.9424C4.5134 13.1325 5.54631 14.0307 6.75887 14.0307H16.1C17.2677 14.0307 18.2781 13.1998 18.5251 12.0546L19.9847 4.75687C20.0745 4.28532 19.7601 3.81377 19.2661 3.72395Z"
+                                    fill="white" />
+                                <path
+                                    d="M9.43087 17.0845C9.38596 15.8495 8.35305 14.8615 7.11804 14.8615C5.81566 14.9288 4.82766 16.0066 4.87257 17.2866C4.91748 18.5216 5.92794 19.5096 7.16295 19.5096H7.20786C8.48777 19.4422 9.49824 18.3644 9.43087 17.0845Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_4006_7307">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" role="link" target="_self" aria-label="Apply now"
+                        class="header-icon header-icon-link header-icon-red">
+                        <!-- Checkmark / apply icon -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_4006_7318)">
+                                <path
+                                    d="M19.2895 15.7606L15.9977 12.4688C16.5962 11.2718 16.9952 9.87531 16.9952 8.4788C16.9952 3.79052 13.2047 0 8.5164 0C3.82812 0 0.0375977 3.79052 0.0375977 8.4788C0.0375977 13.1671 3.82812 16.9576 8.5164 16.9576C9.91291 16.9576 11.3094 16.5586 12.5064 15.9601L15.7982 19.2519C16.7957 20.2494 18.292 20.2494 19.2895 19.2519C20.1872 18.2544 20.1872 16.7581 19.2895 15.7606ZM8.5164 14.9626C4.92538 14.9626 2.03261 12.0698 2.03261 8.4788C2.03261 4.88778 4.92538 1.99501 8.5164 1.99501C12.1074 1.99501 15.0002 4.88778 15.0002 8.4788C15.0002 12.0698 12.1074 14.9626 8.5164 14.9626Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_4006_7318">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile: right group (cart + search) -->
+            <div class="header-mobile-right">
+                <a href="#" role="link" target="_self" aria-label="Search" class="header-icon header-icon-link">
+                    <!-- Search icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="8.5" cy="8.5" r="5.5" />
+                        <line x1="13" y1="13" x2="18" y2="18" />
+                    </svg>
+                </a>
+                <a href="#" role="link" target="_self" aria-label="Apply now"
+                    class="header-icon header-icon-link header-icon-red">
+                    <!-- Apply icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 10l4 4 8-8" />
+                    </svg>
+                </a>
+            </div>
+
+        </div><!-- /.header-nav -->
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <div class="mobile-menu-accordions">
+
+                <!-- Accordion: Amenities (expandable) -->
+                <div class="mobile-accordion is-expandable">
+                    <button type="button" aria-label="Toggle Amenities" class="mobile-accordion-trigger">
+                        <span class="mobile-accordion-label">Amenities</span>
+                        <span class="mobile-accordion-chevron" aria-hidden="true">
+                            <!-- Chevron right icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="7 4 13 10 7 16" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="mobile-accordion-content">
+                        <a href="#" role="link" target="_self" aria-label="Fitness Center" class="mobile-sub-link">
+                            Fitness Center
+                        </a>
+                        <a href="#" role="link" target="_self" aria-label="Rooftop Lounge" class="mobile-sub-link">
+                            Rooftop Lounge
+                        </a>
+                        <a href="#" role="link" target="_self" aria-label="Study Rooms" class="mobile-sub-link">
+                            Study Rooms
+                        </a>
+                        <a href="#" role="link" target="_self" aria-label="Outdoor Spaces" class="mobile-sub-link">
+                            Outdoor Spaces
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accordion: Floor Plans (expandable) -->
+                <div class="mobile-accordion is-expandable">
+                    <button type="button" aria-label="Toggle Floor Plans" class="mobile-accordion-trigger">
+                        <span class="mobile-accordion-label">Floor Plans</span>
+                        <span class="mobile-accordion-chevron" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="7 4 13 10 7 16" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="mobile-accordion-content">
+                        <a href="#" role="link" target="_self" aria-label="Studio" class="mobile-sub-link">
+                            Studio
+                        </a>
+                        <a href="#" role="link" target="_self" aria-label="1 Bedroom" class="mobile-sub-link">
+                            1 Bedroom
+                        </a>
+                        <a href="#" role="link" target="_self" aria-label="2 Bedroom" class="mobile-sub-link">
+                            2 Bedroom
+                        </a>
+                        <a href="#" role="link" target="_self" aria-label="4 Bedroom" class="mobile-sub-link">
+                            4 Bedroom
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Accordion: Neighborhood (no sub-links) -->
+                <div class="mobile-accordion">
+                    <a href="#" role="link" target="_self" aria-label="Neighborhood" class="mobile-accordion-trigger">
+                        <span class="mobile-accordion-label">Neighborhood</span>
+                    </a>
+                </div>
+
+                <!-- Accordion: Gallery (no sub-links) -->
+                <div class="mobile-accordion">
+                    <a href="#" role="link" target="_self" aria-label="Gallery" class="mobile-accordion-trigger">
+                        <span class="mobile-accordion-label">Gallery</span>
+                    </a>
+                </div>
+
+                <!-- Accordion: Residents (no sub-links) -->
+                <div class="mobile-accordion">
+                    <a href="#" role="link" target="_self" aria-label="Residents" class="mobile-accordion-trigger">
+                        <span class="mobile-accordion-label">Residents</span>
+                    </a>
+                </div>
+
+            </div><!-- /.mobile-menu-accordions -->
+
+            <div class="mobile-menu-footer p-20 flex flex-col gap-20">
+                <a href="tel:+16095550100" role="link" target="_self" aria-label="Call us at (609) 555-0100"
+                    class="mobile-phone">
+                    <span class="header-icon text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M3 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L13 12l5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 1 5a2 2 0 0 1 2-2z" />
+                        </svg>
+                    </span>
+                    <span class="mobile-phone-text">(609) 555-0100</span>
+                </a>
+                <a href="#" role="link" target="_self" aria-label="Schedule a tour" class="btn btn-red">
+                    Schedule a Tour
+                </a>
+            </div>
+
+        </div><!-- /.mobile-menu -->
+
+    </header>
+
+    <main>
+
+        <!-- ======= BANNER SECTION ======= -->
+        <section class="banner-section general-padding">
+
+            <!-- Background photo -->
+            <div class="banner-bg" aria-hidden="true">
+                <img src="../assets/images/banner.png" alt="The Edge at Princeton — interior staircase" width="1512"
+                    height="800" class="banner-bg-img" />
+                <!-- Top-left light bleed (desktop radial overlay) -->
+                <div class="banner-overlay banner-overlay-tl max-768:hidden"></div>
+                <!-- Top dark gradient -->
+                <div class="banner-overlay banner-overlay-top"></div>
+                <!-- Right dark gradient / mobile flat overlay -->
+                <div class="banner-overlay banner-overlay-right"></div>
+            </div>
+
+            <!-- Main content -->
+            <div class="banner-inner">
+                <div class="banner-copy">
+                    <div class="banner-title-group">
+
+                        <div class="title title-white">
+                            <h1>FIND YOUR EDGE. MIND-BODY ALIGNMENT THROUGH CREATING SPACE FOR STRENGTH &amp;
+                                SELF-DISCOVERY.</h1>
+                        </div>
+
+                        <div class="content content-white banner-subtitle">
+                            <p>Connect, grow, and transform with our online or in-person group coaching.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rotating circular badge -->
+            <div class="banner-badge" aria-label="Find Your Edge">
+
+                <!-- Outer ring — GSAP rotates this -->
+                <div class="banner-badge-ring" id="bannerBadgeRing" aria-hidden="true">
+                    <img src="../assets/images/round-logo.png" alt="" width="129" height="129" />
+                </div>
+
+                <!-- Center favicon — stays static -->
+                <div class="banner-badge-center" aria-hidden="true">
+                    <img src="../assets/images/favicon.png" alt="" width="64" height="52" />
+                </div>
+
+            </div><!-- /.banner-badge -->
+
+            <!-- Bottom decorative strip -->
+            <div class="banner-bottom-el" aria-hidden="true">
+                <img src="../assets/images/banner-bottom.png" alt="" width="1512" height="70" />
+            </div>
+
+        </section><!-- /.banner-section -->
+
+        <!-- ======= ABOUT SECTION ======= -->
+        <section class="about-section general-padding">
+
+            <!-- Layered background: solid colour → texture at 5% → radial white vignette -->
+            <div class="about-bg" aria-hidden="true">
+                <div class="about-bg-color"></div>
+                <img
+                    src="../assets/images/vector/common-bg.png"
+                    alt=""
+                    width="1512"
+                    height="393"
+                    class="about-bg-img"
+                />
+                <div class="about-bg-overlay"></div>
+            </div>
+
+            <!-- Content — centred column, max 1000px -->
+            <div class="about-inner">
+                <div class="about-copy">
+
+                    <div class="title title-gold">
+                        <h2>Break Through Your Limits</h2>
+                    </div>
+
+                    <div class="content content-navy">
+                        <p>The EDGE is a community-driven movement committed to helping men rediscover their authentic masculinity through holistic methods, deep coaching, and meaningful connection. Our approach combines practical tools with profound introspection, empowering men to cultivate emotional resilience, purpose-driven living, and unwavering strength. This isn&rsquo;t therapy. This isn&rsquo;t self-help fluff. This is the deep dive&mdash;the work that separates men who merely exist from men who truly live.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section><!-- /.about-section -->
+
+        <!-- ======= TWO-COLUMN: 4 WEEK MASTERY ======= -->
+        <section class="twocol-section general-padding">
+
+            <!-- Top decorative strip (E-pattern, inverted) -->
+            <div class="twocol-top-strip" aria-hidden="true">
+                <img
+                    src="../assets/images/banner-bottom.png"
+                    alt=""
+                    width="1512"
+                    height="70"
+                    class="twocol-top-strip-dt"
+                />
+                <img
+                    src="../assets/images/banner-bottom-mobile.png"
+                    alt=""
+                    width="752"
+                    height="56"
+                    class="twocol-top-strip-mb"
+                />
+            </div>
+
+            <!-- Left: gold column with copy -->
+            <div class="twocol-left">
+                <div class="twocol-copy">
+
+                    <div class="title title-off-white">
+                        <h2>4 Week Transformational Mastery</h2>
+                    </div>
+
+                    <div class="content content-white">
+                        <p>Commit to a life-changing four-week journey designed to break old patterns and forge a stronger version of yourself. Each week unlocks a new dimension — emotional resilience, physical discipline, mental clarity, and relational depth — through structured coaching and community accountability.</p>
+                    </div>
+
+                    <div>
+                        <a
+                            href="#"
+                            role="link"
+                            target="_self"
+                            aria-label="Learn more about the 4 week transformational mastery program"
+                            class="btn btn-red"
+                        >
+                            Learn More About The Mastery
+                        </a>
+                    </div>
+
+                </div>
+            </div><!-- /.twocol-left -->
+
+            <!-- Right: photo column -->
+            <div class="twocol-right">
+
+                <!-- Vertical E-strip at left edge of photo (desktop) -->
+                <div class="twocol-side-strip" aria-hidden="true">
+                    <img
+                        src="../assets/images/banner-bottom.png"
+                        alt=""
+                        width="1512"
+                        height="70"
+                    />
+                </div>
+
+                <!-- Horizontal strip between photo and gold (mobile) -->
+                <div class="twocol-bottom-strip" aria-hidden="true">
+                    <img
+                        src="../assets/images/banner-bottom-mobile.png"
+                        alt=""
+                        width="752"
+                        height="56"
+                    />
+                </div>
+
+                <img
+                    src="../assets/images/two-col-photo.png"
+                    alt="Two people enjoying outdoor activities as part of the 4 week mastery program"
+                    width="3840"
+                    height="2160"
+                    class="twocol-right-img"
+                />
+
+            </div><!-- /.twocol-right -->
+
+        </section><!-- /.twocol-section -->
+
+    </main>
+
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/gsap.min.js"></script>
+    <script src="../assets/js/scrolltrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/animation.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

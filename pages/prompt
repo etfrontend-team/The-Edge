@@ -1,0 +1,51 @@
+header 
+figma- @https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=563-2288&m=dev
+figma with dropdown:- @https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=563-2292&m=dev
+figma responsive:- @https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=563-4496&m=dev
+figma with responsive dropdown:- @https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=563-5065&m=dev
+figma with responsive dropdown with open:- @https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=563-5249&m=dev
+i want to create header as showing in the figma. make it pixel perfect and responsive. also i am shared design of the dropdown of nav links. 
+aslo i want to make header fixed. also i shared the responsive version of that. with also open dropn down so amke that pixel perfect
+-----
+
+banner
+Desktop:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4996-27668&m=dev
+Mobile:-  @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4999-28868&m=dev
+i want to create the banner as showing in the figma.make it pixel perfect and responsive.
+also in bottom i want to add the rounded image as showing in the figma. make that continous rounded animation. 
+also add one more background the ::after add the image of bottom. 
+also i shared the responsive design as showing in the figma. make sure design is pixel perfect and responsive
+
+
+----
+
+common about
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4996-27670&m=dev
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4999-28870&m=dev
+after that i want to common about section as showing in the figma.
+in the background image is added. also content add in the middle. 
+make sure design is pixel perfect and responsive.
+all image are added in the local. if not then addd that when required.
+
+
+
+----
+
+two column with background
+
+Desktop:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4996-27672&m=dev
+responsive:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4999-28872&m=dev
+i want to create the section of "two column with background" as showing in the figma.
+section's ::before can we add the shape using the clip path at the top.
+add the text in the left side and image in the right side. also the rightside's ::before can we add the shape using the clip path as showing in the figma. i want design pixel perfect and responsive.
+
+
+
+----
+explore the path of excellence
+desktop:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4996-27671&m=dev
+Mobile:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4999-28871&m=dev
+i want to create the section of "explore the path of excellence" as showing in the figma.
+wrap the section in the 1402px. add the video with text in the right side.
+and in the right side i want to show 3 cards-box with track as showing in the figma. also you can use the swiper if needed. make that cards-box name unique so we can use in many places.
+i want design pixel perfect and responsive.

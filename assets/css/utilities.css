@@ -1,0 +1,200 @@
+/* ========================
+   BANNER SECTION
+   ======================== */
+
+.banner-section {
+  @apply relative py-0;
+}
+
+.banner-bg {
+  @apply absolute inset-0 overflow-hidden pointer-events-none;
+}
+
+.banner-bg-img {
+  @apply w-full h-full object-cover object-center;
+}
+
+.banner-overlay {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+.banner-overlay-tl {
+  @apply bg-linear-to-br from-white/60 via-white/30 to-transparent;
+}
+
+.banner-overlay-top {
+  @apply bg-linear-to-b from-black/40 via-black/25 to-transparent;
+}
+
+.banner-overlay-right {
+  @apply bg-linear-to-l from-black/40 via-black/25 to-transparent max-768:from-black/28 max-768:via-black/28 max-768:to-black/28;
+}
+
+.banner-inner {
+  @apply relative z-10 flex items-center justify-end px-100 pt-194 pb-177 max-768:px-30 max-768:pt-100 max-768:pb-140 max-768:justify-center;
+}
+
+.banner-copy {
+  @apply flex flex-col gap-28 max-w-879 max-768:max-w-full;
+}
+
+.banner-title-group {
+  @apply flex flex-col gap-10;
+}
+
+.banner-section .banner-copy h1 {
+  @apply font-futura-pt-cond uppercase max-768:text-40 max-768:text-center;
+}
+
+.banner-subtitle p {
+  @apply font-futura-pt italic text-heading-4 uppercase max-768:text-heading-5 max-768:text-center;
+}
+
+/* ========================
+   BANNER BADGE (rotating ring)
+   ======================== */
+
+.banner-badge {
+  @apply absolute bottom-0 left-1/2 -translate-x-1/2 z-20;
+}
+
+.banner-badge-ring {
+  @apply block w-140 shrink-0;
+}
+
+.banner-badge-ring img {
+  @apply block w-full h-auto;
+}
+
+.banner-badge-center {
+  @apply absolute inset-0 flex items-center justify-center;
+}
+
+.banner-badge-center img {
+  @apply block w-46 h-auto;
+}
+
+/* ========================
+   ABOUT SECTION
+   ======================== */
+
+.about-section {
+  @apply relative px-80 max-768:px-30;
+}
+
+.about-section.general-padding {
+  @apply max-768:py-70;
+}
+
+.about-bg {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+.about-bg-color {
+  @apply absolute inset-0 bg-off-white;
+}
+
+.about-bg-img {
+  @apply absolute inset-0 w-full h-full object-cover opacity-5;
+}
+
+.about-bg-overlay {
+  @apply absolute inset-0 bg-radial from-white/90 to-transparent;
+}
+
+.about-inner {
+  @apply relative z-10 flex justify-center;
+}
+
+.about-copy {
+  @apply flex flex-col gap-20 max-w-1000 w-full text-center;
+}
+
+.about-section h2 {
+  @apply font-futura-pt-cond font-bold uppercase;
+}
+
+.about-section .content p {
+  @apply font-normal text-heading-5 max-768:text-heading-6;
+}
+
+/* ========================
+   BANNER BOTTOM ELEMENT
+   ======================== */
+
+.banner-bottom-el {
+  @apply absolute bottom-0 left-0 w-full z-10 pointer-events-none;
+}
+
+.banner-bottom-el img {
+  @apply w-full block;
+}
+
+/* ========================
+   TWO-COLUMN SECTION
+   ======================== */
+
+.twocol-section {
+  @apply relative flex items-stretch overflow-hidden max-768:flex-col;
+}
+
+.twocol-section.general-padding {
+  @apply py-0;
+}
+
+/* Top decorative strip (E-pattern, inverted) */
+.twocol-top-strip {
+  @apply absolute top-0 left-0 w-full z-20 pointer-events-none;
+}
+
+.twocol-top-strip-dt {
+  @apply w-full block rotate-180 max-768:hidden;
+}
+
+.twocol-top-strip-mb {
+  @apply hidden max-768:block w-full rotate-180;
+}
+
+/* Left gold column */
+.twocol-left {
+  @apply relative flex flex-col justify-center gap-20 bg-gold py-70 px-80 shrink-0 max-w-700 w-full max-768:max-w-full max-768:py-55 max-768:px-30 max-768:order-last;
+}
+
+.twocol-copy {
+  @apply flex flex-col gap-20;
+}
+
+.twocol-section h2 {
+  @apply font-futura-pt-cond font-bold uppercase;
+}
+
+.twocol-section .content p {
+  @apply font-normal;
+}
+
+/* Right photo column */
+.twocol-right {
+  @apply flex-1 relative overflow-hidden max-768:flex-none max-768:w-full max-768:aspect-video max-768:overflow-visible max-768:order-first;
+}
+
+.twocol-right-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+/* Vertical E-strip at gold/photo boundary (desktop only) */
+.twocol-side-strip {
+  @apply absolute top-0 left-0 w-70 h-full z-10 overflow-hidden pointer-events-none max-768:hidden;
+}
+
+.twocol-side-strip img {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90;
+}
+
+/* Horizontal strip between photo and gold (mobile only) */
+.twocol-bottom-strip {
+  @apply hidden max-768:block absolute bottom-0 left-0 w-full z-10 pointer-events-none;
+}
+
+.twocol-bottom-strip img {
+  @apply w-full block;
+}

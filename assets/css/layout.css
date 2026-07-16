@@ -1,0 +1,283 @@
+/* ========================
+   HEADER — FIXED WRAPPER
+   ======================== */
+
+header {
+  @apply fixed top-0 left-0 right-0 z-50 w-full;
+}
+
+/* ========================
+   SITEWIDE BAR
+   ======================== */
+
+.header-sitewide {
+  @apply bg-gold flex items-center justify-between px-55 py-14 max-768:px-30 max-768:justify-center;
+}
+
+.header-sitewide .content {
+  @apply max-768:flex-1;
+}
+
+.header-sitewide .content p {
+  @apply font-bold uppercase max-768:text-12 max-768:text-center;
+}
+
+.header-sitewide-actions {
+  @apply flex gap-20 items-start shrink-0 max-768:hidden;
+}
+
+/* ========================
+   MAIN NAV BAR
+   ======================== */
+
+.header-nav {
+  @apply flex items-center justify-between px-55 py-20 bg-transparent transition-colors duration-300 max-768:px-30 max-768:bg-white;
+}
+
+header.is-scrolled .header-nav {
+  @apply bg-white;
+}
+
+/* ========================
+   LOGO
+   ======================== */
+
+.header-logo {
+  @apply block shrink-0;
+}
+
+.header-logo-img {
+  @apply block h-60 w-315 object-contain transition-all duration-300 max-768:h-28 max-768:w-147;
+}
+
+/* Transparent desktop nav: white logo via CSS filter */
+header:not(.is-scrolled) .header-logo-img {
+  @apply brightness-0 invert max-768:brightness-100 max-768:invert-0;
+}
+
+/* Scrolled desktop nav: restore dark logo */
+header.is-scrolled .header-logo-img {
+  @apply brightness-100 invert-0;
+}
+
+/* ========================
+   DESKTOP NAV LINKS
+   ======================== */
+
+.header-desktop-nav {
+  @apply flex items-center max-768:hidden;
+}
+
+.nav-item {
+  @apply relative;
+}
+
+.nav-link {
+  @apply font-bold text-heading-6 uppercase whitespace-nowrap cursor-pointer transition-colors duration-300;
+}
+
+header:not(.is-scrolled) .nav-link {
+  @apply text-white hover:text-gold;
+}
+
+header.is-scrolled .nav-link {
+  @apply text-black hover:text-gold;
+}
+
+.nav-item.is-open > .nav-link {
+  @apply text-gold;
+}
+
+/* ========================
+   DESKTOP DROPDOWN
+   ======================== */
+
+.nav-dropdown {
+  @apply absolute top-full left-0 bg-off-white min-w-max rounded-b shadow-dropdown opacity-0 invisible pointer-events-none transition-all duration-200;
+}
+
+.nav-item.is-open .nav-dropdown {
+  @apply opacity-100 visible pointer-events-auto;
+}
+
+.nav-dropdown ul {
+  @apply flex flex-col p-28;
+}
+
+.nav-dropdown li + li {
+  @apply mt-28;
+}
+
+.nav-dropdown-link {
+  @apply block font-bold text-heading-6 uppercase text-black whitespace-nowrap transition-colors duration-300 hover:text-gold;
+}
+
+/* ========================
+   DESKTOP RIGHT: PHONE + ICONS
+   ======================== */
+
+.header-right {
+  @apply flex items-center gap-40 max-768:hidden;
+}
+
+.header-phone {
+  @apply flex items-center gap-10 cursor-pointer;
+}
+
+.header-phone-text {
+  @apply font-bold text-heading-6 whitespace-nowrap transition-colors duration-300;
+}
+
+header:not(.is-scrolled) .header-phone-text {
+  @apply text-white;
+}
+
+header.is-scrolled .header-phone-text {
+  @apply text-black;
+}
+
+.header-divider {
+  @apply w-px self-stretch transition-colors duration-300;
+}
+
+header:not(.is-scrolled) .header-divider {
+  @apply bg-white;
+}
+
+header.is-scrolled .header-divider {
+  @apply bg-grey;
+}
+
+.header-icons {
+  @apply flex items-center gap-40;
+}
+
+/* ========================
+   ICONS (SHARED)
+   ======================== */
+
+.header-icon {
+  @apply flex items-center justify-center w-20 h-20 shrink-0 transition-colors duration-300;
+}
+
+.header-icon svg {
+  @apply w-20 h-20;
+}
+
+/* Desktop icon colors follow scroll state */
+header:not(.is-scrolled) .header-right .header-icon {
+  @apply text-white;
+}
+
+header.is-scrolled .header-right .header-icon {
+  @apply text-black;
+}
+
+.header-icon-red {
+  @apply text-red;
+}
+
+.header-icon-link {
+  @apply cursor-pointer;
+}
+
+/* ========================
+   MOBILE CONTROLS
+   ======================== */
+
+.header-mobile-left {
+  @apply hidden max-768:flex items-center gap-20;
+}
+
+.header-mobile-right {
+  @apply hidden max-768:flex items-center gap-20;
+}
+
+.header-mobile-left .header-icon,
+.header-mobile-right .header-icon {
+  @apply text-black;
+}
+
+.hamburger-btn {
+  @apply cursor-pointer flex items-center justify-center;
+}
+
+/* ========================
+   MOBILE MENU
+   ======================== */
+
+.mobile-menu {
+  @apply hidden;
+}
+
+.mobile-menu.is-open {
+  @apply max-768:block;
+}
+
+.mobile-menu-accordions {
+  @apply flex flex-col bg-off-white;
+}
+
+.mobile-accordion {
+  @apply w-full;
+}
+
+.mobile-accordion-trigger {
+  @apply flex items-center gap-10 p-20 w-full cursor-pointer bg-off-white;
+}
+
+.mobile-accordion-label {
+  @apply flex-1 font-bold text-heading-6 uppercase text-black text-left;
+}
+
+.mobile-accordion.is-active .mobile-accordion-label {
+  @apply text-gold;
+}
+
+.mobile-accordion-chevron {
+  @apply flex items-center justify-center w-20 h-20 shrink-0 text-black transition-transform duration-200;
+}
+
+.is-expandable:not(.is-active) .mobile-accordion-chevron {
+  @apply rotate-90;
+}
+
+.is-expandable.is-active .mobile-accordion-chevron {
+  @apply -rotate-90;
+}
+
+.mobile-accordion-content {
+  @apply hidden;
+}
+
+.mobile-accordion-content.is-open {
+  @apply flex flex-col;
+}
+
+.mobile-sub-link {
+  @apply block bg-white font-bold text-heading-6 uppercase text-black w-full p-20 transition-colors duration-200 hover:text-gold;
+}
+
+/* ========================
+   MOBILE MENU FOOTER
+   ======================== */
+
+.mobile-menu-footer {
+  @apply bg-white shadow-dropdown;
+}
+
+.mobile-phone {
+  @apply flex items-center justify-center gap-10;
+}
+
+.mobile-phone-text {
+  @apply font-bold text-heading-6 text-black;
+}
+
+.mobile-menu-footer .btn {
+  @apply w-full;
+}
+
+/* ========================
+   FOOTER
+   ======================== */

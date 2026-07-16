@@ -1,0 +1,193 @@
+/* ========================
+   GLOBAL ELEMENTS
+   ======================== */
+
+body {
+  @apply font-futura-pt text-black;
+}
+
+a {
+  @apply no-underline;
+}
+
+/* ========================
+   HEADING TAGS
+   ======================== */
+
+h1,
+.h1 {
+  @apply text-heading-1 max-768:text-36;
+}
+
+h2,
+.h2 {
+  @apply text-heading-2 max-768:text-heading-3;
+}
+
+h3,
+.h3 {
+  @apply text-heading-3 max-768:text-heading-4;
+}
+
+h4,
+.h4 {
+  @apply text-heading-4 max-768:text-heading-5;
+}
+
+h5,
+.h5 {
+  @apply text-heading-5 max-768:text-heading-6;
+}
+
+h6,
+.h6 {
+  @apply text-heading-6;
+}
+
+/* ========================
+   PARAGRAPH TAGS
+   ======================== */
+
+.content p {
+  @apply text-heading-6;
+}
+
+.content p + p {
+  @apply mt-20;
+}
+
+/* ========================
+   TITLE COLORS
+   ======================== */
+
+.title-white h1,
+.title-white h2,
+.title-white h3,
+.title-white h4,
+.title-white h5,
+.title-white h6 {
+  @apply text-white;
+}
+
+.title-off-white h1,
+.title-off-white h2,
+.title-off-white h3,
+.title-off-white h4,
+.title-off-white h5,
+.title-off-white h6 {
+  @apply text-off-white;
+}
+
+.title-black h1,
+.title-black h2,
+.title-black h3,
+.title-black h4,
+.title-black h5,
+.title-black h6 {
+  @apply text-black;
+}
+
+.title-red h1,
+.title-red h2,
+.title-red h3,
+.title-red h4,
+.title-red h5,
+.title-red h6 {
+  @apply text-red;
+}
+
+.title-gold h1,
+.title-gold h2,
+.title-gold h3,
+.title-gold h4,
+.title-gold h5,
+.title-gold h6 {
+  @apply text-gold;
+}
+
+.title-navy h1,
+.title-navy h2,
+.title-navy h3,
+.title-navy h4,
+.title-navy h5,
+.title-navy h6 {
+  @apply text-navy;
+}
+
+.title-silver h1,
+.title-silver h2,
+.title-silver h3,
+.title-silver h4,
+.title-silver h5,
+.title-silver h6 {
+  @apply text-silver;
+}
+
+.title-grey h1,
+.title-grey h2,
+.title-grey h3,
+.title-grey h4,
+.title-grey h5,
+.title-grey h6 {
+  @apply text-grey;
+}
+
+/* ========================
+   CONTENT COLORS
+   ======================== */
+
+.content-white p {
+  @apply text-white;
+}
+
+.content-off-white p {
+  @apply text-off-white;
+}
+
+.content-black p {
+  @apply text-black;
+}
+
+.content-red p {
+  @apply text-red;
+}
+
+.content-gold p {
+  @apply text-gold;
+}
+
+.content-navy p {
+  @apply text-navy;
+}
+
+.content-silver p {
+  @apply text-silver;
+}
+
+.content-grey p {
+  @apply text-grey;
+}
+
+/* ========================
+   CONTAINERS
+   ======================== */
+
+.container-fluid {
+  @apply px-55 max-768:px-20;
+}
+
+.container-fluid-md {
+  @apply px-80 max-768:px-20;
+}
+
+.container-fluid-lg {
+  @apply px-100 max-768:px-20;
+}
+
+/* ========================
+   GENERAL PADDING
+   ======================== */
+
+.general-padding {
+  @apply py-100 max-1024:py-60 max-768:py-40;
+}
