@@ -6,15 +6,28 @@
   @apply relative py-0;
 }
 
-.banner-bg {
+/* ========================
+   BANNER SWIPER
+   ======================== */
+
+.banner-slide {
+  /* @apply relative h-800 max-768:h-770; */
+  @apply relative flex min-h-screen;
+}
+
+.banner-slide-bg {
   @apply absolute inset-0 overflow-hidden pointer-events-none;
 }
 
-.banner-bg-img {
-  @apply w-full h-full object-cover object-center;
+.banner-slide-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
 }
 
-.banner-overlay {
+.banner-slide-video-el {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.banner-slide-overlay {
   @apply absolute inset-0 pointer-events-none;
 }
 
@@ -26,28 +39,61 @@
   @apply bg-linear-to-b from-black/40 via-black/25 to-transparent;
 }
 
-.banner-overlay-right {
-  @apply bg-linear-to-l from-black/40 via-black/25 to-transparent max-768:from-black/28 max-768:via-black/28 max-768:to-black/28;
+.banner-slide-ol-dark {
+  @apply bg-black/28;
 }
 
-.banner-inner {
-  @apply relative z-10 flex items-center justify-end px-100 pt-194 pb-177 max-768:px-30 max-768:pt-100 max-768:pb-140 max-768:justify-center;
+.banner-slide-ol-left {
+  @apply bg-linear-to-r from-black/40 via-black/25 to-transparent;
 }
 
-.banner-copy {
-  @apply flex flex-col gap-28 max-w-879 max-768:max-w-full;
+.banner-slide-ol-right {
+  @apply bg-linear-to-l from-black/40 via-black/25 to-transparent;
 }
 
-.banner-title-group {
-  @apply flex flex-col gap-10;
+.banner-slide-inner {
+  @apply relative z-10 w-full h-full flex flex-col justify-center pt-153 pb-70 max-768:pt-100 max-768:pb-140 my-auto;
 }
 
-.banner-section .banner-copy h1 {
-  @apply font-futura-pt-cond uppercase max-768:text-40 max-768:text-center;
+.banner-slide h1,
+.banner-slide h2 {
+  @apply font-futura-pt-cond uppercase text-heading-1 max-768:text-40 max-768:text-center;
 }
 
-.banner-subtitle p {
-  @apply font-futura-pt italic text-heading-4 uppercase max-768:text-heading-5 max-768:text-center;
+.banner-slide-subtitle p {
+  @apply font-futura-pt italic text-heading-4 uppercase leading-normal max-768:text-heading-5 max-768:text-center;
+}
+
+.banner-slide-copy--center {
+  @apply flex flex-col gap-10 items-center text-center w-full max-w-5xl mx-auto;
+}
+
+.banner-slide-copy--left {
+  @apply flex flex-col gap-28 items-start max-w-700 max-768:items-center max-768:text-center max-768:max-w-full;
+}
+
+.banner-slide-copy--right {
+  @apply flex flex-col gap-10 items-start max-w-779 ml-auto max-768:items-center max-768:text-center max-768:max-w-full max-768:ml-0;
+}
+
+/* ========================
+   BANNER PAGINATION
+   ======================== */
+
+.banner-pagination-bar {
+  @apply absolute z-20 w-full bottom-70 max-768:bottom-140;
+}
+
+.banner-pagination-bar .banner-pagination {
+  @apply static flex gap-20 items-center w-auto max-768:justify-center;
+}
+
+.banner-pagination-bar .banner-pagination .swiper-pagination-bullet {
+  @apply block w-48 h-4 rounded-full border-2 border-solid border-silver bg-transparent opacity-100 m-0 p-0 cursor-pointer;
+}
+
+.banner-pagination-bar .banner-pagination .swiper-pagination-bullet-active {
+  @apply border-white bg-transparent;
 }
 
 /* ========================
@@ -55,11 +101,11 @@
    ======================== */
 
 .banner-badge {
-  @apply absolute bottom-0 left-1/2 -translate-x-1/2 z-20;
+  @apply max-1024:hidden absolute w-140 h-140 bottom-0 left-1/2 -translate-x-1/2 z-30 bg-white rounded-full shadow drop-shadow-[0px_5px_15px_rgba(0,0,0,0.17)] p-5;
 }
 
 .banner-badge-ring {
-  @apply block w-140 shrink-0;
+  @apply block w-130 shrink-0;
 }
 
 .banner-badge-ring img {
@@ -103,7 +149,7 @@
 }
 
 .about-inner {
-  @apply relative z-10 flex justify-center;
+  @apply relative z-10 flex justify-center w-full max-w-1402 mx-auto px-55 max-768:px-20;
 }
 
 .about-copy {
@@ -135,7 +181,11 @@
    ======================== */
 
 .twocol-section {
-  @apply relative flex items-stretch overflow-hidden max-768:flex-col;
+  @apply relative overflow-hidden;
+}
+
+.twocol-section .container-fluid {
+  @apply flex items-stretch max-768:flex-col;
 }
 
 .twocol-section.general-padding {
@@ -197,4 +247,421 @@
 
 .twocol-bottom-strip img {
   @apply w-full block;
+}
+
+/* ========================
+   PATHS OF EXCELLENCE SECTION
+   ======================== */
+
+.paths-section {
+  @apply bg-white;
+}
+
+.paths-section.general-padding {
+  @apply max-1024:py-70;
+}
+
+.paths-inner {
+  @apply mx-auto max-w-1402 px-55 flex gap-55 items-start max-1024:flex-col max-1024:gap-40 max-1024:px-30;
+}
+
+/* Left: Feature image panel */
+.paths-feature {
+  @apply relative flex flex-col justify-end p-40 rounded overflow-hidden shrink-0 w-full max-w-440 h-590 max-768:max-w-full max-768:h-280 max-768:p-28;
+}
+
+.paths-feature-bg {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+.paths-feature-media {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.paths-feature-overlay {
+  @apply absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent;
+}
+
+.paths-feature-content {
+  @apply relative z-10;
+}
+
+.paths-feature h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-tight;
+}
+
+/* Right: Cards area */
+.paths-cards-area {
+  @apply flex flex-col gap-44 flex-1 min-w-0;
+}
+
+.paths-swiper {
+  @apply w-full;
+}
+
+.paths-swiper .swiper-wrapper {
+  @apply items-stretch;
+}
+
+.paths-swiper .swiper-slide {
+  @apply h-auto;
+}
+
+/* ========================
+   TRACK CARD — reusable component
+   ======================== */
+
+.track-card {
+  @apply flex flex-col gap-20 h-full;
+}
+
+.track-card-image {
+  @apply relative flex flex-col justify-end p-28 rounded overflow-hidden h-440;
+}
+
+.track-card-bg {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+.track-card-bg-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.track-card-overlay {
+  @apply absolute inset-0 bg-linear-to-b from-transparent via-black/25 to-black/40;
+}
+
+.track-card-content {
+  @apply relative z-10 flex flex-col gap-10 items-center w-full;
+}
+
+.track-card-tag {
+  @apply bg-black/40 border border-solid border-white rounded px-14 py-4;
+}
+
+.track-card-tag .content p {
+  @apply text-12 uppercase whitespace-nowrap text-center font-bold;
+}
+
+.track-card .title h3 {
+  @apply font-futura-pt-cond font-bold text-heading-3 uppercase text-center;
+}
+
+.track-card-footer {
+  @apply flex justify-center shrink-0;
+}
+
+/* Progress bar */
+.paths-scrollbar {
+  @apply w-full;
+}
+
+.paths-progress-track {
+  @apply relative bg-silver rounded-full h-4 overflow-visible flex items-center;
+}
+
+.paths-progress-fill {
+  @apply bg-red rounded-full h-10 transition-all duration-300;
+}
+
+/* ========================
+   OUR STORY SECTION
+   ======================== */
+
+.our-story-section {
+    @apply relative overflow-hidden;
+}
+
+.our-story-section.general-padding {
+    @apply pt-170 pb-100 max-1024:pt-100 max-1024:pb-60 max-768:pt-70 max-768:pb-70;
+}
+
+/* Top decorative element */
+.our-story-top-el {
+    @apply absolute top-0 left-0 w-full z-10 pointer-events-none;
+}
+
+.our-story-top-el-dt {
+    @apply w-full block rotate-180 max-768:hidden;
+}
+
+.our-story-top-el-mb {
+    @apply hidden max-768:block w-full rotate-180;
+}
+
+/* Background layers */
+.our-story-bg {
+    @apply absolute inset-0 pointer-events-none;
+}
+
+.our-story-bg-color {
+    @apply absolute inset-0 bg-maroon;
+}
+
+.our-story-bg-texture {
+    @apply absolute inset-0 w-full h-full object-cover opacity-16;
+}
+
+.our-story-bg-gradient {
+    @apply absolute inset-0 bg-radial from-maroon-dark to-transparent;
+}
+
+/* Content container */
+.our-story-inner {
+    @apply max-w-1312 relative z-20 flex gap-80 items-center max-1024:flex-col max-1024:gap-55;
+}
+
+/* Left: media column */
+.our-story-media {
+    @apply flex flex-col gap-40 shrink-0 w-700 max-1024:w-full max-1024:order-last;
+}
+
+/* Video */
+.our-story-video-wrap {
+    @apply relative rounded overflow-hidden flex items-center justify-center h-400 max-768:h-220 cursor-pointer;
+}
+
+.our-story-thumb {
+    @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.our-story-video-wrap.is-playing .our-story-thumb {
+    @apply hidden;
+}
+
+.our-story-video-wrap.is-playing .our-story-play-btn {
+    @apply hidden;
+}
+
+.our-story-video-player {
+    @apply hidden absolute inset-0 z-30 bg-black;
+}
+
+.our-story-video-player.is-playing {
+    @apply flex items-stretch;
+}
+
+.our-story-video {
+    @apply w-full h-full object-cover;
+}
+
+.our-story-play-btn {
+    @apply relative z-20 flex items-center justify-center;
+}
+
+.our-story-play-icon {
+    @apply flex items-center justify-center w-40 h-40 overflow-hidden;
+}
+
+.our-story-play-icon img {
+    @apply w-full h-full object-contain;
+}
+
+/* Featured In */
+.our-story-featured {
+    @apply flex flex-col gap-20 items-center w-full;
+}
+
+.our-story-featured-label .content p {
+    @apply text-heading-5 font-bold text-center uppercase;
+}
+
+.our-story-logos {
+    @apply flex items-center justify-between w-full;
+}
+
+.our-story-logo {
+    @apply block h-28 w-auto object-contain;
+}
+
+/* Right: copy column */
+.our-story-copy {
+    @apply flex flex-col gap-20 flex-1 min-w-0 max-1024:order-first;
+}
+
+.our-story-eyebrow .content p {
+    @apply font-futura-pt font-medium italic text-heading-4 uppercase max-768:text-heading-5;
+}
+
+.our-story-headline-wrap {
+    @apply flex gap-20 items-center;
+}
+
+.our-story-headline-wrap .title {
+    @apply flex-1 min-w-0;
+}
+
+.our-story-section h2 {
+    @apply font-futura-pt-cond font-bold uppercase;
+}
+
+.our-story-accent-line {
+    @apply shrink-0 w-86 h-4 bg-red self-center max-1024:hidden;
+}
+
+.our-story-actions {
+    @apply flex gap-20 pt-14 max-768:flex-col;
+}
+
+/* ========================
+   SECTION HEADING — reusable centered heading block
+   ======================== */
+
+.section-heading {
+  @apply flex flex-col items-center gap-20 text-center max-w-1000 mx-auto w-full;
+}
+
+.section-heading .title h2,
+.section-heading .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase;
+}
+
+/* ========================
+   SUCCESS STORIES SECTION
+   ======================== */
+
+.stories-section {
+  @apply bg-off-white relative overflow-hidden max-768:py-70;
+}
+
+.stories-bg {
+  @apply absolute inset-0 overflow-hidden pointer-events-none opacity-7;
+}
+
+.stories-bg-img {
+  @apply absolute bottom-0 -left-170 w-3/4 max-w-none;
+}
+
+.stories-section .container-fluid {
+  @apply flex flex-col gap-55 items-center;
+}
+
+.stories-swiper {
+  @apply w-full;
+}
+
+.stories-swiper .swiper-wrapper {
+  @apply items-stretch;
+}
+
+.stories-swiper .swiper-slide {
+  @apply h-auto;
+}
+
+/* ========================
+   STORY CARD — reusable video card component
+   ======================== */
+
+.story-card {
+  @apply relative rounded overflow-hidden flex flex-col justify-end p-28 h-550 max-1024:h-470 cursor-pointer;
+}
+
+.story-card-media {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+.story-card-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.story-card-base-overlay {
+  @apply absolute inset-0 bg-black/40;
+}
+
+.story-card-gradient {
+  @apply absolute inset-0 bg-linear-to-t from-black/40 via-black/25 to-transparent;
+}
+
+.story-card.is-playing .story-card-media {
+  @apply hidden;
+}
+
+.story-card.is-playing .story-play-btn {
+  @apply hidden;
+}
+
+.story-card-content {
+  @apply relative z-10;
+}
+
+.story-card .title h3 {
+  @apply text-heading-4 font-bold;
+}
+
+/* Play button */
+
+.story-play-btn {
+  @apply absolute inset-0 flex items-center justify-center z-20;
+}
+
+.story-play-icon {
+  @apply flex items-center justify-center w-40 h-40 overflow-hidden shrink-0;
+}
+
+.story-play-icon img {
+  @apply w-full h-full object-contain;
+}
+
+/* Video embed */
+
+.story-video-wrap {
+  @apply hidden absolute inset-0 z-30 bg-black;
+}
+
+.story-video-wrap.is-playing {
+  @apply flex items-stretch;
+}
+
+.story-video {
+  @apply w-full h-full object-cover;
+}
+
+/* ========================
+   CTA SECTION
+   ======================== */
+
+.cta-section {
+    @apply relative overflow-hidden;
+}
+
+.cta-section.general-padding {
+    @apply pt-260 pb-55 max-768:pt-250 max-768:pb-55;
+}
+
+/* Background */
+.cta-section-bg {
+    @apply absolute inset-0 pointer-events-none overflow-hidden;
+}
+
+.cta-section-bg-img {
+    @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.cta-section-overlay {
+    @apply absolute inset-0 bg-linear-to-b from-maroon/0 via-maroon/50 to-maroon/77;
+}
+
+/* Content */
+.cta-section-inner {
+    @apply relative z-10 flex justify-center;
+}
+
+.cta-section-copy {
+    @apply flex flex-col gap-20 items-center text-center max-w-1000 w-full;
+}
+
+.cta-section-text {
+    @apply flex flex-col gap-10;
+}
+
+.cta-section h2 {
+    @apply font-futura-pt-cond font-bold uppercase text-heading-2 max-768:text-heading-3;
+}
+
+.cta-section .content p {
+    @apply font-futura-pt font-medium italic uppercase text-heading-4 max-768:text-heading-5;
+}
+
+.cta-section-actions {
+    @apply pt-8;
 }

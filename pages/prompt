@@ -47,5 +47,133 @@ desktop:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepa
 Mobile:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4999-28871&m=dev
 i want to create the section of "explore the path of excellence" as showing in the figma.
 wrap the section in the 1402px. add the video with text in the right side.
-and in the right side i want to show 3 cards-box with track as showing in the figma. also you can use the swiper if needed. make that cards-box name unique so we can use in many places.
+and in the right side i want to show 3 cards-box with track as showing in the figma. also you can use the swiper if needed.
+make that cards-box name unique so we can use in many places.
 i want design pixel perfect and responsive.
+
+----
+
+
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=18-8884&m=dev
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4036-5518&m=dev
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4036-5839&m=dev
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4123-9426&m=dev
+in the desktop navdropdown is add like this. also review the nav-link which is add same as showing in the figma. also i added the different navdropdown.
+
+----
+
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=5017-29977&m=dev
+in the header-nav and header-sitewide i want to wrap the container of 1402px and also other sections i want to wrap that into container.
+
+---
+
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=5018-31551&m=dev
+Default d:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=18-17583&m=dev
+About dropdown:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4045-9362&m=dev
+in the desktop header is working proper.now see in the responsive i want to do as same as showing in the figma.i also shared the mobile-menu's view, and also when dropdown is oprn then it's figma view. make sure it is pixel perfect
+
+
+Default screen:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=5018-31551&m=dev
+Scrollabled screen:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=5021-30550&m=dev
+
+in the responsive, show the header as default screen. when i header.is-scrolled then show the Scrollabled screen
+
+
+
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4040-3850&m=dev
+when i click on the search icon then show the popup like shhowing in the figma.
+
+---
+banner section
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=5023-32041&m=dev
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=5023-32050&m=dev
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=5023-32051&m=dev
+responsive slide1:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=5023-33058&m=dev
+responsive slide2:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=5023-33061&m=dev
+responsive slide3:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=5023-33062&m=dev
+
+in the banner section i want to add the swiper. in that make the design as showing in the figma. make that pixel perfect adn responsive. also i have shared the mobile version of that. curently i have added the banner-badge-center. make that z index high so it will show up in all slides. in the slide 3 as of now add any image. in the figma also header is showing so as of now ignore that. make sure design is pixel perfect and responsive
+
+---
+Cart
+
+Desktop:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4040-3767&m=dev
+Responsive:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4047-5797&m=dev
+i want to create "cart" as showing in the figma. i am not available for 1 hour so dont ask me any permission.
+in the header when i click on the header-icons's shopping icon then show the cart as showing in the figma. also i have shared the responsive version of that. so make the pixel perfect and responsive. images are added in the local so use that. also when i click on the shopping icon then change the color of that icon as showing in the figma.
+
+---
+
+Story
+Desktop:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4996-27673&m=dev
+mobile:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4045-7032&m=dev
+i want to create this section as showing in the figma. i am not available for 1 hour so dont ask me any permission.
+i want to create the this section as showing in the figma. make that pixel perfect and responsive.
+make the common heading so i can use at many places. also add the common cards as showing in the figma also that i will add many places.
+in card by default add the text, play icon and image place that as showing in the figma. when i click on the play icon then hide that icon and image and show the video. also i have shared the responsive version of that. rest of things add as showing in the figma.  also in the responsive look how cards is added. it's in swiper or what. i want to add same thing. 
+make the section picel perfect and responsive. 
+
+
+----
+
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4996-27673&m=dev
+there background image is added in the background. i want to add same position as added in the figma for story section
+
+---
+banner issue
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=5023-32050&m=dev
+we are wrapping all section in the container-fluid. so also you wrap that banner in container-fluid. after that also make sure design according the figma
+
+---
+one more banner slide
+desktop:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4996-27668&m=dev
+mobile:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4999-28868&m=dev
+in the banner i want to add one more slide as showing in the figma. also i am sharing the responsive version of that.  make that slide to first position.
+
+
+---
+
+
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4999-28871&m=dev
+also make the proper paths-section in the responsive as showing in the figma. make it pixel perfect.
+
+
+Implement this design from Figma.
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4996-27671&m=dev
+http://127.0.0.1:5500/pages/index.html
+
+---
+remove the all fonts from 
+
+Implement this design from Figma.
+@https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4996-27668&m=devadde
+
+---
+our story
+
+desktop:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4996-27674&m=dev
+responsive:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4999-28874&m=dev
+i want to create this section as showing in the figma. add the image with background color .
+in the left side add the image with icon. when i click on the icon then show the  video instead of image.
+also after that add the content in the left side as showing in the figma.
+also in the left side add the content as showing in the figma.
+also i shared the responsive version of thi section. so make as showing in the figma.
+i want to create the pixel perfect and responsive.
+
+---
+
+our story issue
+desktop:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4996-27674&m=dev
+responsive:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4999-28874&m=dev
+in the our-story-logo they are added the image of logo not text.
+make sure in that section you are using the claude-fluid.
+after that make sure section is proper as showing in the figma. 
+also beside of our-story-headline-wrap there are one line is added which you are not added.
+
+
+----
+
+Desktop:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4036-2657&m=dev
+Mobile:- @https://www.figma.com/design/A5Aqt7DtdeGSVY4G1Agrx2/The-Edge---Homepage?node-id=4045-7054&m=dev
+Create this banner wrapper section as showing in the figma. also make that background image as parallax. 
+i want to make section responsive and pixel perfect. i aslo shared the responsive version of that

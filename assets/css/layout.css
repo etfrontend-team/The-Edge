@@ -11,19 +11,23 @@ header {
    ======================== */
 
 .header-sitewide {
-  @apply bg-gold flex items-center justify-between px-55 py-14 max-768:px-30 max-768:justify-center;
+  @apply bg-gold py-14;
+}
+
+.header-sitewide .container-fluid {
+  @apply flex items-center justify-between max-1024:justify-center max-1024:px-30;
 }
 
 .header-sitewide .content {
-  @apply max-768:flex-1;
+  @apply max-1024:flex-1;
 }
 
 .header-sitewide .content p {
-  @apply font-bold uppercase max-768:text-12 max-768:text-center;
+  @apply font-bold uppercase max-1024:text-12 max-1024:text-center;
 }
 
 .header-sitewide-actions {
-  @apply flex gap-20 items-start shrink-0 max-768:hidden;
+  @apply flex gap-20 items-start shrink-0 max-1024:hidden;
 }
 
 /* ========================
@@ -31,7 +35,11 @@ header {
    ======================== */
 
 .header-nav {
-  @apply flex items-center justify-between px-55 py-20 bg-transparent transition-colors duration-300 max-768:px-30 max-768:bg-white;
+  @apply bg-transparent transition-colors duration-300;
+}
+
+.header-nav .container-fluid {
+  @apply flex items-stretch justify-between max-1024:items-center max-1024:px-30;
 }
 
 header.is-scrolled .header-nav {
@@ -43,21 +51,29 @@ header.is-scrolled .header-nav {
    ======================== */
 
 .header-logo {
-  @apply block shrink-0;
+  @apply block shrink-0 flex items-center py-20;
 }
 
 .header-logo-img {
-  @apply block h-60 w-315 object-contain transition-all duration-300 max-768:h-28 max-768:w-147;
+  @apply block h-60 w-315 object-contain transition-all duration-300 max-1410:w-160 max-1410:h-35 max-1024:h-28 max-1024:w-147;
 }
 
-/* Transparent desktop nav: white logo via CSS filter */
-header:not(.is-scrolled) .header-logo-img {
-  @apply brightness-0 invert max-768:brightness-100 max-768:invert-0;
+/* Light logo: shown on transparent header (default); hidden when scrolled */
+.header-logo-light {
+  @apply block;
 }
 
-/* Scrolled desktop nav: restore dark logo */
-header.is-scrolled .header-logo-img {
-  @apply brightness-100 invert-0;
+header.is-scrolled .header-logo-light {
+  @apply hidden;
+}
+
+/* Dark logo: hidden on transparent header; shown when scrolled */
+.header-logo-dark {
+  @apply hidden;
+}
+
+header.is-scrolled .header-logo-dark {
+  @apply block;
 }
 
 /* ========================
@@ -65,11 +81,15 @@ header.is-scrolled .header-logo-img {
    ======================== */
 
 .header-desktop-nav {
-  @apply flex items-center max-768:hidden;
+  @apply self-stretch flex items-center max-1024:hidden;
 }
 
 .nav-item {
-  @apply relative;
+  @apply relative self-stretch flex items-center;
+}
+
+.header-desktop-nav ul {
+  @apply h-full items-stretch;
 }
 
 .nav-link {
@@ -93,10 +113,11 @@ header.is-scrolled .nav-link {
    ======================== */
 
 .nav-dropdown {
-  @apply absolute top-full left-0 bg-off-white min-w-max rounded-b shadow-dropdown opacity-0 invisible pointer-events-none transition-all duration-200;
+  @apply absolute top-full left-0 bg-off-white min-w-max rounded-b shadow-dropdown opacity-0 invisible pointer-events-none transition-all duration-200 1024:drop-shadow-[0px_5px_15px_rgba(0,0,0,0.17)];
 }
 
-.nav-item.is-open .nav-dropdown {
+.nav-item.is-open .nav-dropdown,
+.nav-item.has-dropdown:hover .nav-dropdown {
   @apply opacity-100 visible pointer-events-auto;
 }
 
@@ -117,11 +138,15 @@ header.is-scrolled .nav-link {
    ======================== */
 
 .header-right {
-  @apply flex items-center gap-40 max-768:hidden;
+  @apply flex items-center gap-40 py-20 max-1366:gap-15 max-1024:hidden;
 }
 
 .header-phone {
   @apply flex items-center gap-10 cursor-pointer;
+}
+header.is-scrolled .header-right .header-phone svg path,
+header.is-scrolled .header-right .header-icons svg path {
+  @apply fill-red;
 }
 
 .header-phone-text {
@@ -149,7 +174,7 @@ header.is-scrolled .header-divider {
 }
 
 .header-icons {
-  @apply flex items-center gap-40;
+  @apply flex items-center gap-40 max-1410:gap-20;
 }
 
 /* ========================
@@ -186,15 +211,20 @@ header.is-scrolled .header-right .header-icon {
    ======================== */
 
 .header-mobile-left {
-  @apply hidden max-768:flex items-center gap-20;
+  @apply hidden max-1024:flex items-center gap-20;
 }
 
 .header-mobile-right {
-  @apply hidden max-768:flex items-center gap-20;
+  @apply hidden max-1024:flex items-center gap-20;
 }
 
-.header-mobile-left .header-icon,
-.header-mobile-right .header-icon {
+header:not(.is-scrolled) .header-mobile-left .header-icon,
+header:not(.is-scrolled) .header-mobile-right .header-icon {
+  @apply text-white;
+}
+
+header.is-scrolled .header-mobile-left .header-icon,
+header.is-scrolled .header-mobile-right .header-icon {
   @apply text-black;
 }
 
@@ -211,7 +241,7 @@ header.is-scrolled .header-right .header-icon {
 }
 
 .mobile-menu.is-open {
-  @apply max-768:block;
+  @apply max-1024:block;
 }
 
 .mobile-menu-accordions {
@@ -276,6 +306,206 @@ header.is-scrolled .header-right .header-icon {
 
 .mobile-menu-footer .btn {
   @apply w-full;
+}
+
+/* ========================
+   SEARCH POPUP
+   ======================== */
+
+.search-popup {
+  @apply hidden w-full justify-end ;
+}
+
+.search-popup.is-open {
+  @apply flex;
+}
+
+.search-popup-inner {
+  @apply bg-white rounded-b p-40 flex flex-col gap-10 max-1024:w-full max-1024:rounded-none max-1024:p-20 shadow-dropdown;
+}
+
+.search-form-row {
+  @apply flex items-center gap-10 w-440 max-1024:w-full cursor-text;
+}
+
+.search-form-icon {
+  @apply flex items-center justify-center w-20 h-20 shrink-0 text-red;
+}
+
+.search-form-icon svg {
+  @apply w-20 h-20;
+}
+
+.search-input {
+  @apply flex-1 font-futura-pt italic text-heading-6 text-black bg-transparent outline-none border-0 appearance-none placeholder:text-grey placeholder:italic placeholder:opacity-70;
+}
+
+.search-form-divider {
+  @apply w-440 border-t border-red max-1024:w-full;
+}
+
+/* ========================
+   CART PANEL
+   ======================== */
+
+.cart-btn.is-active {
+  @apply text-gold;
+}
+
+.cart-panel {
+  @apply hidden w-full justify-end shadow-dropdown;
+}
+
+.cart-panel.is-open {
+  @apply flex;
+}
+
+.cart-panel-inner {
+  @apply bg-off-white flex flex-col gap-40 p-55 rounded-b w-550 max-768:w-full max-768:gap-30 max-768:px-30 max-768:py-40;
+}
+
+.cart-title h3 {
+  @apply font-futura-pt-cond font-bold uppercase;
+}
+
+.cart-count {
+  @apply text-slate;
+}
+
+.cart-products {
+  @apply flex flex-col gap-40 w-full;
+}
+
+.cart-products-list {
+  @apply flex flex-col gap-40;
+}
+
+.cart-divider {
+  @apply border-t border-grey w-full;
+}
+
+.cart-product-row {
+  @apply px-14;
+}
+
+.cart-product-inner {
+  @apply flex gap-28 items-start;
+}
+
+.cart-product-body {
+  @apply flex gap-28 items-start flex-1 min-w-0 max-768:gap-20;
+}
+
+.cart-product-img {
+  @apply w-140 h-140 object-cover rounded shrink-0 max-768:w-100 max-768:h-100;
+}
+
+.cart-product-copy {
+  @apply flex flex-col gap-10 flex-1 min-w-0 self-stretch justify-center;
+}
+
+.cart-product-title {
+  @apply flex flex-col gap-4;
+}
+
+.cart-product-title h4 {
+  @apply font-futura-pt-cond font-bold uppercase;
+}
+
+.cart-product-tag {
+  @apply inline-flex items-center justify-center px-14 py-4 rounded self-start;
+}
+
+.cart-product-tag span {
+  @apply font-bold text-12 text-white uppercase whitespace-nowrap;
+}
+
+.cart-tag-virtual {
+  @apply bg-silver;
+}
+
+.cart-tag-inperson {
+  @apply bg-gold;
+}
+
+.cart-product-price-row {
+  @apply flex items-center gap-20;
+}
+
+.cart-price-text {
+  @apply font-bold text-heading-6 text-navy whitespace-nowrap shrink-0;
+}
+
+.cart-qty {
+  @apply flex flex-1 items-center justify-between bg-white border-2 border-navy rounded px-20 py-10;
+}
+
+.cart-qty-btn {
+  @apply flex items-center justify-center w-20 h-20 cursor-pointer text-navy;
+}
+
+.cart-qty-btn svg {
+  @apply w-20 h-20;
+}
+
+.cart-qty-value {
+  @apply font-bold text-heading-6 text-navy text-center;
+}
+
+.cart-remove-btn {
+  @apply flex items-center justify-center w-20 h-20 cursor-pointer shrink-0 text-red;
+}
+
+.cart-remove-btn svg {
+  @apply w-20 h-20;
+}
+
+.cart-upsell {
+  @apply border-2 border-slate rounded p-28 flex flex-col gap-28 w-full;
+}
+
+.cart-upsell-title h3 {
+  @apply font-futura-pt-cond font-bold uppercase;
+}
+
+.cart-upsell-product {
+  @apply flex gap-28 items-start w-full;
+}
+
+.cart-upsell-product-body {
+  @apply flex gap-28 items-start flex-1 min-w-0 max-768:flex-col max-768:gap-20;
+}
+
+.cart-upsell-img {
+  @apply w-140 h-140 object-cover rounded shrink-0;
+}
+
+.cart-upsell-copy {
+  @apply flex flex-col gap-10 flex-1 min-w-0 self-stretch justify-center max-768:w-full max-768:flex-none max-768:self-auto;
+}
+
+.cart-qty-narrow {
+  @apply flex-none w-124;
+}
+
+.cart-footer {
+  @apply flex flex-col gap-28 w-full;
+}
+
+.cart-subtotal-row {
+  @apply flex items-center justify-between;
+}
+
+.cart-subtotal-label {
+  @apply font-futura-pt text-heading-3 text-navy max-768:text-heading-4;
+}
+
+.cart-subtotal-amount {
+  @apply font-futura-pt font-bold text-heading-3 text-slate max-768:text-heading-4;
+}
+
+.cart-checkout-actions {
+  @apply flex justify-center w-full;
 }
 
 /* ========================

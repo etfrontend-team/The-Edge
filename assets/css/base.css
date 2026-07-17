@@ -16,7 +16,7 @@ a {
 
 h1,
 .h1 {
-  @apply text-heading-1 max-768:text-36;
+  @apply text-heading-1 max-768:text-36 leading-[1.29];
 }
 
 h2,
@@ -173,7 +173,7 @@ h6,
    ======================== */
 
 .container-fluid {
-  @apply px-55 max-768:px-20;
+  @apply w-full max-w-1402 mx-auto max-1410:px-55 max-768:px-20;
 }
 
 .container-fluid-md {

@@ -13,8 +13,8 @@ now i want add the all fonts in font.css like we added before in fonts.css file 
 
 banner
 @https://www.figma.com/design/uU0GRBhbpCL9sU0EF1XtDB/Princeton-Demo1?node-id=223-3363&m=dev
- I need you to create a banner section for a website based on figma.
- requirements:
+I need you to create a banner section for a website based on figma.
+requirements:
 The banner should have a video playing in the background that covers the entire section. On top of the video, display the main content  as shown in the Figma design. Include a play button icon alongside the text "Watch Full Video" — when clicked, this should open a modal popup containing the full video player. The popup must also feature a close icon positioned in the top-right corner that closes the modal when clicked.
 
 

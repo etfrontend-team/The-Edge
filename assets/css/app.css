@@ -11,6 +11,7 @@
   --breakpoint-1600: 1601px;
   --breakpoint-1512: 1513px;
   --breakpoint-1440: 1441px;
+  --breakpoint-1410: 1411px;
   --breakpoint-1366: 1367px;
   --breakpoint-1199: 1200px;
   --breakpoint-1024: 1025px;
@@ -34,9 +35,12 @@
   --color-red: #a6192e;
   --color-gold: #84754e;
   --color-navy: #253746;
+  --color-slate: #4d6179;
   --color-silver: #8a8d8f;
   --color-grey: #c7c7c7;
   --color-black: #000000;
+  --color-maroon: #572d2d;
+  --color-maroon-dark: #492626;
 
   /* FONT SIZES */
   --text-heading-1: 70px;
@@ -51,6 +55,7 @@
   --text-18: 18px;
   --text-14: 14px;
   --text-12: 12px;
+  --text-150: 150px;
 
   /* SHADOWS */
   --shadow-dropdown: 0px 5px 15px rgba(0, 0, 0, 0.17);

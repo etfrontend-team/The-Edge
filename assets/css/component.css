@@ -3,7 +3,7 @@
    ======================== */
 
 .btn {
-  @apply inline-flex items-center justify-center px-28 py-10 rounded-full border border-solid cursor-pointer font-bold uppercase transition-colors duration-300;
+  @apply inline-flex items-center justify-center px-28 py-10 rounded-full border border-solid cursor-pointer font-bold uppercase transition-colors duration-300 leading-20.5;
 }
 
 .btn-red {

@@ -26,3 +26,7 @@ pnpm-debug.log*
 # Editor settings
 .vscode/
 .idea/
+
+# Prompt files
+prompt
+prompt2
