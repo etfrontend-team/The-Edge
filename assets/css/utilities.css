@@ -73,7 +73,11 @@
 }
 
 .banner-slide-copy--right {
-  @apply flex flex-col gap-10 items-start max-w-779 ml-auto max-768:items-center max-768:text-center max-768:max-w-full max-768:ml-0;
+  @apply flex flex-col gap-28 items-start max-w-779 ml-auto max-768:items-center max-768:text-center max-768:max-w-full max-768:ml-0;
+}
+
+.banner-slide-copy-group {
+  @apply flex flex-col gap-10;
 }
 
 /* ========================
@@ -89,11 +93,11 @@
 }
 
 .banner-pagination-bar .banner-pagination .swiper-pagination-bullet {
-  @apply block w-48 h-4 rounded-full border-2 border-solid border-silver bg-transparent opacity-100 m-0 p-0 cursor-pointer;
+  @apply block w-48 h-4 rounded-full border-2 border-solid border-silver bg-silver opacity-100 m-0 p-0 cursor-pointer;
 }
 
 .banner-pagination-bar .banner-pagination .swiper-pagination-bullet-active {
-  @apply border-white bg-transparent;
+  @apply bg-white border-white;
 }
 
 /* ========================
@@ -101,7 +105,7 @@
    ======================== */
 
 .banner-badge {
-  @apply max-1024:hidden absolute w-140 h-140 bottom-0 left-1/2 -translate-x-1/2 z-30 bg-white rounded-full shadow drop-shadow-[0px_5px_15px_rgba(0,0,0,0.17)] p-5;
+  @apply max-1024:hidden absolute w-140 h-140 bottom-0 left-1/2 -translate-x-1/2 z-30 bg-white rounded-full shadow-dropdown p-5;
 }
 
 .banner-badge-ring {
@@ -149,7 +153,7 @@
 }
 
 .about-inner {
-  @apply relative z-10 flex justify-center w-full max-w-1402 mx-auto px-55 max-768:px-20;
+  @apply relative z-10 flex justify-center w-full max-w-1402 mx-auto px-55 max-768:px-0;
 }
 
 .about-copy {
@@ -176,38 +180,59 @@
   @apply w-full block;
 }
 
+.banner-bottom-dt {
+  @apply max-768:hidden!;
+}
+
+.banner-bottom-mb {
+  @apply hidden! max-768:block!;
+}
+
 /* ========================
    TWO-COLUMN SECTION
    ======================== */
 
 .twocol-section {
-  @apply relative overflow-hidden;
-}
-
-.twocol-section .container-fluid {
-  @apply flex items-stretch max-768:flex-col;
+  @apply relative;
 }
 
 .twocol-section.general-padding {
-  @apply py-0;
+  @apply py-0 overflow-hidden;
 }
 
-/* Top decorative strip (E-pattern, inverted) */
+/* Top decorative strip */
 .twocol-top-strip {
-  @apply absolute top-0 left-0 w-full z-20 pointer-events-none;
+  @apply absolute -top-2 left-0 w-full z-20 pointer-events-none;
+}
+
+.twocol-top-strip img {
+  @apply w-full block;
 }
 
 .twocol-top-strip-dt {
-  @apply w-full block rotate-180 max-768:hidden;
+  @apply rotate-180 max-1024:hidden!;
 }
 
 .twocol-top-strip-mb {
-  @apply hidden max-768:block w-full rotate-180;
+  @apply hidden! rotate-180 max-1024:block!;
 }
 
-/* Left gold column */
+/* 50/50 inner layout */
+.twocol-section-inner {
+  @apply flex items-stretch relative max-1024:flex-col;
+}
+
+/* Left: gold column */
 .twocol-left {
-  @apply relative flex flex-col justify-center gap-20 bg-gold py-70 px-80 shrink-0 max-w-700 w-full max-768:max-w-full max-768:py-55 max-768:px-30 max-768:order-last;
+  @apply flex-1 flex flex-col justify-center bg-gold relative max-1024:order-2;
+}
+
+.twocol-left .container-fluid {
+  @apply px-80 max-1024:px-55 max-768:px-30 ;
+}
+
+.twocol-left-inner {
+  @apply flex flex-col gap-20 pt-151 pb-81 max-1024:py-70 max-768:py-55 max-w-540 1600:ms-auto;
 }
 
 .twocol-copy {
@@ -215,38 +240,38 @@
 }
 
 .twocol-section h2 {
-  @apply font-futura-pt-cond font-bold uppercase;
+  @apply font-futura-pt-cond font-bold uppercase leading-none max-1024:text-heading-3;
 }
 
 .twocol-section .content p {
-  @apply font-normal;
+  @apply text-heading-6 font-normal leading-none;
 }
 
-/* Right photo column */
+/* Right: photo column */
 .twocol-right {
-  @apply flex-1 relative overflow-hidden max-768:flex-none max-768:w-full max-768:aspect-video max-768:overflow-visible max-768:order-first;
+  @apply flex-1 relative overflow-hidden max-1024:order-1 max-1024:flex-none max-1024:h-360;
 }
 
 .twocol-right-img {
   @apply absolute inset-0 w-full h-full object-cover object-center;
 }
 
-/* Vertical E-strip at gold/photo boundary (desktop only) */
-.twocol-side-strip {
-  @apply absolute top-0 left-0 w-70 h-full z-10 overflow-hidden pointer-events-none max-768:hidden;
+/* Gold diagonal strip: vertical at panel boundary (desktop, child of twocol-section-inner) */
+.twocol-side-strip-dt {
+  @apply absolute top-0 h-full w-70 overflow-hidden ms-20 pointer-events-none z-10 left-1/2 -translate-x-1/2 max-1024:hidden;
 }
 
-.twocol-side-strip img {
-  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90;
+.twocol-side-strip-dt img {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 max-w-none;
 }
 
-/* Horizontal strip between photo and gold (mobile only) */
-.twocol-bottom-strip {
-  @apply hidden max-768:block absolute bottom-0 left-0 w-full z-10 pointer-events-none;
+/* Gold diagonal strip: horizontal at top of gold panel (mobile only) */
+.twocol-side-strip-mb {
+  @apply hidden absolute -top-28 left-0 w-full h-28 overflow-hidden pointer-events-none z-10 max-1024:block;
 }
 
-.twocol-bottom-strip img {
-  @apply w-full block;
+.twocol-side-strip-mb img {
+  @apply w-full h-28 object-cover;
 }
 
 /* ========================
@@ -258,16 +283,16 @@
 }
 
 .paths-section.general-padding {
-  @apply max-1024:py-70;
+  @apply max-1024:py-70 max-768:py-70;
 }
 
 .paths-inner {
-  @apply mx-auto max-w-1402 px-55 flex gap-55 items-start max-1024:flex-col max-1024:gap-40 max-1024:px-30;
+  @apply mx-auto max-w-1402 px-55 flex gap-55 items-start max-1024:flex-col max-1024:gap-40 max-1024:px-30 max-1024:items-stretch;
 }
 
 /* Left: Feature image panel */
 .paths-feature {
-  @apply relative flex flex-col justify-end p-40 rounded overflow-hidden shrink-0 w-full max-w-440 h-590 max-768:max-w-full max-768:h-280 max-768:p-28;
+  @apply relative flex flex-col justify-end p-40 rounded overflow-hidden shrink-0 w-full max-w-440 h-590 max-1024:max-w-full max-1024:h-280 max-1024:p-28;
 }
 
 .paths-feature-bg {
@@ -287,7 +312,7 @@
 }
 
 .paths-feature h2 {
-  @apply font-futura-pt-cond font-bold uppercase leading-tight;
+  @apply font-futura-pt-cond font-bold uppercase leading-none max-1024:text-heading-3;
 }
 
 /* Right: Cards area */
@@ -340,11 +365,11 @@
 }
 
 .track-card-tag .content p {
-  @apply text-12 uppercase whitespace-nowrap text-center font-bold;
+  @apply text-12 uppercase whitespace-nowrap text-center font-bold leading-none;
 }
 
 .track-card .title h3 {
-  @apply font-futura-pt-cond font-bold text-heading-3 uppercase text-center;
+  @apply font-futura-pt-cond font-bold text-heading-3 uppercase text-center leading-none;
 }
 
 .track-card-footer {
@@ -369,138 +394,138 @@
    ======================== */
 
 .our-story-section {
-    @apply relative overflow-hidden;
+  @apply relative overflow-hidden;
 }
 
 .our-story-section.general-padding {
-    @apply pt-170 pb-100 max-1024:pt-100 max-1024:pb-60 max-768:pt-70 max-768:pb-70;
+  @apply pt-170 pb-100 max-1024:pt-100 max-1024:pb-60 max-768:pt-70 max-768:pb-70;
 }
 
 /* Top decorative element */
 .our-story-top-el {
-    @apply absolute top-0 left-0 w-full z-10 pointer-events-none;
+  @apply absolute -top-1 left-0 w-full z-10 pointer-events-none;
 }
 
 .our-story-top-el-dt {
-    @apply w-full block rotate-180 max-768:hidden;
+  @apply w-full block rotate-180 max-768:hidden;
 }
 
 .our-story-top-el-mb {
-    @apply hidden max-768:block w-full rotate-180;
+  @apply hidden max-768:block w-full rotate-180;
 }
 
 /* Background layers */
 .our-story-bg {
-    @apply absolute inset-0 pointer-events-none;
+  @apply absolute inset-0 pointer-events-none;
 }
 
 .our-story-bg-color {
-    @apply absolute inset-0 bg-maroon;
+  @apply absolute inset-0 bg-maroon;
 }
 
 .our-story-bg-texture {
-    @apply absolute inset-0 w-full h-full object-cover opacity-16;
+  @apply absolute inset-0 w-full h-full object-cover opacity-16;
 }
 
 .our-story-bg-gradient {
-    @apply absolute inset-0 bg-radial from-maroon-dark to-transparent;
+  @apply absolute inset-0 bg-radial from-maroon-dark to-transparent;
 }
 
 /* Content container */
 .our-story-inner {
-    @apply max-w-1312 relative z-20 flex gap-80 items-center max-1024:flex-col max-1024:gap-55;
+  @apply max-w-1312 relative z-20 flex gap-80 items-center max-1024:flex-col max-1024:gap-55;
 }
 
 /* Left: media column */
 .our-story-media {
-    @apply flex flex-col gap-40 shrink-0 w-700 max-1024:w-full max-1024:order-last;
+  @apply flex flex-col gap-40 shrink-0 w-700 max-1024:w-full max-1024:order-last;
 }
 
 /* Video */
 .our-story-video-wrap {
-    @apply relative rounded overflow-hidden flex items-center justify-center h-400 max-768:h-220 cursor-pointer;
+  @apply relative rounded overflow-hidden flex items-center justify-center h-400 max-768:h-220 cursor-pointer;
 }
 
 .our-story-thumb {
-    @apply absolute inset-0 w-full h-full object-cover object-center;
+  @apply absolute inset-0 w-full h-full object-cover object-center;
 }
 
 .our-story-video-wrap.is-playing .our-story-thumb {
-    @apply hidden;
+  @apply hidden;
 }
 
 .our-story-video-wrap.is-playing .our-story-play-btn {
-    @apply hidden;
+  @apply hidden;
 }
 
 .our-story-video-player {
-    @apply hidden absolute inset-0 z-30 bg-black;
+  @apply hidden absolute inset-0 z-30 bg-black;
 }
 
 .our-story-video-player.is-playing {
-    @apply flex items-stretch;
+  @apply flex items-stretch;
 }
 
 .our-story-video {
-    @apply w-full h-full object-cover;
+  @apply w-full h-full object-cover;
 }
 
 .our-story-play-btn {
-    @apply relative z-20 flex items-center justify-center;
+  @apply relative z-20 flex items-center justify-center;
 }
 
 .our-story-play-icon {
-    @apply flex items-center justify-center w-40 h-40 overflow-hidden;
+  @apply flex items-center justify-center w-40 h-40 overflow-hidden;
 }
 
 .our-story-play-icon img {
-    @apply w-full h-full object-contain;
+  @apply w-full h-full object-contain;
 }
 
 /* Featured In */
 .our-story-featured {
-    @apply flex flex-col gap-20 items-center w-full;
+  @apply flex flex-col gap-20 items-center w-full;
 }
 
 .our-story-featured-label .content p {
-    @apply text-heading-5 font-bold text-center uppercase;
+  @apply text-heading-5 font-bold text-center uppercase;
 }
 
 .our-story-logos {
-    @apply flex items-center justify-between w-full;
+  @apply flex items-center justify-between w-full;
 }
 
 .our-story-logo {
-    @apply block h-28 w-auto object-contain;
+  @apply block h-28 w-auto object-contain;
 }
 
 /* Right: copy column */
 .our-story-copy {
-    @apply flex flex-col gap-20 flex-1 min-w-0 max-1024:order-first;
+  @apply flex flex-col gap-20 flex-1 min-w-0 max-1024:order-first;
 }
 
 .our-story-eyebrow .content p {
-    @apply font-futura-pt font-medium italic text-heading-4 uppercase max-768:text-heading-5;
+  @apply font-futura-pt font-medium italic text-heading-4 uppercase max-768:text-heading-5;
 }
 
 .our-story-headline-wrap {
-    @apply flex gap-20 items-center;
+  @apply flex gap-20 items-center;
 }
 
 .our-story-headline-wrap .title {
-    @apply flex-1 min-w-0;
+  @apply flex-1 min-w-0;
 }
 
 .our-story-section h2 {
-    @apply font-futura-pt-cond font-bold uppercase;
+  @apply font-futura-pt-cond font-bold uppercase leading-[1.27];
 }
 
 .our-story-accent-line {
-    @apply shrink-0 w-86 h-4 bg-red self-center max-1024:hidden;
+  @apply shrink-0 w-86 h-4 bg-red self-center max-1024:hidden;
 }
 
 .our-story-actions {
-    @apply flex gap-20 pt-14 max-768:flex-col;
+  @apply flex gap-20 pt-14 max-768:flex-col;
 }
 
 /* ========================
@@ -513,7 +538,7 @@
 
 .section-heading .title h2,
 .section-heading .title h3 {
-  @apply font-futura-pt-cond font-bold uppercase;
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
 }
 
 /* ========================
@@ -523,17 +548,23 @@
 .stories-section {
   @apply bg-off-white relative overflow-hidden max-768:py-70;
 }
-
+.stories-section .title h2 {
+  @apply leading-[1.28];
+}
 .stories-bg {
   @apply absolute inset-0 overflow-hidden pointer-events-none opacity-7;
 }
 
 .stories-bg-img {
-  @apply absolute bottom-0 -left-170 w-3/4 max-w-none;
+  @apply absolute bottom-0 -left-170 w-3/4 max-768:w-full max-w-none;
 }
 
 .stories-section .container-fluid {
   @apply flex flex-col gap-55 items-center;
+}
+
+.stories-section .section-heading .content p {
+  @apply leading-none;
 }
 
 .stories-swiper {
@@ -585,7 +616,7 @@
 }
 
 .story-card .title h3 {
-  @apply text-heading-4 font-bold;
+  @apply text-heading-4 font-bold leading-[1.2];
 }
 
 /* Play button */
@@ -621,47 +652,319 @@
    ======================== */
 
 .cta-section {
-    @apply relative overflow-hidden;
+  @apply relative overflow-hidden;
 }
 
 .cta-section.general-padding {
-    @apply pt-260 pb-55 max-768:pt-250 max-768:pb-55;
+  @apply pt-260 pb-55 max-768:pt-250 max-768:pb-55;
 }
 
 /* Background */
 .cta-section-bg {
-    @apply absolute inset-0 pointer-events-none overflow-hidden;
+  @apply absolute inset-0 pointer-events-none overflow-hidden;
 }
 
 .cta-section-bg-img {
-    @apply absolute inset-0 w-full h-full object-cover object-center;
+  @apply absolute inset-0 w-full h-full object-cover object-center will-change-transform;
 }
 
 .cta-section-overlay {
-    @apply absolute inset-0 bg-linear-to-b from-maroon/0 via-maroon/50 to-maroon/77;
+  @apply absolute inset-0 bg-linear-to-b from-maroon/0 via-maroon/50 to-maroon/77;
 }
 
 /* Content */
 .cta-section-inner {
-    @apply relative z-10 flex justify-center;
+  @apply relative z-10 flex justify-center;
 }
 
 .cta-section-copy {
-    @apply flex flex-col gap-20 items-center text-center max-w-1000 w-full;
+  @apply flex flex-col gap-20 items-center text-center max-w-1000 w-full;
 }
 
 .cta-section-text {
-    @apply flex flex-col gap-10;
+  @apply flex flex-col gap-10;
 }
 
 .cta-section h2 {
-    @apply font-futura-pt-cond font-bold uppercase text-heading-2 max-768:text-heading-3;
+  @apply font-futura-pt-cond font-bold uppercase text-heading-2 max-768:text-heading-3 max-768:leading-[41px];
 }
 
 .cta-section .content p {
-    @apply font-futura-pt font-medium italic uppercase text-heading-4 max-768:text-heading-5;
+  @apply font-futura-pt font-medium italic uppercase text-heading-4 max-768:text-heading-5;
 }
 
 .cta-section-actions {
-    @apply pt-8;
+  @apply pt-8;
+}
+
+/* ========================
+   NEWSLETTER SECTION
+   ======================== */
+
+.newsletter-section {
+  @apply bg-off-white;
+}
+
+.newsletter-section.general-padding {
+  @apply py-55;
+}
+
+.newsletter-inner {
+  @apply w-full flex gap-100 items-center px-100 max-1024:flex-col max-1024:gap-55 max-768:gap-40 max-1024:px-55 max-768:px-30;
+}
+
+/* Left copy */
+.newsletter-copy {
+  @apply flex flex-col gap-20 flex-1;
+}
+
+.newsletter-copy-inner {
+  @apply flex flex-col gap-10;
+}
+
+.newsletter-section .newsletter-eyebrow .content p {
+  @apply font-medium italic text-heading-4 uppercase leading-none max-768:text-heading-5;
+}
+
+.newsletter-title-row {
+  @apply flex gap-20 items-center;
+}
+
+.newsletter-divider {
+  @apply flex-1 self-center border-t-4 border-solid border-red max-768:min-w-105 rounded-[4px];
+}
+
+.newsletter-section h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
+}
+
+.newsletter-section .content p {
+  @apply font-futura-pt text-heading-6 leading-none;
+}
+
+/* Form */
+.newsletter-form {
+  @apply flex flex-col gap-20 pt-14;
+}
+
+.newsletter-field {
+  @apply flex flex-col;
+}
+
+.newsletter-field label {
+  @apply sr-only;
+}
+
+.newsletter-field input {
+  @apply font-futura-pt font-normal italic text-heading-6 text-silver bg-transparent outline-none w-full pb-10 border-0 border-b border-solid border-red;
+}
+
+.newsletter-field input::placeholder {
+  @apply text-silver opacity-70;
+}
+
+.newsletter-submit {
+  @apply pt-14;
+}
+
+/* Right images */
+.newsletter-images {
+  @apply flex gap-20 flex-1 self-stretch max-1024:flex-none max-1024:w-full max-1024:self-auto;
+}
+
+.newsletter-img-wrap {
+  @apply flex-1 relative overflow-hidden rounded max-1024:h-193;
+}
+
+.newsletter-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+/* ========================
+   BANNERWRAP SECTION
+   ======================== */
+
+.bannerwrap-section {
+  @apply bg-white;
+}
+
+.bannerwrap-section.general-padding {
+  @apply py-0;
+}
+
+.bannerwrap-inner {
+  @apply flex items-stretch max-1024:flex-col;
+}
+
+/* Left panel */
+.bannerwrap-left {
+  @apply flex-1 flex flex-col justify-center;
+}
+
+.bannerwrap-left .container-fluid {
+  /* @apply max-768:px-30     max-width: 720px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 100px; */
+  @apply max-768:px-30 max-1512:max-w-520 max-w-720 1512:ms-auto 1512:me-0 1512:pe-100;
+}
+
+.bannerwrap-left-inner {
+  @apply flex flex-col gap-40 py-100 max-1024:py-70;
+}
+
+/* Copy */
+.bannerwrap-copy {
+  @apply flex flex-col gap-20;
+}
+
+.bannerwrap-eyebrow .content p {
+  @apply font-medium italic text-heading-4 uppercase leading-none max-1024:text-heading-5;
+}
+
+.bannerwrap-left h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
+}
+
+.bannerwrap-body .content p {
+  @apply leading-none;
+}
+
+/* Tabs */
+.bannerwrap-tabs {
+  @apply flex flex-col gap-20;
+}
+
+.bannerwrap-divider {
+  @apply border-t border-solid border-grey;
+}
+
+.bannerwrap-tab {
+  @apply flex flex-col gap-20;
+}
+
+.bannerwrap-tab-header {
+  @apply flex gap-20 items-center max-768:gap-14;
+}
+
+.bannerwrap-tab-btn {
+  @apply bg-transparent border-0 p-0 cursor-pointer;
+}
+
+.bannerwrap-tab-label {
+  @apply font-futura-pt-cond font-bold text-heading-3 uppercase whitespace-nowrap leading-none transition-colors duration-200 text-grey max-1024:text-heading-4;
+}
+
+.bannerwrap-tab.is-active .bannerwrap-tab-label {
+  @apply text-black;
+}
+
+.bannerwrap-tab-cta {
+  @apply hidden;
+}
+
+.bannerwrap-tab.is-active .bannerwrap-tab-cta {
+  @apply flex;
+}
+
+/* Mobile inline media — hidden on desktop, shown after active tab on mobile */
+.bannerwrap-media-inline {
+  @apply hidden;
+}
+
+.bannerwrap-tab.is-active .bannerwrap-media-inline {
+  @apply max-1024:flex max-1024:flex-col;
+}
+
+/* Right panel */
+.bannerwrap-right {
+  @apply flex-1 relative overflow-hidden max-1024:hidden;
+}
+
+/* Desktop media panels — stacked absolutely */
+.bannerwrap-media {
+  @apply absolute inset-0 flex flex-col opacity-0 invisible pointer-events-none transition-opacity duration-300;
+}
+
+.bannerwrap-media.is-active {
+  @apply opacity-100 visible pointer-events-auto;
+}
+
+/* Shared media structure */
+.bannerwrap-media-bg {
+  @apply absolute inset-0;
+}
+
+.bannerwrap-media-bg-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300;
+}
+
+.bannerwrap-media-video {
+  @apply absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300;
+}
+
+.bannerwrap-media-wrap {
+  @apply relative flex flex-col overflow-hidden;
+}
+
+/* Desktop: media-wrap fills the absolute panel */
+.bannerwrap-right .bannerwrap-media-wrap {
+  @apply flex-1;
+}
+
+/* Mobile: inline media wrap has fixed height */
+.bannerwrap-media-inline .bannerwrap-media-wrap {
+  @apply h-550;
+}
+
+/* Play icon area */
+.bannerwrap-play-area {
+  @apply relative flex-1 flex items-center justify-center z-10;
+}
+
+.bannerwrap-play-btn {
+  @apply flex items-center justify-center cursor-pointer w-40 h-40;
+}
+
+/* Wave gradient divider */
+.bannerwrap-wave {
+  @apply relative z-10 h-40 w-full shrink-0 mt-auto;
+}
+
+.bannerwrap-wave img,
+.banner-wave-img {
+  @apply block w-full h-full object-fill;
+}
+
+/* Overlay */
+.bannerwrap-overlay {
+  @apply relative z-10 bg-black/[.77] flex flex-col gap-20 items-start justify-center p-55 shrink-0 max-1024:px-30 max-1024:py-40;
+}
+
+.bannerwrap-overlay-copy {
+  @apply flex flex-col gap-10 max-w-646;
+}
+
+.bannerwrap-overlay h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none max-1024:text-heading-3;
+}
+
+.bannerwrap-overlay-subtitle .content p {
+  @apply font-medium italic text-heading-4 uppercase leading-none max-1024:text-heading-5;
+}
+
+/* Video playing state */
+.bannerwrap-media-wrap.is-playing .bannerwrap-media-bg-img,
+.bannerwrap-media.is-playing .bannerwrap-media-bg-img {
+  @apply opacity-0;
+}
+
+.bannerwrap-media-wrap.is-playing .bannerwrap-media-video,
+.bannerwrap-media.is-playing .bannerwrap-media-video {
+  @apply opacity-100;
+}
+
+.bannerwrap-media-wrap.is-playing .bannerwrap-play-area,
+.bannerwrap-media.is-playing .bannerwrap-play-area {
+  @apply hidden;
 }

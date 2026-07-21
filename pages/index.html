@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
     <link rel="stylesheet" href="../dist/style.css" />
     <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../node_modules/lenis/dist/lenis.css" />
 </head>
 
 <body>
@@ -217,7 +218,7 @@
 
                 <!-- Desktop right: phone + divider + icons -->
                 <div class="header-right">
-                    <a href="tel:+16095550100" role="link" target="_self" aria-label="Call us at (609) 555-0100"
+                    <a href="tel:+3014032161" role="link" target="_self" aria-label="Call us at 301.403.2161"
                         class="header-phone">
                         <span class="header-icon">
                             <!-- Phone icon -->
@@ -236,7 +237,7 @@
                             </svg>
 
                         </span>
-                        <span class="header-phone-text">(609) 555-0100</span>
+                        <span class="header-phone-text">301.403.2161</span>
                     </a>
 
                     <div class="header-divider" aria-hidden="true"></div>
@@ -262,17 +263,20 @@
                                 </defs>
                             </svg>
                         </a>
-                        <button
-                            type="button"
-                            aria-label="Open shopping cart"
-                            id="cartBtn"
-                            class="cart-btn header-icon">
+                        <button type="button" aria-label="Open shopping cart" id="cartBtn" class="cart-btn header-icon">
                             <!-- Cart icon -->
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip-cart-dt)">
-                                    <path d="M15.1571 14.8615C13.8771 14.8615 12.8218 15.8944 12.8218 17.1967C12.8218 18.4767 13.8547 19.532 15.1571 19.532C16.437 19.532 17.4924 18.4991 17.4924 17.1967C17.4699 15.9168 16.437 14.8615 15.1571 14.8615Z" fill="currentColor" />
-                                    <path d="M19.2661 3.72395C19.2212 3.72395 19.1539 3.7015 19.0865 3.7015H4.94004L4.71549 2.19703C4.58076 1.20902 3.72748 0.468018 2.71702 0.468018H0.898188C0.404185 0.468018 0 0.872202 0 1.36621C0 1.86021 0.404185 2.26439 0.898188 2.26439H2.71702C2.82929 2.26439 2.91911 2.35421 2.94157 2.46649L4.33376 11.9424C4.5134 13.1325 5.54631 14.0307 6.75887 14.0307H16.1C17.2677 14.0307 18.2781 13.1998 18.5251 12.0546L19.9847 4.75687C20.0745 4.28532 19.7601 3.81377 19.2661 3.72395Z" fill="currentColor" />
-                                    <path d="M9.43087 17.0845C9.38596 15.8495 8.35305 14.8615 7.11804 14.8615C5.81566 14.9288 4.82766 16.0066 4.87257 17.2866C4.91748 18.5216 5.92794 19.5096 7.16295 19.5096H7.20786C8.48777 19.4422 9.49824 18.3644 9.43087 17.0845Z" fill="currentColor" />
+                                    <path
+                                        d="M15.1571 14.8615C13.8771 14.8615 12.8218 15.8944 12.8218 17.1967C12.8218 18.4767 13.8547 19.532 15.1571 19.532C16.437 19.532 17.4924 18.4991 17.4924 17.1967C17.4699 15.9168 16.437 14.8615 15.1571 14.8615Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M19.2661 3.72395C19.2212 3.72395 19.1539 3.7015 19.0865 3.7015H4.94004L4.71549 2.19703C4.58076 1.20902 3.72748 0.468018 2.71702 0.468018H0.898188C0.404185 0.468018 0 0.872202 0 1.36621C0 1.86021 0.404185 2.26439 0.898188 2.26439H2.71702C2.82929 2.26439 2.91911 2.35421 2.94157 2.46649L4.33376 11.9424C4.5134 13.1325 5.54631 14.0307 6.75887 14.0307H16.1C17.2677 14.0307 18.2781 13.1998 18.5251 12.0546L19.9847 4.75687C20.0745 4.28532 19.7601 3.81377 19.2661 3.72395Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M9.43087 17.0845C9.38596 15.8495 8.35305 14.8615 7.11804 14.8615C5.81566 14.9288 4.82766 16.0066 4.87257 17.2866C4.91748 18.5216 5.92794 19.5096 7.16295 19.5096H7.20786C8.48777 19.4422 9.49824 18.3644 9.43087 17.0845Z"
+                                        fill="currentColor" />
                                 </g>
                                 <defs>
                                     <clipPath id="clip-cart-dt">
@@ -281,9 +285,11 @@
                                 </defs>
                             </svg>
                         </button>
-                        <a href="#" role="link" target="_self" aria-label="Search" class="header-icon header-icon-link search-btn">
+                        <a href="#" role="link" target="_self" aria-label="Search"
+                            class="header-icon header-icon-link search-btn">
                             <!-- Search icon -->
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_4006_7318)">
                                     <path
                                         d="M19.2895 15.7606L15.9977 12.4688C16.5962 11.2718 16.9952 9.87531 16.9952 8.4788C16.9952 3.79052 13.2047 0 8.5164 0C3.82812 0 0.0375977 3.79052 0.0375977 8.4788C0.0375977 13.1671 3.82812 16.9576 8.5164 16.9576C9.91291 16.9576 11.3094 16.5586 12.5064 15.9601L15.7982 19.2519C16.7957 20.2494 18.292 20.2494 19.2895 19.2519C20.1872 18.2544 20.1872 16.7581 19.2895 15.7606ZM8.5164 14.9626C4.92538 14.9626 2.03261 12.0698 2.03261 8.4788C2.03261 4.88778 4.92538 1.99501 8.5164 1.99501C12.1074 1.99501 15.0002 4.88778 15.0002 8.4788C15.0002 12.0698 12.1074 14.9626 8.5164 14.9626Z"
@@ -302,11 +308,7 @@
 
                 <!-- Mobile: right group (cart + search) -->
                 <div class="header-mobile-right">
-                    <button
-                        type="button"
-                        aria-label="Open shopping cart"
-                        id="cartBtnMb"
-                        class="cart-btn header-icon">
+                    <button type="button" aria-label="Open shopping cart" id="cartBtnMb" class="cart-btn header-icon">
                         <!-- Cart icon -->
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip-cart-mb)">
@@ -327,7 +329,8 @@
                             </defs>
                         </svg>
                     </button>
-                    <a href="#" role="link" target="_self" aria-label="Search" class="header-icon header-icon-link search-btn">
+                    <a href="#" role="link" target="_self" aria-label="Search"
+                        class="header-icon header-icon-link search-btn">
                         <!-- Search icon -->
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip-search-mb)">
@@ -354,7 +357,9 @@
                     <span class="search-form-icon">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip-search-popup)">
-                                <path d="M19.2895 15.7606L15.9977 12.4688C16.5962 11.2718 16.9952 9.87531 16.9952 8.4788C16.9952 3.79052 13.2047 0 8.5164 0C3.82812 0 0.0375977 3.79052 0.0375977 8.4788C0.0375977 13.1671 3.82812 16.9576 8.5164 16.9576C9.91291 16.9576 11.3094 16.5586 12.5064 15.9601L15.7982 19.2519C16.7957 20.2494 18.292 20.2494 19.2895 19.2519C20.1872 18.2544 20.1872 16.7581 19.2895 15.7606ZM8.5164 14.9626C4.92538 14.9626 2.03261 12.0698 2.03261 8.4788C2.03261 4.88778 4.92538 1.99501 8.5164 1.99501C12.1074 1.99501 15.0002 4.88778 15.0002 8.4788C15.0002 12.0698 12.1074 14.9626 8.5164 14.9626Z" fill="currentColor" />
+                                <path
+                                    d="M19.2895 15.7606L15.9977 12.4688C16.5962 11.2718 16.9952 9.87531 16.9952 8.4788C16.9952 3.79052 13.2047 0 8.5164 0C3.82812 0 0.0375977 3.79052 0.0375977 8.4788C0.0375977 13.1671 3.82812 16.9576 8.5164 16.9576C9.91291 16.9576 11.3094 16.5586 12.5064 15.9601L15.7982 19.2519C16.7957 20.2494 18.292 20.2494 19.2895 19.2519C20.1872 18.2544 20.1872 16.7581 19.2895 15.7606ZM8.5164 14.9626C4.92538 14.9626 2.03261 12.0698 2.03261 8.4788C2.03261 4.88778 4.92538 1.99501 8.5164 1.99501C12.1074 1.99501 15.0002 4.88778 15.0002 8.4788C15.0002 12.0698 12.1074 14.9626 8.5164 14.9626Z"
+                                    fill="currentColor" />
                             </g>
                             <defs>
                                 <clipPath id="clip-search-popup">
@@ -363,11 +368,7 @@
                             </defs>
                         </svg>
                     </span>
-                    <input type="search"
-                        id="searchInput"
-                        name="q"
-                        placeholder="Search"
-                        autocomplete="off"
+                    <input type="search" id="searchInput" name="q" placeholder="Search" autocomplete="off"
                         class="search-input" />
                 </label>
                 <div class="search-form-divider" aria-hidden="true"></div>
@@ -394,41 +395,49 @@
                         <div class="cart-product-row">
                             <div class="cart-product-inner">
                                 <div class="cart-product-body">
-                                    <img
-                                        src="../assets/images/card-coaching-1-1.jpg"
-                                        width="140"
-                                        height="140"
-                                        alt="1-1 Coaching"
-                                        class="cart-product-img" />
+                                    <img src="../assets/images/card-coaching-1-1.webp" width="140" height="140"
+                                        alt="1-1 Coaching" class="cart-product-img" />
                                     <div class="cart-product-copy">
                                         <div class="cart-product-title">
-                                            <div class="title title-black"><h4>1-1 Coaching</h4></div>
+                                            <div class="title title-black">
+                                                <h4>1-1 Coaching</h4>
+                                            </div>
                                         </div>
                                         <div class="cart-product-price-row">
                                             <span class="cart-price-text">$2,597.00</span>
                                             <div class="cart-qty">
-                                                <button
-                                                    type="button"
-                                                    aria-label="Decrease quantity of 1-1 Coaching"
+                                                <button type="button" aria-label="Decrease quantity of 1-1 Coaching"
                                                     class="cart-qty-btn">
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
                                                 </button>
                                                 <span class="cart-qty-value">1</span>
-                                                <button
-                                                    type="button"
-                                                    aria-label="Increase quantity of 1-1 Coaching"
+                                                <button type="button" aria-label="Increase quantity of 1-1 Coaching"
                                                     class="cart-qty-btn">
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="10" y1="4" x2="10" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button
-                                    type="button"
-                                    aria-label="Remove 1-1 Coaching from cart"
+                                <button type="button" aria-label="Remove 1-1 Coaching from cart"
                                     class="cart-remove-btn">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -437,42 +446,52 @@
                         <div class="cart-product-row">
                             <div class="cart-product-inner">
                                 <div class="cart-product-body">
-                                    <img
-                                        src="../assets/images/card-online-coaching.jpg"
-                                        width="140"
-                                        height="140"
-                                        alt="Online Group Coaching"
-                                        class="cart-product-img" />
+                                    <img src="../assets/images/card-online-coaching.webp" width="140" height="140"
+                                        alt="Online Group Coaching" class="cart-product-img" />
                                     <div class="cart-product-copy">
                                         <div class="cart-product-title">
                                             <span class="cart-product-tag cart-tag-virtual">VIRTUAL</span>
-                                            <div class="title title-black"><h4>Online Group Coaching</h4></div>
+                                            <div class="title title-black">
+                                                <h4>Online Group Coaching</h4>
+                                            </div>
                                         </div>
                                         <div class="cart-product-price-row">
                                             <span class="cart-price-text">$1,997.00</span>
                                             <div class="cart-qty">
-                                                <button
-                                                    type="button"
+                                                <button type="button"
                                                     aria-label="Decrease quantity of Online Group Coaching"
                                                     class="cart-qty-btn">
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
                                                 </button>
                                                 <span class="cart-qty-value">1</span>
-                                                <button
-                                                    type="button"
+                                                <button type="button"
                                                     aria-label="Increase quantity of Online Group Coaching"
                                                     class="cart-qty-btn">
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="10" y1="4" x2="10" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
                                                 </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button
-                                    type="button"
-                                    aria-label="Remove Online Group Coaching from cart"
+                                <button type="button" aria-label="Remove Online Group Coaching from cart"
                                     class="cart-remove-btn">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -484,53 +503,59 @@
                 <!-- Upsell -->
                 <div class="cart-upsell">
                     <div class="cart-upsell-title">
-                        <div class="title title-black"><h3>Highly Rated Experience</h3></div>
+                        <div class="title title-black">
+                            <h3>Highly Rated Experience</h3>
+                        </div>
                     </div>
                     <div class="cart-upsell-product">
                         <div class="cart-upsell-product-body">
-                            <img
-                                src="../assets/images/card-inperson-coaching.jpg"
-                                width="140"
-                                height="140"
-                                alt="In-Person Group Coaching"
-                                class="cart-upsell-img" />
+                            <img src="../assets/images/card-inperson-coaching.webp" width="140" height="140"
+                                alt="In-Person Group Coaching" class="cart-upsell-img" />
                             <div class="cart-upsell-copy">
                                 <div class="cart-product-title">
                                     <span class="cart-product-tag cart-tag-inperson">IN-PERSON</span>
-                                    <div class="title title-black"><h4>In-Person Group Coaching</h4></div>
+                                    <div class="title title-black">
+                                        <h4>In-Person Group Coaching</h4>
+                                    </div>
                                 </div>
                                 <div class="cart-product-price-row">
                                     <span class="cart-price-text">$997.00</span>
                                     <div class="cart-qty cart-qty-narrow">
-                                        <button
-                                            type="button"
-                                            aria-label="Decrease quantity of In-Person Group Coaching"
+                                        <button type="button" aria-label="Decrease quantity of In-Person Group Coaching"
                                             class="cart-qty-btn">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
                                         </button>
                                         <span class="cart-qty-value">1</span>
-                                        <button
-                                            type="button"
-                                            aria-label="Increase quantity of In-Person Group Coaching"
+                                        <button type="button" aria-label="Increase quantity of In-Person Group Coaching"
                                             class="cart-qty-btn">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="10" y1="4" x2="10" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button
-                            type="button"
-                            aria-label="Remove In-Person Group Coaching from cart"
+                        <button type="button" aria-label="Remove In-Person Group Coaching from cart"
                             class="cart-remove-btn">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
                         </button>
                     </div>
-                    <a
-                        href="#"
-                        role="link"
-                        target="_self"
-                        aria-label="Quick add In-Person Group Coaching to cart"
+                    <a href="#" role="link" target="_self" aria-label="Quick add In-Person Group Coaching to cart"
                         class="btn btn-red">
                         Quick Add
                     </a>
@@ -543,12 +568,7 @@
                         <span class="cart-subtotal-amount">$4,594.00</span>
                     </div>
                     <div class="cart-checkout-actions">
-                        <a
-                            href="#"
-                            role="link"
-                            target="_self"
-                            aria-label="Proceed to checkout"
-                            class="btn btn-red">
+                        <a href="#" role="link" target="_self" aria-label="Proceed to checkout" class="btn btn-red">
                             Checkout
                         </a>
                     </div>
@@ -560,6 +580,16 @@
         <!-- Mobile menu -->
         <div class="mobile-menu" id="mobileMenu">
             <div class="mobile-menu-accordions">
+                <!-- Background texture overlay -->
+                <div class="mobile-menu-accordions-bg" aria-hidden="true">
+                    <img
+                        src="../assets/images/vector/accordions-bg.png"
+                        alt="Background texture"
+                        width="1512"
+                        height="393"
+                        class="mobile-menu-accordions-bg-img"
+                    />
+                </div>
                 <!-- Accordion: About (expandable) -->
                 <div class="mobile-accordion is-expandable">
                     <button type="button" aria-label="Toggle About" class="mobile-accordion-trigger">
@@ -719,11 +749,9 @@
                     <div class="swiper-slide">
                         <div class="banner-slide">
                             <div class="banner-slide-bg" aria-hidden="true">
-                                <img src="https://www.figma.com/api/mcp/asset/6aa5b2d0-7db1-42b3-a881-896ff303ae3e"
-                                    alt="Business professional walking on stairs overhead view"
-                                    width="1512"
-                                    height="800"
-                                    class="banner-slide-img" />
+                                <img src="../assets/images/banner.webp"
+                                    alt="Business professional walking on stairs overhead view" width="1512"
+                                    height="945" class="banner-slide-img" />
                                 <div class="banner-slide-overlay banner-overlay-tl max-768:hidden"></div>
                                 <div class="banner-slide-overlay banner-overlay-top"></div>
                                 <div class="banner-slide-overlay banner-slide-ol-right"></div>
@@ -731,11 +759,15 @@
                             <div class="banner-slide-inner">
                                 <div class="container-fluid">
                                     <div class="banner-slide-copy banner-slide-copy--right">
-                                        <div class="title title-white">
-                                            <h1>Find Your Edge. Mind-Body Alignment Through Creating Space for Strength &amp; Self-Discovery.</h1>
-                                        </div>
-                                        <div class="content content-white banner-slide-subtitle">
-                                            <p>Connect, grow, and transform with our online or in-person group coaching.</p>
+                                        <div class="banner-slide-copy-group">
+                                            <div class="title title-white">
+                                                <h1>Find Your Edge. Mind-Body Alignment Through Creating Space for Strength
+                                                    &amp; Self-Discovery.</h1>
+                                            </div>
+                                            <div class="content content-white banner-slide-subtitle">
+                                                <p>Connect, grow, and transform with our online or in-person group
+                                                    coaching.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -746,15 +778,12 @@
                     <!-- SLIDE 2: Video background, centered copy, no CTA -->
                     <div class="swiper-slide">
                         <div class="banner-slide">
-                             <div class="banner-slide-bg" aria-hidden="true">
-                                <img src="../assets/images/banner2.png"
-                                    alt="Man standing in an open field at sunset"
-                                    width="1512"
-                                    height="800"
-                                    class="banner-slide-img" />
+                            <div class="banner-slide-bg" aria-hidden="true">
+                                <img src="../assets/images/banner2.webp" alt="Man standing in an open field at sunset"
+                                    width="1512" height="800" class="banner-slide-img" />
                                 <div class="banner-slide-overlay banner-overlay-tl max-768:hidden"></div>
                                 <div class="banner-slide-overlay banner-overlay-top"></div>
-                                <div class="banner-slide-overlay banner-slide-ol-left"></div>
+                                <div class="banner-slide-overlay banner-slide-ol-dark"></div>
                             </div>
                             <div class="banner-slide-inner">
                                 <div class="container-fluid">
@@ -775,11 +804,8 @@
                     <div class="swiper-slide">
                         <div class="banner-slide">
                             <div class="banner-slide-bg" aria-hidden="true">
-                                <img src="../assets/images/banner3.png"
-                                    alt="Man standing in an open field at sunset"
-                                    width="1512"
-                                    height="800"
-                                    class="banner-slide-img" />
+                                <img src="../assets/images/banner3.webp" alt="Man standing in an open field at sunset"
+                                    width="1512" height="800" class="banner-slide-img" />
                                 <div class="banner-slide-overlay banner-overlay-tl max-768:hidden"></div>
                                 <div class="banner-slide-overlay banner-overlay-top"></div>
                                 <div class="banner-slide-overlay banner-slide-ol-left"></div>
@@ -787,18 +813,18 @@
                             <div class="banner-slide-inner">
                                 <div class="container-fluid">
                                     <div class="banner-slide-copy banner-slide-copy--left">
-                                        <div class="title title-white">
-                                            <h2>Reset, Reconnect, Realign</h2>
-                                        </div>
-                                        <div class="content content-white banner-slide-subtitle">
-                                            <p>Step away from the noise and into a weekend of clarity and transformation.</p>
+                                        <div class="banner-slide-copy-group">
+                                            <div class="title title-white">
+                                                <h2>Reset, Reconnect, Realign</h2>
+                                            </div>
+                                            <div class="content content-white banner-slide-subtitle">
+                                                <p>Step away from the noise and into a weekend of clarity and
+                                                    transformation.</p>
+                                            </div>
                                         </div>
                                         <div>
-                                            <a href="#"
-                                                role="link"
-                                                target="_self"
-                                                aria-label="Reserve your spot for the retreat"
-                                                class="btn btn-red">
+                                            <a href="#" role="link" target="_self"
+                                                aria-label="Reserve your spot for the retreat" class="btn btn-red">
                                                 Reserve Your Spot
                                             </a>
                                         </div>
@@ -812,10 +838,8 @@
                     <div class="swiper-slide">
                         <div class="banner-slide">
                             <div class="banner-slide-bg" aria-hidden="true">
-                                <img src="../assets/images/paths-feature.jpg"
-                                    alt="Performance-driven gear and equipment for excellence"
-                                    width="1512"
-                                    height="800"
+                                <img src="../assets/images/paths-feature.webp"
+                                    alt="Performance-driven gear and equipment for excellence" width="1512" height="800"
                                     class="banner-slide-img" />
                                 <div class="banner-slide-overlay banner-overlay-tl max-768:hidden"></div>
                                 <div class="banner-slide-overlay banner-overlay-top"></div>
@@ -824,16 +848,17 @@
                             <div class="banner-slide-inner">
                                 <div class="container-fluid">
                                     <div class="banner-slide-copy banner-slide-copy--right">
-                                        <div class="title title-white">
-                                            <h2>Equip Yourself for Excellence</h2>
-                                        </div>
-                                        <div class="content content-white banner-slide-subtitle">
-                                            <p>Gear up with performance-driven essentials designed to sharpen your mind and body for the path ahead.</p>
+                                        <div class="banner-slide-copy-group">
+                                            <div class="title title-white">
+                                                <h2>Equip Yourself for Excellence</h2>
+                                            </div>
+                                            <div class="content content-white banner-slide-subtitle">
+                                                <p>Gear up with performance-driven essentials designed to sharpen your mind
+                                                    and body for the path ahead.</p>
+                                            </div>
                                         </div>
                                         <div>
-                                            <a href="#"
-                                                role="link"
-                                                target="_self"
+                                            <a href="#" role="link" target="_self"
                                                 aria-label="Own your gear and shop the performance collection"
                                                 class="btn btn-red">
                                                 Own Your Gear
@@ -873,7 +898,8 @@
 
             <!-- Bottom decorative strip -->
             <div class="banner-bottom-el" aria-hidden="true">
-                <img src="../assets/images/banner-bottom.png" alt="" width="1512" height="70" />
+                <img src="../assets/images/banner-bottom.png" alt="" width="1512" height="70" class="banner-bottom-dt" />
+                <img src="../assets/images/banner-bottom2.png" alt="" width="376" height="28" class="banner-bottom-mb" />
             </div>
 
         </section><!-- /.banner-section -->
@@ -911,305 +937,474 @@
 
         </section><!-- /.about-section -->
 
-          <!-- ======= PATHS OF EXCELLENCE SECTION ======= -->
+        <!-- ======= PATHS OF EXCELLENCE SECTION ======= -->
         <section class="paths-section general-padding">
-                <div class="paths-inner">
-                    <!-- Left: Feature image panel with heading overlay -->
-                    <div class="paths-feature">
-                        <div class="paths-feature-bg" aria-hidden="true">
-                            <video class="paths-feature-media" autoplay muted loop playsinline preload="metadata">
-                                <source src="../assets/images/video1.mp4" type="video/mp4" />
-                            </video>
-                            <div class="paths-feature-overlay"></div>
-                        </div>
-                        <div class="paths-feature-content">
-                            <div class="title title-off-white">
-                                <h2>Explore The Paths of Excellence</h2>
-                            </div>
+            <div class="paths-inner">
+                <!-- Left: Feature image panel with heading overlay -->
+                <div class="paths-feature">
+                    <div class="paths-feature-bg" aria-hidden="true">
+                        <video class="paths-feature-media" autoplay muted loop playsinline preload="metadata">
+                            <source src="../assets/images/video1.mp4" type="video/mp4" />
+                        </video>
+                        <div class="paths-feature-overlay"></div>
+                    </div>
+                    <div class="paths-feature-content">
+                        <div class="title title-off-white">
+                            <h2>Explore The Paths of Excellence</h2>
                         </div>
                     </div>
-    
-                    <!-- Right: Track cards + swiper scrollbar -->
-                    <div class="paths-cards-area">
-    
-                        <div class="swiper paths-swiper">
-                            <div class="swiper-wrapper">
-    
-                                <!-- Track Card 1: 1-1 Coaching -->
-                                <div class="swiper-slide">
-                                    <div class="track-card">
-                                        <div class="track-card-image">
-                                            <div class="track-card-bg" aria-hidden="true">
-                                                <img src="../assets/images/image4.png"
-                                                    alt="Coach and client in a focused 1-1 personal coaching session"
-                                                    width="400" height="440" class="track-card-bg-img" />
-                                                <div class="track-card-overlay"></div>
-                                            </div>
-                                            <div class="track-card-content">
-                                                <div class="track-card-tag">
-                                                    <div class="content content-white">
-                                                        <p>Summer 2026</p>
-                                                    </div>
-                                                </div>
-                                                <div class="title title-white">
-                                                    <h3>1-1<br />Coaching</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="track-card-footer">
-                                            <a href="#" role="link" target="_self"
-                                                aria-label="Register for 1-1 Coaching at $2,597.00" class="btn btn-red">
-                                                $2,597.00 | Register
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- Track Card 2: Online Group Coaching -->
-                                <div class="swiper-slide">
-                                    <div class="track-card">
-                                        <div class="track-card-image">
-                                            <div class="track-card-bg" aria-hidden="true">
-                                                <img src="../assets/images/card-online-coaching.jpg"
-                                                    alt="Man wearing headphones engaged in an online group coaching session"
-                                                    width="400" height="440" class="track-card-bg-img" />
-                                                <div class="track-card-overlay"></div>
-                                            </div>
-                                            <div class="track-card-content">
-                                                <div class="title title-white">
-                                                    <h3>Online Group Coaching</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="track-card-footer">
-                                            <a href="#" role="link" target="_self"
-                                                aria-label="Register for Online Group Coaching at $300.00"
-                                                class="btn btn-red">
-                                                $300.00 | Register
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- Track Card 3: In-Person Group Coaching -->
-                                <div class="swiper-slide">
-                                    <div class="track-card">
-                                        <div class="track-card-image">
-                                            <div class="track-card-bg" aria-hidden="true">
-                                                <img src="../assets/images/card-inperson-coaching.jpg"
-                                                    alt="Group of people joining hands together in an in-person group coaching session"
-                                                    width="400" height="440" class="track-card-bg-img" />
-                                                <div class="track-card-overlay"></div>
-                                            </div>
-                                            <div class="track-card-content">
-                                                <div class="track-card-tag">
-                                                    <div class="content content-white">
-                                                        <p>Summer 2026</p>
-                                                    </div>
-                                                </div>
-                                                <div class="title title-white">
-                                                    <h3>In-Person Group Coaching</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="track-card-footer">
-                                            <a href="#" role="link" target="_self"
-                                                aria-label="Register for In-Person Group Coaching at $997.00"
-                                                class="btn btn-red">
-                                                $997.00 | Register
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- Track Card 1: 1-1 Coaching -->
-                                <div class="swiper-slide">
-                                    <div class="track-card">
-                                        <div class="track-card-image">
-                                            <div class="track-card-bg" aria-hidden="true">
-                                                <img src="../assets/images/card-coaching-1-1.jpg"
-                                                    alt="Coach and client in a focused 1-1 personal coaching session"
-                                                    width="400" height="440" class="track-card-bg-img" />
-                                                <div class="track-card-overlay"></div>
-                                            </div>
-                                            <div class="track-card-content">
-                                                <div class="track-card-tag">
-                                                    <div class="content content-white">
-                                                        <p>Summer 2026</p>
-                                                    </div>
-                                                </div>
-                                                <div class="title title-white">
-                                                    <h3>1-1<br />Coaching</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="track-card-footer">
-                                            <a href="#" role="link" target="_self"
-                                                aria-label="Register for 1-1 Coaching at $2,597.00" class="btn btn-red">
-                                                $2,597.00 | Register
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- Track Card 2: Online Group Coaching -->
-                                <div class="swiper-slide">
-                                    <div class="track-card">
-                                        <div class="track-card-image">
-                                            <div class="track-card-bg" aria-hidden="true">
-                                                <img src="../assets/images/card-online-coaching.jpg"
-                                                    alt="Man wearing headphones engaged in an online group coaching session"
-                                                    width="400" height="440" class="track-card-bg-img" />
-                                                <div class="track-card-overlay"></div>
-                                            </div>
-                                            <div class="track-card-content">
-                                                <div class="title title-white">
-                                                    <h3>Online Group Coaching</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="track-card-footer">
-                                            <a href="#" role="link" target="_self"
-                                                aria-label="Register for Online Group Coaching at $300.00"
-                                                class="btn btn-red">
-                                                $300.00 | Register
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <!-- Track Card 3: In-Person Group Coaching -->
-                                <div class="swiper-slide">
-                                    <div class="track-card">
-                                        <div class="track-card-image">
-                                            <div class="track-card-bg" aria-hidden="true">
-                                                <img src="../assets/images/card-inperson-coaching.jpg"
-                                                    alt="Group of people joining hands together in an in-person group coaching session"
-                                                    width="400" height="440" class="track-card-bg-img" />
-                                                <div class="track-card-overlay"></div>
-                                            </div>
-                                            <div class="track-card-content">
-                                                <div class="track-card-tag">
-                                                    <div class="content content-white">
-                                                        <p>Summer 2026</p>
-                                                    </div>
-                                                </div>
-                                                <div class="title title-white">
-                                                    <h3>In-Person Group Coaching</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="track-card-footer">
-                                            <a href="#" role="link" target="_self"
-                                                aria-label="Register for In-Person Group Coaching at $997.00"
-                                                class="btn btn-red">
-                                                $997.00 | Register
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                            </div><!-- /.swiper-wrapper -->
-                        </div><!-- /.paths-swiper -->
-    
-                        <!-- Custom progress bar -->
-                        <div class="paths-scrollbar" aria-hidden="true">
-                            <div class="paths-progress-track">
-                                <div class="paths-progress-fill"></div>
-                            </div>
-                        </div>
-    
-                    </div><!-- /.paths-cards-area -->
+                </div>
 
-                </div><!-- /.paths-inner -->
+                <!-- Right: Track cards + swiper scrollbar -->
+                <div class="paths-cards-area">
+
+                    <div class="swiper paths-swiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- Track Card 1: 1-1 Coaching -->
+                            <div class="swiper-slide">
+                                <div class="track-card">
+                                    <div class="track-card-image">
+                                        <div class="track-card-bg" aria-hidden="true">
+                                            <img src="../assets/images/image4.png"
+                                                alt="Coach and client in a focused 1-1 personal coaching session"
+                                                width="400" height="440" class="track-card-bg-img" />
+                                            <div class="track-card-overlay"></div>
+                                        </div>
+                                        <div class="track-card-content">
+                                            <div class="track-card-tag">
+                                                <div class="content content-white">
+                                                    <p>Summer 2026</p>
+                                                </div>
+                                            </div>
+                                            <div class="title title-white">
+                                                <h3>1-1<br />Coaching</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="track-card-footer">
+                                        <a href="#" role="link" target="_self"
+                                            aria-label="Register for 1-1 Coaching at $2,597.00" class="btn btn-red">
+                                            $2,597.00 | Register
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Track Card 2: Online Group Coaching -->
+                            <div class="swiper-slide">
+                                <div class="track-card">
+                                    <div class="track-card-image">
+                                        <div class="track-card-bg" aria-hidden="true">
+                                            <img src="../assets/images/card-online-coaching.webp"
+                                                alt="Man wearing headphones engaged in an online group coaching session"
+                                                width="400" height="440" class="track-card-bg-img" />
+                                            <div class="track-card-overlay"></div>
+                                        </div>
+                                        <div class="track-card-content">
+                                            <div class="title title-white">
+                                                <h3>Online Group Coaching</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="track-card-footer">
+                                        <a href="#" role="link" target="_self"
+                                            aria-label="Register for Online Group Coaching at $300.00"
+                                            class="btn btn-red">
+                                            $300.00 | Register
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Track Card 3: In-Person Group Coaching -->
+                            <div class="swiper-slide">
+                                <div class="track-card">
+                                    <div class="track-card-image">
+                                        <div class="track-card-bg" aria-hidden="true">
+                                            <img src="../assets/images/card-inperson-coaching.webp"
+                                                alt="Group of people joining hands together in an in-person group coaching session"
+                                                width="400" height="440" class="track-card-bg-img" />
+                                            <div class="track-card-overlay"></div>
+                                        </div>
+                                        <div class="track-card-content">
+                                            <div class="track-card-tag">
+                                                <div class="content content-white">
+                                                    <p>Summer 2026</p>
+                                                </div>
+                                            </div>
+                                            <div class="title title-white">
+                                                <h3>In-Person Group Coaching</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="track-card-footer">
+                                        <a href="#" role="link" target="_self"
+                                            aria-label="Register for In-Person Group Coaching at $997.00"
+                                            class="btn btn-red">
+                                            $997.00 | Register
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Track Card 1: 1-1 Coaching -->
+                            <div class="swiper-slide">
+                                <div class="track-card">
+                                    <div class="track-card-image">
+                                        <div class="track-card-bg" aria-hidden="true">
+                                            <img src="../assets/images/card-coaching-1-1.webp"
+                                                alt="Coach and client in a focused 1-1 personal coaching session"
+                                                width="400" height="440" class="track-card-bg-img" />
+                                            <div class="track-card-overlay"></div>
+                                        </div>
+                                        <div class="track-card-content">
+                                            <div class="track-card-tag">
+                                                <div class="content content-white">
+                                                    <p>Summer 2026</p>
+                                                </div>
+                                            </div>
+                                            <div class="title title-white">
+                                                <h3>1-1<br />Coaching</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="track-card-footer">
+                                        <a href="#" role="link" target="_self"
+                                            aria-label="Register for 1-1 Coaching at $2,597.00" class="btn btn-red">
+                                            $2,597.00 | Register
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Track Card 2: Online Group Coaching -->
+                            <div class="swiper-slide">
+                                <div class="track-card">
+                                    <div class="track-card-image">
+                                        <div class="track-card-bg" aria-hidden="true">
+                                            <img src="../assets/images/card-online-coaching.webp"
+                                                alt="Man wearing headphones engaged in an online group coaching session"
+                                                width="400" height="440" class="track-card-bg-img" />
+                                            <div class="track-card-overlay"></div>
+                                        </div>
+                                        <div class="track-card-content">
+                                            <div class="title title-white">
+                                                <h3>Online Group Coaching</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="track-card-footer">
+                                        <a href="#" role="link" target="_self"
+                                            aria-label="Register for Online Group Coaching at $300.00"
+                                            class="btn btn-red">
+                                            $300.00 | Register
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Track Card 3: In-Person Group Coaching -->
+                            <div class="swiper-slide">
+                                <div class="track-card">
+                                    <div class="track-card-image">
+                                        <div class="track-card-bg" aria-hidden="true">
+                                            <img src="../assets/images/card-inperson-coaching.webp"
+                                                alt="Group of people joining hands together in an in-person group coaching session"
+                                                width="400" height="440" class="track-card-bg-img" />
+                                            <div class="track-card-overlay"></div>
+                                        </div>
+                                        <div class="track-card-content">
+                                            <div class="track-card-tag">
+                                                <div class="content content-white">
+                                                    <p>Summer 2026</p>
+                                                </div>
+                                            </div>
+                                            <div class="title title-white">
+                                                <h3>In-Person Group Coaching</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="track-card-footer">
+                                        <a href="#" role="link" target="_self"
+                                            aria-label="Register for In-Person Group Coaching at $997.00"
+                                            class="btn btn-red">
+                                            $997.00 | Register
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- /.swiper-wrapper -->
+                    </div><!-- /.paths-swiper -->
+
+                    <!-- Custom progress bar -->
+                    <div class="paths-scrollbar" aria-hidden="true">
+                        <div class="paths-progress-track">
+                            <div class="paths-progress-fill"></div>
+                        </div>
+                    </div>
+
+                </div><!-- /.paths-cards-area -->
+
+            </div><!-- /.paths-inner -->
         </section><!-- /.paths-section -->
 
         <!-- ======= TWO-COLUMN: 4 WEEK MASTERY ======= -->
         <section class="twocol-section general-padding">
 
-            <!-- Top decorative strip (E-pattern, inverted) -->
+            <!-- Top decorative strip -->
             <div class="twocol-top-strip" aria-hidden="true">
-                <img src="../assets/images/banner-bottom.png" alt="" width="1512" height="70"
+                <img
+                    src="../assets/images/two-col-top-strip.svg"
+                    alt=""
+                    width="1512"
+                    height="70"
                     class="twocol-top-strip-dt" />
-                <img src="../assets/images/banner-bottom-mobile.png" alt="" width="752" height="56"
+                <img
+                    src="../assets/images/two-col-top-strip.svg"
+                    alt=""
+                    width="376"
+                    height="28"
                     class="twocol-top-strip-mb" />
+            </div>
+
+            <div class="twocol-section-inner">
+
+                <!-- Left: gold column with copy -->
+                <div class="twocol-left">
+                    <div class="container-fluid">
+                        <div class="twocol-left-inner">
+                            <div class="twocol-copy">
+
+                                <div class="title title-off-white">
+                                    <h2>4 Week Transformational Mastery</h2>
+                                </div>
+
+                                <div class="content content-white">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Leo facilisi risus risus vel imperdiet
+                                        urna varius commodo et. Morbi velit nibh mus turpis. Fermentum mollis id lacus
+                                        nisl augue maecenas. Netus tortor odio sed ultrices. Cras tellus volutpat leo
+                                        in risus. Diam mauris viverra aliquam odio. Cursus faucibus interdum morbi et
+                                        aliquet. Tincidunt ullamcorper nunc consequat varius auctor. Massa vitae lectus
+                                        dolor iaculis in.</p>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <a
+                                    href="#"
+                                    role="link"
+                                    target="_self"
+                                    aria-label="Learn more about the 4 week transformational mastery program"
+                                    class="btn btn-red">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gold diagonal strip: horizontal on mobile -->
+                    <div class="twocol-side-strip-mb" aria-hidden="true">
+                        <img
+                            src="../assets/images/two-col-side-strip.svg"
+                            alt=""
+                            width="570"
+                            height="40" />
+                    </div>
+                </div><!-- /.twocol-left -->
+
+                <!-- Gold diagonal strip: vertical at panel boundary (desktop only) -->
+                <div class="twocol-side-strip-dt" aria-hidden="true">
+                    <img
+                        src="../assets/images/two-col-side-strip.svg"
+                        alt=""
+                        width="570"
+                        height="40" />
+                </div>
+
+                <!-- Right: photo column -->
+                <div class="twocol-right">
+                    <img
+                        src="../assets/images/two-col-photo.webp"
+                        alt="Two people practicing martial arts as part of the 4 Week Transformational Mastery program"
+                        width="3840"
+                        height="2160"
+                        class="twocol-right-img" />
+                </div><!-- /.twocol-right -->
+
+            </div><!-- /.twocol-section-inner -->
+
+        </section><!-- /.twocol-section -->
+
+
+    <section class="stories-section general-padding">
+
+            <div aria-hidden="true" class="stories-bg">
+                <img src="../assets/images/story-bg.png" alt="" width="1113" height="558" class="stories-bg-img" />
             </div>
 
             <div class="container-fluid">
 
-                <!-- Left: gold column with copy -->
-                <div class="twocol-left">
-                    <div class="twocol-copy">
+                <div class="section-heading">
+                    <div class="title title-gold">
+                        <h2>Success Stories</h2>
+                    </div>
+                    <div class="content content-navy">
+                        <p>Lorem ipsum dolor sit amet consectetur. Ac semper et senectus ut proin. Nunc turpis ac
+                            egestas dictumst nec nulla pharetra posuere ac. Nec adipiscing dolor massa felis. Purus
+                            congue praesent adipiscing dictum. Massa neque eu aenean a porttitor. Sit tincidunt
+                            tincidunt neque venenatis.</p>
+                    </div>
+                    <a href="#" role="link" target="_self" aria-label="View member testimonials">
+                        <span class="btn btn-red-outline">Member Testimonials</span>
+                    </a>
+                </div>
 
-                        <div class="title title-off-white">
-                            <h2>4 Week Transformational Mastery</h2>
+                <div class="stories-swiper swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="story-card" data-video="../assets/images/video1.mp4">
+                                <div class="story-card-media">
+                                    <img src="../assets/images/story-card-1a.jpg"
+                                        alt="Julian's transformation story through The Edge coaching" width="346"
+                                        height="512" class="story-card-img" />
+                                    <img src="../assets/images/story-card-1b.jpg"
+                                        alt="Julian success story visual layer" width="480" height="270"
+                                        class="story-card-img" />
+                                    <div class="story-card-base-overlay"></div>
+                                    <div class="story-card-gradient"></div>
+                                </div>
+                                <button type="button" aria-label="Play Julian's success story video"
+                                    class="story-play-btn">
+                                    <span class="story-play-icon">
+                                        <img src="../assets/images/play-icon.svg" alt="Play video" width="40"
+                                            height="40" />
+                                    </span>
+                                </button>
+                                <div class="story-video-wrap">
+                                    <video class="story-video" controls playsinline></video>
+                                </div>
+                                <div class="story-card-content">
+                                    <div class="title title-white">
+                                        <h3>How Julian Went From Stuck to Unstoppable by Hardening His Edge</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="content content-white">
-                            <p>Lorem ipsum dolor sit amet consectetur. Leo facilisi risus risus vel imperdiet urna varius commodo et. Morbi velit nibh mus turpis. Fermentum mollis id lacus nisl augue maecenas. Netus tortor odio sed ultrices. Cras tellus volutpat leo in risus. Diam mauris viverra aliquam odio. Cursus faucibus interdum morbi et aliquet. Tincidunt ullamcorper nunc consequat varius auctor. Massa vitae lectus dolor iaculis in.</p>
+                        <div class="swiper-slide">
+                            <div class="story-card" data-video="../assets/images/video1.mp4">
+                                <div class="story-card-media">
+                                    <img src="../assets/images/story-card-2a.jpg"
+                                        alt="David's breakthrough coaching journey at The Edge" width="2731"
+                                        height="4096" class="story-card-img" />
+                                    <img src="../assets/images/story-card-2b.webp" alt="David success story visual layer"
+                                        width="3840" height="2160" class="story-card-img" />
+                                    <div class="story-card-base-overlay"></div>
+                                    <div class="story-card-gradient"></div>
+                                </div>
+                                <button type="button" aria-label="Play David's success story video"
+                                    class="story-play-btn">
+                                    <span class="story-play-icon">
+                                        <img src="../assets/images/play-icon.svg" alt="Play video" width="40"
+                                            height="40" />
+                                    </span>
+                                </button>
+                                <div class="story-video-wrap">
+                                    <video class="story-video" controls playsinline></video>
+                                </div>
+                                <div class="story-card-content">
+                                    <div class="title title-white">
+                                        <h3>How David Owned His Fire and Rewrote His Fate Through Coaching</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div>
-                            <a href="#" role="link" target="_self"
-                                aria-label="Learn more about the 4 week transformational mastery program"
-                                class="btn btn-red">
-                                Learn More About The Mastery
-                            </a>
+                        <div class="swiper-slide">
+                            <div class="story-card" data-video="../assets/images/video1.mp4">
+                                <div class="story-card-media">
+                                    <img src="../assets/images/story-card-3a.jpg"
+                                        alt="James harnessing his power through coaching at The Edge" width="342"
+                                        height="512" class="story-card-img" />
+                                    <img src="../assets/images/story-card-3b.webp" alt="James success story visual layer"
+                                        width="3840" height="2160" class="story-card-img" />
+                                    <div class="story-card-base-overlay"></div>
+                                    <div class="story-card-gradient"></div>
+                                </div>
+                                <button type="button" aria-label="Play James's success story video"
+                                    class="story-play-btn">
+                                    <span class="story-play-icon">
+                                        <img src="../assets/images/play-icon.svg" alt="Play video" width="40"
+                                            height="40" />
+                                    </span>
+                                </button>
+                                <div class="story-video-wrap">
+                                    <video class="story-video" controls playsinline></video>
+                                </div>
+                                <div class="story-card-content">
+                                    <div class="title title-white">
+                                        <h3>How James Harnessed His Power with Coaching and Owned His Purpose</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="story-card" data-video="../assets/images/video1.mp4">
+                                <div class="story-card-media">
+                                    <img src="../assets/images/story-card-4a.jpg"
+                                        alt="Christian reforging his masculinity through The Edge coaching" width="341"
+                                        height="512" class="story-card-img" />
+                                    <img src="../assets/images/story-card-4b.jpg"
+                                        alt="Christian success story visual layer" width="480" height="270"
+                                        class="story-card-img" />
+                                    <div class="story-card-base-overlay"></div>
+                                    <div class="story-card-gradient"></div>
+                                </div>
+                                <button type="button" aria-label="Play Christian's success story video"
+                                    class="story-play-btn">
+                                    <span class="story-play-icon">
+                                        <img src="../assets/images/play-icon.svg" alt="Play video" width="40"
+                                            height="40" />
+                                    </span>
+                                </button>
+                                <div class="story-video-wrap">
+                                    <video class="story-video" controls playsinline></video>
+                                </div>
+                                <div class="story-card-content">
+                                    <div class="title title-white">
+                                        <h3>How a Christian Reforged His Masculinity and Built the Man He Was Meant to
+                                            Be</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
-                </div><!-- /.twocol-left -->
+                </div>
 
-                <!-- Right: photo column -->
-                <div class="twocol-right">
-
-                    <!-- Vertical E-strip at left edge of photo (desktop) -->
-                    <div class="twocol-side-strip" aria-hidden="true">
-                        <img src="../assets/images/banner-bottom.png" alt="" width="1512" height="70" />
-                    </div>
-
-                    <!-- Horizontal strip between photo and gold (mobile) -->
-                    <div class="twocol-bottom-strip" aria-hidden="true">
-                        <img src="../assets/images/banner-bottom-mobile.png" alt="" width="752" height="56" />
-                    </div>
-
-                    <img src="../assets/images/two-col-photo.png"
-                        alt="Two people enjoying outdoor activities as part of the 4 week mastery program" width="3840"
-                        height="2160" class="twocol-right-img" />
-
-                </div><!-- /.twocol-right -->
-
-            </div><!-- /.container-fluid -->
-
-        </section><!-- /.twocol-section -->
-
-      
-
+            </div>
+        </section>
         <!-- ======= OUR STORY SECTION ======= -->
         <section class="our-story-section general-padding">
 
             <!-- Top decorative element (banner-bottom strip flipped) -->
             <div class="our-story-top-el" aria-hidden="true">
-                <img src="../assets/images/banner-bottom.png"
-                     alt="Decorative top edge element"
-                     width="1512"
-                     height="70"
-                     class="our-story-top-el-dt" />
-                <img src="../assets/images/banner-bottom-mobile.png"
-                     alt="Decorative top edge element"
-                     width="752"
-                     height="28"
-                     class="our-story-top-el-mb" />
+                <img src="../assets/images/our-story-top-el-dt.svg" alt="Decorative top edge element" width="1512" height="70"
+                    class="our-story-top-el-dt" />
+                <img src="../assets/images/banner-bottom-mobile.png" alt="Decorative top edge element" width="752"
+                    height="28" class="our-story-top-el-mb" />
             </div>
 
             <!-- Layered background -->
             <div class="our-story-bg" aria-hidden="true">
                 <div class="our-story-bg-color"></div>
                 <img src="https://www.figma.com/api/mcp/asset/b99dbb71-c899-46fe-a2d1-4747f63e5f59"
-                     alt="Background texture pattern"
-                     width="1512"
-                     height="940"
-                     class="our-story-bg-texture" />
+                    alt="Background texture pattern" width="1512" height="940" class="our-story-bg-texture" />
                 <div class="our-story-bg-gradient"></div>
             </div>
 
@@ -1221,26 +1416,16 @@
 
                     <!-- Video thumbnail with play-to-reveal -->
                     <div class="our-story-video-wrap" id="ourStoryVideoWrap">
-                        <img src="../assets/images/image5.png"
-                             alt="The Edge community members celebrating together"
-                             width="700"
-                             height="400"
-                             class="our-story-thumb" />
-                        <button type="button"
-                                aria-label="Play The Edge story video"
-                                class="our-story-play-btn"
-                                id="ourStoryPlayBtn">
+                        <img src="../assets/images/image5.png" alt="The Edge community members celebrating together"
+                            width="700" height="400" class="our-story-thumb" />
+                        <button type="button" aria-label="Play The Edge story video" class="our-story-play-btn"
+                            id="ourStoryPlayBtn">
                             <span class="our-story-play-icon">
-                                <img src="../assets/images/play-icon.svg"
-                                     alt="Play video"
-                                     width="40"
-                                     height="40" />
+                                <img src="../assets/images/play-icon.svg" alt="Play video" width="40" height="40" />
                             </span>
                         </button>
                         <div class="our-story-video-player" id="ourStoryVideoPlayer">
-                            <video class="our-story-video"
-                                   controls
-                                   playsinline></video>
+                            <video class="our-story-video" controls playsinline></video>
                         </div>
                     </div>
 
@@ -1252,16 +1437,10 @@
                             </div>
                         </div>
                         <div class="our-story-logos" aria-label="As featured in these publications">
-                            <img src="../assets/images/logo-forbes.png"
-                                 alt="Forbes"
-                                 width="112"
-                                 height="28"
-                                 class="our-story-logo" />
-                            <img src="../assets/images/logo-success.png"
-                                 alt="SUCCESS"
-                                 width="158"
-                                 height="28"
-                                 class="our-story-logo" />
+                            <img src="../assets/images/logo-forbes.png" alt="Forbes" width="112" height="28"
+                                class="our-story-logo" />
+                            <img src="../assets/images/logo-success.png" alt="SUCCESS" width="158" height="28"
+                                class="our-story-logo" />
                         </div>
                     </div>
 
@@ -1278,26 +1457,28 @@
 
                     <div class="our-story-headline-wrap">
                         <div class="title title-off-white">
-                            <h2>Raw authentic connection, meets unapologetic self-exploration &amp; unlimited growth.</h2>
+                            <h2>Raw authentic connection, meets unapologetic self-exploration &amp; unlimited growth.
+                            </h2>
                         </div>
                         <div class="our-story-accent-line" aria-hidden="true"></div>
                     </div>
 
                     <div class="content content-white">
-                        <p>The EDGE isn't just a community—it's a crucible. A place where men burn away the masks, break through their limits, and reclaim the fire of their authentic masculinity. Here, we strip back the noise of modern life and rebuild from the core— through deep work, raw brotherhood, and unapologetic self-exploration. Through 1-on-1 coaching, we go beyond surface-level fixes. This is about penetrating the truth of who you are, facing what you've avoided, and stepping into unshakable presence. Whether you're navigating career shifts, relationships, or your own inner battles, we provide a space to sharpen your clarity, fortify your confidence, and ground your purpose in something Real.</p>
+                        <p>The EDGE isn't just a community—it's a crucible. A place where men burn away the masks, break
+                            through their limits, and reclaim the fire of their authentic masculinity. Here, we strip
+                            back the noise of modern life and rebuild from the core— through deep work, raw brotherhood,
+                            and unapologetic self-exploration. Through 1-on-1 coaching, we go beyond surface-level
+                            fixes. This is about penetrating the truth of who you are, facing what you've avoided, and
+                            stepping into unshakable presence. Whether you're navigating career shifts, relationships,
+                            or your own inner battles, we provide a space to sharpen your clarity, fortify your
+                            confidence, and ground your purpose in something Real.</p>
                     </div>
 
                     <div class="our-story-actions">
-                        <a href="#"
-                           role="link"
-                           target="_self"
-                           aria-label="Learn more about The Edge">
+                        <a href="#" role="link" target="_self" aria-label="Learn more about The Edge">
                             <span class="btn btn-red">More About The Edge</span>
                         </a>
-                        <a href="#"
-                           role="link"
-                           target="_self"
-                           aria-label="Meet the founders of The Edge">
+                        <a href="#" role="link" target="_self" aria-label="Meet the founders of The Edge">
                             <span class="btn btn-red">Meet The Founders</span>
                         </a>
                     </div>
@@ -1308,209 +1489,398 @@
 
         </section><!-- /.our-story-section -->
 
-        <section class="stories-section general-padding">
+    
 
-            <div aria-hidden="true" class="stories-bg">
-                <img src="../assets/images/story-bg.png"
-                    alt=""
-                    width="1113"
-                    height="558"
-                    class="stories-bg-img" />
-            </div>
+        <!-- ======= BANNERWRAP SECTION ======= -->
+        <section class="bannerwrap-section general-padding">
+            <div class="bannerwrap-inner">
 
-            <div class="container-fluid">
+                <!-- LEFT: copy + tabs -->
+                <div class="bannerwrap-left">
+                    <div class="container-fluid">
+                        <div class="bannerwrap-left-inner">
 
-                <div class="section-heading">
-                    <div class="title title-gold">
-                        <h2>Success Stories</h2>
+                            <div class="bannerwrap-copy">
+                            <div class="bannerwrap-copy-inner">
+                                <div class="bannerwrap-eyebrow">
+                                    <div class="content content-silver"><p>Find Your Path.</p></div>
+                                </div>
+                                <div class="title title-gold">
+                                    <h2>Step In. Level Up. Join the Brotherhood.</h2>
+                                </div>
+                                </div>
+                                <div class="bannerwrap-body">
+                                    <div class="content content-navy"><p>Raw truth. Brutal growth. No BS conversations to fuel your evolution.</p></div>
+                                </div>
+                            </div>
+
+                            <div class="bannerwrap-tabs">
+                                <div class="bannerwrap-divider" aria-hidden="true"></div>
+
+                                <!-- Tab 1: Podcast -->
+                                <div class="bannerwrap-tab is-active" data-tab="0"
+                                     data-body="Raw truth. Brutal growth. No BS conversations to fuel your evolution.">
+                                    <div class="bannerwrap-tab-header">
+                                        <button type="button"
+                                                aria-label="Show Podcast content"
+                                                aria-pressed="true"
+                                                class="bannerwrap-tab-btn">
+                                            <span class="bannerwrap-tab-label">Podcast</span>
+                                        </button>
+                                        <a href="#"
+                                           role="link"
+                                           target="_self"
+                                           aria-label="Tune in to The Edge Podcast"
+                                           class="btn btn-red-outline bannerwrap-tab-cta">Tune In</a>
+                                    </div>
+                                    <div class="bannerwrap-media-inline">
+                                        <div class="bannerwrap-media-wrap">
+                                            <div class="bannerwrap-media-bg" aria-hidden="true">
+                                                <img src="../assets/images/bannerwrap-section1.png"
+                                                     alt="Group of men at an Edge podcast session"
+                                                     width="756"
+                                                     height="550"
+                                                     class="bannerwrap-media-bg-img" />
+                                                <video class="bannerwrap-media-video"
+                                                       muted
+                                                       playsinline
+                                                       preload="none">
+                                                    <source src="../assets/images/bannerwrap-vido1.mp4" type="video/mp4" />
+                                                </video>
+                                            </div>
+                                            <div class="bannerwrap-play-area">
+                                                <button type="button"
+                                                        aria-label="Play podcast preview video"
+                                                        class="bannerwrap-play-btn">
+                                                    <img src="../assets/images/play-icon.svg"
+                                                         alt=""
+                                                         width="40"
+                                                         height="40"
+                                                         aria-hidden="true" />
+                                                </button>
+                                            </div>
+                                            <div class="bannerwrap-wave" aria-hidden="true">
+                                                <img
+                                                    src="../assets/images/banner-wave.svg"
+                                                    alt="Wave transition shape"
+                                                    width="1512"
+                                                    height="40"
+                                                    class="banner-wave-img"
+                                                />
+                                            </div>
+                                            <div class="bannerwrap-overlay">
+                                                <div class="bannerwrap-overlay-copy">
+                                                    <div class="title title-off-white"><h2>Podcast</h2></div>
+                                                    <div class="bannerwrap-overlay-subtitle">
+                                                        <div class="content content-white"><p>Raw truth. Brutal growth. No BS conversations to fuel your evolution.</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="bannerwrap-overlay-cta">
+                                                    <a href="#"
+                                                       role="link"
+                                                       target="_self"
+                                                       aria-label="Tune in to The Edge Podcast"
+                                                       class="btn btn-red">Tune In</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bannerwrap-divider" aria-hidden="true"></div>
+
+                                <!-- Tab 2: Events & Retreats -->
+                                <div class="bannerwrap-tab" data-tab="1"
+                                     data-body="Challenge your limits. Forge unshakable bonds. Step into experiences that redefine you.">
+                                    <div class="bannerwrap-tab-header">
+                                        <button type="button"
+                                                aria-label="Show Events and Retreats content"
+                                                aria-pressed="false"
+                                                class="bannerwrap-tab-btn">
+                                            <span class="bannerwrap-tab-label">Events &amp; Retreats</span>
+                                        </button>
+                                        <a href="#"
+                                           role="link"
+                                           target="_self"
+                                           aria-label="Claim your spot at an Edge event or retreat"
+                                           class="btn btn-red-outline bannerwrap-tab-cta">Claim Your Spot Now</a>
+                                    </div>
+                                    <div class="bannerwrap-media-inline">
+                                        <div class="bannerwrap-media-wrap">
+                                            <div class="bannerwrap-media-bg" aria-hidden="true">
+                                                <img src="../assets/images/bannerwrap-section2.png"
+                                                     alt="Group joining hands at an Edge retreat"
+                                                     width="756"
+                                                     height="550"
+                                                     class="bannerwrap-media-bg-img" />
+                                                <video class="bannerwrap-media-video"
+                                                       muted
+                                                       playsinline
+                                                       preload="none">
+                                                    <source src="../assets/images/bannerwrap-vido3.mp4" type="video/mp4" />
+                                                </video>
+                                            </div>
+                                            <div class="bannerwrap-play-area">
+                                                <button type="button"
+                                                        aria-label="Play Events and Retreats preview video"
+                                                        class="bannerwrap-play-btn">
+                                                    <img src="../assets/images/play-icon.svg"
+                                                         alt=""
+                                                         width="40"
+                                                         height="40"
+                                                         aria-hidden="true" />
+                                                </button>
+                                            </div>
+                                            <div class="bannerwrap-wave" aria-hidden="true">
+                                                <img
+                                                    src="../assets/images/banner-wave.svg"
+                                                    alt="Wave transition shape"
+                                                    width="1512"
+                                                    height="40"
+                                                    class="banner-wave-img"
+                                                />
+                                            </div>
+                                            <div class="bannerwrap-overlay">
+                                                <div class="bannerwrap-overlay-copy">
+                                                    <div class="title title-off-white"><h2>Events &amp; Retreats</h2></div>
+                                                    <div class="bannerwrap-overlay-subtitle">
+                                                        <div class="content content-white"><p>Challenge your limits. Forge unshakable bonds. Step into experiences that redefine you.</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bannerwrap-divider" aria-hidden="true"></div>
+
+                                <!-- Tab 3: Resources -->
+                                <div class="bannerwrap-tab" data-tab="2"
+                                     data-body="Tools for the mind and body. Gear up and sharpen your edge.">
+                                    <div class="bannerwrap-tab-header">
+                                        <button type="button"
+                                                aria-label="Show Resources content"
+                                                aria-pressed="false"
+                                                class="bannerwrap-tab-btn">
+                                            <span class="bannerwrap-tab-label">Resources</span>
+                                        </button>
+                                        <a href="#"
+                                           role="link"
+                                           target="_self"
+                                           aria-label="Explore The Edge Resources"
+                                           class="btn btn-red-outline bannerwrap-tab-cta">Explore</a>
+                                    </div>
+                                    <div class="bannerwrap-media-inline">
+                                        <div class="bannerwrap-media-wrap">
+                                            <div class="bannerwrap-media-bg" aria-hidden="true">
+                                                <img src="../assets/images/bannerwrap-section3.png"
+                                                     alt="Man using The Edge online resources"
+                                                     width="756"
+                                                     height="550"
+                                                     class="bannerwrap-media-bg-img" />
+                                                <video class="bannerwrap-media-video"
+                                                       muted
+                                                       playsinline
+                                                       preload="none">
+                                                    <source src="../assets/images/bannerwrap-video3.mp4" type="video/mp4" />
+                                                </video>
+                                            </div>
+                                            <div class="bannerwrap-play-area">
+                                                <button type="button"
+                                                        aria-label="Play Resources preview video"
+                                                        class="bannerwrap-play-btn">
+                                                    <img src="../assets/images/play-icon.svg"
+                                                         alt=""
+                                                         width="40"
+                                                         height="40"
+                                                         aria-hidden="true" />
+                                                </button>
+                                            </div>
+                                            <div class="bannerwrap-wave" aria-hidden="true">
+                                                <img
+                                                    src="../assets/images/banner-wave.svg"
+                                                    alt="Wave transition shape"
+                                                    width="1512"
+                                                    height="40"
+                                                    class="banner-wave-img"
+                                                />
+                                            </div>
+                                            <div class="bannerwrap-overlay">
+                                                <div class="bannerwrap-overlay-copy">
+                                                    <div class="title title-off-white"><h2>Resources</h2></div>
+                                                    <div class="bannerwrap-overlay-subtitle">
+                                                        <div class="content content-white"><p>Tools for the mind and body. Gear up and sharpen your edge.</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bannerwrap-divider" aria-hidden="true"></div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="content content-navy">
-                        <p>Lorem ipsum dolor sit amet consectetur. Ac semper et senectus ut proin. Nunc turpis ac egestas dictumst nec nulla pharetra posuere ac. Nec adipiscing dolor massa felis. Purus congue praesent adipiscing dictum. Massa neque eu aenean a porttitor. Sit tincidunt tincidunt neque venenatis.</p>
+                </div><!-- /.bannerwrap-left -->
+
+                <!-- RIGHT: desktop media panels -->
+                <div class="bannerwrap-right">
+
+                    <!-- Media 0: Podcast -->
+                    <div class="bannerwrap-media is-active" data-media="0">
+                        <div class="bannerwrap-media-bg" aria-hidden="true">
+                            <img src="../assets/images/bannerwrap-section1.png"
+                                 alt="Group of men at an Edge podcast session"
+                                 width="756"
+                                 height="730"
+                                 class="bannerwrap-media-bg-img" />
+                            <video class="bannerwrap-media-video"
+                                   muted
+                                   playsinline
+                                   preload="none">
+                                <source src="../assets/images/bannerwrap-vido1.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="bannerwrap-play-area">
+                            <button type="button"
+                                    aria-label="Play podcast preview video"
+                                    class="bannerwrap-play-btn">
+                                <img src="../assets/images/play-icon.svg"
+                                     alt=""
+                                     width="40"
+                                     height="40"
+                                     aria-hidden="true" />
+                            </button>
+                        </div>
+                        <div class="bannerwrap-wave" aria-hidden="true">
+                            <img
+                                src="../assets/images/banner-wave.svg"
+                                alt="Wave transition shape"
+                                width="1512"
+                                height="40"
+                                class="banner-wave-img"
+                            />
+                        </div>
+                        <div class="bannerwrap-overlay">
+                            <div class="bannerwrap-overlay-copy">
+                                <div class="title title-off-white"><h2>Podcast</h2></div>
+                                <div class="bannerwrap-overlay-subtitle">
+                                    <div class="content content-white"><p>Raw truth. Brutal growth. No BS conversations to fuel your evolution.</p></div>
+                                </div>
+                            </div>
+                            <div class="bannerwrap-overlay-cta">
+                                <a href="#"
+                                   role="link"
+                                   target="_self"
+                                   aria-label="Tune in to The Edge Podcast"
+                                   class="btn btn-red">Tune In</a>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#"
-                        role="link"
-                        target="_self"
-                        aria-label="View member testimonials">
-                        <span class="btn btn-red-outline">Member Testimonials</span>
-                    </a>
-                </div>
 
-                <div class="stories-swiper swiper">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="story-card" data-video="../assets/images/video1.mp4">
-                                <div class="story-card-media">
-                                    <img src="../assets/images/story-card-1a.jpg"
-                                        alt="Julian's transformation story through The Edge coaching"
-                                        width="346"
-                                        height="512"
-                                        class="story-card-img" />
-                                    <img src="../assets/images/story-card-1b.jpg"
-                                        alt="Julian success story visual layer"
-                                        width="480"
-                                        height="270"
-                                        class="story-card-img" />
-                                    <div class="story-card-base-overlay"></div>
-                                    <div class="story-card-gradient"></div>
-                                </div>
-                                <button type="button"
-                                    aria-label="Play Julian's success story video"
-                                    class="story-play-btn">
-                                    <span class="story-play-icon">
-                                        <img src="../assets/images/play-icon.svg"
-                                            alt="Play video"
-                                            width="40"
-                                            height="40" />
-                                    </span>
-                                </button>
-                                <div class="story-video-wrap">
-                                    <video class="story-video"
-                                        controls
-                                        playsinline></video>
-                                </div>
-                                <div class="story-card-content">
-                                    <div class="title title-white">
-                                        <h3>How Julian Went From Stuck to Unstoppable by Hardening His Edge</h3>
-                                    </div>
+                    <!-- Media 1: Events & Retreats -->
+                    <div class="bannerwrap-media" data-media="1">
+                        <div class="bannerwrap-media-bg" aria-hidden="true">
+                            <img src="../assets/images/bannerwrap-section2.png"
+                                 alt="Group joining hands at an Edge retreat"
+                                 width="756"
+                                 height="730"
+                                 class="bannerwrap-media-bg-img" />
+                            <video class="bannerwrap-media-video"
+                                   muted
+                                   playsinline
+                                   preload="none">
+                                <source src="../assets/images/video1.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="bannerwrap-play-area">
+                            <button type="button"
+                                    aria-label="Play Events and Retreats preview video"
+                                    class="bannerwrap-play-btn">
+                                <img src="../assets/images/play-icon.svg"
+                                     alt=""
+                                     width="40"
+                                     height="40"
+                                     aria-hidden="true" />
+                            </button>
+                        </div>
+                        <div class="bannerwrap-wave" aria-hidden="true">
+                            <img
+                                src="../assets/images/banner-wave.svg"
+                                alt="Wave transition shape"
+                                width="1512"
+                                height="40"
+                                class="banner-wave-img"
+                            />
+                        </div>
+                        <div class="bannerwrap-overlay">
+                            <div class="bannerwrap-overlay-copy">
+                                <div class="title title-off-white"><h2>Events &amp; Retreats</h2></div>
+                                <div class="bannerwrap-overlay-subtitle">
+                                    <div class="content content-white"><p>Challenge your limits. Forge unshakable bonds. Step into experiences that redefine you.</p></div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swiper-slide">
-                            <div class="story-card" data-video="../assets/images/video1.mp4">
-                                <div class="story-card-media">
-                                    <img src="../assets/images/story-card-2a.jpg"
-                                        alt="David's breakthrough coaching journey at The Edge"
-                                        width="2731"
-                                        height="4096"
-                                        class="story-card-img" />
-                                    <img src="../assets/images/story-card-2b.jpg"
-                                        alt="David success story visual layer"
-                                        width="3840"
-                                        height="2160"
-                                        class="story-card-img" />
-                                    <div class="story-card-base-overlay"></div>
-                                    <div class="story-card-gradient"></div>
-                                </div>
-                                <button type="button"
-                                    aria-label="Play David's success story video"
-                                    class="story-play-btn">
-                                    <span class="story-play-icon">
-                                        <img src="../assets/images/play-icon.svg"
-                                            alt="Play video"
-                                            width="40"
-                                            height="40" />
-                                    </span>
-                                </button>
-                                <div class="story-video-wrap">
-                                    <video class="story-video"
-                                        controls
-                                        playsinline></video>
-                                </div>
-                                <div class="story-card-content">
-                                    <div class="title title-white">
-                                        <h3>How David Owned His Fire and Rewrote His Fate Through Coaching</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="story-card" data-video="../assets/images/video1.mp4">
-                                <div class="story-card-media">
-                                    <img src="../assets/images/story-card-3a.jpg"
-                                        alt="James harnessing his power through coaching at The Edge"
-                                        width="342"
-                                        height="512"
-                                        class="story-card-img" />
-                                    <img src="../assets/images/story-card-3b.jpg"
-                                        alt="James success story visual layer"
-                                        width="3840"
-                                        height="2160"
-                                        class="story-card-img" />
-                                    <div class="story-card-base-overlay"></div>
-                                    <div class="story-card-gradient"></div>
-                                </div>
-                                <button type="button"
-                                    aria-label="Play James's success story video"
-                                    class="story-play-btn">
-                                    <span class="story-play-icon">
-                                        <img src="../assets/images/play-icon.svg"
-                                            alt="Play video"
-                                            width="40"
-                                            height="40" />
-                                    </span>
-                                </button>
-                                <div class="story-video-wrap">
-                                    <video class="story-video"
-                                        controls
-                                        playsinline></video>
-                                </div>
-                                <div class="story-card-content">
-                                    <div class="title title-white">
-                                        <h3>How James Harnessed His Power with Coaching and Owned His Purpose</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="story-card" data-video="../assets/images/video1.mp4">
-                                <div class="story-card-media">
-                                    <img src="../assets/images/story-card-4a.jpg"
-                                        alt="Christian reforging his masculinity through The Edge coaching"
-                                        width="341"
-                                        height="512"
-                                        class="story-card-img" />
-                                    <img src="../assets/images/story-card-4b.jpg"
-                                        alt="Christian success story visual layer"
-                                        width="480"
-                                        height="270"
-                                        class="story-card-img" />
-                                    <div class="story-card-base-overlay"></div>
-                                    <div class="story-card-gradient"></div>
-                                </div>
-                                <button type="button"
-                                    aria-label="Play Christian's success story video"
-                                    class="story-play-btn">
-                                    <span class="story-play-icon">
-                                        <img src="../assets/images/play-icon.svg"
-                                            alt="Play video"
-                                            width="40"
-                                            height="40" />
-                                    </span>
-                                </button>
-                                <div class="story-video-wrap">
-                                    <video class="story-video"
-                                        controls
-                                        playsinline></video>
-                                </div>
-                                <div class="story-card-content">
-                                    <div class="title title-white">
-                                        <h3>How a Christian Reforged His Masculinity and Built the Man He Was Meant to Be</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                </div>
 
-            </div>
-        </section>
+                    <!-- Media 2: Resources -->
+                    <div class="bannerwrap-media" data-media="2">
+                        <div class="bannerwrap-media-bg" aria-hidden="true">
+                            <img src="../assets/images/bannerwrap-section3.png"
+                                 alt="Man using The Edge online resources"
+                                 width="756"
+                                 height="730"
+                                 class="bannerwrap-media-bg-img" />
+                            <video class="bannerwrap-media-video"
+                                   muted
+                                   playsinline
+                                   preload="none">
+                                <source src="../assets/images/bannerwrap-video3.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <div class="bannerwrap-play-area">
+                            <button type="button"
+                                    aria-label="Play Resources preview video"
+                                    class="bannerwrap-play-btn">
+                                <img src="../assets/images/play-icon.svg"
+                                     alt=""
+                                     width="40"
+                                     height="40"
+                                     aria-hidden="true" />
+                            </button>
+                        </div>
+                        <div class="bannerwrap-wave" aria-hidden="true">
+                            <img
+                                src="../assets/images/banner-wave.svg"
+                                alt="Wave transition shape"
+                                width="1512"
+                                height="40"
+                                class="banner-wave-img"
+                            />
+                        </div>
+                        <div class="bannerwrap-overlay">
+                            <div class="bannerwrap-overlay-copy">
+                                <div class="title title-off-white"><h2>Resources</h2></div>
+                                <div class="bannerwrap-overlay-subtitle">
+                                    <div class="content content-white"><p>Tools for the mind and body. Gear up and sharpen your edge.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /.bannerwrap-right -->
+
+            </div><!-- /.bannerwrap-inner -->
+        </section><!-- /.bannerwrap-section -->
 
         <!-- ======= CTA SECTION ======= -->
         <section class="cta-section general-padding">
 
             <!-- Background -->
             <div class="cta-section-bg" aria-hidden="true">
-                <img src="../assets/images/cta-banner-bg.jpg"
-                     alt="Person standing on mountain peak at sunrise"
-                     width="1512"
-                     height="550"
-                     class="cta-section-bg-img"
-                     id="ctaSectionParallax" />
+                <img src="../assets/images/cta-banner-bg.png" alt="Person standing on mountain peak at sunrise"
+                    width="1512" height="550" class="cta-section-bg-img" id="ctaSectionParallax" />
                 <div class="cta-section-overlay"></div>
             </div>
 
@@ -1522,14 +1892,12 @@
                             <h2>Ready To Own Your Fire and Live Unshaken?</h2>
                         </div>
                         <div class="content content-white">
-                            <p>No more holding back. Step into a path built for relentless growth, unshakable confidence, and true purpose.</p>
+                            <p>No more holding back. Step into a path built for relentless growth, unshakable
+                                confidence, and true purpose.</p>
                         </div>
                     </div>
                     <div class="cta-section-actions">
-                        <a href="#"
-                           role="link"
-                           target="_self"
-                           aria-label="Join The Edge community">
+                        <a href="#" role="link" target="_self" aria-label="Join The Edge community">
                             <span class="btn btn-red">Join The Edge</span>
                         </a>
                     </div>
@@ -1538,12 +1906,310 @@
 
         </section><!-- /.cta-section -->
 
+        <!-- ======= NEWSLETTER SECTION ======= -->
+        <section class="newsletter-section general-padding">
+            <div class="newsletter-inner container-fluid">
+
+                <!-- Left: copy + form -->
+                <div class="newsletter-copy">
+                <div class="newsletter-copy-inner">
+                    <div class="newsletter-eyebrow">
+                        <div class="content content-silver">
+                            <p>One email per week. One powerful practice.</p>
+                        </div>
+                    </div>
+
+                    <div class="newsletter-title-row">
+                        <div class="title title-gold">
+                            <h2>Free 4-Week Guided Journal</h2>
+                        </div>
+                        <div class="newsletter-divider" aria-hidden="true"></div>
+                    </div>
+                </div>
+
+
+                    <div class="content content-navy">
+                        <p>Each week builds upon the last&mdash;layering awareness, discipline, and embodiment to help
+                            you meet your edge and become the man you&rsquo;re here to be.</p>
+                    </div>
+
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="newsletter-field">
+                            <label for="newsletterName">Name</label>
+                            <input type="text" id="newsletterName" name="name" placeholder="Name" autocomplete="name" />
+                        </div>
+                        <div class="newsletter-field">
+                            <label for="newsletterEmail">Email Address</label>
+                            <input type="email" id="newsletterEmail" name="email" placeholder="Email Address"
+                                autocomplete="email" />
+                        </div>
+                        <div class="newsletter-submit">
+                            <button type="submit"
+                                aria-label="Join the newsletter and receive the free 4-week guided journal"
+                                class="btn btn-red">
+                                Join Now
+                            </button>
+                        </div>
+                    </form>
+
+                </div><!-- /.newsletter-copy -->
+
+                <!-- Right: 2 portrait images -->
+                <div class="newsletter-images">
+                    <div class="newsletter-img-wrap">
+                        <img src="../assets/images/card-coaching-1-1.webp" alt="Man in a focused 1-1 coaching session"
+                            width="400" height="550" class="newsletter-img" />
+                    </div>
+                    <div class="newsletter-img-wrap">
+                        <img src="../assets/images/card-inperson-coaching.webp"
+                            alt="Group joining hands in an in-person coaching session" width="400" height="550"
+                            class="newsletter-img" />
+                    </div>
+                </div><!-- /.newsletter-images -->
+
+            </div><!-- /.newsletter-inner -->
+        </section><!-- /.newsletter-section -->
+
     </main>
 
-    <!-- <script src="../assets/js/gsap.min.js"></script>
-    <script src="../assets/js/scrolltrigger.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js" crossorigin="anonymous"
-        referrerpolicy="no-referrer"></script> -->
+    <footer>
+        <!-- Background image overlay -->
+        <div class="footer-bg-overlay" aria-hidden="true">
+            <img
+                src="../assets/images/footer-bg.png"
+                alt="Footer background"
+                width="1920"
+                height="1080"
+                class="footer-bg-img"
+            />
+        </div>
+
+        <!-- White clip-path transition element -->
+        <div class="footer-clip-wrap" aria-hidden="true">
+            <img src="../assets/images/footer-clip-path.svg" alt="" width="1512" height="70" class="footer-clip-img" />
+        </div>
+
+        <div class="footer-inner container-fluid">
+
+            <div class="footer-top-row">
+
+                <!-- IG Photos grid -->
+                <div class="footer-ig-grid">
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img1.png" alt="The Edge community member in focused practice"
+                            width="300" height="269" />
+                    </div>
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img2.png"
+                            alt="The Edge community member during a coaching session" width="300" height="269" />
+                    </div>
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img3.png" alt="The Edge coaching in action" width="300"
+                            height="269" />
+                    </div>
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img4.png"
+                            alt="The Edge community member sharing their transformation" width="300" height="269" />
+                    </div>
+                </div>
+
+                <!-- Follow Us copy -->
+                <div class="footer-follow">
+                    <div class="title title-off-white">
+                        <h2>follow us</h2>
+                    </div>
+                    <div class="title title-white">
+                        <h3>@theedge</h3>
+                    </div>
+                </div>
+
+            </div><!-- /.footer-top-row -->
+
+            <!-- Horizontal Divider -->
+            <div class="footer-divider" aria-hidden="true"></div>
+
+            <!-- ROW 2: Nav Links + Logo + Social/Copyright -->
+            <div class="footer-bottom-row">
+
+                <!-- Footer Navigation -->
+                <nav class="footer-nav" aria-label="Footer navigation">
+
+                    <!-- Col 1: Support Our Cause -->
+                    <div class="footer-nav-col">
+                        <div class="footer-nav-col-header">
+                            <div class="title title-white">
+                                <h4>Support Our Cause</h4>
+                            </div>
+                            <button type="button" aria-label="Toggle Support Our Cause navigation"
+                                class="footer-nav-toggle">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="footer-nav-links">
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Donate to support The Edge">
+                                    Donate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Download The Edge Press Kit">
+                                    Press Kit
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Shop The Edge Gear">
+                                    The Edge Gear
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 2: Learn More -->
+                    <div class="footer-nav-col">
+                        <div class="footer-nav-col-header">
+                            <div class="title title-white">
+                                <h4>Learn More</h4>
+                            </div>
+                            <button type="button" aria-label="Toggle Learn More navigation" class="footer-nav-toggle">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="footer-nav-links">
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="View The Edge Programs">
+                                    Programs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="View Resources">
+                                    Resources
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read The Edge Blog">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read Frequently Asked Questions">
+                                    FAQs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self"
+                                    aria-label="Read Success Stories from The Edge community">
+                                    Success Stories
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3: Policies -->
+                    <div class="footer-nav-col">
+                        <div class="footer-nav-col-header">
+                            <div class="title title-white">
+                                <h4>Policies</h4>
+                            </div>
+                            <button type="button" aria-label="Toggle Policies navigation" class="footer-nav-toggle">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="footer-nav-links">
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read the Privacy Policy">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read the Cancellation Policy">
+                                    Cancellation Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read the Terms and Conditions">
+                                    Terms &amp; Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav><!-- /.footer-nav -->
+
+
+                <!-- Right: Copyright + Social Icons -->
+                <div class="footer-right">
+
+                    <div class="footer-copyright">
+                        <div class="content content-white">
+                            <p>© 2025 The Edge</p>
+                        </div>
+                        <span class="footer-copyright-sep" aria-hidden="true"></span>
+                        <div class="footer-copyright-name">
+                            <img src="../assets/images/vector/heart.png" alt="heart" width="24" height="24"
+                                class="heart-icon" />
+                            <div class="content content-white">
+                                <p>//</p>
+                            </div>
+                            <div class="content content-white">
+                                <p>TECHYSCOUTS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on Instagram"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-instagram-icon.svg" alt="Instagram" width="24"
+                                height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on Facebook"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-facebook-icon.svg" alt="Facebook" width="24"
+                                height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on TikTok"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-tiktok-icon.svg" alt="TikTok" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on X"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-x-icon.svg" alt="X" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Find The Edge on Yelp"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-yelp-icon.svg" alt="Yelp" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Watch The Edge on YouTube"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-youtube-icon.svg" alt="YouTube" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Connect with The Edge on LinkedIn"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-linkedin-icon.svg" alt="LinkedIn" width="24"
+                                height="24" />
+                        </a>
+                    </div><!-- /.footer-social -->
+
+                </div><!-- /.footer-right -->
+
+            </div><!-- /.footer-bottom-row -->
+
+        </div><!-- /.footer-inner -->
+
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
     <script src="../assets/js/animation.js"></script>
     <script type="module" src="../assets/js/main.js"></script>

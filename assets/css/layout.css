@@ -113,7 +113,7 @@ header.is-scrolled .nav-link {
    ======================== */
 
 .nav-dropdown {
-  @apply absolute top-full left-0 bg-off-white min-w-max rounded-b shadow-dropdown opacity-0 invisible pointer-events-none transition-all duration-200 1024:drop-shadow-[0px_5px_15px_rgba(0,0,0,0.17)];
+  @apply absolute top-full left-0 bg-off-white min-w-max rounded-b shadow-dropdown opacity-0 invisible pointer-events-none transition-all duration-200;
 }
 
 .nav-item.is-open .nav-dropdown,
@@ -138,7 +138,7 @@ header.is-scrolled .nav-link {
    ======================== */
 
 .header-right {
-  @apply flex items-center gap-40 py-20 max-1366:gap-15 max-1024:hidden;
+  @apply flex items-center h-fit gap-40 py-20 max-1366:gap-15 max-1024:hidden 1024:my-auto ;
 }
 
 .header-phone {
@@ -245,7 +245,15 @@ header.is-scrolled .header-mobile-right .header-icon {
 }
 
 .mobile-menu-accordions {
-  @apply flex flex-col bg-off-white;
+  @apply relative flex flex-col bg-off-white overflow-hidden;
+}
+
+.mobile-menu-accordions-bg {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+.mobile-menu-accordions-bg-img {
+  @apply w-full h-full object-cover object-center opacity-7;
 }
 
 .mobile-accordion {
@@ -361,11 +369,12 @@ header.is-scrolled .header-mobile-right .header-icon {
 }
 
 .cart-panel-inner {
-  @apply bg-off-white flex flex-col gap-40 p-55 rounded-b w-550 max-768:w-full max-768:gap-30 max-768:px-30 max-768:py-40;
+  @apply bg-off-white flex flex-col gap-40 p-55 rounded-b w-550 overflow-y-auto max-768:w-full max-768:gap-30 max-768:px-30 max-768:py-40;
+  max-height: calc(100vh - var(--header-h, 0px));
 }
 
 .cart-title h3 {
-  @apply font-futura-pt-cond font-bold uppercase;
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
 }
 
 .cart-count {
@@ -409,7 +418,7 @@ header.is-scrolled .header-mobile-right .header-icon {
 }
 
 .cart-product-title h4 {
-  @apply font-futura-pt-cond font-bold uppercase;
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
 }
 
 .cart-product-tag {
@@ -433,7 +442,7 @@ header.is-scrolled .header-mobile-right .header-icon {
 }
 
 .cart-price-text {
-  @apply font-bold text-heading-6 text-navy whitespace-nowrap shrink-0;
+  @apply font-bold text-heading-6 text-navy leading-none whitespace-nowrap shrink-0;
 }
 
 .cart-qty {
@@ -449,7 +458,7 @@ header.is-scrolled .header-mobile-right .header-icon {
 }
 
 .cart-qty-value {
-  @apply font-bold text-heading-6 text-navy text-center;
+  @apply font-bold text-heading-6 text-navy leading-none text-center;
 }
 
 .cart-remove-btn {
@@ -465,7 +474,7 @@ header.is-scrolled .header-mobile-right .header-icon {
 }
 
 .cart-upsell-title h3 {
-  @apply font-futura-pt-cond font-bold uppercase;
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
 }
 
 .cart-upsell-product {
@@ -497,11 +506,11 @@ header.is-scrolled .header-mobile-right .header-icon {
 }
 
 .cart-subtotal-label {
-  @apply font-futura-pt text-heading-3 text-navy max-768:text-heading-4;
+  @apply font-futura-pt font-medium leading-none text-heading-3 text-navy max-768:text-heading-4;
 }
 
 .cart-subtotal-amount {
-  @apply font-futura-pt font-bold text-heading-3 text-slate max-768:text-heading-4;
+  @apply font-futura-pt font-bold leading-none text-heading-3 text-slate max-768:text-heading-4;
 }
 
 .cart-checkout-actions {
@@ -511,3 +520,177 @@ header.is-scrolled .header-mobile-right .header-icon {
 /* ========================
    FOOTER
    ======================== */
+
+footer {
+    @apply relative bg-navy overflow-hidden;
+}
+
+.footer-bg-overlay {
+    @apply absolute inset-0 pointer-events-none;
+}
+
+.footer-bg-img {
+    @apply w-full h-full object-cover object-center opacity-10;
+}
+
+/* Clip-path transition image at top */
+
+.footer-clip-wrap {
+    @apply absolute -top-2 left-0 w-full z-10 pointer-events-none;
+}
+
+.footer-clip-img {
+    @apply block w-full rotate-180;
+}
+
+/* Main content wrapper */
+
+.footer-inner {
+    @apply flex flex-col gap-55 pt-125 pb-55 max-1024:pt-83 relative z-3;
+}
+
+/* ========================
+   FOOTER ROW 1 — IG + FOLLOW
+   ======================== */
+
+.footer-top-row {
+    @apply flex gap-80 items-center max-1024:flex-col max-1024:gap-40;
+}
+
+.footer-ig-grid {
+    @apply flex-1 grid grid-cols-4 gap-20 max-1024:order-2 max-1024:w-full max-1024:grid-cols-2;
+}
+
+.footer-ig-photo {
+    @apply rounded overflow-hidden;
+}
+
+.footer-ig-photo img {
+    @apply w-full h-268 object-cover object-center max-1024:h-148;
+}
+
+.footer-follow {
+    @apply flex flex-col gap-20 shrink-0 max-1024:order-1 max-1024:w-full max-1024:items-center max-1024:text-center 1024:min-w-211;
+}
+
+.footer-follow .title h2 {
+    @apply font-futura-pt-cond font-bold uppercase leading-none;
+}
+
+.footer-follow .title h3 {
+    @apply font-bold leading-none;
+}
+
+/* ========================
+   FOOTER DIVIDER
+   ======================== */
+
+.footer-divider {
+    @apply w-full border-t border-white;
+}
+
+/* ========================
+   FOOTER ROW 2 — BOTTOM
+   ======================== */
+
+.footer-bottom-row {
+    @apply flex items-start justify-between gap-20 max-1024:flex-col max-1024:gap-55 max-1024:w-full;
+}
+
+/* --- Navigation --- */
+
+.footer-nav {
+    @apply flex gap-80 items-start max-1024:flex-col max-1024:gap-0 max-1024:w-full;
+}
+
+.footer-nav-col {
+    @apply flex flex-col gap-14 max-1024:w-full max-1024:border-t max-1024:border-white/20 max-1024:py-20;
+}
+
+.footer-nav-col:last-child {
+    @apply max-1024:border-b max-1024:border-white/20;
+}
+
+.footer-nav-col-header {
+    @apply flex items-center justify-between max-1024:cursor-pointer;
+}
+
+.footer-nav-col .title h4 {
+    @apply font-futura-pt-cond font-bold uppercase leading-none;
+}
+
+.footer-nav-toggle {
+    @apply hidden items-center justify-center shrink-0 w-20 h-20 cursor-pointer max-1024:flex;
+}
+
+.footer-nav-toggle svg {
+    @apply transition-transform duration-200;
+}
+
+.footer-nav-col.is-open .footer-nav-toggle svg {
+    @apply rotate-180;
+}
+
+.footer-nav-links {
+    @apply flex flex-col gap-12 max-1024:hidden;
+}
+
+.footer-nav-col.is-open .footer-nav-links {
+    @apply flex;
+}
+
+.footer-nav-links li a {
+    @apply font-bold text-heading-6 text-white leading-none transition-colors duration-200 hover:text-gold;
+}
+
+/* --- Logo --- */
+
+.footer-logo-wrap {
+    @apply flex items-center justify-center shrink-0 max-1024:self-start;
+}
+
+.footer-logo-img {
+    @apply block object-contain w-230 h-44 max-1024:w-147 max-1024:h-28;
+}
+
+/* --- Right: Copyright + Social --- */
+
+.footer-right {
+    @apply flex flex-col gap-20 items-end max-1024:items-start max-1024:w-full;
+}
+
+.footer-copyright {
+    @apply flex items-center gap-20;
+}
+
+.footer-copyright .content p {
+    @apply font-bold text-heading-6 text-white leading-none whitespace-nowrap;
+}
+
+.footer-copyright-sep {
+    @apply w-px self-stretch bg-white/30;
+}
+
+.footer-social {
+    @apply flex items-center gap-20 max-1024:w-full max-768:gap-17 max-576:flex-wrap;
+}
+
+.footer-social-icon {
+    @apply flex items-center justify-center bg-red rounded-full shrink-0 overflow-hidden w-40 h-40 max-1024:w-30 max-1024:h-30 transition-opacity duration-200 hover:opacity-80;
+}
+
+.footer-social-icon img {
+    @apply block object-contain w-24 h-24 max-1024:w-18 max-1024:h-18;
+}
+
+.footer-social-icon svg {
+    @apply block w-24 h-24 max-1024:w-18 max-1024:h-18;
+}
+.footer-copyright-name {
+  @apply flex items-center gap-6;
+}
+
+.footer-copyright-name .heart-icon {
+  @apply w-24 h-24 object-contain;
+}
+

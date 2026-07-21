@@ -57,6 +57,12 @@
   --text-12: 12px;
   --text-150: 150px;
 
+  /* LINE HEIGHTS */
+  --leading-heading-1: 1.29;
+
   /* SHADOWS */
   --shadow-dropdown: 0px 5px 15px rgba(0, 0, 0, 0.17);
+
+  /* DROP SHADOWS */
+  --drop-shadow-dropdown: 0px 5px 15px rgba(0, 0, 0, 0.17);
 }
