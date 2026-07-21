@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>The Edge</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../node_modules/lenis/dist/lenis.css" />
+</head>
+
+<body>
+
+  <header>
+
+        <!-- Sitewide bar -->
+        <div class="header-sitewide">
+            <div class="container-fluid">
+                <div class="content content-white">
+                    <p>This is the first example of a sitewide notice.</p>
+                </div>
+                <div class="header-sitewide-actions">
+                    <a href="#" role="link" target="_self" aria-label="Schedule a tour" class="btn btn-red">
+                        JOIN THE EDGE
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main nav bar -->
+        <div class="header-nav">
+            <div class="container-fluid">
+
+                <!-- Mobile: left group (hamburger + user) -->
+                <div class="header-mobile-left">
+                    <button type="button" aria-label="Open navigation menu" class="hamburger-btn" id="hamburgerBtn">
+                        <span class="header-icon">
+                            <!-- Hamburger icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                                <line x1="2" y1="5" x2="18" y2="5" />
+                                <line x1="2" y1="10" x2="18" y2="10" />
+                                <line x1="2" y1="15" x2="18" y2="15" />
+                            </svg>
+                        </span>
+                    </button>
+                    <a href="#" role="link" target="_self" aria-label="My account" class="header-icon header-icon-link header-icon-user">
+                        <!-- User icon -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_4006_7302)">
+                                <path
+                                    d="M9.99968 10.0001C11.3803 10.0001 12.5586 9.51166 13.535 8.53517C14.5116 7.55868 14.9999 6.38033 14.9999 4.99994C14.9999 3.61978 14.5116 2.44139 13.535 1.46467C12.5583 0.488223 11.3799 0 9.99968 0C8.61948 0 7.4409 0.488223 6.46445 1.46467C5.48783 2.44139 4.99951 3.61974 4.99951 4.99994C4.99951 6.38033 5.48783 7.55868 6.46445 8.53517C7.44117 9.51166 8.61943 10.0001 9.99968 10.0001Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M19.121 15.28C19.0905 14.8417 19.0297 14.3685 18.9387 13.8606C18.8475 13.3528 18.7323 12.882 18.5934 12.4478C18.4545 12.0139 18.2678 11.5907 18.0335 11.1783C17.7992 10.766 17.5301 10.4145 17.2261 10.1236C16.9221 9.83272 16.5511 9.60067 16.113 9.42709C15.6744 9.25355 15.1904 9.16663 14.6609 9.16663C14.5828 9.16663 14.4005 9.25994 14.114 9.44661C13.8278 9.63328 13.5044 9.84166 13.1441 10.0718C12.7839 10.3015 12.3149 10.51 11.7379 10.6964C11.1606 10.883 10.5812 10.9764 9.99942 10.9764C9.41784 10.9764 8.83845 10.883 8.26125 10.6964C7.68409 10.51 7.21521 10.3015 6.85496 10.0718C6.49475 9.84166 6.17145 9.63332 5.88503 9.44661C5.59848 9.25994 5.41629 9.16663 5.33816 9.16663C4.80866 9.16663 4.32468 9.25355 3.88635 9.42709C3.44793 9.60067 3.07687 9.8329 2.77299 10.1236C2.46921 10.4145 2.20008 10.766 1.96579 11.1783C1.73151 11.5907 1.54489 12.0141 1.40597 12.4478C1.2671 12.882 1.15203 13.3528 1.06091 13.8606C0.969692 14.3685 0.908944 14.8414 0.878524 15.28C0.848149 15.7185 0.833008 16.1678 0.833008 16.6278C0.833008 17.6693 1.14993 18.492 1.78355 19.0954C2.4173 19.6985 3.25939 20 4.30972 20H15.6902C16.7404 20 17.5824 19.6985 18.2163 19.0954C18.8502 18.492 19.1669 17.6695 19.1669 16.6278C19.1668 16.1678 19.1517 15.7185 19.121 15.28Z"
+                                    fill="white"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_4006_7302">
+                                    <rect width="20" height="20" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Logo -->
+                <a href="/pages/index.html" role="link" target="_self" aria-label="The Edge homepage" class="header-logo">
+                    <img src="../assets/images/logo.png" alt="The Edge at Princeton" width="315" height="60"
+                        class="header-logo-img header-logo-light" />
+                    <img src="../assets/images/logo2.png" alt="The Edge at Princeton" width="315" height="60"
+                        class="header-logo-img header-logo-dark" />
+                </a>
+
+                <!-- Desktop nav -->
+                <nav class="header-desktop-nav" aria-label="Main navigation">
+                    <ul class="flex gap-28 max-1199:gap-10">
+
+                        <li class="nav-item has-dropdown">
+                            <a href="about.html"
+                                role="link"
+                                target="_self"
+                                aria-label="About"
+                                aria-haspopup="true"
+                                class="nav-link">
+                                About
+                            </a>
+                            <div class="nav-dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="#" role="link" target="_self" aria-label="Our Story"
+                                            class="nav-dropdown-link">
+                                            Our Story
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="our_community.html" role="link" target="_self" aria-label="Our Community"
+                                            class="nav-dropdown-link">
+                                            Our Community
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item has-dropdown">
+                             <a href="coaching.html"
+                                role="link"
+                                target="_self"
+                                aria-label="coaching"
+                                aria-haspopup="true"
+                                class="nav-link">
+                                Coaching
+                            </a>
+                            <div class="nav-dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="single-coaching.html" role="link" target="_self" aria-label="1-1 Coaching"
+                                            class="nav-dropdown-link">
+                                            1-1 Coaching
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="single-coaching.html" role="link" target="_self" aria-label="Online Group Coaching"
+                                            class="nav-dropdown-link">
+                                            Online Group Coaching
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="single-coaching.html" role="link" target="_self" aria-label="In-Person Group Coaching"
+                                            class="nav-dropdown-link">
+                                            In-Person Group Coaching
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="single-coaching.html" role="link" target="_self"
+                                            aria-label="4-Week Transformative Program" class="nav-dropdown-link">
+                                            4-Week Transformative Program
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="single-coaching.html" role="link" target="_self" aria-label="Men's Weekend"
+                                            class="nav-dropdown-link">
+                                            Men's Weekend
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="podcast-listing.html" role="link" target="_self" aria-label="Podcast" class="nav-link">
+                                Podcast
+                            </a>
+                        </li>
+
+                        <li class="nav-item has-dropdown">
+                           
+                             <a href="event-listing.html" role="link" target="_self" aria-label="Podcast" class="nav-link">
+                                Events
+                            </a>
+                            <div class="nav-dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="event-single.html" role="link" target="_self" aria-label="Retreats"
+                                            class="nav-dropdown-link">
+                                            Retreats
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="event-single.html" role="link" target="_self" aria-label="Workshops"
+                                            class="nav-dropdown-link">
+                                            Workshops
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="event-single.html" role="link" target="_self" aria-label="Summits"
+                                            class="nav-dropdown-link">
+                                            Summits
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item has-dropdown">
+                             <a href="resources-listing.html" role="link" target="_self" aria-label="Resources" class="nav-link">
+                                Resources
+                            </a>
+                            <div class="nav-dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="resources-single.html" role="link" target="_self" aria-label="Freebies"
+                                            class="nav-dropdown-link">
+                                            Freebies
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="resources-single.html" role="link" target="_self" aria-label="Shop"
+                                            class="nav-dropdown-link">
+                                            Shop
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="resourcessingle.html" role="link" target="_self" aria-label="Courses"
+                                            class="nav-dropdown-link">
+                                            Courses
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contact.html" role="link" target="_self" aria-label="Contact" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!-- Desktop right: phone + divider + icons -->
+                <div class="header-right">
+                    <a href="tel:+3014032161" role="link" target="_self" aria-label="Call us at 301.403.2161"
+                        class="header-phone">
+                        <span class="header-icon">
+                            <!-- Phone icon -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4032_2496)">
+                                    <path
+                                        d="M19.5516 15.8058L16.4629 12.7168C15.8477 12.1041 14.8289 12.1227 14.1923 12.7596L12.6362 14.3153C12.5379 14.2611 12.4361 14.2045 12.3291 14.1445C11.3465 13.6 10.0015 12.8537 8.58628 11.4374C7.16683 10.0182 6.41986 8.67115 5.87372 7.68786C5.81609 7.58369 5.76087 7.48325 5.70634 7.38787L6.75071 6.34506L7.26416 5.83098C7.90178 5.19319 7.91936 4.17468 7.30559 3.56016L4.2169 0.470783C3.60313 -0.142874 2.58387 -0.124258 1.94626 0.513532L1.07576 1.38903L1.09955 1.41264C0.807657 1.78509 0.563746 2.21465 0.382234 2.67788C0.214915 3.11882 0.110743 3.53959 0.0631095 3.96122C-0.344731 7.34231 1.20033 10.4324 5.39342 14.6255C11.1896 20.4213 15.8605 19.9834 16.062 19.962C16.5009 19.9096 16.9214 19.8047 17.3489 19.6387C17.8081 19.4593 18.2374 19.2158 18.6096 18.9245L18.6286 18.9414L19.5105 18.0779C20.1468 17.4402 20.1651 16.4213 19.5516 15.8058Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4032_2496">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </span>
+                        <span class="header-phone-text">301.403.2161</span>
+                    </a>
+
+                    <div class="header-divider" aria-hidden="true"></div>
+
+                    <div class="header-icons">
+                        <a href="#" role="link" target="_self" aria-label="My account"
+                            class="header-icon header-icon-link">
+                            <!-- User icon -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4006_7302)">
+                                    <path
+                                        d="M9.99968 10.0001C11.3803 10.0001 12.5586 9.51166 13.535 8.53517C14.5116 7.55868 14.9999 6.38033 14.9999 4.99994C14.9999 3.61978 14.5116 2.44139 13.535 1.46467C12.5583 0.488223 11.3799 0 9.99968 0C8.61948 0 7.4409 0.488223 6.46445 1.46467C5.48783 2.44139 4.99951 3.61974 4.99951 4.99994C4.99951 6.38033 5.48783 7.55868 6.46445 8.53517C7.44117 9.51166 8.61943 10.0001 9.99968 10.0001Z"
+                                        fill="white" />
+                                    <path
+                                        d="M19.121 15.28C19.0905 14.8417 19.0297 14.3685 18.9387 13.8606C18.8475 13.3528 18.7323 12.882 18.5934 12.4478C18.4545 12.0139 18.2678 11.5907 18.0335 11.1783C17.7992 10.766 17.5301 10.4145 17.2261 10.1236C16.9221 9.83272 16.5511 9.60067 16.113 9.42709C15.6744 9.25355 15.1904 9.16663 14.6609 9.16663C14.5828 9.16663 14.4005 9.25994 14.114 9.44661C13.8278 9.63328 13.5044 9.84166 13.1441 10.0718C12.7839 10.3015 12.3149 10.51 11.7379 10.6964C11.1606 10.883 10.5812 10.9764 9.99942 10.9764C9.41784 10.9764 8.83845 10.883 8.26125 10.6964C7.68409 10.51 7.21521 10.3015 6.85496 10.0718C6.49475 9.84166 6.17145 9.63332 5.88503 9.44661C5.59848 9.25994 5.41629 9.16663 5.33816 9.16663C4.80866 9.16663 4.32468 9.25355 3.88635 9.42709C3.44793 9.60067 3.07687 9.8329 2.77299 10.1236C2.46921 10.4145 2.20008 10.766 1.96579 11.1783C1.73151 11.5907 1.54489 12.0141 1.40597 12.4478C1.2671 12.882 1.15203 13.3528 1.06091 13.8606C0.969692 14.3685 0.908944 14.8414 0.878524 15.28C0.848149 15.7185 0.833008 16.1678 0.833008 16.6278C0.833008 17.6693 1.14993 18.492 1.78355 19.0954C2.4173 19.6985 3.25939 20 4.30972 20H15.6902C16.7404 20 17.5824 19.6985 18.2163 19.0954C18.8502 18.492 19.1669 17.6695 19.1669 16.6278C19.1668 16.1678 19.1517 15.7185 19.121 15.28Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4006_7302">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <button type="button" aria-label="Open shopping cart" id="cartBtn" class="cart-btn header-icon">
+                            <!-- Cart icon -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip-cart-dt)">
+                                    <path
+                                        d="M15.1571 14.8615C13.8771 14.8615 12.8218 15.8944 12.8218 17.1967C12.8218 18.4767 13.8547 19.532 15.1571 19.532C16.437 19.532 17.4924 18.4991 17.4924 17.1967C17.4699 15.9168 16.437 14.8615 15.1571 14.8615Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M19.2661 3.72395C19.2212 3.72395 19.1539 3.7015 19.0865 3.7015H4.94004L4.71549 2.19703C4.58076 1.20902 3.72748 0.468018 2.71702 0.468018H0.898188C0.404185 0.468018 0 0.872202 0 1.36621C0 1.86021 0.404185 2.26439 0.898188 2.26439H2.71702C2.82929 2.26439 2.91911 2.35421 2.94157 2.46649L4.33376 11.9424C4.5134 13.1325 5.54631 14.0307 6.75887 14.0307H16.1C17.2677 14.0307 18.2781 13.1998 18.5251 12.0546L19.9847 4.75687C20.0745 4.28532 19.7601 3.81377 19.2661 3.72395Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M9.43087 17.0845C9.38596 15.8495 8.35305 14.8615 7.11804 14.8615C5.81566 14.9288 4.82766 16.0066 4.87257 17.2866C4.91748 18.5216 5.92794 19.5096 7.16295 19.5096H7.20786C8.48777 19.4422 9.49824 18.3644 9.43087 17.0845Z"
+                                        fill="currentColor" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip-cart-dt">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <a href="#" role="link" target="_self" aria-label="Search"
+                            class="header-icon header-icon-link search-btn">
+                            <!-- Search icon -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4006_7318)">
+                                    <path
+                                        d="M19.2895 15.7606L15.9977 12.4688C16.5962 11.2718 16.9952 9.87531 16.9952 8.4788C16.9952 3.79052 13.2047 0 8.5164 0C3.82812 0 0.0375977 3.79052 0.0375977 8.4788C0.0375977 13.1671 3.82812 16.9576 8.5164 16.9576C9.91291 16.9576 11.3094 16.5586 12.5064 15.9601L15.7982 19.2519C16.7957 20.2494 18.292 20.2494 19.2895 19.2519C20.1872 18.2544 20.1872 16.7581 19.2895 15.7606ZM8.5164 14.9626C4.92538 14.9626 2.03261 12.0698 2.03261 8.4788C2.03261 4.88778 4.92538 1.99501 8.5164 1.99501C12.1074 1.99501 15.0002 4.88778 15.0002 8.4788C15.0002 12.0698 12.1074 14.9626 8.5164 14.9626Z"
+                                        fill="currentColor" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4006_7318">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Mobile: right group (cart + search) -->
+                <div class="header-mobile-right">
+                    <button type="button" aria-label="Open shopping cart" id="cartBtnMb" class="cart-btn header-icon">
+                        <!-- Cart icon -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip-cart-mb)">
+                                <path
+                                    d="M15.1571 14.8615C13.8771 14.8615 12.8218 15.8944 12.8218 17.1967C12.8218 18.4767 13.8547 19.532 15.1571 19.532C16.437 19.532 17.4924 18.4991 17.4924 17.1967C17.4699 15.9168 16.437 14.8615 15.1571 14.8615Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M19.2661 3.72395C19.2212 3.72395 19.1539 3.7015 19.0865 3.7015H4.94004L4.71549 2.19703C4.58076 1.20902 3.72748 0.468018 2.71702 0.468018H0.898188C0.404185 0.468018 0 0.872202 0 1.36621C0 1.86021 0.404185 2.26439 0.898188 2.26439H2.71702C2.82929 2.26439 2.91911 2.35421 2.94157 2.46649L4.33376 11.9424C4.5134 13.1325 5.54631 14.0307 6.75887 14.0307H16.1C17.2677 14.0307 18.2781 13.1998 18.5251 12.0546L19.9847 4.75687C20.0745 4.28532 19.7601 3.81377 19.2661 3.72395Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M9.43087 17.0845C9.38596 15.8495 8.35305 14.8615 7.11804 14.8615C5.81566 14.9288 4.82766 16.0066 4.87257 17.2866C4.91748 18.5216 5.92794 19.5096 7.16295 19.5096H7.20786C8.48777 19.4422 9.49824 18.3644 9.43087 17.0845Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip-cart-mb">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a href="#" role="link" target="_self" aria-label="Search"
+                        class="header-icon header-icon-link search-btn">
+                        <!-- Search icon -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip-search-mb)">
+                                <path
+                                    d="M19.2895 15.7606L15.9977 12.4688C16.5962 11.2718 16.9952 9.87531 16.9952 8.4788C16.9952 3.79052 13.2047 0 8.5164 0C3.82812 0 0.0375977 3.79052 0.0375977 8.4788C0.0375977 13.1671 3.82812 16.9576 8.5164 16.9576C9.91291 16.9576 11.3094 16.5586 12.5064 15.9601L15.7982 19.2519C16.7957 20.2494 18.292 20.2494 19.2895 19.2519C20.1872 18.2544 20.1872 16.7581 19.2895 15.7606ZM8.5164 14.9626C4.92538 14.9626 2.03261 12.0698 2.03261 8.4788C2.03261 4.88778 4.92538 1.99501 8.5164 1.99501C12.1074 1.99501 15.0002 4.88778 15.0002 8.4788C15.0002 12.0698 12.1074 14.9626 8.5164 14.9626Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip-search-mb">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+            </div><!-- /.container-fluid -->
+        </div><!-- /.header-nav -->
+
+        <!-- Search popup -->
+        <div class="search-popup" id="searchPopup" role="search">
+            <div class="search-popup-inner">
+                <label for="searchInput" class="search-form-row">
+                    <span class="search-form-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip-search-popup)">
+                                <path
+                                    d="M19.2895 15.7606L15.9977 12.4688C16.5962 11.2718 16.9952 9.87531 16.9952 8.4788C16.9952 3.79052 13.2047 0 8.5164 0C3.82812 0 0.0375977 3.79052 0.0375977 8.4788C0.0375977 13.1671 3.82812 16.9576 8.5164 16.9576C9.91291 16.9576 11.3094 16.5586 12.5064 15.9601L15.7982 19.2519C16.7957 20.2494 18.292 20.2494 19.2895 19.2519C20.1872 18.2544 20.1872 16.7581 19.2895 15.7606ZM8.5164 14.9626C4.92538 14.9626 2.03261 12.0698 2.03261 8.4788C2.03261 4.88778 4.92538 1.99501 8.5164 1.99501C12.1074 1.99501 15.0002 4.88778 15.0002 8.4788C15.0002 12.0698 12.1074 14.9626 8.5164 14.9626Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip-search-popup">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                    <input type="search" id="searchInput" name="q" placeholder="Search" autocomplete="off"
+                        class="search-input" />
+                </label>
+                <div class="search-form-divider" aria-hidden="true"></div>
+            </div>
+        </div>
+
+        <!-- Cart Panel -->
+        <div class="cart-panel" id="cartPanel">
+            <div class="cart-panel-inner">
+
+                <!-- Title -->
+                <div class="cart-title">
+                    <div class="title title-black">
+                        <h3>Shopping Cart <span class="cart-count">(2 Items)</span></h3>
+                    </div>
+                </div>
+
+                <!-- Products list -->
+                <div class="cart-products">
+                    <div class="cart-divider" aria-hidden="true"></div>
+                    <div class="cart-products-list">
+
+                        <!-- Product 1 -->
+                        <div class="cart-product-row">
+                            <div class="cart-product-inner">
+                                <div class="cart-product-body">
+                                    <img src="../assets/images/card-coaching-1-1.webp" width="140" height="140"
+                                        alt="1-1 Coaching" class="cart-product-img" />
+                                    <div class="cart-product-copy">
+                                        <div class="cart-product-title">
+                                            <div class="title title-black">
+                                                <h4>1-1 Coaching</h4>
+                                            </div>
+                                        </div>
+                                        <div class="cart-product-price-row">
+                                            <span class="cart-price-text">$2,597.00</span>
+                                            <div class="cart-qty">
+                                                <button type="button" aria-label="Decrease quantity of 1-1 Coaching"
+                                                    class="cart-qty-btn">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                                <span class="cart-qty-value">1</span>
+                                                <button type="button" aria-label="Increase quantity of 1-1 Coaching"
+                                                    class="cart-qty-btn">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" aria-label="Remove 1-1 Coaching from cart"
+                                    class="cart-remove-btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="cart-product-row">
+                            <div class="cart-product-inner">
+                                <div class="cart-product-body">
+                                    <img src="../assets/images/card-online-coaching.webp" width="140" height="140"
+                                        alt="Online Group Coaching" class="cart-product-img" />
+                                    <div class="cart-product-copy">
+                                        <div class="cart-product-title">
+                                            <span class="cart-product-tag cart-tag-virtual">VIRTUAL</span>
+                                            <div class="title title-black">
+                                                <h4>Online Group Coaching</h4>
+                                            </div>
+                                        </div>
+                                        <div class="cart-product-price-row">
+                                            <span class="cart-price-text">$1,997.00</span>
+                                            <div class="cart-qty">
+                                                <button type="button"
+                                                    aria-label="Decrease quantity of Online Group Coaching"
+                                                    class="cart-qty-btn">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                                <span class="cart-qty-value">1</span>
+                                                <button type="button"
+                                                    aria-label="Increase quantity of Online Group Coaching"
+                                                    class="cart-qty-btn">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" aria-label="Remove Online Group Coaching from cart"
+                                    class="cart-remove-btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cart-divider" aria-hidden="true"></div>
+                </div>
+
+                <!-- Upsell -->
+                <div class="cart-upsell">
+                    <div class="cart-upsell-title">
+                        <div class="title title-black">
+                            <h3>Highly Rated Experience</h3>
+                        </div>
+                    </div>
+                    <div class="cart-upsell-product">
+                        <div class="cart-upsell-product-body">
+                            <img src="../assets/images/card-inperson-coaching.webp" width="140" height="140"
+                                alt="In-Person Group Coaching" class="cart-upsell-img" />
+                            <div class="cart-upsell-copy">
+                                <div class="cart-product-title">
+                                    <span class="cart-product-tag cart-tag-inperson">IN-PERSON</span>
+                                    <div class="title title-black">
+                                        <h4>In-Person Group Coaching</h4>
+                                    </div>
+                                </div>
+                                <div class="cart-product-price-row">
+                                    <span class="cart-price-text">$997.00</span>
+                                    <div class="cart-qty cart-qty-narrow">
+                                        <button type="button" aria-label="Decrease quantity of In-Person Group Coaching"
+                                            class="cart-qty-btn">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                        <span class="cart-qty-value">1</span>
+                                        <button type="button" aria-label="Increase quantity of In-Person Group Coaching"
+                                            class="cart-qty-btn">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" aria-label="Remove In-Person Group Coaching from cart"
+                            class="cart-remove-btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" role="link" target="_self" aria-label="Quick add In-Person Group Coaching to cart"
+                        class="btn btn-red">
+                        Quick Add
+                    </a>
+                </div>
+
+                <!-- Subtotal + Checkout -->
+                <div class="cart-footer">
+                    <div class="cart-subtotal-row">
+                        <span class="cart-subtotal-label">Subtotal</span>
+                        <span class="cart-subtotal-amount">$4,594.00</span>
+                    </div>
+                    <div class="cart-checkout-actions">
+                        <a href="#" role="link" target="_self" aria-label="Proceed to checkout" class="btn btn-red">
+                            Checkout
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-accordions">
+                <!-- Background texture overlay -->
+                <div class="mobile-menu-accordions-bg" aria-hidden="true">
+                    <img src="../assets/images/vector/accordions-bg.png" alt="Background texture" width="1512"
+                        height="393" class="mobile-menu-accordions-bg-img" />
+                </div>
+                <div class="mobile-menu-accordions-inner">
+                    <!-- Accordion: About (expandable) -->
+                    <div class="mobile-accordion is-expandable">
+                        <div class="mobile-accordion-trigger">
+                            <a href="about.html"
+                                role="link"
+                                target="_self"
+                                aria-label="About"
+                                class="mobile-accordion-label">About</a>
+                            <button type="button" aria-label="Toggle About submenu" class="mobile-accordion-chevron-btn">
+                                <span class="mobile-accordion-chevron" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="7 4 13 10 7 16" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="mobile-accordion-content">
+                            <a href="#" role="link" target="_self" aria-label="Our Story" class="mobile-sub-link">
+                                Our Story
+                            </a>
+                            <a href="our_community.html" role="link" target="_self" aria-label="Our Community" class="mobile-sub-link">
+                                Our Community
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Accordion: Coaching (expandable) -->
+                    <div class="mobile-accordion is-expandable">
+                        <div class="mobile-accordion-trigger">
+                            <a href="coaching.html"
+                                role="link"
+                                target="_self"
+                                aria-label="Coaching"
+                                class="mobile-accordion-label">Coaching</a>
+                            <button type="button" aria-label="Toggle Coaching submenu" class="mobile-accordion-chevron-btn">
+                                <span class="mobile-accordion-chevron" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="7 4 13 10 7 16" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="mobile-accordion-content">
+                            <a href="single-coaching.html" role="link" target="_self" aria-label="1-1 Coaching" class="mobile-sub-link">
+                                1-1 Coaching
+                            </a>
+                            <a href="single-coaching.html" role="link" target="_self" aria-label="Online Group Coaching"
+                                class="mobile-sub-link">
+                                Online Group Coaching
+                            </a>
+                            <a href="single-coaching.html" role="link" target="_self" aria-label="In-Person Group Coaching"
+                                class="mobile-sub-link">
+                                In-Person Group Coaching
+                            </a>
+                            <a href="single-coaching.html" role="link" target="_self" aria-label="4-Week Transformative Program"
+                                class="mobile-sub-link">
+                                4-Week Transformative Program
+                            </a>
+                            <a href="single-coaching.html" role="link" target="_self" aria-label="Men's Weekend" class="mobile-sub-link">
+                                Men's Weekend
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Accordion: Podcast (no sub-links) -->
+                    <div class="mobile-accordion">
+                        <a href="podcast-listing.html" role="link" target="_self" aria-label="Podcast" class="mobile-accordion-trigger">
+                            <span class="mobile-accordion-label">Podcast</span>
+                        </a>
+                    </div>
+
+                    <!-- Accordion: Events (expandable) -->
+                    <div class="mobile-accordion is-expandable">
+                        <div class="mobile-accordion-trigger">
+                            <a href="event-listing.html"
+                                role="link"
+                                target="_self"
+                                aria-label="Events"
+                                class="mobile-accordion-label">Events</a>
+                            <button type="button" aria-label="Toggle Events submenu" class="mobile-accordion-chevron-btn">
+                                <span class="mobile-accordion-chevron" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="7 4 13 10 7 16" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="mobile-accordion-content">
+                            <a href="event-single.html" role="link" target="_self" aria-label="Retreats" class="mobile-sub-link">
+                                Retreats
+                            </a>
+                            <a href="event-single.html" role="link" target="_self" aria-label="Workshops" class="mobile-sub-link">
+                                Workshops
+                            </a>
+                            <a href="event-single.html" role="link" target="_self" aria-label="Summits" class="mobile-sub-link">
+                                Summits
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Accordion: Resources (expandable) -->
+                    <div class="mobile-accordion is-expandable">
+                        <div class="mobile-accordion-trigger">
+                            <a href="resources-listing.html"
+                                role="link"
+                                target="_self"
+                                aria-label="Resources"
+                                class="mobile-accordion-label">Resources</a>
+                            <button type="button" aria-label="Toggle Resources submenu" class="mobile-accordion-chevron-btn">
+                                <span class="mobile-accordion-chevron" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="7 4 13 10 7 16" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="mobile-accordion-content">
+                            <a href="resources-single.html" role="link" target="_self" aria-label="Freebies" class="mobile-sub-link">
+                                Freebies
+                            </a>
+                            <a href="resources-single.html" role="link" target="_self" aria-label="Shop" class="mobile-sub-link">
+                                Shop
+                            </a>
+                            <a href="resourcessingle.html" role="link" target="_self" aria-label="Courses" class="mobile-sub-link">
+                                Courses
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Accordion: Contact (no sub-links) -->
+                    <div class="mobile-accordion">
+                        <a href="contact.html" role="link" target="_self" aria-label="Contact" class="mobile-accordion-trigger">
+                            <span class="mobile-accordion-label">Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div><!-- /.mobile-menu-accordions -->
+
+            <div class="mobile-menu-footer p-20 flex flex-col gap-20">
+                <a href="tel:3104032161" role="link" target="_self" aria-label="Call us at 310.403.2161"
+                    class="mobile-phone">
+                    <span class="header-icon text-black">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip-phone-mb)">
+                                <path
+                                    d="M19.5516 15.8058L16.4629 12.7168C15.8477 12.1041 14.8289 12.1227 14.1923 12.7596L12.6362 14.3153C12.5379 14.2611 12.4361 14.2045 12.3291 14.1445C11.3465 13.6 10.0015 12.8537 8.58628 11.4374C7.16683 10.0182 6.41986 8.67115 5.87372 7.68786C5.81609 7.58369 5.76087 7.48325 5.70634 7.38787L6.75071 6.34506L7.26416 5.83098C7.90178 5.19319 7.91936 4.17468 7.30559 3.56016L4.2169 0.470783C3.60313 -0.142874 2.58387 -0.124258 1.94626 0.513532L1.07576 1.38903L1.09955 1.41264C0.807657 1.78509 0.563746 2.21465 0.382234 2.67788C0.214915 3.11882 0.110743 3.53959 0.0631095 3.96122C-0.344731 7.34231 1.20033 10.4324 5.39342 14.6255C11.1896 20.4213 15.8605 19.9834 16.062 19.962C16.5009 19.9096 16.9214 19.8047 17.3489 19.6387C17.8081 19.4593 18.2374 19.2158 18.6096 18.9245L18.6286 18.9414L19.5105 18.0779C20.1468 17.4402 20.1651 16.4213 19.5516 15.8058Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip-phone-mb">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                    <span class="mobile-phone-text">310.403.2161</span>
+                </a>
+                <a href="#" role="link" target="_self" aria-label="Join The Edge" class="btn btn-red">
+                    JOIN THE EDGE
+                </a>
+            </div>
+
+        </div><!-- /.mobile-menu -->
+
+    </header>
+
+    <main>
+
+        <!-- ======= INNER BANNER ======= -->
+        <section class="inner-banner general-padding">
+
+            <!-- Background photo + overlays -->
+            <div class="inner-banner-bg" aria-hidden="true">
+                <img src="../assets/images/banner1.jpg" alt="" width="1512" height="460" id="innerBannerParallax"
+                    class="inner-banner-bg-img" />
+                <div class="inner-banner-overlay-tl"></div>
+                <div class="inner-banner-overlay-top"></div>
+                <div class="inner-banner-overlay-right"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="inner-banner-content container-fluid">
+                <div class="inner-banner-copy">
+                    <div class="title title-white">
+                        <h1>Our Community</h1>
+                    </div>
+                    <div class="content content-white inner-banner-subtitle">
+                        <p>About</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom decorative strip -->
+            <div class="banner-bottom-el" aria-hidden="true">
+                <img src="../assets/images/banner-bottom.png" alt="" width="1512" height="70"
+                    class="banner-bottom-dt" />
+                <img src="../assets/images/banner-bottom2.png" alt="" width="376" height="28"
+                    class="banner-bottom-mb" />
+            </div>
+
+        </section><!-- /.inner-banner -->
+
+
+        <!-- ======= ABOUT SECTION ======= -->
+        <section class="about-section general-padding">
+
+            <!-- Layered background: solid colour → texture at 5% → radial white vignette -->
+            <div class="about-bg" aria-hidden="true">
+                <div class="about-bg-color"></div>
+                <img src="../assets/images/vector/common-bg.png" alt="" width="1512" height="393"
+                    class="about-bg-img" />
+                <div class="about-bg-overlay"></div>
+            </div>
+
+            <!-- Content — centred column, max 1000px -->
+            <div class="about-inner">
+                <div class="about-copy">
+
+                    <div class="about-title-group">
+                        <div class="content content-silver about-eyebrow">
+                            <p>The EDGE Philosophy</p>
+                        </div>
+                        <div class="title title-gold">
+                            <h2>An Artful Journey of Emergence</h2>
+                        </div>
+                    </div>
+
+                    <div class="content content-navy">
+                        <p>The EDGE is more than a program--it's an initiation into the art of becoming. It's where raw truth meets unwavering discipline, where limiting beliefs dissolve like old brushstrokes, and where your authentic self emerges--bold, unapologetic, and fully expressed.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section><!-- /.about-section -->
+
+
+        <!-- ======= EDGE SECTION ======= -->
+        <section class="edge-section general-padding">
+            <div class="container-fluid">
+                <div class="edge-inner">
+
+                    <!-- Left: image with diagonal clip-path strip -->
+                    <div class="edge-left">
+                        <img
+                            src="../assets/images/approach-photo.webp"
+                            alt="The Edge community members in transformation"
+                            width="481"
+                            height="600"
+                            class="edge-img" />
+                    </div>
+
+                    <!-- Right: 4 EDGE content items -->
+                    <div class="edge-right">
+
+                        <!-- E: Explore Your Truth -->
+                        <div class="edge-item-wrap pl-40">
+                            <div class="edge-item">
+                                <div class="edge-item-label">
+                                    <div class="title title-gold">
+                                        <h3>E</h3>
+                                    </div>
+                                    <div class="content content-silver edge-item-subtitle">
+                                        <p>Explore Your Truth</p>
+                                    </div>
+                                </div>
+                                <div class="edge-item-body">
+                                    <div class="content content-black edge-item-quote">
+                                        <p>"The truth doesn't live in the mind. It pulses in the body."</p>
+                                    </div>
+                                    <div class="content content-black edge-item-desc">
+                                        <p>Begin by peeling back the layers of noise and distraction. Drop out of your head and into the deep current of your body's wisdom. This is where you learn to listen--where the quiet voice of intuition reveals what's real, raw, and waiting to be witnessed. To explore your truth is to embrace the courage to stand face-to-face with the parts of yourself that have long been ignored.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edge-divider" aria-hidden="true"></div>
+                        </div>
+
+                        <!-- D: Destroy Limiting Beliefs -->
+                        <div class="edge-item-wrap pl-30">
+                            <div class="edge-item">
+                                <div class="edge-item-label">
+                                    <div class="title title-gold">
+                                        <h3>D</h3>
+                                    </div>
+                                    <div class="content content-silver edge-item-subtitle">
+                                        <p>Destroy Limiting Beliefs</p>
+                                    </div>
+                                </div>
+                                <div class="edge-item-body">
+                                    <div class="content content-black edge-item-quote">
+                                        <p>"Destruction clears the canvas for creation."</p>
+                                    </div>
+                                    <div class="content content-black edge-item-desc">
+                                        <p>Once your truth is unearthed, the next step is to dismantle the illusions that keep you small. Shatter the narratives, the inherited patterns, and the protective armor that no longer serve you. Destruction isn't chaos--it's a deliberate liberation. It's the sacred act of clearing space for something more potent, more aligned. When you destroy what limits you, you create fertile ground for something extraordinary to take root.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edge-divider" aria-hidden="true"></div>
+                        </div>
+
+                        <!-- G: Ground Into Your Center -->
+                        <div class="edge-item-wrap pl-20">
+                            <div class="edge-item">
+                                <div class="edge-item-label">
+                                    <div class="title title-gold">
+                                        <h3>G</h3>
+                                    </div>
+                                    <div class="content content-silver edge-item-subtitle">
+                                        <p>Ground Into Your Center</p>
+                                    </div>
+                                </div>
+                                <div class="edge-item-body">
+                                    <div class="content content-black edge-item-quote">
+                                        <p>"True power is rooted, not grasped."</p>
+                                    </div>
+                                    <div class="content content-black edge-item-desc">
+                                        <p>After the old has been cleared, the journey turns inward--toward stillness, toward grounding. Through breath, movement, and presence, you plant yourself deeply into your center. Here, in the quiet of your foundation, clarity arises. Grounding is not passive; it's an active return to yourself--a commitment to standing firm, allowing your transformation to anchor and take root.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edge-divider" aria-hidden="true"></div>
+                        </div>
+
+                        <!-- E: Embody Your Full Expression -->
+                        <div class="edge-item-wrap pl-10">
+                            <div class="edge-item">
+                                <div class="edge-item-label">
+                                    <div class="title title-gold">
+                                        <h3>E</h3>
+                                    </div>
+                                    <div class="content content-silver edge-item-subtitle">
+                                        <p>Embody Your Full Expression</p>
+                                    </div>
+                                </div>
+                                <div class="edge-item-body">
+                                    <div class="content content-black edge-item-quote">
+                                        <p>"To embody is to weave the soul into form."</p>
+                                    </div>
+                                    <div class="content content-black edge-item-desc">
+                                        <p>True transformation is not a fleeting moment of insight--it's the art of embodiment. It's when your truth, your power, and your vision converge into a lived experience. To embody is to become--to move through the world as the fullest expression of who you are. It's where thought dissolves and action speaks, where your authenticity breathes life into every movement, every word, every presence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edge-divider" aria-hidden="true"></div>
+                        </div>
+
+                    </div><!-- /.edge-right -->
+                </div><!-- /.edge-inner -->
+            </div><!-- /.container-fluid -->
+        </section><!-- /.edge-section -->
+
+   <!-- ======= NEWSLETTER SECTION ======= -->
+        <section class="newsletter-section general-padding">
+            <div class="newsletter-inner container-fluid">
+
+                <!-- Left: copy + form -->
+                <div class="newsletter-copy">
+                    <div class="newsletter-copy-inner">
+                        <div class="newsletter-eyebrow">
+                            <div class="content content-silver">
+                                <p>One email per week. One powerful practice.</p>
+                            </div>
+                        </div>
+
+                        <div class="newsletter-title-row">
+                            <div class="title title-gold">
+                                <h2>Free 4-Week Guided Journal</h2>
+                            </div>
+                            <div class="newsletter-divider" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="content content-navy">
+                        <p>Each week builds upon the last&mdash;layering awareness, discipline, and embodiment to help
+                            you meet your edge and become the man you&rsquo;re here to be.</p>
+                    </div>
+
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="newsletter-field">
+                            <label for="newsletterName">Name</label>
+                            <input type="text" id="newsletterName" name="name" placeholder="Name" autocomplete="name" />
+                        </div>
+                        <div class="newsletter-field">
+                            <label for="newsletterEmail">Email Address</label>
+                            <input type="email" id="newsletterEmail" name="email" placeholder="Email Address"
+                                autocomplete="email" />
+                        </div>
+                        <div class="newsletter-submit">
+                            <button type="submit"
+                                aria-label="Join the newsletter and receive the free 4-week guided journal"
+                                class="btn btn-red">
+                                Join Now
+                            </button>
+                        </div>
+                    </form>
+
+                </div><!-- /.newsletter-copy -->
+
+                <!-- Right: 2 portrait images -->
+                <div class="newsletter-images">
+                    <div class="newsletter-img-wrap">
+                        <img src="../assets/images/card-coaching-1-1.webp" alt="Man in a focused 1-1 coaching session"
+                            width="400" height="550" class="newsletter-img" />
+                    </div>
+                    <div class="newsletter-img-wrap">
+                        <img src="../assets/images/card-inperson-coaching.webp"
+                            alt="Group joining hands in an in-person coaching session" width="400" height="550"
+                            class="newsletter-img" />
+                    </div>
+                </div><!-- /.newsletter-images -->
+
+            </div><!-- /.newsletter-inner -->
+        </section><!-- /.newsletter-section -->
+    </main>
+
+    <footer>
+        <!-- Background image overlay -->
+        <div class="footer-bg-overlay" aria-hidden="true">
+            <img
+                src="../assets/images/footer-bg.png"
+                alt="Footer background"
+                width="1920"
+                height="1080"
+                class="footer-bg-img"
+            />
+        </div>
+
+        <!-- White clip-path transition element -->
+        <div class="footer-clip-wrap" aria-hidden="true">
+            <img src="../assets/images/footer-clip-path.svg" alt="" width="1512" height="70" class="footer-clip-img" />
+        </div>
+
+        <div class="footer-inner container-fluid">
+
+            <div class="footer-top-row">
+
+                <!-- IG Photos grid -->
+                <div class="footer-ig-grid">
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img1.png" alt="The Edge community member in focused practice"
+                            width="300" height="269" />
+                    </div>
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img2.png"
+                            alt="The Edge community member during a coaching session" width="300" height="269" />
+                    </div>
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img3.png" alt="The Edge coaching in action" width="300"
+                            height="269" />
+                    </div>
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img4.png"
+                            alt="The Edge community member sharing their transformation" width="300" height="269" />
+                    </div>
+                </div>
+
+                <!-- Follow Us copy -->
+                <div class="footer-follow">
+                    <div class="title title-off-white">
+                        <h2>follow us</h2>
+                    </div>
+                    <div class="title title-white">
+                        <h3>@theedge</h3>
+                    </div>
+                </div>
+
+            </div><!-- /.footer-top-row -->
+
+            <!-- Horizontal Divider -->
+            <div class="footer-divider" aria-hidden="true"></div>
+
+            <!-- ROW 2: Nav Links + Logo + Social/Copyright -->
+            <div class="footer-bottom-row">
+
+                <!-- Footer Navigation -->
+                <nav class="footer-nav" aria-label="Footer navigation">
+
+                    <!-- Col 1: Support Our Cause -->
+                    <div class="footer-nav-col">
+                        <div class="footer-nav-col-header">
+                            <div class="title title-white">
+                                <h4>Support Our Cause</h4>
+                            </div>
+                            <button type="button" aria-label="Toggle Support Our Cause navigation"
+                                class="footer-nav-toggle">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="footer-nav-links">
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Donate to support The Edge">
+                                    Donate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Download The Edge Press Kit">
+                                    Press Kit
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Shop The Edge Gear">
+                                    The Edge Gear
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 2: Learn More -->
+                    <div class="footer-nav-col">
+                        <div class="footer-nav-col-header">
+                            <div class="title title-white">
+                                <h4>Learn More</h4>
+                            </div>
+                            <button type="button" aria-label="Toggle Learn More navigation" class="footer-nav-toggle">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="footer-nav-links">
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="View The Edge Programs">
+                                    Programs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="View Resources">
+                                    Resources
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read The Edge Blog">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read Frequently Asked Questions">
+                                    FAQs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self"
+                                    aria-label="Read Success Stories from The Edge community">
+                                    Success Stories
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3: Policies -->
+                    <div class="footer-nav-col">
+                        <div class="footer-nav-col-header">
+                            <div class="title title-white">
+                                <h4>Policies</h4>
+                            </div>
+                            <button type="button" aria-label="Toggle Policies navigation" class="footer-nav-toggle">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="footer-nav-links">
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read the Privacy Policy">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read the Cancellation Policy">
+                                    Cancellation Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read the Terms and Conditions">
+                                    Terms &amp; Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav><!-- /.footer-nav -->
+
+
+                <!-- Right: Copyright + Social Icons -->
+                <div class="footer-right">
+
+                    <div class="footer-copyright">
+                        <div class="content content-white">
+                            <p>© 2025 The Edge</p>
+                        </div>
+                        <span class="footer-copyright-sep" aria-hidden="true"></span>
+                        <div class="footer-copyright-name">
+                            <img src="../assets/images/vector/heart.png" alt="heart" width="24" height="24"
+                                class="heart-icon" />
+                            <div class="content content-white">
+                                <p>//</p>
+                            </div>
+                            <div class="content content-white">
+                                <p>TECHYSCOUTS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on Instagram"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-instagram-icon.svg" alt="Instagram" width="24"
+                                height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on Facebook"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-facebook-icon.svg" alt="Facebook" width="24"
+                                height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on TikTok"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-tiktok-icon.svg" alt="TikTok" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on X"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-x-icon.svg" alt="X" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Find The Edge on Yelp"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-yelp-icon.svg" alt="Yelp" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Watch The Edge on YouTube"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-youtube-icon.svg" alt="YouTube" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Connect with The Edge on LinkedIn"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-linkedin-icon.svg" alt="LinkedIn" width="24"
+                                height="24" />
+                        </a>
+                    </div><!-- /.footer-social -->
+                </div><!-- /.footer-right -->
+            </div><!-- /.footer-bottom-row -->
+        </div><!-- /.footer-inner -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script type="module" src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

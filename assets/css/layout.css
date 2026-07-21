@@ -198,6 +198,9 @@ header.is-scrolled .header-right .header-icon {
   @apply text-black;
 }
 
+header.is-scrolled .header-mobile-left .header-icon-user svg path{
+  @apply fill-black;
+}
 .header-icon-red {
   @apply text-red;
 }
@@ -205,6 +208,7 @@ header.is-scrolled .header-right .header-icon {
 .header-icon-link {
   @apply cursor-pointer;
 }
+
 
 /* ========================
    MOBILE CONTROLS
@@ -247,6 +251,9 @@ header.is-scrolled .header-mobile-right .header-icon {
 .mobile-menu-accordions {
   @apply relative flex flex-col bg-off-white overflow-hidden;
 }
+.mobile-menu-accordions-inner {
+  @apply relative z-2
+}
 
 .mobile-menu-accordions-bg {
   @apply absolute inset-0 pointer-events-none;
@@ -261,11 +268,15 @@ header.is-scrolled .header-mobile-right .header-icon {
 }
 
 .mobile-accordion-trigger {
-  @apply flex items-center gap-10 p-20 w-full cursor-pointer bg-off-white;
+  @apply flex items-center gap-10 p-20 w-full cursor-pointer;
 }
 
 .mobile-accordion-label {
   @apply flex-1 font-bold text-heading-6 uppercase text-black text-left;
+}
+
+.mobile-accordion-chevron-btn {
+  @apply flex items-center justify-center shrink-0 cursor-pointer;
 }
 
 .mobile-accordion.is-active .mobile-accordion-label {

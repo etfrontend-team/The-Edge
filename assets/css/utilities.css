@@ -168,6 +168,14 @@
   @apply font-normal text-heading-5 max-768:text-heading-6;
 }
 
+.about-title-group {
+  @apply flex flex-col items-center text-center;
+}
+
+.about-section .about-eyebrow p {
+  @apply font-futura-pt italic text-heading-4 uppercase leading-normal max-768:text-heading-5;
+}
+
 /* ========================
    BANNER BOTTOM ELEMENT
    ======================== */
@@ -186,6 +194,250 @@
 
 .banner-bottom-mb {
   @apply hidden! max-768:block!;
+}
+
+/* ========================
+   INNER BANNER SECTION
+   ======================== */
+
+.inner-banner {
+  @apply relative overflow-hidden py-0;
+}
+
+.inner-banner-bg {
+  @apply absolute inset-0 overflow-hidden pointer-events-none;
+}
+
+.inner-banner-bg-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.inner-banner-overlay-tl {
+  @apply absolute inset-0 pointer-events-none bg-linear-to-br from-white/60 via-white/30 to-transparent;
+}
+
+.inner-banner-overlay-top {
+  @apply absolute inset-0 pointer-events-none bg-linear-to-b from-black/40 via-black/25 to-transparent;
+}
+
+.inner-banner-overlay-right {
+  @apply absolute inset-0 pointer-events-none bg-linear-to-l from-black/40 via-black/25 to-transparent;
+}
+
+.inner-banner-content {
+  @apply relative z-10 flex flex-col justify-center pt-240 pb-157 max-768:h-auto max-768:pt-150 max-768:pb-100;
+}
+
+.inner-banner-copy {
+  @apply flex flex-col gap-10 max-w-700;
+}
+
+.inner-banner h1 {
+  @apply font-futura-pt-cond uppercase text-heading-1 max-768:text-40;
+}
+
+.inner-banner-subtitle p {
+  @apply font-futura-pt italic text-heading-4 uppercase leading-normal max-768:text-heading-5;
+}
+
+/* ========================
+   THREE COLUMNS SECTION
+   ======================== */
+
+.three-col-section {
+  @apply relative overflow-hidden bg-off-white;
+}
+
+.three-col-bg {
+  @apply absolute inset-0 overflow-hidden pointer-events-none opacity-7;
+}
+
+.three-col-bg-img {
+  @apply absolute bottom-0 -left-170 w-3/4 max-w-none max-768:w-full;
+}
+
+.three-col-section .container-fluid {
+  @apply flex flex-col gap-55 relative z-10;
+}
+
+.three-col-section .section-heading .content p {
+  @apply leading-natural;
+}
+
+.three-col-swiper {
+  @apply w-full;
+}
+
+.three-col-swiper .swiper-wrapper {
+  @apply items-stretch;
+}
+
+.three-col-swiper .swiper-slide {
+  @apply h-auto;
+}
+
+.three-col-card {
+  @apply relative rounded overflow-hidden flex flex-col justify-end p-28 h-480 max-768:h-380;
+}
+
+.three-col-card-media {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+.three-col-card-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 ease-linear;
+}
+
+.three-col-card:hover .three-col-card-img {
+  @apply scale-110;
+}
+
+.three-col-card-base-overlay {
+  @apply absolute inset-0 bg-black/40;
+}
+
+.three-col-card-gradient {
+  @apply absolute inset-0 bg-linear-to-t from-black/40 via-black/25 to-transparent;
+}
+
+.three-col-card-content {
+  @apply relative z-10 flex flex-col gap-10;
+}
+
+.three-col-card .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
+}
+
+.three-col-card .content p {
+  @apply leading-none;
+}
+
+/* ========================
+   TWO COLUMN NO-BG SECTION
+   ======================== */
+
+.twocol-nb-section {
+  @apply relative bg-white;
+}
+
+.twocol-nb-inner {
+  @apply flex gap-55 items-center w-full max-1024:flex-col max-1024:gap-40;
+}
+
+.twocol-nb-left {
+  @apply relative shrink-0 w-598 max-1024:w-full;
+}
+
+.twocol-nb-left::after {
+  content: '';
+  @apply absolute inset-y-0 -right-1 w-40 z-10 pointer-events-none bg-white max-1024:hidden;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+
+.twocol-nb-img-wrap {
+  @apply relative rounded-sm overflow-hidden h-480 max-1024:h-360 max-768:h-280;
+}
+
+.twocol-nb-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.twocol-nb-right {
+  @apply flex-1 min-w-0 flex flex-col gap-20 items-start justify-center;
+}
+
+.twocol-nb-title-group {
+  @apply flex flex-col items-start;
+}
+
+.twocol-nb-eyebrow p {
+  @apply font-futura-pt font-medium italic text-heading-4 uppercase leading-natural max-768:text-heading-5;
+}
+
+.twocol-nb-section h2 {
+  @apply font-futura-pt-cond font-bold uppercase max-w-440;
+}
+
+.twocol-nb-section .content p {
+  @apply font-normal text-heading-6 leading-natural max-768:text-14;
+}
+
+.twocol-nb-edge-meaning {
+  @apply flex flex-col gap-20 w-full;
+}
+
+.twocol-nb-section .twocol-nb-edge-meaning .twocol-nb-eyebrow p {
+  @apply font-futura-pt font-medium italic text-heading-4 uppercase leading-natural max-768:text-heading-5;
+}
+
+.twocol-nb-list {
+  @apply flex flex-col gap-10;
+}
+
+.twocol-nb-list-item {
+  @apply flex gap-8 items-start;
+}
+
+.twocol-nb-bullet {
+  @apply shrink-0 mt-3;
+}
+
+.twocol-nb-list-item strong {
+  @apply font-bold uppercase;
+}
+
+/* ========================
+   ACCORDION SECTION
+   ======================== */
+.twocol-process-section .twocol-left-inner{
+  @apply 1024:pt-90! 1024:pb-70!;
+}
+.twocol-section .accordion-section h3 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
+}
+
+.twocol-section .accordion-right {
+  @apply flex-1 relative overflow-hidden max-1024:order-1 max-1024:flex-none max-1024:h-360;
+}
+
+.twocol-section .accordion-right-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.twocol-section .accordion-list {
+  @apply flex flex-col;
+}
+
+.twocol-section .accordion-item {
+  @apply flex flex-col;
+}
+
+.twocol-section .accordion-trigger {
+  @apply bg-transparent border-0 p-0 cursor-pointer text-left w-full py-10;
+}
+
+.twocol-section .accordion-item .title h3 {
+  @apply opacity-60 transition-opacity duration-200 font-bold uppercase;
+} 
+
+.twocol-section .accordion-item.is-active .title h3 {
+  @apply opacity-100;
+}
+
+.twocol-section .accordion-body {
+  @apply hidden pb-10;
+}
+
+.twocol-section .accordion-item.is-active .accordion-body {
+  @apply block;
+}
+
+.twocol-section .accordion-section .accordion-body .content p {
+  @apply text-heading-6 font-normal leading-normal;
+}
+
+.twocol-section .accordion-divider {
+  @apply w-full border-t border-solid border-white/30;
 }
 
 /* ========================
@@ -232,7 +484,7 @@
 }
 
 .twocol-left-inner {
-  @apply flex flex-col gap-20 pt-151 pb-81 max-1024:py-70 max-768:py-55 max-w-540 1600:ms-auto;
+  @apply flex flex-col gap-20 pt-151 pb-81 max-1024:py-70 max-768:py-55 max-w-568 1600:ms-auto;
 }
 
 .twocol-copy {
@@ -256,22 +508,16 @@
   @apply absolute inset-0 w-full h-full object-cover object-center;
 }
 
-/* Gold diagonal strip: vertical at panel boundary (desktop, child of twocol-section-inner) */
+/* Gold diagonal strip: vertical at panel boundary (desktop) */
 .twocol-side-strip-dt {
-  @apply absolute top-0 h-full w-70 overflow-hidden ms-20 pointer-events-none z-10 left-1/2 -translate-x-1/2 max-1024:hidden;
+  @apply absolute top-0 h-full w-40 pointer-events-none z-10 left-1/2 max-1024:hidden bg-gold;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
 }
 
-.twocol-side-strip-dt img {
-  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 max-w-none;
-}
-
-/* Gold diagonal strip: horizontal at top of gold panel (mobile only) */
+/* Gold diagonal strip: horizontal at top of gold panel (mobile) */
 .twocol-side-strip-mb {
-  @apply hidden absolute -top-28 left-0 w-full h-28 overflow-hidden pointer-events-none z-10 max-1024:block;
-}
-
-.twocol-side-strip-mb img {
-  @apply w-full h-28 object-cover;
+  @apply hidden absolute -top-28 left-0 w-full h-28 pointer-events-none z-10 max-1024:block bg-gold;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
 
 /* ========================
@@ -967,4 +1213,667 @@
 .bannerwrap-media-wrap.is-playing .bannerwrap-play-area,
 .bannerwrap-media.is-playing .bannerwrap-play-area {
   @apply hidden;
+}
+
+/* ========================
+   TWOCOL DARK SECTION
+   ======================== */
+
+.twocol-dark {
+  @apply relative overflow-hidden;
+}
+
+.twocol-dark.general-padding {
+  @apply pt-170 pb-100 max-1024:pt-100 max-1024:pb-60 max-768:pt-70 max-768:pb-50;
+}
+
+.twocol-dark-top-el {
+  @apply absolute -top-1 left-0 w-full z-20 pointer-events-none rotate-180;
+}
+
+.twocol-dark-top-el-img {
+  @apply block w-full;
+}
+
+.twocol-dark-bg {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+.twocol-dark-bg-color {
+  @apply absolute inset-0 bg-maroon;
+}
+
+.twocol-dark-texture {
+  @apply absolute inset-0 w-full h-full object-cover opacity-16;
+}
+
+.twocol-dark-gradient {
+  @apply absolute inset-0 bg-radial from-maroon-dark to-transparent;
+}
+
+.twocol-dark-inner {
+  @apply relative z-10 flex gap-80 items-center max-1024:flex-col max-1024:gap-50 1024:px-45;
+}
+
+.twocol-dark-copy {
+  @apply flex flex-col gap-20 flex-1 min-w-0;
+}
+
+.twocol-dark h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
+}
+
+.twocol-dark .content p {
+  @apply font-futura-pt font-normal text-heading-6 leading-natural;
+}
+
+.twocol-dark-body {
+  @apply flex flex-col gap-20;
+}
+
+.twocol-dark-list {
+  @apply flex flex-col gap-10 list-none p-0 m-0;
+}
+
+.twocol-dark-list-item {
+  @apply flex gap-8 items-start;
+}
+
+.twocol-dark-bullet {
+  @apply shrink-0 mt-5;
+}
+
+.twocol-dark-list-item strong {
+  @apply font-bold uppercase leading-20;
+}
+
+.twocol-dark-closing {
+  @apply flex flex-col gap-20;
+}
+
+.twocol-dark-media {
+  @apply flex-1 self-stretch relative rounded overflow-hidden shadow-dropdown max-1024:flex-none max-1024:w-full max-1024:h-400 max-768:h-280;
+}
+
+.twocol-dark-media-base {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.twocol-dark-media-photo {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+/* ========================
+   EDGE SECTION
+   ======================== */
+.edge-section {
+  @apply relative bg-white;
+}
+
+.edge-inner {
+  @apply flex gap-28 items-stretch max-1024:flex-col max-1024:gap-0;
+}
+
+.edge-left {
+  @apply relative shrink-0 w-481 overflow-hidden max-1024:w-full max-1024:h-360 max-768:h-260;
+}
+
+.edge-left::after {
+  content: '';
+  @apply absolute inset-y-0 -right-1 w-40 z-10 pointer-events-none bg-white max-1024:hidden;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+
+.edge-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.edge-right {
+  @apply flex-1 min-w-0 flex flex-col;
+}
+
+.edge-item-wrap {
+  @apply flex flex-col;
+}
+
+.edge-item {
+  @apply flex gap-28 items-start py-40 max-768:py-24 max-768:gap-16;
+}
+
+.edge-divider {
+  @apply border-t border-red w-full;
+}
+
+.edge-item-label {
+  @apply shrink-0 w-200 flex flex-col max-768:w-120;
+}
+
+.edge-section h3 {
+  @apply text-heading-2 font-futura-pt-cond font-bold uppercase leading-none;
+}
+
+.edge-item-subtitle p {
+  @apply font-futura-pt font-medium italic uppercase text-heading-4 leading-none max-768:text-heading-5;
+}
+
+.edge-item-body {
+  @apply flex-1 min-w-0 flex flex-col gap-10;
+}
+
+.edge-item-quote p {
+  @apply font-futura-pt italic text-heading-6 leading-natural;
+}
+
+.edge-item-desc p {
+  @apply font-futura-pt font-normal text-heading-6 leading-natural;
+}
+
+/* ========================
+   COACHING LISTING SECTION
+   ======================== */
+.coaching-listing-section {
+  @apply relative bg-white;
+}
+
+.coaching-listing-inner {
+  @apply flex flex-col gap-40;
+}
+
+.coaching-filter-row {
+  @apply flex gap-40 items-center flex-wrap max-768:gap-20;
+}
+
+.coaching-filter-group {
+  @apply flex gap-8 items-center;
+}
+
+.coaching-filter-icon {
+  @apply shrink-0;
+}
+
+.coaching-filter-label-text {
+  @apply font-futura-pt font-medium text-heading-5 uppercase leading-none text-navy;
+}
+
+.coaching-filter-btn {
+  @apply font-futura-pt font-medium text-heading-5 uppercase leading-none text-navy cursor-pointer bg-transparent p-0;
+}
+
+/* ========================
+   PROGRAM CARD (reusable)
+   ======================== */
+.program-card-swiper {
+  @apply w-full;
+}
+
+.program-card-swiper .swiper-wrapper {
+  @apply items-stretch;
+}
+
+.program-card-swiper .swiper-slide {
+  @apply h-auto;
+}
+
+.program-card {
+  @apply flex flex-col gap-20 h-full;
+}
+
+.program-card-media {
+  @apply relative rounded overflow-hidden h-440 flex flex-col justify-end p-28 max-768:h-360;
+}
+
+.program-card-bg {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+.program-card-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 ease-linear;
+}
+
+.program-card-media:hover .program-card-img {
+  @apply scale-110;
+}
+
+.program-card-gradient {
+  @apply absolute inset-0 bg-linear-to-t from-black/40 via-black/25 to-transparent;
+}
+
+.program-card-overlay {
+  @apply relative z-10 flex flex-col gap-10 items-center w-full;
+}
+
+.program-card-tag {
+  @apply inline-flex items-center justify-center bg-black/40 border border-white rounded px-14 py-4 shrink-0;
+}
+
+.program-card-tag span {
+  @apply font-futura-pt font-bold text-12 uppercase leading-none text-white whitespace-nowrap;
+}
+
+.program-card-media h3 {
+  @apply font-futura-pt-cond font-bold text-heading-3 uppercase leading-none text-center text-white max-768:text-heading-4;
+}
+
+.program-card-footer {
+  @apply flex items-center justify-center shrink-0;
+}
+
+.program-card .btn {
+  @apply px-26
+}
+
+/* ========================
+   PHASES SECTION
+   ======================== */
+
+.phases-section {
+  @apply bg-off-white;
+}
+
+.phases-rows {
+  @apply flex flex-col gap-80 max-1024:gap-40;
+}
+
+.phases-row {
+  @apply flex items-stretch gap-55 max-1024:flex-col max-1024:gap-30;
+}
+
+.phases-row--img-right {
+  @apply flex-row-reverse max-1024:flex-col;
+}
+
+.phases-row-img-side {
+  @apply relative shrink-0 w-598 max-1024:w-full max-1024:h-360 max-768:h-280;
+}
+
+.phases-row--img-left .phases-row-img-side::after {
+  content: '';
+  @apply absolute inset-y-0 -right-1 w-40 z-10 bg-off-white pointer-events-none max-1024:hidden;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+}
+
+.phases-row--img-right .phases-row-img-side::after {
+  content: '';
+  @apply absolute inset-y-0 left-0 w-40 z-10 bg-off-white pointer-events-none max-1024:hidden;
+  clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+}
+
+.phases-row-img-wrap {
+  @apply absolute inset-0 overflow-hidden rounded-sm;
+}
+
+.phases-row-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.phases-row-copy {
+  @apply flex-1 min-w-0 flex flex-col gap-20 justify-center;
+}
+
+.phases-row-heading {
+  @apply flex flex-col;
+}
+
+.phases-section .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-[1.27];
+}
+
+.phases-row-theme p {
+  @apply font-futura-pt font-medium italic text-heading-4 uppercase leading-natural max-768:text-heading-5;
+}
+
+.phases-section .content p {
+  @apply font-futura-pt leading-natural;
+}
+
+.phases-list-group {
+  @apply flex flex-col gap-10 w-full;
+}
+
+.phases-section .phases-list-label p {
+  @apply font-bold uppercase leading-20;
+}
+
+.phases-bullet-list {
+  @apply flex flex-col gap-10 list-none;
+}
+
+.phases-bullet-item {
+  @apply flex gap-8 items-start;
+}
+
+.phases-bullet-icon {
+  @apply shrink-0 mt-3;
+}
+.phases-bullet-icon img {
+  @apply w-10 h-10 object-contain;
+}
+
+/* ========================
+   EXPLORE JOURNEYS SECTION
+   ======================== */
+
+.explore-section {
+  @apply relative overflow-hidden;
+}
+
+.explore-section-clip {
+  @apply absolute top-0 left-0 w-full h-70 max-1024:h-40 max-768:h-30 z-20 pointer-events-none bg-off-white;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.explore-section.general-padding {
+  @apply pt-170 pb-100 max-1024:pt-100 max-1024:pb-60 max-768:pt-70 max-768:pb-40;
+}
+
+.explore-section-bg {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+.explore-section-bg-color {
+  @apply absolute inset-0 bg-maroon;
+}
+
+.explore-section-bg-texture {
+  @apply absolute inset-0 w-full h-full object-cover opacity-16;
+}
+
+.explore-section-bg-gradient {
+  @apply absolute inset-0 bg-radial from-maroon-dark to-transparent;
+}
+
+.explore-section-inner {
+  @apply relative z-10 flex flex-col gap-70 items-center max-1024:gap-50 max-768:gap-40;
+}
+
+.explore-section-copy {
+  @apply flex flex-col gap-20 items-center text-center max-w-1000;
+}
+
+.explore-section .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase text-center leading-none;
+}
+
+.explore-section .content p {
+  @apply font-futura-pt text-center leading-natural;
+}
+
+.explore-section-swiper {
+  @apply w-full overflow-hidden;
+}
+
+.explore-section-swiper .swiper-wrapper {
+  @apply items-stretch;
+}
+
+.explore-section-swiper .swiper-slide {
+  @apply h-auto;
+}
+
+.explore-card {
+  @apply flex flex-col gap-20 items-center h-full;
+}
+
+.explore-card-img {
+  @apply relative w-full h-440 rounded overflow-hidden flex flex-col justify-end p-28 shrink-0 max-768:h-400;
+}
+
+.explore-card-img-photo {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.explore-card-img-overlay {
+  @apply absolute inset-0 bg-gradient-to-b from-transparent via-black/25 to-black/40 rounded pointer-events-none;
+}
+
+.explore-card-img-inner {
+  @apply relative z-1 flex flex-col gap-10 items-center w-full;
+}
+
+.explore-card-tag {
+  @apply bg-black/40 border border-white border-solid px-14 py-4 rounded;
+}
+
+.explore-section .explore-card-tag p {
+  @apply font-futura-pt font-bold text-12 uppercase whitespace-nowrap leading-natural;
+}
+
+.explore-section .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase text-center leading-none;
+}
+
+.explore-card-btn {
+  @apply flex items-center justify-center;
+}
+
+/* ========================
+   COACHING DESC SECTION
+   ======================== */
+
+.coaching-desc-section {
+  @apply bg-white;
+}
+
+.coaching-desc-section.general-padding {
+  @apply pt-100 pb-100 max-1024:pt-70 max-1024:pb-70 max-768:pt-50 max-768:pb-50;
+}
+
+.coaching-desc-inner {
+  @apply flex gap-55 items-start max-1024:flex-col max-1024:gap-40;
+}
+
+/* ---- Left: media column ---- */
+
+.coaching-desc-media {
+  @apply flex flex-col gap-20 flex-1 relative min-w-0 overflow-hidden;
+}
+
+.coaching-desc-main-swiper {
+  @apply w-full rounded overflow-hidden shadow-dropdown;
+}
+
+.coaching-desc-main-swiper .swiper-wrapper {
+  @apply items-stretch;
+}
+
+.coaching-desc-main-swiper .swiper-slide {
+  @apply h-auto;
+}
+
+.coaching-desc-slide {
+  @apply relative h-560 w-full rounded overflow-hidden max-768:h-380;
+}
+
+.coaching-desc-slide-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.coaching-desc-slide-empty {
+  @apply bg-grey;
+}
+
+/* Nav arrows */
+
+.coaching-desc-nav-wrap {
+  @apply absolute z-10 flex items-center justify-between pointer-events-none top-260 left-20 right-20 -translate-y-1/2;
+}
+
+.coaching-desc-nav {
+  @apply relative pointer-events-auto flex items-center justify-center cursor-pointer;
+}
+
+.coaching-desc-nav img {
+  @apply w-40 h-40;
+}
+
+.coaching-desc-prev img {
+  @apply -scale-x-100;
+}
+
+/* Thumbs swiper */
+
+.coaching-desc-thumbs {
+  @apply w-full overflow-hidden;
+}
+
+.coaching-desc-thumbs .swiper-wrapper {
+  @apply items-stretch;
+}
+
+.coaching-desc-thumbs .swiper-slide {
+  @apply h-auto;
+}
+
+.coaching-desc-thumb {
+  @apply relative h-153 rounded overflow-hidden cursor-pointer shadow-dropdown;
+}
+
+.coaching-desc-thumb-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.coaching-desc-thumb-empty {
+  @apply bg-grey;
+}
+
+.coaching-desc-thumb-overlay {
+  @apply absolute inset-0 rounded opacity-0 transition-opacity duration-300 bg-red/40;
+}
+
+.coaching-desc-thumbs .swiper-slide-thumb-active .coaching-desc-thumb {
+  @apply border-4 border-red border-solid;
+}
+
+.coaching-desc-thumbs .swiper-slide-thumb-active .coaching-desc-thumb-overlay {
+  @apply opacity-100;
+}
+
+/* ---- Right: content column ---- */
+
+.coaching-desc-content {
+  @apply flex flex-col gap-40 flex-1 min-w-0 max-1024:w-full;
+}
+
+.coaching-desc-header {
+  @apply flex flex-col gap-10 items-start;
+}
+
+.coaching-desc-section .coaching-desc-header .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
+}
+
+.coaching-desc-meta {
+  @apply flex gap-20 items-center;
+}
+
+.coaching-desc-meta .content p {
+  @apply font-futura-pt font-bold italic leading-none text-heading-3;
+}
+
+.coaching-desc-stars {
+  @apply flex items-center gap-1;
+}
+
+.coaching-desc-star {
+  @apply w-28 h-28 flex-shrink-0;
+}
+
+.coaching-desc-body {
+  @apply flex flex-col gap-20 items-start;
+}
+
+.coaching-desc-section .coaching-desc-body .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
+}
+
+.coaching-desc-section .coaching-desc-body .content p {
+  @apply font-futura-pt leading-natural;
+}
+
+.coaching-desc-section .coaching-desc-body .content-bold p {
+  @apply font-futura-pt font-bold leading-natural;
+}
+
+/* Pricing option cards */
+
+.coaching-desc-options {
+  @apply flex gap-20 items-start flex-wrap;
+}
+
+.coaching-desc-option {
+  @apply flex flex-col gap-10 items-center justify-center px-28 py-10 rounded cursor-pointer shadow-dropdown;
+}
+
+.coaching-desc-option-active {
+  @apply bg-white border-2 border-red border-solid;
+}
+
+.coaching-desc-option-inactive {
+  @apply bg-off-white;
+}
+
+.coaching-desc-option .content p {
+  @apply font-futura-pt text-heading-6 text-center whitespace-nowrap leading-natural;
+}
+
+.coaching-desc-option-price {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-3 text-center whitespace-nowrap leading-none;
+}
+
+.coaching-desc-option-active .coaching-desc-option-price {
+  @apply text-red;
+}
+
+.coaching-desc-option-inactive .coaching-desc-option-price {
+  @apply text-black;
+}
+
+/* Checkbox */
+
+.coaching-desc-checkbox-row {
+  @apply flex gap-8 items-center;
+}
+
+.coaching-desc-checkbox {
+  @apply shrink-0 w-16 h-16 bg-white border-2 border-red border-solid rounded appearance-none cursor-pointer;
+}
+
+/* Quantity */
+
+.coaching-desc-quantity-row {
+  @apply flex gap-20 items-center;
+}
+
+.coaching-desc-qty-label {
+  @apply font-futura-pt font-bold text-heading-4 text-black whitespace-nowrap leading-natural;
+}
+
+.coaching-desc-qty-stepper {
+  @apply flex gap-20 items-center px-20 py-8 border-2 border-red border-solid rounded-full;
+}
+
+.coaching-desc-qty-btn {
+  @apply w-24 h-24 flex items-center justify-center cursor-pointer;
+}
+
+.coaching-desc-qty-val {
+  @apply font-futura-pt font-bold text-heading-6 text-navy text-center leading-natural;
+}
+
+/* Buttons */
+
+.coaching-desc-actions {
+  @apply flex gap-20 items-center flex-wrap pt-14;
+}
+
+.coaching-desc-shoppay-btn {
+  @apply flex gap-5 items-center justify-center px-28 py-10 border-2 border-red border-solid rounded-full cursor-pointer transition-colors duration-300;
+}
+
+.coaching-desc-shoppay-label {
+  @apply font-futura-pt font-bold uppercase text-red text-heading-6 leading-20 whitespace-nowrap;
+}
+
+.coaching-desc-shoppay-logo {
+  @apply h-14 w-63;
 }

@@ -59,6 +59,8 @@
 
   /* LINE HEIGHTS */
   --leading-heading-1: 1.29;
+  --leading-natural: normal;
+  --leading-20: 20.5px;
 
   /* SHADOWS */
   --shadow-dropdown: 0px 5px 15px rgba(0, 0, 0, 0.17);
