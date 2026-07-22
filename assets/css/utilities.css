@@ -943,6 +943,10 @@
   @apply pt-8;
 }
 
+.cta-section--community .content p {
+  @apply not-italic normal-case font-normal text-[16px] leading-natural;
+}
+
 /* ========================
    NEWSLETTER SECTION
    ======================== */
@@ -1655,7 +1659,7 @@
 }
 
 .coaching-desc-section.general-padding {
-  @apply pt-100 pb-100 max-1024:pt-70 max-1024:pb-70 max-768:pt-50 max-768:pb-50;
+  @apply pt-269 pb-100 max-1024:pt-170 max-1024:pb-70 max-768:pt-150 max-768:pb-50;
 }
 
 .coaching-desc-inner {
@@ -1665,7 +1669,7 @@
 /* ---- Left: media column ---- */
 
 .coaching-desc-media {
-  @apply flex flex-col gap-20 flex-1 relative min-w-0 overflow-hidden;
+  @apply flex flex-col gap-20 flex-1 relative min-w-0 overflow-hidden max-1024:w-full;
 }
 
 .coaching-desc-main-swiper {
@@ -1801,7 +1805,7 @@
 }
 
 .coaching-desc-option {
-  @apply flex flex-col gap-10 items-center justify-center px-28 py-10 rounded cursor-pointer shadow-dropdown;
+  @apply flex flex-col gap-10 1024:h-92 items-center justify-center px-28 py-10 rounded cursor-pointer shadow-dropdown;
 }
 
 .coaching-desc-option-active {
@@ -1871,9 +1875,556 @@
 }
 
 .coaching-desc-shoppay-label {
-  @apply font-futura-pt font-bold uppercase text-red text-heading-6 leading-20 whitespace-nowrap;
+  @apply font-futura-pt font-bold uppercase text-red text-heading-6 leading-20 whitespace-nowrap leading-[1.1];
 }
 
 .coaching-desc-shoppay-logo {
   @apply h-14 w-63;
+}
+
+/* ========================
+   PODCAST FEATURED SECTION
+   ======================== */
+
+.podcast-featured-section {
+  @apply pt-55 pb-0 max-768:pt-30;
+}
+
+.podcast-featured-card {
+  @apply relative overflow-hidden rounded px-45 pt-45 pb-200 max-768:px-20 max-768:pt-30 max-768:pb-150;
+}
+
+.podcast-featured-bg {
+  @apply absolute inset-0 pointer-events-none;
+}
+
+.podcast-featured-bg-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.podcast-featured-overlay {
+  @apply absolute inset-0 bg-linear-to-l from-transparent to-black/60;
+}
+
+.podcast-featured-content {
+  @apply relative z-10 flex flex-col gap-28 items-start max-w-575 max-768:max-w-full;
+}
+
+.podcast-featured-content .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none max-768:text-heading-3;
+}
+
+.podcast-featured-desc p {
+  @apply font-futura-pt text-heading-6 leading-none;
+}
+
+.podcast-featured-desc p + p {
+  @apply mt-16;
+}
+
+.podcast-featured-ctas {
+  @apply flex gap-11 items-center flex-wrap;
+}
+
+/* Apple Podcast CTA */
+.podcast-cta-apple {
+  @apply min-h-48 flex gap-6 items-center px-10 py-6 bg-red rounded cursor-pointer transition-opacity duration-300 hover:opacity-80;
+}
+
+.podcast-cta-apple-icon {
+  @apply shrink-0 flex items-center justify-center;
+}
+
+.podcast-cta-label {
+  @apply flex flex-col items-start;
+}
+
+.podcast-cta-listen-on {
+  @apply font-futura-pt text-12 text-white leading-none;
+}
+
+.podcast-cta-platform {
+  @apply font-futura-pt font-bold uppercase text-heading-6 text-white leading-natural;
+}
+
+/* Start Listening CTA */
+.podcast-cta-listen {
+  @apply 1024:min-h-48 flex gap-6 items-center self-stretch px-10 py-6 border-2 border-white border-solid rounded cursor-pointer transition-opacity duration-300 hover:opacity-80;
+}
+
+.podcast-cta-waves {
+  @apply shrink-0 flex items-center justify-center;
+}
+
+.podcast-cta-text {
+  @apply font-futura-pt font-bold uppercase text-heading-6 text-white whitespace-nowrap leading-20;
+}
+
+/* ========================
+   PODCAST PLAYER CARD
+   ======================== */
+
+.podcast-player-card {
+  @apply min-h-235 relative flex items-stretch gap-20 bg-white rounded drop-shadow-player overflow-hidden -mt-130 max-768:flex-col max-768:mt-20 max-768:gap-0;
+}
+
+.podcast-player-thumb {
+  @apply shrink-0 relative overflow-hidden w-220 max-768:w-full max-768:h-200;
+}
+
+.podcast-player-thumb-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.podcast-player-body {
+  @apply flex flex-1 flex-col gap-35 items-start pr-20 py-20 max-768:p-20;
+}
+
+.podcast-player-meta {
+  @apply flex flex-col gap-10 items-start w-full;
+}
+
+.podcast-player-meta .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-3 leading-none max-768:text-heading-4;
+}
+
+.podcast-player-meta .content p {
+  @apply font-futura-pt font-medium text-heading-5 leading-[1.3] uppercase;
+}
+
+.podcast-player-controls {
+  @apply w-full;
+}
+
+.podcast-player-play-row {
+  @apply flex gap-20 items-center w-full;
+}
+
+.podcast-play-btn {
+  @apply shrink-0 w-60 h-60 rounded-full bg-red flex items-center justify-center cursor-pointer transition-opacity duration-300 hover:opacity-80;
+}
+
+.podcast-player-progress {
+  @apply flex flex-1 flex-col gap-16 min-w-0;
+}
+
+.podcast-player-times {
+  @apply flex justify-between w-full;
+}
+
+.podcast-player-times span {
+  @apply font-futura-pt text-heading-6 text-black leading-natural whitespace-nowrap;
+}
+
+.podcast-player-bar {
+  @apply w-full;
+}
+
+.podcast-player-bar-track {
+  @apply w-full h-6 bg-grey2 rounded-full;
+}
+
+.podcast-player-actions {
+  @apply flex items-center justify-between w-full gap-10 flex-wrap;
+}
+
+.podcast-player-left-actions {
+  @apply flex gap-20 items-center;
+}
+
+.podcast-ctrl-btn {
+  @apply w-24 h-24 flex items-center justify-center cursor-pointer opacity-100 hover:opacity-70 transition-opacity duration-300;
+}
+
+.podcast-ctrl-btn img {
+  @apply block w-full h-full object-contain;
+}
+
+.podcast-ctrl-fwd {
+  @apply rotate-180;
+}
+
+.podcast-speed-btn {
+  @apply font-futura-pt font-medium text-heading-6 text-red whitespace-nowrap cursor-pointer;
+}
+
+.podcast-player-right-actions {
+  @apply flex gap-20 items-center;
+}
+
+.podcast-action-link {
+  @apply font-futura-pt text-heading-6 text-black whitespace-nowrap hover:text-red transition-colors duration-300;
+}
+
+/* ========================
+   LATEST EPISODES SECTION
+   ======================== */
+
+.latest-episodes-section {
+  @apply bg-white;
+}
+.latest-episodes-section .container-fluid,
+.podcast-category-section .container-fluid
+{
+  @apply max-w-1312
+}
+.latest-episodes-header {
+  @apply flex flex-col items-center gap-20 text-center mb-60 max-768:mb-40 max-w-1000 mx-auto;
+}
+
+.latest-episodes-header .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-2 leading-none max-768:text-heading-3;
+}
+
+.latest-episodes-header .content p {
+  @apply font-futura-pt text-heading-6 leading-relaxed;
+}
+
+.latest-episodes-grid {
+  @apply grid grid-cols-3 gap-x-55 gap-y-40 max-1024:grid-cols-2 max-640:grid-cols-1;
+}
+
+.podcast-ep-card {
+  @apply flex flex-col gap-20 cursor-pointer;
+}
+
+.podcast-ep-card-img {
+  @apply relative overflow-hidden rounded h-360 max-1024:h-300 max-768:h-240;
+}
+
+.podcast-ep-card-img img {
+  @apply absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 ease-linear;
+}
+
+.podcast-ep-card:hover .podcast-ep-card-img img {
+  @apply scale-110;
+}
+
+.podcast-ep-card-body {
+  @apply flex flex-col gap-20;
+}
+
+.podcast-ep-card-meta {
+  @apply flex gap-28 items-center;
+}
+
+.podcast-ep-card-speaker,
+.podcast-ep-card-duration {
+  @apply flex gap-8 items-center;
+}
+
+.podcast-ep-meta-icon {
+  @apply shrink-0 w-18 h-18 flex items-center justify-center;
+}
+
+.podcast-ep-card-meta .content p {
+  @apply font-futura-pt text-heading-6 leading-none italic whitespace-nowrap;
+}
+
+.podcast-ep-card-body .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-3 leading-none;
+}
+
+/* ========================
+   PODCAST CATEGORY SECTION
+   ======================== */
+
+.podcast-category-section {
+  @apply relative overflow-hidden bg-maroon pt-0 pb-0;
+  clip-path: polygon(0 70px, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.podcast-category-bg {
+  @apply absolute inset-0 z-0 pointer-events-none;
+}
+
+.podcast-category-bg-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center opacity-20;
+}
+
+.podcast-category-inner {
+  @apply relative z-10 flex flex-col gap-55 items-center w-full pt-170 pb-100 max-1024:pt-130 max-768:pt-100 max-768:pb-70;
+}
+
+.podcast-category-header {
+  @apply w-full text-center;
+}
+
+.podcast-category-header .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-2 leading-none max-w-1000 mx-auto max-768:text-heading-3;
+}
+
+.podcast-category-tabs {
+  @apply flex flex-wrap justify-center gap-20 w-full;
+}
+
+.podcast-cat-tab {
+  @apply font-futura-pt font-bold uppercase text-heading-6 leading-none text-white border-2 border-white rounded-full px-28 py-10 cursor-pointer transition-all duration-300;
+}
+
+.podcast-cat-tab--active {
+  @apply bg-red border-red;
+}
+
+.podcast-category-grid {
+  @apply grid grid-cols-2 gap-40 w-full max-768:grid-cols-1;
+}
+
+.podcast-cat-card {
+  @apply flex flex-col;
+}
+
+.podcast-cat-card-img {
+  @apply relative overflow-hidden rounded-t h-310 max-1024:h-260 max-768:h-220;
+}
+
+.podcast-cat-card-img img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.podcast-cat-card-body {
+  @apply flex flex-col gap-20 bg-white p-20 rounded-b;
+}
+
+.podcast-cat-card-body .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-3 leading-[1.3] max-1024:text-heading-4;
+}
+
+.podcast-cat-card-meta {
+  @apply flex gap-40 items-start flex-wrap;
+}
+
+.podcast-cat-card-speaker,
+.podcast-cat-card-category {
+  @apply flex gap-8 items-center;
+}
+
+.podcast-cat-meta-icon {
+  @apply shrink-0;
+}
+
+.podcast-cat-card-meta .content p {
+  @apply font-futura-pt text-heading-6 leading-none italic;
+}
+
+.podcast-cat-card-player {
+  @apply flex gap-20 items-center;
+}
+
+.podcast-cat-player-main {
+  @apply flex flex-1 gap-20 items-center;
+}
+
+.podcast-cat-play-btn {
+  @apply shrink-0 cursor-pointer;
+}
+
+.podcast-cat-play-img {
+  @apply block w-40 h-40;
+}
+
+.podcast-cat-player-progress {
+  @apply flex flex-col gap-10 flex-1;
+}
+
+.podcast-cat-player-times {
+  @apply flex justify-between items-center;
+}
+
+.podcast-cat-time {
+  @apply font-futura-pt text-heading-6 leading-none text-black;
+}
+
+.podcast-cat-player-bar {
+  @apply relative w-full h-6 bg-grey rounded-full overflow-hidden;
+}
+
+.podcast-cat-player-track {
+  @apply absolute left-0 top-0 h-full bg-red rounded-full w-0;
+}
+
+.podcast-cat-player-volume {
+  @apply flex gap-11 items-center;
+}
+
+.podcast-cat-volume-img {
+  @apply shrink-0 w-24 h-24;
+}
+
+.podcast-cat-volume-slider {
+  @apply relative shrink-0 w-44;
+}
+
+.podcast-cat-volume-line-img {
+  @apply block w-full h-auto;
+}
+
+.podcast-cat-pagination {
+  @apply flex gap-20 items-center justify-center w-full;
+}
+
+.podcast-cat-page-arrow {
+  @apply shrink-0 cursor-pointer;
+}
+
+.podcast-cat-arrow-img {
+  @apply block w-40 h-40;
+}
+
+.podcast-cat-arrow-flip {
+  @apply rotate-180;
+}
+
+.podcast-cat-page-numbers {
+  @apply flex gap-10 items-center;
+}
+
+.podcast-cat-page-num {
+  @apply font-futura-pt font-bold text-heading-6 leading-[1.35] text-white px-15 py-10 rounded cursor-pointer transition-all duration-300;
+}
+
+.podcast-cat-page-num--active {
+  @apply bg-white text-red;
+}
+
+/* ========================
+   PODCAST SINGLE SECTION
+   ======================== */
+
+.podcast-player-card-solo {
+  @apply mt-0 w-full;
+}
+
+.podcast-play-img-btn {
+  @apply shrink-0 w-80 h-80 max-768:w-60 max-768:h-60 cursor-pointer transition-opacity duration-300 hover:opacity-80;
+}
+
+.podcast-play-img-btn img {
+  @apply block w-full h-full object-contain;
+}
+
+.podcast-single-inner {
+  @apply flex flex-col gap-40 items-center w-full max-w-1000 mx-auto;
+}
+
+.podcast-single-top-nav {
+  @apply w-full pt-14;
+}
+
+.podcast-single-image {
+  @apply relative w-full rounded overflow-hidden shadow-dropdown h-412 max-1024:h-340 max-768:h-240;
+}
+
+
+.podcast-single-parallax-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center;
+}
+
+.podcast-single-content {
+  @apply flex flex-col gap-20 items-center w-full;
+}
+
+.podcast-single-content .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-2 leading-none text-center max-768:text-heading-3;
+}
+
+.podcast-single-meta {
+  @apply flex gap-40 items-center justify-center flex-wrap max-768:gap-20;
+}
+
+.podcast-single-meta-item {
+  @apply flex gap-8 items-center;
+}
+
+.podcast-single-meta-icon {
+  @apply shrink-0 w-18 h-18 flex items-center justify-center;
+}
+
+.podcast-single-meta .content p {
+  @apply font-futura-pt italic text-heading-6 text-navy leading-none whitespace-nowrap;
+}
+
+.podcast-single-body {
+  @apply w-full;
+}
+
+.podcast-single-body .content p {
+  @apply font-futura-pt text-heading-6 text-navy leading-relaxed text-center;
+}
+
+.podcast-single-body .content p + p {
+  @apply mt-16;
+}
+
+.podcast-single-nav {
+  @apply flex items-center justify-between w-full pt-14;
+}
+.podcast-single-box {
+  @apply flex flex-col gap-40;
+}
+.podcast-single-section {
+  @apply pt-283 max-1024:pt-180;
+}
+.podcast-single-nav .btn-red-outline {
+  @apply leading-[1.05];
+}
+
+/* ========================
+   EVENTS LISTING SECTION
+   ======================== */
+
+.events-listing-section {
+  @apply bg-white;
+}
+
+.events-listing-inner {
+  @apply flex flex-col gap-55 items-center px-100 max-768:px-0;
+}
+
+.events-listing-tabs {
+  @apply flex flex-wrap justify-center gap-16 w-full;
+}
+
+.events-tab {
+  @apply font-futura-pt font-bold uppercase text-heading-6 leading-none border-2 border-red text-red px-28 py-10 rounded-full cursor-pointer transition-all duration-300;
+}
+
+.events-tab--active {
+  @apply bg-red text-white;
+}
+
+.events-listing-grid {
+  @apply grid grid-cols-3 gap-30 w-full max-1024:grid-cols-2 max-640:grid-cols-1;
+}
+
+.events-listing-card {
+  @apply relative overflow-hidden rounded block no-underline;
+}
+
+.events-card-media {
+  @apply relative h-440 max-1024:h-360 max-768:h-300;
+}
+
+.events-card-bg-img {
+  @apply absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500;
+}
+
+.events-listing-card:hover .events-card-bg-img {
+  @apply scale-110;
+}
+
+.events-card-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent;
+}
+
+.events-card-content {
+  @apply absolute bottom-0 left-0 right-0 flex flex-col items-center gap-8 pb-28 px-28 text-center;
+}
+
+.events-card-content .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-3 leading-none max-768:text-heading-4;
+}
+
+.events-card-content .title h4 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-4 leading-none;
 }

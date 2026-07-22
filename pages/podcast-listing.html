@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>The Edge</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../node_modules/lenis/dist/lenis.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Sitewide bar -->
+        <div class="header-sitewide">
+            <div class="container-fluid">
+                <div class="content content-white">
+                    <p>This is the first example of a sitewide notice.</p>
+                </div>
+                <div class="header-sitewide-actions">
+                    <a href="#" role="link" target="_self" aria-label="Schedule a tour" class="btn btn-red">
+                        JOIN THE EDGE
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main nav bar -->
+        <div class="header-nav">
+            <div class="container-fluid">
+
+                <!-- Mobile: left group (hamburger + user) -->
+                <div class="header-mobile-left">
+                    <button type="button" aria-label="Open navigation menu" class="hamburger-btn" id="hamburgerBtn">
+                        <span class="header-icon">
+                            <!-- Hamburger icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                                <line x1="2" y1="5" x2="18" y2="5" />
+                                <line x1="2" y1="10" x2="18" y2="10" />
+                                <line x1="2" y1="15" x2="18" y2="15" />
+                            </svg>
+                        </span>
+                    </button>
+                    <a href="#" role="link" target="_self" aria-label="My account"
+                        class="header-icon header-icon-link header-icon-user">
+                        <!-- User icon -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_4006_7302)">
+                                <path
+                                    d="M9.99968 10.0001C11.3803 10.0001 12.5586 9.51166 13.535 8.53517C14.5116 7.55868 14.9999 6.38033 14.9999 4.99994C14.9999 3.61978 14.5116 2.44139 13.535 1.46467C12.5583 0.488223 11.3799 0 9.99968 0C8.61948 0 7.4409 0.488223 6.46445 1.46467C5.48783 2.44139 4.99951 3.61974 4.99951 4.99994C4.99951 6.38033 5.48783 7.55868 6.46445 8.53517C7.44117 9.51166 8.61943 10.0001 9.99968 10.0001Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M19.121 15.28C19.0905 14.8417 19.0297 14.3685 18.9387 13.8606C18.8475 13.3528 18.7323 12.882 18.5934 12.4478C18.4545 12.0139 18.2678 11.5907 18.0335 11.1783C17.7992 10.766 17.5301 10.4145 17.2261 10.1236C16.9221 9.83272 16.5511 9.60067 16.113 9.42709C15.6744 9.25355 15.1904 9.16663 14.6609 9.16663C14.5828 9.16663 14.4005 9.25994 14.114 9.44661C13.8278 9.63328 13.5044 9.84166 13.1441 10.0718C12.7839 10.3015 12.3149 10.51 11.7379 10.6964C11.1606 10.883 10.5812 10.9764 9.99942 10.9764C9.41784 10.9764 8.83845 10.883 8.26125 10.6964C7.68409 10.51 7.21521 10.3015 6.85496 10.0718C6.49475 9.84166 6.17145 9.63332 5.88503 9.44661C5.59848 9.25994 5.41629 9.16663 5.33816 9.16663C4.80866 9.16663 4.32468 9.25355 3.88635 9.42709C3.44793 9.60067 3.07687 9.8329 2.77299 10.1236C2.46921 10.4145 2.20008 10.766 1.96579 11.1783C1.73151 11.5907 1.54489 12.0141 1.40597 12.4478C1.2671 12.882 1.15203 13.3528 1.06091 13.8606C0.969692 14.3685 0.908944 14.8414 0.878524 15.28C0.848149 15.7185 0.833008 16.1678 0.833008 16.6278C0.833008 17.6693 1.14993 18.492 1.78355 19.0954C2.4173 19.6985 3.25939 20 4.30972 20H15.6902C16.7404 20 17.5824 19.6985 18.2163 19.0954C18.8502 18.492 19.1669 17.6695 19.1669 16.6278C19.1668 16.1678 19.1517 15.7185 19.121 15.28Z"
+                                    fill="white"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_4006_7302">
+                                    <rect width="20" height="20" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Logo -->
+                <a href="/pages/index.html" role="link" target="_self" aria-label="The Edge homepage"
+                    class="header-logo">
+                    <img src="../assets/images/logo.png" alt="The Edge at Princeton" width="315" height="60"
+                        class="header-logo-img header-logo-light" />
+                    <img src="../assets/images/logo2.png" alt="The Edge at Princeton" width="315" height="60"
+                        class="header-logo-img header-logo-dark" />
+                </a>
+
+                <!-- Desktop nav -->
+                <nav class="header-desktop-nav" aria-label="Main navigation">
+                    <ul class="flex gap-28 max-1199:gap-10">
+
+                        <li class="nav-item has-dropdown">
+                            <a href="about.html" role="link" target="_self" aria-label="About" aria-haspopup="true"
+                                class="nav-link">
+                                About
+                            </a>
+                            <div class="nav-dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="#" role="link" target="_self" aria-label="Our Story"
+                                            class="nav-dropdown-link">
+                                            Our Story
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="our_community.html" role="link" target="_self"
+                                            aria-label="Our Community" class="nav-dropdown-link">
+                                            Our Community
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item has-dropdown">
+                            <a href="coaching.html" role="link" target="_self" aria-label="coaching"
+                                aria-haspopup="true" class="nav-link">
+                                Coaching
+                            </a>
+                            <div class="nav-dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="single-coaching.html" role="link" target="_self"
+                                            aria-label="1-1 Coaching" class="nav-dropdown-link">
+                                            1-1 Coaching
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="single-coaching.html" role="link" target="_self"
+                                            aria-label="Online Group Coaching" class="nav-dropdown-link">
+                                            Online Group Coaching
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="single-coaching.html" role="link" target="_self"
+                                            aria-label="In-Person Group Coaching" class="nav-dropdown-link">
+                                            In-Person Group Coaching
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="single-coaching.html" role="link" target="_self"
+                                            aria-label="4-Week Transformative Program" class="nav-dropdown-link">
+                                            4-Week Transformative Program
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="single-coaching.html" role="link" target="_self"
+                                            aria-label="Men's Weekend" class="nav-dropdown-link">
+                                            Men's Weekend
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="podcast-listing.html" role="link" target="_self" aria-label="Podcast"
+                                class="nav-link">
+                                Podcast
+                            </a>
+                        </li>
+
+                        <li class="nav-item has-dropdown">
+
+                            <a href="event-listing.html" role="link" target="_self" aria-label="Podcast"
+                                class="nav-link">
+                                Events
+                            </a>
+                            <div class="nav-dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="event-single.html" role="link" target="_self" aria-label="Retreats"
+                                            class="nav-dropdown-link">
+                                            Retreats
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="event-single.html" role="link" target="_self" aria-label="Workshops"
+                                            class="nav-dropdown-link">
+                                            Workshops
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="event-single.html" role="link" target="_self" aria-label="Summits"
+                                            class="nav-dropdown-link">
+                                            Summits
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item has-dropdown">
+                            <a href="resources-listing.html" role="link" target="_self" aria-label="Resources"
+                                class="nav-link">
+                                Resources
+                            </a>
+                            <div class="nav-dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="resources-single.html" role="link" target="_self" aria-label="Freebies"
+                                            class="nav-dropdown-link">
+                                            Freebies
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="resources-single.html" role="link" target="_self" aria-label="Shop"
+                                            class="nav-dropdown-link">
+                                            Shop
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="resourcessingle.html" role="link" target="_self" aria-label="Courses"
+                                            class="nav-dropdown-link">
+                                            Courses
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contact.html" role="link" target="_self" aria-label="Contact" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!-- Desktop right: phone + divider + icons -->
+                <div class="header-right">
+                    <a href="tel:+3014032161" role="link" target="_self" aria-label="Call us at 301.403.2161"
+                        class="header-phone">
+                        <span class="header-icon">
+                            <!-- Phone icon -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4032_2496)">
+                                    <path
+                                        d="M19.5516 15.8058L16.4629 12.7168C15.8477 12.1041 14.8289 12.1227 14.1923 12.7596L12.6362 14.3153C12.5379 14.2611 12.4361 14.2045 12.3291 14.1445C11.3465 13.6 10.0015 12.8537 8.58628 11.4374C7.16683 10.0182 6.41986 8.67115 5.87372 7.68786C5.81609 7.58369 5.76087 7.48325 5.70634 7.38787L6.75071 6.34506L7.26416 5.83098C7.90178 5.19319 7.91936 4.17468 7.30559 3.56016L4.2169 0.470783C3.60313 -0.142874 2.58387 -0.124258 1.94626 0.513532L1.07576 1.38903L1.09955 1.41264C0.807657 1.78509 0.563746 2.21465 0.382234 2.67788C0.214915 3.11882 0.110743 3.53959 0.0631095 3.96122C-0.344731 7.34231 1.20033 10.4324 5.39342 14.6255C11.1896 20.4213 15.8605 19.9834 16.062 19.962C16.5009 19.9096 16.9214 19.8047 17.3489 19.6387C17.8081 19.4593 18.2374 19.2158 18.6096 18.9245L18.6286 18.9414L19.5105 18.0779C20.1468 17.4402 20.1651 16.4213 19.5516 15.8058Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4032_2496">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </span>
+                        <span class="header-phone-text">301.403.2161</span>
+                    </a>
+
+                    <div class="header-divider" aria-hidden="true"></div>
+
+                    <div class="header-icons">
+                        <a href="#" role="link" target="_self" aria-label="My account"
+                            class="header-icon header-icon-link">
+                            <!-- User icon -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4006_7302)">
+                                    <path
+                                        d="M9.99968 10.0001C11.3803 10.0001 12.5586 9.51166 13.535 8.53517C14.5116 7.55868 14.9999 6.38033 14.9999 4.99994C14.9999 3.61978 14.5116 2.44139 13.535 1.46467C12.5583 0.488223 11.3799 0 9.99968 0C8.61948 0 7.4409 0.488223 6.46445 1.46467C5.48783 2.44139 4.99951 3.61974 4.99951 4.99994C4.99951 6.38033 5.48783 7.55868 6.46445 8.53517C7.44117 9.51166 8.61943 10.0001 9.99968 10.0001Z"
+                                        fill="white" />
+                                    <path
+                                        d="M19.121 15.28C19.0905 14.8417 19.0297 14.3685 18.9387 13.8606C18.8475 13.3528 18.7323 12.882 18.5934 12.4478C18.4545 12.0139 18.2678 11.5907 18.0335 11.1783C17.7992 10.766 17.5301 10.4145 17.2261 10.1236C16.9221 9.83272 16.5511 9.60067 16.113 9.42709C15.6744 9.25355 15.1904 9.16663 14.6609 9.16663C14.5828 9.16663 14.4005 9.25994 14.114 9.44661C13.8278 9.63328 13.5044 9.84166 13.1441 10.0718C12.7839 10.3015 12.3149 10.51 11.7379 10.6964C11.1606 10.883 10.5812 10.9764 9.99942 10.9764C9.41784 10.9764 8.83845 10.883 8.26125 10.6964C7.68409 10.51 7.21521 10.3015 6.85496 10.0718C6.49475 9.84166 6.17145 9.63332 5.88503 9.44661C5.59848 9.25994 5.41629 9.16663 5.33816 9.16663C4.80866 9.16663 4.32468 9.25355 3.88635 9.42709C3.44793 9.60067 3.07687 9.8329 2.77299 10.1236C2.46921 10.4145 2.20008 10.766 1.96579 11.1783C1.73151 11.5907 1.54489 12.0141 1.40597 12.4478C1.2671 12.882 1.15203 13.3528 1.06091 13.8606C0.969692 14.3685 0.908944 14.8414 0.878524 15.28C0.848149 15.7185 0.833008 16.1678 0.833008 16.6278C0.833008 17.6693 1.14993 18.492 1.78355 19.0954C2.4173 19.6985 3.25939 20 4.30972 20H15.6902C16.7404 20 17.5824 19.6985 18.2163 19.0954C18.8502 18.492 19.1669 17.6695 19.1669 16.6278C19.1668 16.1678 19.1517 15.7185 19.121 15.28Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4006_7302">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <button type="button" aria-label="Open shopping cart" id="cartBtn" class="cart-btn header-icon">
+                            <!-- Cart icon -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip-cart-dt)">
+                                    <path
+                                        d="M15.1571 14.8615C13.8771 14.8615 12.8218 15.8944 12.8218 17.1967C12.8218 18.4767 13.8547 19.532 15.1571 19.532C16.437 19.532 17.4924 18.4991 17.4924 17.1967C17.4699 15.9168 16.437 14.8615 15.1571 14.8615Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M19.2661 3.72395C19.2212 3.72395 19.1539 3.7015 19.0865 3.7015H4.94004L4.71549 2.19703C4.58076 1.20902 3.72748 0.468018 2.71702 0.468018H0.898188C0.404185 0.468018 0 0.872202 0 1.36621C0 1.86021 0.404185 2.26439 0.898188 2.26439H2.71702C2.82929 2.26439 2.91911 2.35421 2.94157 2.46649L4.33376 11.9424C4.5134 13.1325 5.54631 14.0307 6.75887 14.0307H16.1C17.2677 14.0307 18.2781 13.1998 18.5251 12.0546L19.9847 4.75687C20.0745 4.28532 19.7601 3.81377 19.2661 3.72395Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M9.43087 17.0845C9.38596 15.8495 8.35305 14.8615 7.11804 14.8615C5.81566 14.9288 4.82766 16.0066 4.87257 17.2866C4.91748 18.5216 5.92794 19.5096 7.16295 19.5096H7.20786C8.48777 19.4422 9.49824 18.3644 9.43087 17.0845Z"
+                                        fill="currentColor" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip-cart-dt">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        <a href="#" role="link" target="_self" aria-label="Search"
+                            class="header-icon header-icon-link search-btn">
+                            <!-- Search icon -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4006_7318)">
+                                    <path
+                                        d="M19.2895 15.7606L15.9977 12.4688C16.5962 11.2718 16.9952 9.87531 16.9952 8.4788C16.9952 3.79052 13.2047 0 8.5164 0C3.82812 0 0.0375977 3.79052 0.0375977 8.4788C0.0375977 13.1671 3.82812 16.9576 8.5164 16.9576C9.91291 16.9576 11.3094 16.5586 12.5064 15.9601L15.7982 19.2519C16.7957 20.2494 18.292 20.2494 19.2895 19.2519C20.1872 18.2544 20.1872 16.7581 19.2895 15.7606ZM8.5164 14.9626C4.92538 14.9626 2.03261 12.0698 2.03261 8.4788C2.03261 4.88778 4.92538 1.99501 8.5164 1.99501C12.1074 1.99501 15.0002 4.88778 15.0002 8.4788C15.0002 12.0698 12.1074 14.9626 8.5164 14.9626Z"
+                                        fill="currentColor" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4006_7318">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Mobile: right group (cart + search) -->
+                <div class="header-mobile-right">
+                    <button type="button" aria-label="Open shopping cart" id="cartBtnMb" class="cart-btn header-icon">
+                        <!-- Cart icon -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip-cart-mb)">
+                                <path
+                                    d="M15.1571 14.8615C13.8771 14.8615 12.8218 15.8944 12.8218 17.1967C12.8218 18.4767 13.8547 19.532 15.1571 19.532C16.437 19.532 17.4924 18.4991 17.4924 17.1967C17.4699 15.9168 16.437 14.8615 15.1571 14.8615Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M19.2661 3.72395C19.2212 3.72395 19.1539 3.7015 19.0865 3.7015H4.94004L4.71549 2.19703C4.58076 1.20902 3.72748 0.468018 2.71702 0.468018H0.898188C0.404185 0.468018 0 0.872202 0 1.36621C0 1.86021 0.404185 2.26439 0.898188 2.26439H2.71702C2.82929 2.26439 2.91911 2.35421 2.94157 2.46649L4.33376 11.9424C4.5134 13.1325 5.54631 14.0307 6.75887 14.0307H16.1C17.2677 14.0307 18.2781 13.1998 18.5251 12.0546L19.9847 4.75687C20.0745 4.28532 19.7601 3.81377 19.2661 3.72395Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M9.43087 17.0845C9.38596 15.8495 8.35305 14.8615 7.11804 14.8615C5.81566 14.9288 4.82766 16.0066 4.87257 17.2866C4.91748 18.5216 5.92794 19.5096 7.16295 19.5096H7.20786C8.48777 19.4422 9.49824 18.3644 9.43087 17.0845Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip-cart-mb">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a href="#" role="link" target="_self" aria-label="Search"
+                        class="header-icon header-icon-link search-btn">
+                        <!-- Search icon -->
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip-search-mb)">
+                                <path
+                                    d="M19.2895 15.7606L15.9977 12.4688C16.5962 11.2718 16.9952 9.87531 16.9952 8.4788C16.9952 3.79052 13.2047 0 8.5164 0C3.82812 0 0.0375977 3.79052 0.0375977 8.4788C0.0375977 13.1671 3.82812 16.9576 8.5164 16.9576C9.91291 16.9576 11.3094 16.5586 12.5064 15.9601L15.7982 19.2519C16.7957 20.2494 18.292 20.2494 19.2895 19.2519C20.1872 18.2544 20.1872 16.7581 19.2895 15.7606ZM8.5164 14.9626C4.92538 14.9626 2.03261 12.0698 2.03261 8.4788C2.03261 4.88778 4.92538 1.99501 8.5164 1.99501C12.1074 1.99501 15.0002 4.88778 15.0002 8.4788C15.0002 12.0698 12.1074 14.9626 8.5164 14.9626Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip-search-mb">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+            </div><!-- /.container-fluid -->
+        </div><!-- /.header-nav -->
+
+        <!-- Search popup -->
+        <div class="search-popup" id="searchPopup" role="search">
+            <div class="search-popup-inner">
+                <label for="searchInput" class="search-form-row">
+                    <span class="search-form-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip-search-popup)">
+                                <path
+                                    d="M19.2895 15.7606L15.9977 12.4688C16.5962 11.2718 16.9952 9.87531 16.9952 8.4788C16.9952 3.79052 13.2047 0 8.5164 0C3.82812 0 0.0375977 3.79052 0.0375977 8.4788C0.0375977 13.1671 3.82812 16.9576 8.5164 16.9576C9.91291 16.9576 11.3094 16.5586 12.5064 15.9601L15.7982 19.2519C16.7957 20.2494 18.292 20.2494 19.2895 19.2519C20.1872 18.2544 20.1872 16.7581 19.2895 15.7606ZM8.5164 14.9626C4.92538 14.9626 2.03261 12.0698 2.03261 8.4788C2.03261 4.88778 4.92538 1.99501 8.5164 1.99501C12.1074 1.99501 15.0002 4.88778 15.0002 8.4788C15.0002 12.0698 12.1074 14.9626 8.5164 14.9626Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip-search-popup">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                    <input type="search" id="searchInput" name="q" placeholder="Search" autocomplete="off"
+                        class="search-input" />
+                </label>
+                <div class="search-form-divider" aria-hidden="true"></div>
+            </div>
+        </div>
+
+        <!-- Cart Panel -->
+        <div class="cart-panel" id="cartPanel">
+            <div class="cart-panel-inner">
+
+                <!-- Title -->
+                <div class="cart-title">
+                    <div class="title title-black">
+                        <h3>Shopping Cart <span class="cart-count">(2 Items)</span></h3>
+                    </div>
+                </div>
+
+                <!-- Products list -->
+                <div class="cart-products">
+                    <div class="cart-divider" aria-hidden="true"></div>
+                    <div class="cart-products-list">
+
+                        <!-- Product 1 -->
+                        <div class="cart-product-row">
+                            <div class="cart-product-inner">
+                                <div class="cart-product-body">
+                                    <img src="../assets/images/card-coaching-1-1.webp" width="140" height="140"
+                                        alt="1-1 Coaching" class="cart-product-img" />
+                                    <div class="cart-product-copy">
+                                        <div class="cart-product-title">
+                                            <div class="title title-black">
+                                                <h4>1-1 Coaching</h4>
+                                            </div>
+                                        </div>
+                                        <div class="cart-product-price-row">
+                                            <span class="cart-price-text">$2,597.00</span>
+                                            <div class="cart-qty">
+                                                <button type="button" aria-label="Decrease quantity of 1-1 Coaching"
+                                                    class="cart-qty-btn">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                                <span class="cart-qty-value">1</span>
+                                                <button type="button" aria-label="Increase quantity of 1-1 Coaching"
+                                                    class="cart-qty-btn">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" aria-label="Remove 1-1 Coaching from cart"
+                                    class="cart-remove-btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="cart-product-row">
+                            <div class="cart-product-inner">
+                                <div class="cart-product-body">
+                                    <img src="../assets/images/card-online-coaching.webp" width="140" height="140"
+                                        alt="Online Group Coaching" class="cart-product-img" />
+                                    <div class="cart-product-copy">
+                                        <div class="cart-product-title">
+                                            <span class="cart-product-tag cart-tag-virtual">VIRTUAL</span>
+                                            <div class="title title-black">
+                                                <h4>Online Group Coaching</h4>
+                                            </div>
+                                        </div>
+                                        <div class="cart-product-price-row">
+                                            <span class="cart-price-text">$1,997.00</span>
+                                            <div class="cart-qty">
+                                                <button type="button"
+                                                    aria-label="Decrease quantity of Online Group Coaching"
+                                                    class="cart-qty-btn">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                                <span class="cart-qty-value">1</span>
+                                                <button type="button"
+                                                    aria-label="Increase quantity of Online Group Coaching"
+                                                    class="cart-qty-btn">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                        <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" aria-label="Remove Online Group Coaching from cart"
+                                    class="cart-remove-btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                        <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cart-divider" aria-hidden="true"></div>
+                </div>
+
+                <!-- Upsell -->
+                <div class="cart-upsell">
+                    <div class="cart-upsell-title">
+                        <div class="title title-black">
+                            <h3>Highly Rated Experience</h3>
+                        </div>
+                    </div>
+                    <div class="cart-upsell-product">
+                        <div class="cart-upsell-product-body">
+                            <img src="../assets/images/card-inperson-coaching.webp" width="140" height="140"
+                                alt="In-Person Group Coaching" class="cart-upsell-img" />
+                            <div class="cart-upsell-copy">
+                                <div class="cart-product-title">
+                                    <span class="cart-product-tag cart-tag-inperson">IN-PERSON</span>
+                                    <div class="title title-black">
+                                        <h4>In-Person Group Coaching</h4>
+                                    </div>
+                                </div>
+                                <div class="cart-product-price-row">
+                                    <span class="cart-price-text">$997.00</span>
+                                    <div class="cart-qty cart-qty-narrow">
+                                        <button type="button" aria-label="Decrease quantity of In-Person Group Coaching"
+                                            class="cart-qty-btn">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                        <span class="cart-qty-value">1</span>
+                                        <button type="button" aria-label="Increase quantity of In-Person Group Coaching"
+                                            class="cart-qty-btn">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" aria-label="Remove In-Person Group Coaching from cart"
+                            class="cart-remove-btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" role="link" target="_self" aria-label="Quick add In-Person Group Coaching to cart"
+                        class="btn btn-red">
+                        Quick Add
+                    </a>
+                </div>
+
+                <!-- Subtotal + Checkout -->
+                <div class="cart-footer">
+                    <div class="cart-subtotal-row">
+                        <span class="cart-subtotal-label">Subtotal</span>
+                        <span class="cart-subtotal-amount">$4,594.00</span>
+                    </div>
+                    <div class="cart-checkout-actions">
+                        <a href="#" role="link" target="_self" aria-label="Proceed to checkout" class="btn btn-red">
+                            Checkout
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-accordions">
+                <!-- Background texture overlay -->
+                <div class="mobile-menu-accordions-bg" aria-hidden="true">
+                    <img src="../assets/images/vector/accordions-bg.png" alt="Background texture" width="1512"
+                        height="393" class="mobile-menu-accordions-bg-img" />
+                </div>
+                <div class="mobile-menu-accordions-inner">
+                    <!-- Accordion: About (expandable) -->
+                    <div class="mobile-accordion is-expandable">
+                        <div class="mobile-accordion-trigger">
+                            <a href="about.html" role="link" target="_self" aria-label="About"
+                                class="mobile-accordion-label">About</a>
+                            <button type="button" aria-label="Toggle About submenu"
+                                class="mobile-accordion-chevron-btn">
+                                <span class="mobile-accordion-chevron" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="7 4 13 10 7 16" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="mobile-accordion-content">
+                            <a href="#" role="link" target="_self" aria-label="Our Story" class="mobile-sub-link">
+                                Our Story
+                            </a>
+                            <a href="our_community.html" role="link" target="_self" aria-label="Our Community"
+                                class="mobile-sub-link">
+                                Our Community
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Accordion: Coaching (expandable) -->
+                    <div class="mobile-accordion is-expandable">
+                        <div class="mobile-accordion-trigger">
+                            <a href="coaching.html" role="link" target="_self" aria-label="Coaching"
+                                class="mobile-accordion-label">Coaching</a>
+                            <button type="button" aria-label="Toggle Coaching submenu"
+                                class="mobile-accordion-chevron-btn">
+                                <span class="mobile-accordion-chevron" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="7 4 13 10 7 16" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="mobile-accordion-content">
+                            <a href="single-coaching.html" role="link" target="_self" aria-label="1-1 Coaching"
+                                class="mobile-sub-link">
+                                1-1 Coaching
+                            </a>
+                            <a href="single-coaching.html" role="link" target="_self" aria-label="Online Group Coaching"
+                                class="mobile-sub-link">
+                                Online Group Coaching
+                            </a>
+                            <a href="single-coaching.html" role="link" target="_self"
+                                aria-label="In-Person Group Coaching" class="mobile-sub-link">
+                                In-Person Group Coaching
+                            </a>
+                            <a href="single-coaching.html" role="link" target="_self"
+                                aria-label="4-Week Transformative Program" class="mobile-sub-link">
+                                4-Week Transformative Program
+                            </a>
+                            <a href="single-coaching.html" role="link" target="_self" aria-label="Men's Weekend"
+                                class="mobile-sub-link">
+                                Men's Weekend
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Accordion: Podcast (no sub-links) -->
+                    <div class="mobile-accordion">
+                        <a href="podcast-listing.html" role="link" target="_self" aria-label="Podcast"
+                            class="mobile-accordion-trigger">
+                            <span class="mobile-accordion-label">Podcast</span>
+                        </a>
+                    </div>
+
+                    <!-- Accordion: Events (expandable) -->
+                    <div class="mobile-accordion is-expandable">
+                        <div class="mobile-accordion-trigger">
+                            <a href="event-listing.html" role="link" target="_self" aria-label="Events"
+                                class="mobile-accordion-label">Events</a>
+                            <button type="button" aria-label="Toggle Events submenu"
+                                class="mobile-accordion-chevron-btn">
+                                <span class="mobile-accordion-chevron" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="7 4 13 10 7 16" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="mobile-accordion-content">
+                            <a href="event-single.html" role="link" target="_self" aria-label="Retreats"
+                                class="mobile-sub-link">
+                                Retreats
+                            </a>
+                            <a href="event-single.html" role="link" target="_self" aria-label="Workshops"
+                                class="mobile-sub-link">
+                                Workshops
+                            </a>
+                            <a href="event-single.html" role="link" target="_self" aria-label="Summits"
+                                class="mobile-sub-link">
+                                Summits
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Accordion: Resources (expandable) -->
+                    <div class="mobile-accordion is-expandable">
+                        <div class="mobile-accordion-trigger">
+                            <a href="resources-listing.html" role="link" target="_self" aria-label="Resources"
+                                class="mobile-accordion-label">Resources</a>
+                            <button type="button" aria-label="Toggle Resources submenu"
+                                class="mobile-accordion-chevron-btn">
+                                <span class="mobile-accordion-chevron" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="7 4 13 10 7 16" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="mobile-accordion-content">
+                            <a href="resources-single.html" role="link" target="_self" aria-label="Freebies"
+                                class="mobile-sub-link">
+                                Freebies
+                            </a>
+                            <a href="resources-single.html" role="link" target="_self" aria-label="Shop"
+                                class="mobile-sub-link">
+                                Shop
+                            </a>
+                            <a href="resourcessingle.html" role="link" target="_self" aria-label="Courses"
+                                class="mobile-sub-link">
+                                Courses
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Accordion: Contact (no sub-links) -->
+                    <div class="mobile-accordion">
+                        <a href="contact.html" role="link" target="_self" aria-label="Contact"
+                            class="mobile-accordion-trigger">
+                            <span class="mobile-accordion-label">Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div><!-- /.mobile-menu-accordions -->
+
+            <div class="mobile-menu-footer p-20 flex flex-col gap-20">
+                <a href="tel:3104032161" role="link" target="_self" aria-label="Call us at 310.403.2161"
+                    class="mobile-phone">
+                    <span class="header-icon text-black">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip-phone-mb)">
+                                <path
+                                    d="M19.5516 15.8058L16.4629 12.7168C15.8477 12.1041 14.8289 12.1227 14.1923 12.7596L12.6362 14.3153C12.5379 14.2611 12.4361 14.2045 12.3291 14.1445C11.3465 13.6 10.0015 12.8537 8.58628 11.4374C7.16683 10.0182 6.41986 8.67115 5.87372 7.68786C5.81609 7.58369 5.76087 7.48325 5.70634 7.38787L6.75071 6.34506L7.26416 5.83098C7.90178 5.19319 7.91936 4.17468 7.30559 3.56016L4.2169 0.470783C3.60313 -0.142874 2.58387 -0.124258 1.94626 0.513532L1.07576 1.38903L1.09955 1.41264C0.807657 1.78509 0.563746 2.21465 0.382234 2.67788C0.214915 3.11882 0.110743 3.53959 0.0631095 3.96122C-0.344731 7.34231 1.20033 10.4324 5.39342 14.6255C11.1896 20.4213 15.8605 19.9834 16.062 19.962C16.5009 19.9096 16.9214 19.8047 17.3489 19.6387C17.8081 19.4593 18.2374 19.2158 18.6096 18.9245L18.6286 18.9414L19.5105 18.0779C20.1468 17.4402 20.1651 16.4213 19.5516 15.8058Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip-phone-mb">
+                                    <rect width="20" height="20" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                    <span class="mobile-phone-text">310.403.2161</span>
+                </a>
+                <a href="#" role="link" target="_self" aria-label="Join The Edge" class="btn btn-red">
+                    JOIN THE EDGE
+                </a>
+            </div>
+
+        </div><!-- /.mobile-menu -->
+
+    </header>
+
+    <main>
+
+        <!-- ======= INNER BANNER ======= -->
+        <section class="inner-banner general-padding">
+
+            <!-- Background photo + overlays -->
+            <div class="inner-banner-bg" aria-hidden="true">
+                <img src="../assets/images/banner1.jpg" alt="" width="1512" height="460" id="innerBannerParallax"
+                    class="inner-banner-bg-img" />
+                <div class="inner-banner-overlay-tl"></div>
+                <div class="inner-banner-overlay-top"></div>
+                <div class="inner-banner-overlay-right"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="inner-banner-content container-fluid">
+                <div class="inner-banner-copy">
+                    <div class="title title-white">
+                        <h1>Podcast</h1>
+                    </div>
+                    <div class="content content-white inner-banner-subtitle">
+                        <p>About</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom decorative strip -->
+            <div class="banner-bottom-el" aria-hidden="true">
+                <img src="../assets/images/banner-bottom3.png" alt="" width="1512" height="70"
+                    class="banner-bottom-dt" />
+                <img src="../assets/images/banner-bottom3.png" alt="" width="376" height="28"
+                    class="banner-bottom-mb" />
+            </div>
+
+        </section><!-- /.inner-banner -->
+
+        <!-- ======= PODCAST FEATURED SECTION ======= -->
+        <section class="podcast-featured-section general-padding">
+            <div class="container-fluid">
+
+                <!-- Featured Card -->
+                <div class="podcast-featured-card">
+
+                    <!-- Background -->
+                    <div class="podcast-featured-bg" aria-hidden="true">
+                        <img src="../assets/images/podcast-featured-bg.jpg" alt="" width="1512" height="850"
+                            class="podcast-featured-bg-img" />
+                        <div class="podcast-featured-overlay"></div>
+                    </div>
+
+                    <!-- Copy -->
+                    <div class="podcast-featured-content">
+
+                        <div class="title title-white">
+                            <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                        </div>
+
+                        <div class="content content-white podcast-featured-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh
+                                ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Aenean
+                                lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh
+                                ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Aenean
+                                lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.</p>
+                        </div>
+
+                        <!-- CTAs -->
+                        <div class="podcast-featured-ctas">
+
+                            <!-- Apple Podcast -->
+                            <a href="#" role="link" target="_blank" aria-label="Listen on Apple Podcast"
+                                class="podcast-cta-apple">
+                                <span class="podcast-cta-apple-icon" aria-hidden="true">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_4561_32305)">
+                                            <mask id="mask0_4561_32305" style="mask-type:luminance"
+                                                maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                                                <path d="M0 0H28V28H0V0Z" fill="white" />
+                                            </mask>
+                                            <g mask="url(#mask0_4561_32305)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M25.6573 26.6187C26.5533 25.928 27.1787 24.9573 27.4493 24.2667C27.9907 22.876 28 21.2987 28 20.3V7.7C28 6.71067 28 5.124 27.4493 3.73333C27.1787 3.04267 26.544 2.06267 25.6573 1.38133C25.0727 0.916154 24.4041 0.567616 23.688 0.354667C22.7827 0.0933333 21.6813 0 20.3 0H7.7C6.31867 0 5.21733 0.0933333 4.312 0.354667C3.59694 0.570259 2.92886 0.918547 2.34267 1.38133C1.44667 2.072 0.821333 3.04267 0.550667 3.73333C0.00933335 5.124 0 6.70133 0 7.7V20.3C0 21.2987 0.00933335 22.876 0.550667 24.2667C0.821333 24.9573 1.456 25.9373 2.34267 26.6187C2.856 27.02 3.472 27.3933 4.312 27.6453C5.21733 27.9067 6.31867 28 7.7 28H20.3C21.6813 28 22.792 27.916 23.688 27.6453C24.4031 27.4297 25.0711 27.0815 25.6573 26.6187ZM4.15333 12.824C4.228 7.46667 8.61467 3.11733 13.972 3.09867C19.4133 3.08933 23.8467 7.51333 23.8653 12.9453C23.8653 17.2387 21.112 20.8973 17.276 22.2413C17.1827 22.2787 17.08 22.204 17.0987 22.1013L17.2387 21.0933C17.2427 21.0344 17.2632 20.9777 17.2978 20.9299C17.3325 20.882 17.3799 20.8449 17.4347 20.8227C20.468 19.488 22.596 16.464 22.596 12.9453C22.596 8.18533 18.704 4.32133 13.9347 4.35867C9.27733 4.396 5.46933 8.19467 5.42267 12.8613C5.40704 14.5484 5.88806 16.2027 6.80581 17.6184C7.72357 19.034 9.03751 20.1484 10.584 20.8227C10.6355 20.8495 10.68 20.8879 10.714 20.9348C10.748 20.9818 10.7706 21.0361 10.78 21.0933C10.8045 21.3173 10.8383 21.5413 10.871 21.7653L10.92 22.1013C10.9293 22.1947 10.836 22.2787 10.7427 22.2413C6.86933 20.8787 4.09733 17.164 4.15333 12.824ZM16.296 12.1427C16.296 13.412 15.2693 14.4387 14 14.4387C13.6984 14.4388 13.3998 14.3795 13.1212 14.2642C12.8425 14.1489 12.5894 13.9798 12.3761 13.7665C12.1629 13.5533 11.9938 13.3001 11.8785 13.0215C11.7631 12.7429 11.7038 12.4442 11.704 12.1427C11.704 10.8733 12.7307 9.84667 14 9.84667C15.2693 9.84667 16.296 10.8827 16.296 12.1427ZM16.3987 16.9027C16.3765 16.5985 16.2437 16.313 16.0253 16.1C15.6053 15.6613 14.868 15.372 14 15.372C13.132 15.372 12.3947 15.652 11.9747 16.1C11.76 16.3333 11.6387 16.5667 11.6013 16.9027C11.5267 17.5537 11.5733 18.1125 11.648 19.0108V19.0213C11.7227 19.88 11.8627 21.028 12.04 22.1853C12.1707 23.016 12.2733 23.464 12.3667 23.7813C12.5253 24.304 13.0947 24.752 14 24.752C14.9053 24.752 15.484 24.2947 15.6333 23.7813C15.7267 23.464 15.8293 23.016 15.96 22.1853C16.1373 21.0187 16.2773 19.88 16.352 19.0213C16.436 18.116 16.4733 17.556 16.3987 16.9027ZM13.748 6.36533C10.2573 6.496 7.45733 9.38 7.41067 12.8707C7.39675 13.9597 7.65287 15.0351 8.15614 16.0009C8.65941 16.9668 9.39414 17.7928 10.2947 18.4053C10.3787 18.4613 10.5 18.396 10.5 18.2933C10.4741 17.9174 10.471 17.5403 10.4907 17.164C10.4949 17.1046 10.4853 17.045 10.4626 16.99C10.44 16.9349 10.4048 16.8859 10.36 16.8467C9.80948 16.3321 9.37428 15.7068 9.08309 15.0118C8.7919 14.3168 8.65134 13.5679 8.67067 12.8147C8.70993 11.462 9.26044 10.1744 10.2113 9.21146C11.1621 8.2485 12.4426 7.68173 13.7947 7.62533C14.5121 7.59739 15.2279 7.71453 15.899 7.96972C16.5701 8.22492 17.1828 8.61293 17.7005 9.11052C18.2181 9.60811 18.63 10.205 18.9115 10.8656C19.193 11.5261 19.3383 12.2367 19.3387 12.9547C19.3387 14.4853 18.6853 15.8667 17.6493 16.8467C17.6076 16.8882 17.5745 16.9377 17.552 16.9922C17.5296 17.0467 17.5183 17.1051 17.5187 17.164C17.5373 17.528 17.528 17.8827 17.5093 18.284C17.5 18.3867 17.6213 18.4613 17.7147 18.396C18.6026 17.7907 19.3294 16.9779 19.832 16.028C20.3346 15.0781 20.5978 14.02 20.5987 12.9453C20.608 9.23067 17.5 6.216 13.748 6.36533Z"
+                                                    fill="white" />
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_4561_32305">
+                                                <rect width="28" height="28" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <span class="podcast-cta-label">
+                                    <span class="podcast-cta-listen-on">Listen on</span>
+                                    <span class="podcast-cta-platform">APPLE PODCAST</span>
+                                </span>
+                            </a>
+
+                            <!-- Start Listening -->
+                            <a href="#" role="link" target="_self" aria-label="Start listening to the podcast"
+                                class="podcast-cta-listen">
+                                <span class="podcast-cta-waves" aria-hidden="true">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M27.5407 14.0885C27.5407 13.8038 27.7715 13.573 28.0562 13.573C28.3408 13.573 28.5716 13.8038 28.5716 14.0885V15.9124C28.5716 16.197 28.3408 16.4278 28.0562 16.4278C27.7715 16.4278 27.5407 16.197 27.5407 15.9124V14.0885ZM25.5094 16.7482C25.5094 17.0329 25.7401 17.2636 26.0248 17.2636C26.3095 17.2636 26.5402 17.0329 26.5402 16.7482V13.2526C26.5402 12.968 26.3095 12.7372 26.0248 12.7372C25.7401 12.7372 25.5094 12.968 25.5094 13.2526V16.7482ZM23.5121 19.0895C23.5121 19.3742 23.7429 19.6049 24.0276 19.6049C24.3122 19.6049 24.543 19.3742 24.543 19.0895V10.9113C24.543 10.6267 24.3122 10.3959 24.0276 10.3959C23.7429 10.3959 23.5121 10.6267 23.5121 10.9113V19.0895ZM21.6135 21.4085C21.6135 21.4102 21.6149 21.4115 21.6166 21.4115H22.1289C22.4136 21.4115 22.6443 21.1808 22.6443 20.8961V9.18898C22.6443 8.90432 22.4136 8.67356 22.1289 8.67356C21.8443 8.67356 21.6135 8.90432 21.6135 9.18898V21.4085ZM19.5809 17.7854C19.5809 18.0701 19.8116 18.3008 20.0963 18.3008C20.3809 18.3008 20.6117 18.0701 20.6117 17.7854V12.2154C20.6117 11.9308 20.3809 11.7 20.0963 11.7C19.8116 11.7 19.5809 11.9308 19.5809 12.2154V17.7854ZM17.516 23.2955C18.0853 23.2955 18.5468 22.834 18.5468 22.2647V6.93989C18.5468 6.65433 18.3153 6.42284 18.0298 6.42284C17.7442 6.42284 17.5127 6.65433 17.5127 6.93988V23.2923C17.5127 23.2941 17.5142 23.2955 17.516 23.2955ZM15.484 25.1993C15.484 25.4839 15.7148 25.7147 15.9994 25.7147C16.2841 25.7147 16.5148 25.4839 16.5148 25.1993V4.80155C16.5148 4.51689 16.2841 4.28613 15.9994 4.28613C15.7148 4.28613 15.484 4.51689 15.484 4.80155V25.1993ZM13.4867 21.8911C13.4867 22.1757 13.7175 22.4065 14.0022 22.4065C14.2868 22.4065 14.5176 22.1757 14.5176 21.8911V8.10969C14.5176 7.82503 14.2868 7.59427 14.0022 7.59427C13.7175 7.59427 13.4867 7.82503 13.4867 8.10969V21.8911ZM11.4206 17.6847C11.4206 17.9694 11.6513 18.2001 11.936 18.2001C12.2207 18.2001 12.4514 17.9694 12.4514 17.6847V12.4721C12.4514 12.1874 12.2207 11.9567 11.936 11.9567C11.6513 11.9567 11.4206 12.1874 11.4206 12.4721V17.6847ZM9.4234 16.7174C9.4234 16.7143 9.42593 16.7118 9.42905 16.7118H9.93882C10.2235 16.7118 10.4542 16.481 10.4542 16.1964V13.799C10.4542 13.5143 10.2235 13.2836 9.93882 13.2836C9.65416 13.2836 9.4234 13.5143 9.4234 13.799V16.7174ZM7.42616 18.5481C7.42616 18.5469 7.42719 18.5459 7.42845 18.5459H7.94158C8.22624 18.5459 8.457 18.3151 8.457 18.0304V11.968C8.457 11.6833 8.22624 11.4526 7.94158 11.4526C7.65692 11.4526 7.42616 11.6833 7.42616 11.968V18.5481ZM5.4612 21.9821C5.46116 21.9807 5.46227 21.9796 5.46364 21.9796H5.98263C6.26393 21.9796 6.49197 21.7515 6.49197 21.4702V8.13074C6.49197 7.8461 6.26123 7.61535 5.97659 7.61535C5.69194 7.61535 5.4612 7.8461 5.4612 8.13074V21.9821ZM3.46395 19.7875C3.46395 19.7862 3.46504 19.7851 3.46638 19.7851H3.97937C4.26403 19.7851 4.49479 19.5543 4.49479 19.2697V10.6078C4.49479 10.3231 4.26403 10.0924 3.97937 10.0924C3.69471 10.0924 3.46395 10.3231 3.46395 10.6078V19.7875ZM1.42871 16.7482C1.42871 17.0329 1.65947 17.2636 1.94413 17.2636C2.22879 17.2636 2.45955 17.0329 2.45955 16.7482V13.2526C2.45955 12.968 2.22879 12.7372 1.94413 12.7372C1.65947 12.7372 1.42871 12.968 1.42871 13.2526V16.7482Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span>
+                                <span class="podcast-cta-text">START LISTENING</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div><!-- /.podcast-featured-card -->
+
+                <!-- Audio Player Card (overlaps featured card) -->
+                <div class="podcast-player-card max-w-1000 mx-auto">
+
+                    <!-- Thumbnail -->
+                    <div class="podcast-player-thumb" aria-hidden="true">
+                        <img src="../assets/images/podcast-featured-bg.jpg" alt="Latest episode thumbnail" width="220"
+                            height="235" class="podcast-player-thumb-img" />
+                    </div>
+
+                    <!-- Player Body -->
+                    <div class="podcast-player-body">
+
+                        <!-- Meta -->
+                        <div class="podcast-player-meta">
+                            <div class="title title-black">
+                                <h3>Lorem Ipsum Dolor Sit Amet</h3>
+                            </div>
+                            <div class="content content-silver">
+                                <p>S01 E01– Lorem ipsum</p>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="podcast-player-controls">
+                            <div class="podcast-player-play-row">
+
+                                <!-- Play Button -->
+                                <button type="button" aria-label="Play episode" class="podcast-play-btn">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <polygon points="8,4 24,14 8,24" fill="white" />
+                                    </svg>
+                                </button>
+
+                                <!-- Progress + Actions -->
+                                <div class="podcast-player-progress">
+
+                                    <div class="podcast-player-times">
+                                        <span>00:00:00</span>
+                                        <span>1:50:40</span>
+                                    </div>
+
+                                    <div class="podcast-player-bar">
+                                        <div class="podcast-player-bar-track" role="progressbar" aria-valuenow="0"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                    <div class="podcast-player-actions">
+
+                                        <div class="podcast-player-left-actions">
+                                            <button type="button" aria-label="Rewind 10 seconds"
+                                                class="podcast-ctrl-btn">
+                                                <img src="../assets/images/podcast-rewind.png" alt="Rewind icon"
+                                                    width="24" height="24" />
+                                            </button>
+                                            <button type="button" aria-label="Fast forward 10 seconds"
+                                                class="podcast-ctrl-btn podcast-ctrl-fwd">
+                                                <img src="../assets/images/podcast-rewind.png" alt="Fast forward icon"
+                                                    width="24" height="24" />
+                                            </button>
+                                            <button type="button" aria-label="Playback speed 1x"
+                                                class="podcast-speed-btn">
+                                                1x
+                                            </button>
+                                            <button type="button" aria-label="Toggle volume" class="podcast-ctrl-btn">
+                                                <img src="../assets/images/podcast-volume.png" alt="Volume icon"
+                                                    width="24" height="24" />
+                                            </button>
+                                        </div>
+
+                                        <div class="podcast-player-right-actions">
+                                            <a href="#" role="link" target="_self" aria-label="View episode notes"
+                                                class="podcast-action-link">Notes</a>
+                                            <a href="#" role="link" target="_self" aria-label="View episode links"
+                                                class="podcast-action-link">Links</a>
+                                            <a href="#" role="link" target="_self" aria-label="Follow this podcast"
+                                                class="podcast-action-link">Follow</a>
+                                            <a href="#" role="link" target="_self" aria-label="Share this episode"
+                                                class="podcast-action-link">Share</a>
+                                        </div>
+
+                                    </div>
+
+                                </div><!-- /.podcast-player-progress -->
+
+                            </div><!-- /.podcast-player-play-row -->
+                        </div><!-- /.podcast-player-controls -->
+
+                    </div><!-- /.podcast-player-body -->
+
+                </div><!-- /.podcast-player-card -->
+
+            </div><!-- /.container-fluid -->
+        </section><!-- /.podcast-featured-section -->
+
+        <!-- ======= LATEST EPISODES SECTION ======= -->
+        <section class="latest-episodes-section general-padding">
+            <div class="container-fluid">
+
+                <!-- Section Header -->
+                <div class="latest-episodes-header">
+                    <div class="title title-gold">
+                        <h2>Latest Episodes</h2>
+                    </div>
+                    <div class="content content-navy">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies
+                            vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia
+                            bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.</p>
+                    </div>
+                </div>
+
+                <!-- Episodes Grid -->
+                <div class="latest-episodes-grid">
+                    <!-- Card 1 -->
+                    <a
+                        href="single-podcast.html"
+                        role="link"
+                        target="_self"
+                        aria-label="Listen to podcast episode"
+                        class="podcast-ep-card"
+                    >
+                        <div class="podcast-ep-card-img">
+                            <img src="../assets/images/story-card-1a.jpg" width="800" height="720"
+                                alt="Episode 1 - The Path to Authentic Masculinity podcast cover" />
+                        </div>
+                        <div class="podcast-ep-card-body">
+                            <div class="podcast-ep-card-meta">
+                                <div class="podcast-ep-card-speaker">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28393)">
+                                                <path
+                                                    d="M8.93164 0C6.44636 0 4.43164 2.01472 4.43164 4.5C4.43164 6.98528 6.44636 9 8.93164 9C11.4169 9 13.4316 6.98528 13.4316 4.5C13.4316 2.01472 11.4169 0 8.93164 0Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M4.84091 10.6367C2.58157 10.6367 0.75 12.4683 0.75 14.7276V17.1822C0.75 17.6341 1.11632 18.0004 1.56818 18.0004H16.2955C16.7473 18.0004 17.1136 17.6341 17.1136 17.1822V14.7276C17.1136 12.4683 15.2821 10.6367 13.0227 10.6367H4.84091Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28393">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>Speaker Goes Here</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-ep-card-duration">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28502)">
+                                                <path
+                                                    d="M8.58999 8.58919C8.58999 8.81553 8.77343 8.99782 8.999 8.99782C9.22457 8.99782 9.40802 8.81438 9.40802 8.58919C9.4084 8.11048 9.57844 7.64517 9.88711 7.27905C10.5738 6.46485 11.0885 5.58211 11.4144 4.65532C11.4584 4.53009 11.4393 4.39145 11.3627 4.28307C11.2857 4.17469 11.1616 4.11035 11.0287 4.11035H6.96888C6.83598 4.11035 6.71152 4.17469 6.63454 4.28307C6.55795 4.39145 6.5388 4.53009 6.58284 4.65532C6.90951 5.58211 7.42346 6.46485 8.11013 7.27905C8.41919 7.64517 8.58961 8.11086 8.58999 8.58919Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M9.40795 10.2289C9.40795 10.003 9.22451 9.82031 8.99894 9.82031C8.77337 9.82031 8.58993 10.0038 8.58993 10.2289C8.58955 10.8195 8.23683 11.4035 7.59689 11.8772C6.22815 12.8879 5.2037 13.9859 4.55189 15.1402C4.48027 15.2673 4.48142 15.422 4.55533 15.5469C4.6281 15.6729 4.7629 15.7498 4.90843 15.7498H13.0902C13.2354 15.7498 13.3698 15.6729 13.4433 15.5469C13.5165 15.422 13.5176 15.2673 13.4464 15.1402C12.7949 13.9859 11.7701 12.8879 10.4018 11.8772C9.76105 11.4035 9.40834 10.8195 9.40795 10.2289Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M16.1578 16.364H15.9131C15.632 13.1803 13.7677 10.7362 12.3186 9.00019C13.7681 7.26457 15.6316 4.82007 15.9139 1.63643H16.1586C16.6105 1.63643 16.9766 1.26993 16.9766 0.818025C16.9766 0.36612 16.6105 0 16.1586 0H1.84049C1.38858 0 1.02246 0.366503 1.02246 0.818025C1.02246 1.26993 1.38858 1.63643 1.84049 1.63643H2.0852C2.36669 4.82045 4.23022 7.26495 5.67977 9.00019C4.23061 10.7358 2.36669 13.1799 2.08482 16.364H1.84049C1.38858 16.364 1.02246 16.7297 1.02246 17.1816C1.02246 17.6339 1.38858 18.0004 1.84049 18.0004H2.8634H15.1353H16.1586C16.6105 18.0004 16.9766 17.6339 16.9766 17.1816C16.9766 16.7297 16.6101 16.364 16.1578 16.364ZM3.72508 16.364C4.03261 13.4875 5.90266 11.2724 7.30011 9.61716L7.37479 9.52869C7.63215 9.22423 7.63215 8.77845 7.37479 8.47361L7.3005 8.38552C5.90342 6.72994 4.03261 4.51484 3.72508 1.63797H14.2736C13.9661 4.51484 12.0953 6.72994 10.6982 8.38552L10.6243 8.47361C10.3669 8.77807 10.3669 9.22385 10.6243 9.52869L10.699 9.61716C12.0961 11.2724 13.9661 13.4875 14.2736 16.364H3.72508Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28502">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>50 Minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title title-black">
+                                <h3>Podcast Title:</h3>
+                                <h3>Latest Subject Discussed</h3>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a
+                        href="single-podcast.html"
+                        role="link"
+                        target="_self"
+                        aria-label="Listen to podcast episode"
+                        class="podcast-ep-card"
+                    >
+                        <div class="podcast-ep-card-img">
+                            <img src="../assets/images/story-card-2a.jpg" width="800" height="720"
+                                alt="Episode 2 - Breaking Through Mental Barriers podcast cover" />
+                        </div>
+                        <div class="podcast-ep-card-body">
+                            <div class="podcast-ep-card-meta">
+                                <div class="podcast-ep-card-speaker">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28393)">
+                                                <path
+                                                    d="M8.93164 0C6.44636 0 4.43164 2.01472 4.43164 4.5C4.43164 6.98528 6.44636 9 8.93164 9C11.4169 9 13.4316 6.98528 13.4316 4.5C13.4316 2.01472 11.4169 0 8.93164 0Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M4.84091 10.6367C2.58157 10.6367 0.75 12.4683 0.75 14.7276V17.1822C0.75 17.6341 1.11632 18.0004 1.56818 18.0004H16.2955C16.7473 18.0004 17.1136 17.6341 17.1136 17.1822V14.7276C17.1136 12.4683 15.2821 10.6367 13.0227 10.6367H4.84091Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28393">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>Speaker Goes Here</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-ep-card-duration">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28502)">
+                                                <path
+                                                    d="M8.58999 8.58919C8.58999 8.81553 8.77343 8.99782 8.999 8.99782C9.22457 8.99782 9.40802 8.81438 9.40802 8.58919C9.4084 8.11048 9.57844 7.64517 9.88711 7.27905C10.5738 6.46485 11.0885 5.58211 11.4144 4.65532C11.4584 4.53009 11.4393 4.39145 11.3627 4.28307C11.2857 4.17469 11.1616 4.11035 11.0287 4.11035H6.96888C6.83598 4.11035 6.71152 4.17469 6.63454 4.28307C6.55795 4.39145 6.5388 4.53009 6.58284 4.65532C6.90951 5.58211 7.42346 6.46485 8.11013 7.27905C8.41919 7.64517 8.58961 8.11086 8.58999 8.58919Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M9.40795 10.2289C9.40795 10.003 9.22451 9.82031 8.99894 9.82031C8.77337 9.82031 8.58993 10.0038 8.58993 10.2289C8.58955 10.8195 8.23683 11.4035 7.59689 11.8772C6.22815 12.8879 5.2037 13.9859 4.55189 15.1402C4.48027 15.2673 4.48142 15.422 4.55533 15.5469C4.6281 15.6729 4.7629 15.7498 4.90843 15.7498H13.0902C13.2354 15.7498 13.3698 15.6729 13.4433 15.5469C13.5165 15.422 13.5176 15.2673 13.4464 15.1402C12.7949 13.9859 11.7701 12.8879 10.4018 11.8772C9.76105 11.4035 9.40834 10.8195 9.40795 10.2289Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M16.1578 16.364H15.9131C15.632 13.1803 13.7677 10.7362 12.3186 9.00019C13.7681 7.26457 15.6316 4.82007 15.9139 1.63643H16.1586C16.6105 1.63643 16.9766 1.26993 16.9766 0.818025C16.9766 0.36612 16.6105 0 16.1586 0H1.84049C1.38858 0 1.02246 0.366503 1.02246 0.818025C1.02246 1.26993 1.38858 1.63643 1.84049 1.63643H2.0852C2.36669 4.82045 4.23022 7.26495 5.67977 9.00019C4.23061 10.7358 2.36669 13.1799 2.08482 16.364H1.84049C1.38858 16.364 1.02246 16.7297 1.02246 17.1816C1.02246 17.6339 1.38858 18.0004 1.84049 18.0004H2.8634H15.1353H16.1586C16.6105 18.0004 16.9766 17.6339 16.9766 17.1816C16.9766 16.7297 16.6101 16.364 16.1578 16.364ZM3.72508 16.364C4.03261 13.4875 5.90266 11.2724 7.30011 9.61716L7.37479 9.52869C7.63215 9.22423 7.63215 8.77845 7.37479 8.47361L7.3005 8.38552C5.90342 6.72994 4.03261 4.51484 3.72508 1.63797H14.2736C13.9661 4.51484 12.0953 6.72994 10.6982 8.38552L10.6243 8.47361C10.3669 8.77807 10.3669 9.22385 10.6243 9.52869L10.699 9.61716C12.0961 11.2724 13.9661 13.4875 14.2736 16.364H3.72508Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28502">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>50 Minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title title-black">
+                                <h3>Podcast Title:</h3>
+                                <h3>Latest Subject Discussed</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a
+                        href="single-podcast.html"
+                        role="link"
+                        target="_self"
+                        aria-label="Listen to podcast episode"
+                        class="podcast-ep-card"
+                    >
+                        <div class="podcast-ep-card-img">
+                            <img src="../assets/images/story-card-3a.jpg" width="800" height="720"
+                                alt="Episode 3 - The Power of Vulnerability podcast cover" />
+                        </div>
+                        <div class="podcast-ep-card-body">
+                            <div class="podcast-ep-card-meta">
+                                <div class="podcast-ep-card-speaker">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28393)">
+                                                <path
+                                                    d="M8.93164 0C6.44636 0 4.43164 2.01472 4.43164 4.5C4.43164 6.98528 6.44636 9 8.93164 9C11.4169 9 13.4316 6.98528 13.4316 4.5C13.4316 2.01472 11.4169 0 8.93164 0Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M4.84091 10.6367C2.58157 10.6367 0.75 12.4683 0.75 14.7276V17.1822C0.75 17.6341 1.11632 18.0004 1.56818 18.0004H16.2955C16.7473 18.0004 17.1136 17.6341 17.1136 17.1822V14.7276C17.1136 12.4683 15.2821 10.6367 13.0227 10.6367H4.84091Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28393">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>Speaker Goes Here</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-ep-card-duration">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28502)">
+                                                <path
+                                                    d="M8.58999 8.58919C8.58999 8.81553 8.77343 8.99782 8.999 8.99782C9.22457 8.99782 9.40802 8.81438 9.40802 8.58919C9.4084 8.11048 9.57844 7.64517 9.88711 7.27905C10.5738 6.46485 11.0885 5.58211 11.4144 4.65532C11.4584 4.53009 11.4393 4.39145 11.3627 4.28307C11.2857 4.17469 11.1616 4.11035 11.0287 4.11035H6.96888C6.83598 4.11035 6.71152 4.17469 6.63454 4.28307C6.55795 4.39145 6.5388 4.53009 6.58284 4.65532C6.90951 5.58211 7.42346 6.46485 8.11013 7.27905C8.41919 7.64517 8.58961 8.11086 8.58999 8.58919Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M9.40795 10.2289C9.40795 10.003 9.22451 9.82031 8.99894 9.82031C8.77337 9.82031 8.58993 10.0038 8.58993 10.2289C8.58955 10.8195 8.23683 11.4035 7.59689 11.8772C6.22815 12.8879 5.2037 13.9859 4.55189 15.1402C4.48027 15.2673 4.48142 15.422 4.55533 15.5469C4.6281 15.6729 4.7629 15.7498 4.90843 15.7498H13.0902C13.2354 15.7498 13.3698 15.6729 13.4433 15.5469C13.5165 15.422 13.5176 15.2673 13.4464 15.1402C12.7949 13.9859 11.7701 12.8879 10.4018 11.8772C9.76105 11.4035 9.40834 10.8195 9.40795 10.2289Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M16.1578 16.364H15.9131C15.632 13.1803 13.7677 10.7362 12.3186 9.00019C13.7681 7.26457 15.6316 4.82007 15.9139 1.63643H16.1586C16.6105 1.63643 16.9766 1.26993 16.9766 0.818025C16.9766 0.36612 16.6105 0 16.1586 0H1.84049C1.38858 0 1.02246 0.366503 1.02246 0.818025C1.02246 1.26993 1.38858 1.63643 1.84049 1.63643H2.0852C2.36669 4.82045 4.23022 7.26495 5.67977 9.00019C4.23061 10.7358 2.36669 13.1799 2.08482 16.364H1.84049C1.38858 16.364 1.02246 16.7297 1.02246 17.1816C1.02246 17.6339 1.38858 18.0004 1.84049 18.0004H2.8634H15.1353H16.1586C16.6105 18.0004 16.9766 17.6339 16.9766 17.1816C16.9766 16.7297 16.6101 16.364 16.1578 16.364ZM3.72508 16.364C4.03261 13.4875 5.90266 11.2724 7.30011 9.61716L7.37479 9.52869C7.63215 9.22423 7.63215 8.77845 7.37479 8.47361L7.3005 8.38552C5.90342 6.72994 4.03261 4.51484 3.72508 1.63797H14.2736C13.9661 4.51484 12.0953 6.72994 10.6982 8.38552L10.6243 8.47361C10.3669 8.77807 10.3669 9.22385 10.6243 9.52869L10.699 9.61716C12.0961 11.2724 13.9661 13.4875 14.2736 16.364H3.72508Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28502">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>45 Minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title title-black">
+                                <h3>Podcast Title:</h3>
+                                <h3>Latest Subject Discussed</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a
+                        href="single-podcast.html"
+                        role="link"
+                        target="_self"
+                        aria-label="Listen to podcast episode"
+                        class="podcast-ep-card"
+                    >
+                        <div class="podcast-ep-card-img">
+                            <img src="../assets/images/story-card-4a.jpg" width="800" height="720"
+                                alt="Episode 4 - Finding Your Purpose podcast cover" />
+                        </div>
+                        <div class="podcast-ep-card-body">
+                            <div class="podcast-ep-card-meta">
+                                <div class="podcast-ep-card-speaker">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28393)">
+                                                <path
+                                                    d="M8.93164 0C6.44636 0 4.43164 2.01472 4.43164 4.5C4.43164 6.98528 6.44636 9 8.93164 9C11.4169 9 13.4316 6.98528 13.4316 4.5C13.4316 2.01472 11.4169 0 8.93164 0Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M4.84091 10.6367C2.58157 10.6367 0.75 12.4683 0.75 14.7276V17.1822C0.75 17.6341 1.11632 18.0004 1.56818 18.0004H16.2955C16.7473 18.0004 17.1136 17.6341 17.1136 17.1822V14.7276C17.1136 12.4683 15.2821 10.6367 13.0227 10.6367H4.84091Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28393">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>Speaker Goes Here</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-ep-card-duration">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28502)">
+                                                <path
+                                                    d="M8.58999 8.58919C8.58999 8.81553 8.77343 8.99782 8.999 8.99782C9.22457 8.99782 9.40802 8.81438 9.40802 8.58919C9.4084 8.11048 9.57844 7.64517 9.88711 7.27905C10.5738 6.46485 11.0885 5.58211 11.4144 4.65532C11.4584 4.53009 11.4393 4.39145 11.3627 4.28307C11.2857 4.17469 11.1616 4.11035 11.0287 4.11035H6.96888C6.83598 4.11035 6.71152 4.17469 6.63454 4.28307C6.55795 4.39145 6.5388 4.53009 6.58284 4.65532C6.90951 5.58211 7.42346 6.46485 8.11013 7.27905C8.41919 7.64517 8.58961 8.11086 8.58999 8.58919Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M9.40795 10.2289C9.40795 10.003 9.22451 9.82031 8.99894 9.82031C8.77337 9.82031 8.58993 10.0038 8.58993 10.2289C8.58955 10.8195 8.23683 11.4035 7.59689 11.8772C6.22815 12.8879 5.2037 13.9859 4.55189 15.1402C4.48027 15.2673 4.48142 15.422 4.55533 15.5469C4.6281 15.6729 4.7629 15.7498 4.90843 15.7498H13.0902C13.2354 15.7498 13.3698 15.6729 13.4433 15.5469C13.5165 15.422 13.5176 15.2673 13.4464 15.1402C12.7949 13.9859 11.7701 12.8879 10.4018 11.8772C9.76105 11.4035 9.40834 10.8195 9.40795 10.2289Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M16.1578 16.364H15.9131C15.632 13.1803 13.7677 10.7362 12.3186 9.00019C13.7681 7.26457 15.6316 4.82007 15.9139 1.63643H16.1586C16.6105 1.63643 16.9766 1.26993 16.9766 0.818025C16.9766 0.36612 16.6105 0 16.1586 0H1.84049C1.38858 0 1.02246 0.366503 1.02246 0.818025C1.02246 1.26993 1.38858 1.63643 1.84049 1.63643H2.0852C2.36669 4.82045 4.23022 7.26495 5.67977 9.00019C4.23061 10.7358 2.36669 13.1799 2.08482 16.364H1.84049C1.38858 16.364 1.02246 16.7297 1.02246 17.1816C1.02246 17.6339 1.38858 18.0004 1.84049 18.0004H2.8634H15.1353H16.1586C16.6105 18.0004 16.9766 17.6339 16.9766 17.1816C16.9766 16.7297 16.6101 16.364 16.1578 16.364ZM3.72508 16.364C4.03261 13.4875 5.90266 11.2724 7.30011 9.61716L7.37479 9.52869C7.63215 9.22423 7.63215 8.77845 7.37479 8.47361L7.3005 8.38552C5.90342 6.72994 4.03261 4.51484 3.72508 1.63797H14.2736C13.9661 4.51484 12.0953 6.72994 10.6982 8.38552L10.6243 8.47361C10.3669 8.77807 10.3669 9.22385 10.6243 9.52869L10.699 9.61716C12.0961 11.2724 13.9661 13.4875 14.2736 16.364H3.72508Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28502">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>30 Minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title title-black">
+                                <h3>Podcast Title:</h3>
+                                <h3>Latest Subject Discussed</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 5 -->
+                    <a
+                        href="single-podcast.html"
+                        role="link"
+                        target="_self"
+                        aria-label="Listen to podcast episode"
+                        class="podcast-ep-card"
+                    >
+                        <div class="podcast-ep-card-img">
+                            <img src="../assets/images/image10.png" width="800" height="720"
+                                alt="Episode 5 - Building Resilience From Within podcast cover" />
+                        </div>
+                        <div class="podcast-ep-card-body">
+                            <div class="podcast-ep-card-meta">
+                                <div class="podcast-ep-card-speaker">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28393)">
+                                                <path
+                                                    d="M8.93164 0C6.44636 0 4.43164 2.01472 4.43164 4.5C4.43164 6.98528 6.44636 9 8.93164 9C11.4169 9 13.4316 6.98528 13.4316 4.5C13.4316 2.01472 11.4169 0 8.93164 0Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M4.84091 10.6367C2.58157 10.6367 0.75 12.4683 0.75 14.7276V17.1822C0.75 17.6341 1.11632 18.0004 1.56818 18.0004H16.2955C16.7473 18.0004 17.1136 17.6341 17.1136 17.1822V14.7276C17.1136 12.4683 15.2821 10.6367 13.0227 10.6367H4.84091Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28393">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>Speaker Goes Here</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-ep-card-duration">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28502)">
+                                                <path
+                                                    d="M8.58999 8.58919C8.58999 8.81553 8.77343 8.99782 8.999 8.99782C9.22457 8.99782 9.40802 8.81438 9.40802 8.58919C9.4084 8.11048 9.57844 7.64517 9.88711 7.27905C10.5738 6.46485 11.0885 5.58211 11.4144 4.65532C11.4584 4.53009 11.4393 4.39145 11.3627 4.28307C11.2857 4.17469 11.1616 4.11035 11.0287 4.11035H6.96888C6.83598 4.11035 6.71152 4.17469 6.63454 4.28307C6.55795 4.39145 6.5388 4.53009 6.58284 4.65532C6.90951 5.58211 7.42346 6.46485 8.11013 7.27905C8.41919 7.64517 8.58961 8.11086 8.58999 8.58919Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M9.40795 10.2289C9.40795 10.003 9.22451 9.82031 8.99894 9.82031C8.77337 9.82031 8.58993 10.0038 8.58993 10.2289C8.58955 10.8195 8.23683 11.4035 7.59689 11.8772C6.22815 12.8879 5.2037 13.9859 4.55189 15.1402C4.48027 15.2673 4.48142 15.422 4.55533 15.5469C4.6281 15.6729 4.7629 15.7498 4.90843 15.7498H13.0902C13.2354 15.7498 13.3698 15.6729 13.4433 15.5469C13.5165 15.422 13.5176 15.2673 13.4464 15.1402C12.7949 13.9859 11.7701 12.8879 10.4018 11.8772C9.76105 11.4035 9.40834 10.8195 9.40795 10.2289Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M16.1578 16.364H15.9131C15.632 13.1803 13.7677 10.7362 12.3186 9.00019C13.7681 7.26457 15.6316 4.82007 15.9139 1.63643H16.1586C16.6105 1.63643 16.9766 1.26993 16.9766 0.818025C16.9766 0.36612 16.6105 0 16.1586 0H1.84049C1.38858 0 1.02246 0.366503 1.02246 0.818025C1.02246 1.26993 1.38858 1.63643 1.84049 1.63643H2.0852C2.36669 4.82045 4.23022 7.26495 5.67977 9.00019C4.23061 10.7358 2.36669 13.1799 2.08482 16.364H1.84049C1.38858 16.364 1.02246 16.7297 1.02246 17.1816C1.02246 17.6339 1.38858 18.0004 1.84049 18.0004H2.8634H15.1353H16.1586C16.6105 18.0004 16.9766 17.6339 16.9766 17.1816C16.9766 16.7297 16.6101 16.364 16.1578 16.364ZM3.72508 16.364C4.03261 13.4875 5.90266 11.2724 7.30011 9.61716L7.37479 9.52869C7.63215 9.22423 7.63215 8.77845 7.37479 8.47361L7.3005 8.38552C5.90342 6.72994 4.03261 4.51484 3.72508 1.63797H14.2736C13.9661 4.51484 12.0953 6.72994 10.6982 8.38552L10.6243 8.47361C10.3669 8.77807 10.3669 9.22385 10.6243 9.52869L10.699 9.61716C12.0961 11.2724 13.9661 13.4875 14.2736 16.364H3.72508Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28502">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>55 Minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title title-black">
+                                <h3>Podcast Title:</h3>
+                                <h3>Latest Subject Discussed</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 6 -->
+                    <a
+                        href="single-podcast.html"
+                        role="link"
+                        target="_self"
+                        aria-label="Listen to podcast episode"
+                        class="podcast-ep-card"
+                    >
+                        <div class="podcast-ep-card-img">
+                            <img src="../assets/images/image14.png" width="800" height="720"
+                                alt="Episode 6 - The Art of Living at Your Edge podcast cover" />
+                        </div>
+                        <div class="podcast-ep-card-body">
+                            <div class="podcast-ep-card-meta">
+                                <div class="podcast-ep-card-speaker">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28393)">
+                                                <path
+                                                    d="M8.93164 0C6.44636 0 4.43164 2.01472 4.43164 4.5C4.43164 6.98528 6.44636 9 8.93164 9C11.4169 9 13.4316 6.98528 13.4316 4.5C13.4316 2.01472 11.4169 0 8.93164 0Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M4.84091 10.6367C2.58157 10.6367 0.75 12.4683 0.75 14.7276V17.1822C0.75 17.6341 1.11632 18.0004 1.56818 18.0004H16.2955C16.7473 18.0004 17.1136 17.6341 17.1136 17.1822V14.7276C17.1136 12.4683 15.2821 10.6367 13.0227 10.6367H4.84091Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28393">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>Speaker Goes Here</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-ep-card-duration">
+                                    <span class="podcast-ep-meta-icon" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4603_28502)">
+                                                <path
+                                                    d="M8.58999 8.58919C8.58999 8.81553 8.77343 8.99782 8.999 8.99782C9.22457 8.99782 9.40802 8.81438 9.40802 8.58919C9.4084 8.11048 9.57844 7.64517 9.88711 7.27905C10.5738 6.46485 11.0885 5.58211 11.4144 4.65532C11.4584 4.53009 11.4393 4.39145 11.3627 4.28307C11.2857 4.17469 11.1616 4.11035 11.0287 4.11035H6.96888C6.83598 4.11035 6.71152 4.17469 6.63454 4.28307C6.55795 4.39145 6.5388 4.53009 6.58284 4.65532C6.90951 5.58211 7.42346 6.46485 8.11013 7.27905C8.41919 7.64517 8.58961 8.11086 8.58999 8.58919Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M9.40795 10.2289C9.40795 10.003 9.22451 9.82031 8.99894 9.82031C8.77337 9.82031 8.58993 10.0038 8.58993 10.2289C8.58955 10.8195 8.23683 11.4035 7.59689 11.8772C6.22815 12.8879 5.2037 13.9859 4.55189 15.1402C4.48027 15.2673 4.48142 15.422 4.55533 15.5469C4.6281 15.6729 4.7629 15.7498 4.90843 15.7498H13.0902C13.2354 15.7498 13.3698 15.6729 13.4433 15.5469C13.5165 15.422 13.5176 15.2673 13.4464 15.1402C12.7949 13.9859 11.7701 12.8879 10.4018 11.8772C9.76105 11.4035 9.40834 10.8195 9.40795 10.2289Z"
+                                                    fill="#A6192E" />
+                                                <path
+                                                    d="M16.1578 16.364H15.9131C15.632 13.1803 13.7677 10.7362 12.3186 9.00019C13.7681 7.26457 15.6316 4.82007 15.9139 1.63643H16.1586C16.6105 1.63643 16.9766 1.26993 16.9766 0.818025C16.9766 0.36612 16.6105 0 16.1586 0H1.84049C1.38858 0 1.02246 0.366503 1.02246 0.818025C1.02246 1.26993 1.38858 1.63643 1.84049 1.63643H2.0852C2.36669 4.82045 4.23022 7.26495 5.67977 9.00019C4.23061 10.7358 2.36669 13.1799 2.08482 16.364H1.84049C1.38858 16.364 1.02246 16.7297 1.02246 17.1816C1.02246 17.6339 1.38858 18.0004 1.84049 18.0004H2.8634H15.1353H16.1586C16.6105 18.0004 16.9766 17.6339 16.9766 17.1816C16.9766 16.7297 16.6101 16.364 16.1578 16.364ZM3.72508 16.364C4.03261 13.4875 5.90266 11.2724 7.30011 9.61716L7.37479 9.52869C7.63215 9.22423 7.63215 8.77845 7.37479 8.47361L7.3005 8.38552C5.90342 6.72994 4.03261 4.51484 3.72508 1.63797H14.2736C13.9661 4.51484 12.0953 6.72994 10.6982 8.38552L10.6243 8.47361C10.3669 8.77807 10.3669 9.22385 10.6243 9.52869L10.699 9.61716C12.0961 11.2724 13.9661 13.4875 14.2736 16.364H3.72508Z"
+                                                    fill="#A6192E" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4603_28502">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    <div class="content content-navy">
+                                        <p>40 Minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title title-black">
+                                <h3>Podcast Title:</h3>
+                                <h3>Latest Subject Discussed</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                </div><!-- /.latest-episodes-grid -->
+
+            </div><!-- /.container-fluid -->
+        </section><!-- /.latest-episodes-section -->
+
+        <!-- ==================== PODCAST CATEGORY SECTION ==================== -->
+        <section class="podcast-category-section general-padding">
+
+            <!-- Background texture overlay -->
+            <div class="podcast-category-bg" aria-hidden="true">
+                <img src="../assets/images/twocol-dark-texture.png" alt="" width="1512" height="1078"
+                    class="podcast-category-bg-img" />
+            </div>
+
+            <div class="podcast-category-inner container-fluid">
+
+                <!-- Section header -->
+                <div class="podcast-category-header">
+                    <div class="title title-white">
+                        <h2>Search by Preferred Topic</h2>
+                    </div>
+                </div>
+
+                <!-- Topic filter tabs -->
+                <div class="podcast-category-tabs">
+                    <button type="button" aria-label="Filter by All Topics"
+                        class="podcast-cat-tab podcast-cat-tab--active">All Topics</button>
+                    <button type="button" aria-label="Filter by Coaching" class="podcast-cat-tab">Coaching</button>
+                    <button type="button" aria-label="Filter by Self Reflections" class="podcast-cat-tab">Self
+                        Reflections</button>
+                    <button type="button" aria-label="Filter by Brotherhood"
+                        class="podcast-cat-tab">Brotherhood</button>
+                    <button type="button" aria-label="Filter by Community" class="podcast-cat-tab">Community</button>
+                </div>
+
+                <!-- 2-column cards grid -->
+                <div class="podcast-category-grid">
+
+                    <!-- Card 1 -->
+                    <article class="podcast-cat-card">
+                        <div class="podcast-cat-card-img">
+                            <img src="../assets/images/story-card-1b.jpg" width="700" height="310"
+                                alt="Podcast episode featuring coaching discussion" />
+                        </div>
+                        <div class="podcast-cat-card-body">
+                            <div class="title title-black">
+                                <h3>Podcast Title: Latest Subject Discussed</h3>
+                            </div>
+                            <div class="podcast-cat-card-meta">
+                                <div class="podcast-cat-card-speaker">
+                                    <img src="../assets/images/podcast-cat-user-icon.svg" width="20" height="20"
+                                        alt="Speaker icon" aria-hidden="true" class="podcast-cat-meta-icon" />
+                                    <div class="content content-navy">
+                                        <p>Speaker Goes Here</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-cat-card-category">
+                                    <img src="../assets/images/podcast-cat-tag-icon.svg" width="18" height="18"
+                                        alt="Category icon" aria-hidden="true" class="podcast-cat-meta-icon" />
+                                    <div class="content content-navy">
+                                        <p>Category Goes Here</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="podcast-cat-card-player">
+                                <div class="podcast-cat-player-main">
+                                    <button type="button" aria-label="Play episode" class="podcast-cat-play-btn">
+                                        <img src="../assets/images/podcast-cat-play-btn.svg" width="40" height="40"
+                                            alt="Play" class="podcast-cat-play-img" />
+                                    </button>
+                                    <div class="podcast-cat-player-progress">
+                                        <div class="podcast-cat-player-times">
+                                            <span class="podcast-cat-time">00:00:00</span>
+                                            <span class="podcast-cat-time">50:40</span>
+                                        </div>
+                                        <div class="podcast-cat-player-bar">
+                                            <div class="podcast-cat-player-track" role="progressbar" aria-valuenow="0"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="podcast-cat-player-volume">
+                                    <img src="../assets/images/podcast-cat-volume-icon.svg" width="24" height="24"
+                                        alt="Volume" aria-hidden="true" class="podcast-cat-volume-img" />
+                                    <div class="podcast-cat-volume-slider">
+                                        <img src="../assets/images/podcast-cat-volume-line.svg" width="44" height="11"
+                                            alt="Volume level" class="podcast-cat-volume-line-img" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="podcast-cat-card">
+                        <div class="podcast-cat-card-img">
+                            <img src="../assets/images/story-card-4b.jpg" width="700" height="310"
+                                alt="Podcast episode featuring brotherhood discussion" />
+                        </div>
+                        <div class="podcast-cat-card-body">
+                            <div class="title title-black">
+                                <h3>Podcast Title: Latest Subject Discussed</h3>
+                            </div>
+                            <div class="podcast-cat-card-meta">
+                                <div class="podcast-cat-card-speaker">
+                                    <img src="../assets/images/podcast-cat-user-icon.svg" width="20" height="20"
+                                        alt="Speaker icon" aria-hidden="true" class="podcast-cat-meta-icon" />
+                                    <div class="content content-navy">
+                                        <p>Speaker Goes Here</p>
+                                    </div>
+                                </div>
+                                <div class="podcast-cat-card-category">
+                                    <img src="../assets/images/podcast-cat-tag-icon.svg" width="18" height="18"
+                                        alt="Category icon" aria-hidden="true" class="podcast-cat-meta-icon" />
+                                    <div class="content content-navy">
+                                        <p>Category Goes Here</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="podcast-cat-card-player">
+                                <div class="podcast-cat-player-main">
+                                    <button type="button" aria-label="Play episode" class="podcast-cat-play-btn">
+                                        <img src="../assets/images/podcast-cat-play-btn.svg" width="40" height="40"
+                                            alt="Play" class="podcast-cat-play-img" />
+                                    </button>
+                                    <div class="podcast-cat-player-progress">
+                                        <div class="podcast-cat-player-times">
+                                            <span class="podcast-cat-time">00:00:00</span>
+                                            <span class="podcast-cat-time">40:10</span>
+                                        </div>
+                                        <div class="podcast-cat-player-bar">
+                                            <div class="podcast-cat-player-track" role="progressbar" aria-valuenow="0"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="podcast-cat-player-volume">
+                                    <img src="../assets/images/podcast-cat-volume-icon.svg" width="24" height="24"
+                                        alt="Volume" aria-hidden="true" class="podcast-cat-volume-img" />
+                                    <div class="podcast-cat-volume-slider">
+                                        <img src="../assets/images/podcast-cat-volume-line.svg" width="44" height="11"
+                                            alt="Volume level" class="podcast-cat-volume-line-img" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div><!-- /.podcast-category-grid -->
+
+                <!-- Pagination -->
+                <nav class="podcast-cat-pagination" aria-label="Podcast category pagination">
+                    <button type="button" aria-label="Previous page" class="podcast-cat-page-arrow">
+                        <img src="../assets/images/podcast-cat-arrow-prev.svg" width="40" height="40"
+                            alt="Previous page" class="podcast-cat-arrow-img podcast-cat-arrow-flip" />
+                    </button>
+                    <div class="podcast-cat-page-numbers">
+                        <button type="button" aria-label="Page 1, current page"
+                            class="podcast-cat-page-num podcast-cat-page-num--active">1</button>
+                        <button type="button" aria-label="Page 2" class="podcast-cat-page-num">2</button>
+                        <button type="button" aria-label="Page 3" class="podcast-cat-page-num">3</button>
+                        <button type="button" aria-label="Page 4" class="podcast-cat-page-num">4</button>
+                        <button type="button" aria-label="Page 5" class="podcast-cat-page-num">5</button>
+                    </div>
+                    <button type="button" aria-label="Next page" class="podcast-cat-page-arrow">
+                        <img src="../assets/images/podcast-cat-arrow-next.svg" width="40" height="40" alt="Next page"
+                            class="podcast-cat-arrow-img" />
+                    </button>
+                </nav>
+
+            </div><!-- /.podcast-category-inner -->
+
+        </section><!-- /.podcast-category-section -->
+
+  <!-- ======= NEWSLETTER SECTION ======= -->
+        <section class="newsletter-section general-padding">
+            <div class="newsletter-inner container-fluid">
+
+                <!-- Left: copy + form -->
+                <div class="newsletter-copy">
+                    <div class="newsletter-copy-inner">
+                        <div class="newsletter-eyebrow">
+                            <div class="content content-silver">
+                                <p>One email per week. One powerful practice.</p>
+                            </div>
+                        </div>
+
+                        <div class="newsletter-title-row">
+                            <div class="title title-gold">
+                                <h2>Free 4-Week Guided Journal</h2>
+                            </div>
+                            <div class="newsletter-divider" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="content content-navy">
+                        <p>Each week builds upon the last&mdash;layering awareness, discipline, and embodiment to help
+                            you meet your edge and become the man you&rsquo;re here to be.</p>
+                    </div>
+
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="newsletter-field">
+                            <label for="newsletterName">Name</label>
+                            <input type="text" id="newsletterName" name="name" placeholder="Name" autocomplete="name" />
+                        </div>
+                        <div class="newsletter-field">
+                            <label for="newsletterEmail">Email Address</label>
+                            <input type="email" id="newsletterEmail" name="email" placeholder="Email Address"
+                                autocomplete="email" />
+                        </div>
+                        <div class="newsletter-submit">
+                            <button type="submit"
+                                aria-label="Join the newsletter and receive the free 4-week guided journal"
+                                class="btn btn-red">
+                                Join Now
+                            </button>
+                        </div>
+                    </form>
+
+                </div><!-- /.newsletter-copy -->
+
+                <!-- Right: 2 portrait images -->
+                <div class="newsletter-images">
+                    <div class="newsletter-img-wrap">
+                        <img src="../assets/images/card-coaching-1-1.webp" alt="Man in a focused 1-1 coaching session"
+                            width="400" height="550" class="newsletter-img" />
+                    </div>
+                    <div class="newsletter-img-wrap">
+                        <img src="../assets/images/card-inperson-coaching.webp"
+                            alt="Group joining hands in an in-person coaching session" width="400" height="550"
+                            class="newsletter-img" />
+                    </div>
+                </div><!-- /.newsletter-images -->
+
+            </div><!-- /.newsletter-inner -->
+        </section><!-- /.newsletter-section -->
+    </main>
+
+    <footer>
+        <!-- Background image overlay -->
+        <div class="footer-bg-overlay" aria-hidden="true">
+            <img src="../assets/images/footer-bg.png" alt="Footer background" width="1920" height="1080"
+                class="footer-bg-img" />
+        </div>
+
+        <!-- White clip-path transition element -->
+        <div class="footer-clip-wrap" aria-hidden="true">
+            <img src="../assets/images/footer-clip-path.svg" alt="" width="1512" height="70" class="footer-clip-img" />
+        </div>
+
+        <div class="footer-inner container-fluid">
+
+            <div class="footer-top-row">
+
+                <!-- IG Photos grid -->
+                <div class="footer-ig-grid">
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img1.png" alt="The Edge community member in focused practice"
+                            width="300" height="269" />
+                    </div>
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img2.png"
+                            alt="The Edge community member during a coaching session" width="300" height="269" />
+                    </div>
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img3.png" alt="The Edge coaching in action" width="300"
+                            height="269" />
+                    </div>
+                    <div class="footer-ig-photo">
+                        <img src="../assets/images/footer_img4.png"
+                            alt="The Edge community member sharing their transformation" width="300" height="269" />
+                    </div>
+                </div>
+
+                <!-- Follow Us copy -->
+                <div class="footer-follow">
+                    <div class="title title-off-white">
+                        <h2>follow us</h2>
+                    </div>
+                    <div class="title title-white">
+                        <h3>@theedge</h3>
+                    </div>
+                </div>
+
+            </div><!-- /.footer-top-row -->
+
+            <!-- Horizontal Divider -->
+            <div class="footer-divider" aria-hidden="true"></div>
+
+            <!-- ROW 2: Nav Links + Logo + Social/Copyright -->
+            <div class="footer-bottom-row">
+
+                <!-- Footer Navigation -->
+                <nav class="footer-nav" aria-label="Footer navigation">
+
+                    <!-- Col 1: Support Our Cause -->
+                    <div class="footer-nav-col">
+                        <div class="footer-nav-col-header">
+                            <div class="title title-white">
+                                <h4>Support Our Cause</h4>
+                            </div>
+                            <button type="button" aria-label="Toggle Support Our Cause navigation"
+                                class="footer-nav-toggle">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="footer-nav-links">
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Donate to support The Edge">
+                                    Donate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Download The Edge Press Kit">
+                                    Press Kit
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Shop The Edge Gear">
+                                    The Edge Gear
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 2: Learn More -->
+                    <div class="footer-nav-col">
+                        <div class="footer-nav-col-header">
+                            <div class="title title-white">
+                                <h4>Learn More</h4>
+                            </div>
+                            <button type="button" aria-label="Toggle Learn More navigation" class="footer-nav-toggle">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="footer-nav-links">
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="View The Edge Programs">
+                                    Programs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="View Resources">
+                                    Resources
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read The Edge Blog">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read Frequently Asked Questions">
+                                    FAQs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self"
+                                    aria-label="Read Success Stories from The Edge community">
+                                    Success Stories
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3: Policies -->
+                    <div class="footer-nav-col">
+                        <div class="footer-nav-col-header">
+                            <div class="title title-white">
+                                <h4>Policies</h4>
+                            </div>
+                            <button type="button" aria-label="Toggle Policies navigation" class="footer-nav-toggle">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="footer-nav-links">
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read the Privacy Policy">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read the Cancellation Policy">
+                                    Cancellation Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" role="link" target="_self" aria-label="Read the Terms and Conditions">
+                                    Terms &amp; Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav><!-- /.footer-nav -->
+
+
+                <!-- Right: Copyright + Social Icons -->
+                <div class="footer-right">
+
+                    <div class="footer-copyright">
+                        <div class="content content-white">
+                            <p>© 2025 The Edge</p>
+                        </div>
+                        <span class="footer-copyright-sep" aria-hidden="true"></span>
+                        <div class="footer-copyright-name">
+                            <img src="../assets/images/vector/heart.png" alt="heart" width="24" height="24"
+                                class="heart-icon" />
+                            <div class="content content-white">
+                                <p>//</p>
+                            </div>
+                            <div class="content content-white">
+                                <p>TECHYSCOUTS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on Instagram"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-instagram-icon.svg" alt="Instagram" width="24"
+                                height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on Facebook"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-facebook-icon.svg" alt="Facebook" width="24"
+                                height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on TikTok"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-tiktok-icon.svg" alt="TikTok" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Follow The Edge on X"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-x-icon.svg" alt="X" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Find The Edge on Yelp"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-yelp-icon.svg" alt="Yelp" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Watch The Edge on YouTube"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-youtube-icon.svg" alt="YouTube" width="24" height="24" />
+                        </a>
+                        <a href="#" role="link" target="_blank" aria-label="Connect with The Edge on LinkedIn"
+                            class="footer-social-icon">
+                            <img src="../assets/images/footer-linkedin-icon.svg" alt="LinkedIn" width="24"
+                                height="24" />
+                        </a>
+                    </div><!-- /.footer-social -->
+                </div><!-- /.footer-right -->
+            </div><!-- /.footer-bottom-row -->
+        </div><!-- /.footer-inner -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script type="module" src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

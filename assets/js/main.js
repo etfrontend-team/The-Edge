@@ -92,7 +92,7 @@ function makeSectionParallax(imgEl) {
 }
 
 var sectionParallaxes = Array.prototype.slice
-  .call(document.querySelectorAll('.edge-img, .twocol-nb-img, .twocol-dark-media-photo'))
+  .call(document.querySelectorAll('.edge-img, .twocol-nb-img, .twocol-dark-media-photo, .podcast-single-parallax-img'))
   .map(makeSectionParallax);
 
 function rafLoop(time) {
@@ -369,7 +369,17 @@ $(function () {
      SCROLL — is-scrolled state
      ======================== */
 
+  var alwaysScrolledPages = [
+    'single-coaching',
+    'single-podcast',
+    // 'event-listing',
+  ];
+  var isAlwaysScrolled = alwaysScrolledPages.some(function (name) {
+    return window.location.pathname.indexOf(name) !== -1;
+  });
+
   function onScroll() {
+    if (isAlwaysScrolled) return;
     $('header').toggleClass('is-scrolled', $(window).scrollTop() > 10);
   }
 

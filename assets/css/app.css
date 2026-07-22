@@ -38,6 +38,7 @@
   --color-slate: #4d6179;
   --color-silver: #8a8d8f;
   --color-grey: #c7c7c7;
+  --color-grey2: #d9d9d9;
   --color-black: #000000;
   --color-maroon: #572d2d;
   --color-maroon-dark: #492626;
@@ -67,4 +68,5 @@
 
   /* DROP SHADOWS */
   --drop-shadow-dropdown: 0px 5px 15px rgba(0, 0, 0, 0.17);
+  --drop-shadow-player: 0px 5px 7.5px rgba(0, 0, 0, 0.17);
 }
