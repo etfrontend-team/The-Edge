@@ -181,7 +181,7 @@
    ======================== */
 
 .banner-bottom-el {
-  @apply absolute bottom-0 left-0 w-full z-10 pointer-events-none;
+  @apply absolute -bottom-1 left-0 w-full z-10 pointer-events-none;
 }
 
 .banner-bottom-el img {
@@ -2382,11 +2382,11 @@
 }
 
 .events-listing-tabs {
-  @apply flex flex-wrap justify-center gap-16 w-full;
+  @apply flex flex-wrap justify-start gap-16 1024:gap-20 w-full;
 }
 
 .events-tab {
-  @apply font-futura-pt font-bold uppercase text-heading-6 leading-none border-2 border-red text-red px-28 py-10 rounded-full cursor-pointer transition-all duration-300;
+  @apply min-h-41 font-futura-pt font-bold uppercase text-heading-6 leading-none border-2 border-red text-red px-28 py-10 rounded-full cursor-pointer transition-all duration-300;
 }
 
 .events-tab--active {
@@ -2427,4 +2427,778 @@
 
 .events-card-content .title h4 {
   @apply font-futura-pt-cond font-bold uppercase text-heading-4 leading-none;
+}
+
+/* ========================
+   SINGLE EVENT DETAIL
+   ======================== */
+
+.single-event-detail {
+  @apply bg-white pt-224 max-992:pt-160 max-576:pt-130;
+}
+
+.event-detail-inner {
+  @apply grid grid-cols-2 gap-55 items-start max-1024:grid-cols-1 max-1024:gap-40;
+}
+
+.event-detail-media {
+  @apply relative overflow-hidden rounded shadow-dropdown;
+}
+
+.event-detail-img {
+  @apply w-full h-560 object-cover object-center block max-1024:h-400 max-768:h-300;
+}
+
+.event-detail-video {
+  @apply w-full h-560 object-cover object-center block max-1024:h-400 max-768:h-300;
+}
+
+.event-detail-content {
+  @apply flex flex-col gap-40;
+}
+
+.event-detail-header {
+  @apply flex flex-col gap-7;
+}
+
+.event-detail-header .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none;
+}
+
+.event-detail-price .content p {
+  @apply text-heading-3 font-futura-pt font-bold italic leading-none;
+}
+
+.event-detail-body {
+  @apply flex flex-col gap-20;
+}
+
+.event-quantity {
+  @apply flex items-center gap-20 flex-wrap;
+}
+
+.event-quantity-label {
+  @apply font-futura-pt font-bold text-heading-4 text-black uppercase leading-none;
+}
+
+.event-quantity-control {
+  @apply flex items-center gap-20 border-2 border-red rounded-full px-20 py-8;
+}
+
+.event-quantity-control button {
+  @apply flex items-center justify-center cursor-pointer text-navy transition-opacity duration-200 hover:opacity-70;
+}
+
+.event-quantity-count {
+  @apply font-futura-pt font-bold text-heading-6 text-navy text-center;
+}
+
+.event-detail-actions {
+  @apply pt-14;
+}
+
+/* ========================
+   RELATED EVENTS
+   ======================== */
+
+.related-events {
+  @apply bg-off-white;
+}
+
+.related-events-grid {
+  @apply max-w-1000 mx-auto grid grid-cols-2 gap-40 max-768:grid-cols-1;
+}
+
+.related-event-card {
+  @apply flex flex-col gap-20;
+}
+
+.related-event-media {
+  @apply relative overflow-hidden rounded;
+}
+
+.related-event-img {
+  @apply w-full h-400 object-cover object-center block max-768:h-280;
+}
+
+.related-event-info {
+  @apply flex flex-col gap-10;
+}
+.related-event-info .btn-red-outline {
+  @apply w-fit leading-[1.1] mt-10;
+}
+
+.related-event-meta-wrap {
+  @apply flex items-center gap-28 flex-wrap;
+}
+
+.related-event-meta-item {
+  @apply flex items-center gap-8;
+}
+
+.related-event-meta-icon {
+  @apply flex items-center justify-center shrink-0;
+}
+
+.related-event-meta-text {
+  @apply font-futura-pt italic text-heading-6 leading-none;
+}
+
+.related-event-info .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-3 leading-none;
+}
+
+/* ========================
+   REGISTER MODAL
+   ======================== */
+
+.register-modal {
+  @apply fixed inset-0 z-999 flex items-center justify-center p-20 invisible opacity-0 transition-all duration-300 max-768:p-0 max-768:items-start;
+}
+
+.register-modal.is-open {
+  @apply visible opacity-100;
+}
+
+.register-modal-backdrop {
+  @apply absolute inset-0 bg-black/60 cursor-pointer;
+}
+
+.register-modal-dialog {
+  @apply relative bg-white flex overflow-hidden max-768:flex-col max-768:w-full max-768:h-full max-768:overflow-y-auto;
+}
+
+/* === LEFT: CALENDAR PANEL === */
+
+.register-modal-cal {
+  @apply bg-gold flex flex-col gap-40 p-40 shrink-0 w-610 max-1024:w-500 max-768:w-full max-768:p-28 max-768:gap-20;
+}
+
+.register-modal-cal .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-2 leading-none text-center max-768:text-heading-4;
+}
+
+.reg-calendar {
+  @apply flex flex-col gap-40 max-768:gap-20;
+}
+
+.reg-cal-nav {
+  @apply flex items-center justify-between;
+}
+
+.reg-cal-arrow {
+  @apply flex items-center justify-center bg-white text-black rounded-full cursor-pointer transition-opacity duration-200 hover:opacity-80 shrink-0 w-40 h-40 max-768:w-32 max-768:h-32;
+}
+
+.reg-cal-month-label {
+  @apply font-futura-pt-cond font-bold text-heading-3 text-white uppercase text-center leading-none max-768:text-heading-5;
+}
+
+.reg-cal-grid {
+  @apply flex flex-col gap-28 max-768:gap-14;
+}
+
+.reg-cal-headers {
+  @apply grid grid-cols-7;
+}
+
+.reg-cal-headers span {
+  @apply font-futura-pt-cond font-bold text-heading-3 text-white uppercase text-center leading-none max-1024:text-heading-4 max-768:text-heading-6;
+}
+
+.reg-cal-days {
+  @apply flex flex-col gap-20 max-768:gap-8;
+}
+
+.reg-cal-week {
+  @apply grid grid-cols-7;
+}
+
+.reg-cal-day {
+  @apply font-futura-pt font-medium text-heading-4 text-white text-center cursor-pointer rounded py-4 transition-all duration-200 hover:bg-white/20 max-1024:text-heading-5 max-768:text-heading-6 max-768:py-2;
+}
+
+.reg-cal-day.is-outside {
+  @apply opacity-30 cursor-default hover:bg-transparent;
+}
+
+.reg-cal-day.is-selected {
+  @apply bg-white text-gold;
+}
+
+/* === RIGHT: FORM PANEL === */
+
+.register-modal-form {
+  @apply relative flex flex-col gap-20 p-40 pt-80 w-606 max-1024:w-500 max-768:w-full max-768:px-28 max-768:pt-50 max-768:pb-40 max-768:gap-16;
+}
+
+.register-modal-close {
+  @apply absolute top-40 right-40 flex items-center justify-center text-black cursor-pointer hover:opacity-60 transition-opacity duration-200 max-768:top-16 max-768:right-20;
+}
+
+.register-form-header {
+  @apply flex flex-col gap-14 max-768:gap-8;
+}
+
+.register-form-header .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-2 leading-none max-768:text-heading-4;
+}
+
+.register-form-price .content p {
+  @apply text-heading-3 font-futura-pt font-bold italic leading-none max-768:text-heading-4;
+}
+
+.register-form-fields {
+  @apply flex flex-col gap-20 w-full flex-1;
+}
+
+.register-form-field {
+  @apply flex flex-col gap-10 pt-14 border-b border-silver;
+}
+
+.register-form-field label {
+  @apply sr-only;
+}
+
+.register-form-field input {
+  @apply bg-transparent border-0 outline-none font-futura-pt italic text-heading-6 text-navy pb-10 w-full;
+}
+
+.register-form-field input::placeholder {
+  @apply text-silver opacity-70;
+}
+
+.register-event-form {
+  @apply flex flex-col gap-20 flex-1 justify-between;
+}
+
+.register-form-actions {
+  @apply pt-14 flex justify-end;
+}
+
+/* ========================
+   RESOURCE DETAIL SECTION
+   ======================== */
+
+.resource-detail-section {
+  @apply bg-white pt-55;
+}
+
+.resource-detail-inner {
+  @apply flex gap-55 items-start max-1024:flex-col;
+}
+
+.resource-detail-media {
+  @apply flex-1 rounded shadow-dropdown overflow-hidden 1024:sticky 1024:top-180 max-1024:w-full;
+}
+
+.resource-detail-video {
+  @apply w-full h-560 object-cover max-1024:h-400 max-768:h-280;
+}
+
+.resource-detail-content {
+  @apply flex-1 flex flex-col gap-40 max-768:gap-28;
+}
+
+.resource-detail-header {
+  @apply flex flex-col gap-7;
+}
+
+.resource-detail-header .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-2 leading-none max-1024:text-heading-3 max-768:text-heading-4;
+}
+
+.resource-detail-header .content p {
+  @apply font-futura-pt font-bold italic text-heading-3 leading-none max-768:text-heading-4;
+}
+
+.resource-detail-block {
+  @apply flex flex-col gap-20;
+}
+
+.resource-detail-block .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-3 leading-none max-768:text-heading-4;
+}
+
+.resource-bullet-list {
+  @apply flex flex-col gap-10;
+}
+
+.resource-bullet-item {
+  @apply flex gap-8 items-start;
+}
+
+.resource-bullet-dot {
+  @apply block w-8 h-8 rounded-full bg-red shrink-0 mt-4;
+}
+
+.resource-detail-sub {
+  @apply flex flex-col gap-10;
+}
+
+.resource-sub-label .content p {
+  @apply font-futura-pt font-medium italic uppercase text-heading-4 leading-none max-768:text-heading-5;
+}
+
+.resource-bullet-label {
+  @apply font-futura-pt font-bold uppercase text-red;
+}
+
+.resource-detail-form-wrap {
+  @apply pt-14;
+}
+
+.resource-detail-form {
+  @apply flex flex-col gap-20;
+}
+
+.resource-form-submit {
+  @apply pt-14;
+}
+
+/* ========================
+   CONTACT INFO SECTION
+   ======================== */
+
+.contact-info-section {
+  @apply relative;
+}
+
+.contact-info-bg {
+  @apply absolute inset-0 overflow-hidden pointer-events-none;
+}
+
+.contact-info-bg-color {
+  @apply absolute inset-0 bg-off-white;
+}
+
+.contact-info-bg-img {
+  @apply absolute inset-0 w-full h-full object-cover opacity-5;
+}
+
+.contact-info-bg-radial {
+  @apply absolute inset-0 bg-radial from-white/90 to-transparent;
+}
+
+.contact-info-inner {
+  @apply flex gap-55 items-start relative z-10 max-1024:flex-col max-1024:gap-40;
+}
+
+.contact-info-left {
+  @apply flex-1 flex flex-col gap-40 items-start;
+}
+
+.contact-info-copy {
+  @apply flex flex-col gap-20 w-full;
+}
+
+.contact-info-copy .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none max-768:text-heading-3;
+}
+
+.contact-info-media {
+  @apply relative w-full;
+}
+
+.contact-info-img-wrap {
+  @apply relative w-full rounded overflow-hidden max-h-381;
+}
+
+.contact-info-img-wrap::before {
+  content: '';
+  @apply absolute top-0 left-0 bottom-0 z-10 pointer-events-none;
+  width: 40px;
+  background-image: url('../assets/images/approach-side-strip2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.contact-info-img {
+  @apply w-full block object-cover;
+}
+
+/* Form Card */
+
+.contact-info-card {
+  @apply bg-white rounded p-20 flex flex-col gap-40 items-center shadow-dropdown shrink-0 max-w-532 w-full max-1024:max-w-full;
+}
+
+.contact-info-card-header {
+  @apply flex flex-col items-center justify-center text-center w-full;
+}
+
+.contact-info-card-header .content p {
+  @apply font-futura-pt font-medium italic uppercase text-heading-4 leading-none;
+}
+
+.contact-info-card-header .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase text-heading-2 max-768:text-heading-3 leading-[1.285];
+}
+
+/* Contact Form */
+
+.contact-info-form {
+  @apply flex flex-col gap-20 w-full items-center gap-40;
+}
+.contact-info-form .btn-red {
+  @apply mt-14;
+}
+
+.contact-form-fields {
+  @apply flex flex-col gap-20 w-full;
+}
+
+.contact-select-wrap {
+  @apply relative flex items-center w-full;
+}
+
+.contact-select {
+  @apply bg-transparent border-0 outline-none font-futura-pt italic text-heading-6 text-silver pb-10 w-full appearance-none cursor-pointer;
+}
+
+.contact-select-chevron {
+  @apply absolute right-0 pointer-events-none flex items-center;
+}
+
+/* Form footer */
+
+.contact-form-footer {
+  @apply flex flex-col gap-20 items-center;
+}
+
+/* =============================================================================
+   DEMOGRAPHICS SECTION
+   ============================================================================= */
+
+.demographics-section {
+  @apply bg-off-white;
+}
+
+.demographics-inner {
+  @apply flex flex-col gap-40 items-center;
+}
+
+.demographics-inner .title h2 {
+  @apply font-futura-pt-cond text-center leading-none font-bold;
+}
+
+.demographics-stats {
+  @apply flex max-w-1000 items-stretch justify-between w-full mx-auto max-768:flex-wrap max-768:justify-center max-768:gap-40;
+}
+
+.demographics-stat {
+  @apply flex flex-col gap-10 items-center text-center;
+}
+
+.demographics-stat-label p {
+  @apply font-futura-pt font-medium italic uppercase text-heading-4 max-768:text-heading-5 leading-none;
+}
+
+.demographics-stat-num p {
+  @apply font-futura-pt-cond font-bold uppercase leading-none text-64 max-768:text-heading-2;
+}
+
+.demographics-stat .content p {
+  @apply leading-none;
+}
+
+.demographics-divider {
+  @apply relative self-stretch shrink-0 flex items-center justify-center w-32 max-768:hidden;
+}
+
+.demographics-divider::after {
+  @apply content-[''] absolute inset-y-0 left-1/2 w-px bg-silver -translate-x-1/2 rotate-[12deg];
+}
+
+/* =============================================================================
+   MEET THE EDGE SECTION
+   ============================================================================= */
+
+.meet-edge-section {
+  @apply bg-white;
+}
+
+.meet-edge-inner {
+  @apply flex gap-55 items-center max-1024:flex-col max-1024:gap-40;
+}
+
+.meet-edge-col-left,
+.meet-edge-col-right {
+  @apply flex-1 relative overflow-hidden rounded h-480 max-1024:w-full max-1024:h-350 max-768:h-250;
+}
+
+.meet-edge-img {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.meet-edge-col-left::after {
+  content: '';
+  @apply absolute top-0 right-0 bottom-0 z-10 pointer-events-none;
+  width: 40px;
+  background-image: url('../assets/images/approach-side-strip2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+
+.meet-edge-col-right::before {
+  content: '';
+  @apply absolute top-0 left-0 bottom-0 z-10 pointer-events-none;
+  width: 40px;
+  background-image: url('../assets/images/approach-side-strip2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.meet-edge-copy {
+  @apply flex-1 flex flex-col gap-20 items-start justify-center max-1024:w-full;
+}
+
+.meet-edge-copy .title h2 {
+  @apply leading-none;
+}
+
+/* =============================================================================
+   PRESSKIT FEATURE SECTION
+   ============================================================================= */
+
+.presskit-feature-section {
+  @apply bg-white;
+}
+
+.presskit-feature-inner {
+  @apply flex gap-55 items-center max-1024:flex-col max-1024:gap-40;
+}
+
+.presskit-feature-col-left,
+.presskit-feature-col-right {
+  @apply flex-1 relative overflow-hidden rounded max-1024:w-full 1024:min-h-480;
+}
+
+.presskit-feature-img {
+  @apply w-full block object-cover;
+}
+
+/* Cross-divider: right edge of left image — upper-right white triangle (\ diagonal) */
+.presskit-feature-col-left::after {
+  content: '';
+  @apply absolute w-60 top-0 right-0 bottom-0 z-10 pointer-events-none bg-white;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+/* Cross-divider: left edge of right image — lower-left white triangle (\ diagonal, complementary) */
+.presskit-feature-col-right::before {
+  content: '';
+  @apply absolute w-60 top-0 -left-1 bottom-0 z-10 pointer-events-none bg-white;
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%);
+}
+
+.presskit-feature-copy {
+  @apply flex-1 flex flex-col gap-20 items-start justify-center max-1024:w-full;
+}
+
+.presskit-feature-copy .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none max-768:text-heading-3;
+}
+
+.presskit-feature-eyebrow p {
+  @apply font-futura-pt font-medium italic uppercase text-heading-4 leading-none max-768:text-heading-5;
+}
+
+/* =============================================================================
+   HOW TO ENGAGE WITH US SECTION
+   ============================================================================= */
+
+.engage-section {
+  @apply bg-off-white relative pt-20 pb-55 max-1199:pb-40 max-768:pb-30;
+}
+
+.engage-gold-strip {
+  @apply absolute top-0 left-0 w-full bg-gold h-170 max-768:h-120;
+}
+
+.engage-inner {
+  @apply relative z-10;
+}
+
+.engage-card {
+  @apply max-w-970 mx-auto bg-white rounded flex flex-col gap-20 px-40 py-28 shadow-lg max-768:px-20 max-768:py-20;
+}
+
+.engage-card-title .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none text-heading-2 text-center max-768:text-heading-3;
+}
+
+.engage-icons {
+  @apply flex items-center justify-center gap-55 max-1199:gap-30 max-768:gap-15 max-992:flex-wrap;
+}
+
+.engage-icon {
+  @apply flex items-center justify-center bg-red rounded shrink-0 w-80 h-80 max-992:w-50 max-992:h-50 max-992:p-10 max-576:w-40 max-576:h-40 transition-opacity duration-300 hover:opacity-80;
+}
+
+.engage-icon img {
+  @apply block object-contain max-992:max-h-full;
+}
+
+/* =============================================================================
+   BRANDS WE'VE WORKED WITH SECTION
+   ============================================================================= */
+
+.as-featured-section {
+  @apply bg-gold py-55;
+}
+
+.as-featured-inner {
+  @apply flex flex-col gap-20;
+}
+
+.as-featured-header {
+  @apply text-center;
+}
+
+.as-featured-header .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none text-heading-2 max-768:text-heading-3;
+}
+
+.as-featured-marquee {
+  @apply overflow-hidden;
+}
+
+.as-featured-swiper {
+  @apply overflow-hidden;
+}
+.as-featured-swiper .swiper-wrapper {
+  @apply items-center
+}
+.as-featured-slide {
+  @apply flex items-center justify-center;
+}
+
+.as-featured-logo {
+  @apply block object-contain max-h-100 max-768:max-h-60 mx-auto;
+}
+
+/* =============================================================================
+   DOWNLOAD OUR PRESS FILES SECTION
+   ============================================================================= */
+
+.press-files-section {
+  @apply bg-off-white pt-0 pb-100 max-1199:pb-50 max-768:pb-30;
+}
+
+.press-files-inner {
+  @apply flex flex-col gap-55 max-768:gap-35;
+}
+
+.press-files-header {
+  @apply text-center;
+}
+
+.press-files-header .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none text-heading-2 max-768:text-heading-3;
+}
+
+.press-files-swiper {
+  @apply overflow-hidden w-full;
+}
+
+.press-files-card {
+  @apply relative rounded overflow-hidden aspect-press-card;
+}
+
+.press-files-card-img {
+  @apply absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out;
+}
+
+.press-files-card:hover .press-files-card-img {
+  @apply scale-110;
+}
+
+.press-files-card-overlay {
+  @apply absolute inset-0 bg-linear-to-b from-black/40 to-black/80 pointer-events-none;
+}
+
+.press-files-card-content {
+  @apply absolute bottom-0 left-0 right-0 p-28 flex flex-col gap-10 z-10 max-768:p-20;
+}
+
+.press-files-card-title h3 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none text-heading-3;
+}
+
+.press-files-card-desc p {
+  @apply text-heading-6 leading-normal;
+}
+
+/* =============================================================================
+   CONNECT WITH US SECTION
+   ============================================================================= */
+
+.connect-section {
+  @apply bg-maroon relative overflow-hidden pt-170 pb-100 max-1199:pt-100 max-1199:pb-60 max-768:pt-60 max-768:pb-40;
+}
+
+.connect-top-el {
+  @apply absolute -top-1 left-0 w-full z-20 pointer-events-none rotate-180;
+}
+
+.connect-top-el-img {
+  @apply block w-full;
+}
+
+.connect-bg {
+  @apply absolute inset-0 pointer-events-none z-0;
+}
+
+.connect-bg-texture {
+  @apply absolute inset-0 w-full h-full max-w-none object-cover opacity-15;
+}
+
+.connect-inner {
+  @apply flex gap-80 items-center relative z-10 max-1024:flex-col max-1024:gap-50;
+}
+
+.connect-copy {
+  @apply flex-1 flex flex-col gap-20;
+}
+
+.connect-copy .title h2 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none text-heading-2 max-768:text-heading-3;
+}
+
+.connect-copy .content p {
+  @apply font-futura-pt text-heading-6 leading-normal;
+}
+
+.connect-contact-group {
+  @apply flex flex-col gap-20;
+}
+
+.connect-contact-group .title h3 {
+  @apply font-futura-pt-cond font-bold uppercase leading-none text-heading-3 max-768:text-heading-4;
+}
+
+.connect-contact-row {
+  @apply flex items-center gap-10;
+}
+
+.connect-contact-icon {
+  @apply shrink-0 flex items-center justify-center w-18 h-18 text-white;
+}
+
+.connect-contact-icon svg {
+  @apply w-full h-full;
+}
+
+.connect-contact-text {
+  @apply font-futura-pt text-heading-6 leading-normal italic text-white;
+}
+
+.connect-image {
+  @apply flex-1 self-stretch flex items-stretch max-1024:w-full max-1024:self-auto;
+}
+
+.connect-img {
+  @apply w-full h-full object-cover rounded shadow-dropdown max-1024:h-auto;
 }

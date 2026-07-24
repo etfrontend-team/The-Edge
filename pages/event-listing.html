@@ -770,7 +770,7 @@
         <section class="inner-banner general-padding">
             <!-- Background photo + overlays -->
             <div class="inner-banner-bg" aria-hidden="true">
-                <img src="../assets/images/banner2.webp" alt="" width="1512" height="460" id="innerBannerParallax"
+                <img src="../assets/images/inner_banner1.png" alt="" width="1512" height="460" id="innerBannerParallax"
                     class="inner-banner-bg-img" />
                 <div class="inner-banner-overlay-tl"></div>
                 <div class="inner-banner-overlay-top"></div>
@@ -798,25 +798,30 @@
 
         <!-- ======= EVENTS LISTING ======= -->
         <section class="events-listing-section general-padding">
-            <div class="events-listing-inner container-fluid">
+            <div class="container-fluid">
+            <div class="events-listing-inner">
 
                 <!-- Filter tabs -->
                 <div class="events-listing-tabs">
                     <button
                         type="button"
                         aria-label="Filter: All events"
+                        data-category="all"
                         class="events-tab events-tab--active">All</button>
                     <button
                         type="button"
                         aria-label="Filter: Retreats"
+                        data-category="retreats"
                         class="events-tab">Retreats</button>
                     <button
                         type="button"
                         aria-label="Filter: Workshops"
+                        data-category="workshops"
                         class="events-tab">Workshops</button>
                     <button
                         type="button"
                         aria-label="Filter: Summits"
+                        data-category="summits"
                         class="events-tab">Summits</button>
                 </div>
 
@@ -829,14 +834,12 @@
                         role="link"
                         target="_self"
                         aria-label="View The Edge Retreats event details"
+                        data-category="retreats"
                         class="events-listing-card">
                         <div class="events-card-media" aria-hidden="true">
-                            <img
-                                src="../assets/images/explore-card-1.jpg"
-                                width="800"
-                                height="600"
-                                alt="The Edge Retreats outdoor experience"
-                                class="events-card-bg-img" />
+                            <video class="events-card-bg-img" autoplay muted loop playsinline aria-label="The Edge Retreats outdoor experience">
+                                <source src="../assets/images/video1.mp4" type="video/mp4" />
+                            </video>
                             <div class="events-card-overlay"></div>
                         </div>
                         <div class="events-card-content">
@@ -844,7 +847,7 @@
                                 <h3>The Edge Retreats</h3>
                             </div>
                             <div class="title title-white">
-                                <h4>$00.00</h4>
+                                <h3>$00.00</h3>
                             </div>
                         </div>
                     </a>
@@ -855,14 +858,12 @@
                         role="link"
                         target="_self"
                         aria-label="View The Edge Workshops event details"
+                        data-category="workshops"
                         class="events-listing-card">
                         <div class="events-card-media" aria-hidden="true">
-                            <img
-                                src="../assets/images/explore-card-2.jpg"
-                                width="800"
-                                height="600"
-                                alt="The Edge Workshops community gathering"
-                                class="events-card-bg-img" />
+                            <video class="events-card-bg-img" autoplay muted loop playsinline aria-label="The Edge Workshops community gathering">
+                                <source src="../assets/images/bannerwrap-video3.mp4" type="video/mp4" />
+                            </video>
                             <div class="events-card-overlay"></div>
                         </div>
                         <div class="events-card-content">
@@ -870,7 +871,7 @@
                                 <h3>The Edge Workshops</h3>
                             </div>
                             <div class="title title-white">
-                                <h4>$00.00</h4>
+                                <h3>$00.00</h3>
                             </div>
                         </div>
                     </a>
@@ -881,14 +882,12 @@
                         role="link"
                         target="_self"
                         aria-label="View The Edge Summits event details"
+                        data-category="summits"
                         class="events-listing-card">
                         <div class="events-card-media" aria-hidden="true">
-                            <img
-                                src="../assets/images/explore-card-4.jpg"
-                                width="800"
-                                height="600"
-                                alt="The Edge Summits leadership experience"
-                                class="events-card-bg-img" />
+                            <video class="events-card-bg-img" autoplay muted loop playsinline aria-label="The Edge Summits leadership experience">
+                                <source src="../assets/images/bannerwrap-vido1.mp4" type="video/mp4" />
+                            </video>
                             <div class="events-card-overlay"></div>
                         </div>
                         <div class="events-card-content">
@@ -896,7 +895,7 @@
                                 <h3>Summits</h3>
                             </div>
                             <div class="title title-white">
-                                <h4>$00.00</h4>
+                                <h3>$00.00</h3>
                             </div>
                         </div>
                     </a>
@@ -904,8 +903,72 @@
                 </div><!-- /.events-listing-grid -->
 
             </div><!-- /.events-listing-inner -->
+            </div>
         </section><!-- /.events-listing-section -->
 
+        <!-- ======= NEWSLETTER SECTION ======= -->
+        <section class="newsletter-section general-padding">
+            <div class="newsletter-inner container-fluid">
+
+                <!-- Left: copy + form -->
+                <div class="newsletter-copy">
+                    <div class="newsletter-copy-inner">
+                        <div class="newsletter-eyebrow">
+                            <div class="content content-silver">
+                                <p>One email per week. One powerful practice.</p>
+                            </div>
+                        </div>
+
+                        <div class="newsletter-title-row">
+                            <div class="title title-gold">
+                                <h2>Free 4-Week Guided Journal</h2>
+                            </div>
+                            <div class="newsletter-divider" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="content content-navy">
+                        <p>Each week builds upon the last&mdash;layering awareness, discipline, and embodiment to help
+                            you meet your edge and become the man you&rsquo;re here to be.</p>
+                    </div>
+
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="newsletter-field">
+                            <label for="newsletterName">Name</label>
+                            <input type="text" id="newsletterName" name="name" placeholder="Name" autocomplete="name" />
+                        </div>
+                        <div class="newsletter-field">
+                            <label for="newsletterEmail">Email Address</label>
+                            <input type="email" id="newsletterEmail" name="email" placeholder="Email Address"
+                                autocomplete="email" />
+                        </div>
+                        <div class="newsletter-submit">
+                            <button type="submit"
+                                aria-label="Join the newsletter and receive the free 4-week guided journal"
+                                class="btn btn-red">
+                                Join Now
+                            </button>
+                        </div>
+                    </form>
+
+                </div><!-- /.newsletter-copy -->
+
+                <!-- Right: 2 portrait images -->
+                <div class="newsletter-images">
+                    <div class="newsletter-img-wrap">
+                        <img src="../assets/images/card-coaching-1-1.webp" alt="Man in a focused 1-1 coaching session"
+                            width="400" height="550" class="newsletter-img" />
+                    </div>
+                    <div class="newsletter-img-wrap">
+                        <img src="../assets/images/card-inperson-coaching.webp"
+                            alt="Group joining hands in an in-person coaching session" width="400" height="550"
+                            class="newsletter-img" />
+                    </div>
+                </div><!-- /.newsletter-images -->
+
+            </div><!-- /.newsletter-inner -->
+        </section><!-- /.newsletter-section -->
 
     </main>
 

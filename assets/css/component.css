@@ -13,3 +13,29 @@
 .btn-red-outline {
   @apply bg-transparent text-red border-2 border-red border-solid hover:bg-red hover:text-white;
 }
+
+/* ========================
+   FORM FIELDS (reusable)
+   ======================== */
+
+.form-field {
+  @apply flex flex-col gap-10 pt-14;
+}
+
+.form-field label {
+  @apply sr-only;
+}
+
+.form-field input,
+.form-field textarea {
+  @apply bg-transparent border-0 border-b border-b-red outline-none font-futura-pt italic text-heading-6 text-navy pb-10 w-full;
+}
+
+.form-field select {
+  @apply bg-transparent border-0 border-b border-b-red outline-none font-futura-pt italic text-heading-6 text-navy pb-10 w-full appearance-none cursor-pointer;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  @apply text-silver opacity-70;
+}

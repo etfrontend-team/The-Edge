@@ -51,6 +51,7 @@
   --text-heading-5: 20px;
   --text-heading-6: 16px;
   --text-40: 40px;
+  --text-64: 64px;
   --text-36: 36px;
   --text-28: 28px;
   --text-18: 18px;
@@ -69,4 +70,7 @@
   /* DROP SHADOWS */
   --drop-shadow-dropdown: 0px 5px 15px rgba(0, 0, 0, 0.17);
   --drop-shadow-player: 0px 5px 7.5px rgba(0, 0, 0, 0.17);
+
+  /* ASPECT RATIOS */
+  --aspect-press-card: 335.5 / 480;
 }

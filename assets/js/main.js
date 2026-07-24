@@ -299,6 +299,76 @@ if (document.querySelector('.explore-section-swiper')) {
 }
 
 /* ========================
+   BRANDS MARQUEE SWIPER
+   ======================== */
+if (document.querySelector('.as-featured-swiper')) {
+  var asFeaturedSwiper = new Swiper('.as-featured-swiper', {
+    slidesPerView: 5,
+    spaceBetween: 60,
+    loop: true,
+    allowTouchMove: false,
+    speed: 4000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2.2,
+        spaceBetween: 30,
+      },
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+      1025: {
+        slidesPerView: 5,
+        spaceBetween: 60,
+      },
+    },
+    on: {
+      transitionEnd: function () {
+        asFeaturedSwiper.autoplay.start();
+      },
+    },
+  });
+}
+
+/* ========================
+   PRESS FILES SWIPER
+   ======================== */
+if (document.querySelector('.press-files-swiper')) {
+  new Swiper('.press-files-swiper', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop: false,
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2,
+        spaceBetween: 16,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
+}
+
+/* ========================
    COACHING DESC SWIPER
    ======================== */
 if (document.querySelector('.coaching-desc-main-swiper')) {
@@ -372,11 +442,16 @@ $(function () {
   var alwaysScrolledPages = [
     'single-coaching',
     'single-podcast',
+    'single-event',
     // 'event-listing',
   ];
   var isAlwaysScrolled = alwaysScrolledPages.some(function (name) {
     return window.location.pathname.indexOf(name) !== -1;
   });
+
+  if (isAlwaysScrolled) {
+    $('header').addClass('is-scrolled');
+  }
 
   function onScroll() {
     if (isAlwaysScrolled) return;
@@ -612,6 +687,25 @@ $(function () {
   });
 
   /* ========================
+     EVENTS LISTING — TAB FILTER
+     ======================== */
+
+  $(document).on('click', '.events-tab', function () {
+    var $btn = $(this);
+    var category = $btn.data('category');
+    $btn.closest('.events-listing-tabs').find('.events-tab').removeClass('events-tab--active');
+    $btn.addClass('events-tab--active');
+    var $cards = $btn.closest('.events-listing-inner').find('.events-listing-card');
+    if (category === 'all') {
+      $cards.show();
+    } else {
+      $cards.each(function () {
+        $(this).data('category') === category ? $(this).show() : $(this).hide();
+      });
+    }
+  });
+
+  /* ========================
      BANNERWRAP — PLAY VIDEO
      ======================== */
 
@@ -631,3 +725,104 @@ $(function () {
   });
 
 });
+
+/* ========================
+   REGISTER MODAL + CALENDAR
+   ======================== */
+
+(function () {
+  var $modal = $('#registerModal');
+  if (!$modal.length) return;
+
+  var calState = {
+    year: new Date().getFullYear(),
+    month: new Date().getMonth(),
+    selected: null,
+  };
+
+  var MONTHS = ['JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'];
+
+  function buildCalendar() {
+    var y = calState.year;
+    var m = calState.month;
+    $('#regCalMonth').text(MONTHS[m]);
+
+    var firstDay = new Date(y, m, 1).getDay();
+    var daysInMonth = new Date(y, m + 1, 0).getDate();
+    var daysInPrev = new Date(y, m, 0).getDate();
+
+    var $days = $('#regCalDays').empty();
+    var cells = [];
+
+    for (var i = firstDay - 1; i >= 0; i--) {
+      cells.push({ day: daysInPrev - i, outside: true });
+    }
+    for (var d = 1; d <= daysInMonth; d++) {
+      cells.push({ day: d, outside: false });
+    }
+    var remaining = 7 - (cells.length % 7);
+    if (remaining < 7) {
+      for (var n = 1; n <= remaining; n++) {
+        cells.push({ day: n, outside: true });
+      }
+    }
+
+    for (var w = 0; w < cells.length / 7; w++) {
+      var $week = $('<div class="reg-cal-week"></div>');
+      for (var c = 0; c < 7; c++) {
+        var cell = cells[w * 7 + c];
+        var isSelected = !cell.outside && calState.selected && calState.selected.year === y && calState.selected.month === m && calState.selected.day === cell.day;
+        var cls = 'reg-cal-day' + (cell.outside ? ' is-outside' : '') + (isSelected ? ' is-selected' : '');
+        var $day = $('<span class="' + cls + '">' + cell.day + '</span>');
+        if (!cell.outside) {
+          (function (day) {
+            $day.on('click', function () {
+              calState.selected = { year: y, month: m, day: day };
+              buildCalendar();
+            });
+          })(cell.day);
+        }
+        $week.append($day);
+      }
+      $days.append($week);
+    }
+  }
+
+  function openModal() {
+    $modal.addClass('is-open').attr('aria-hidden', 'false');
+    $('body').addClass('overflow-hidden');
+    buildCalendar();
+  }
+
+  function closeModal() {
+    $modal.removeClass('is-open').attr('aria-hidden', 'true');
+    $('body').removeClass('overflow-hidden');
+  }
+
+  $('#openRegisterModal').on('click', openModal);
+  $('#registerModalClose, #registerModalBackdrop').on('click', closeModal);
+  $(document).on('keydown', function (e) {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  $('#regCalPrev').on('click', function () {
+    calState.month--;
+    if (calState.month < 0) { calState.month = 11; calState.year--; }
+    buildCalendar();
+  });
+
+  $('#regCalNext').on('click', function () {
+    calState.month++;
+    if (calState.month > 11) { calState.month = 0; calState.year++; }
+    buildCalendar();
+  });
+
+  var regQty = 1;
+  $('#regQtyMinus').on('click', function () {
+    if (regQty > 1) { regQty--; $('#regQtyCount').text(regQty); }
+  });
+  $('#regQtyPlus').on('click', function () {
+    regQty++;
+    $('#regQtyCount').text(regQty);
+  });
+}());
